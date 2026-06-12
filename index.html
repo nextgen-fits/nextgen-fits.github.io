@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 你的谷歌所有权验证雷达 -->
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
     
     <title>NextGen Essentials | Premium Men's Horology, Style & Tech</title>
@@ -11,13 +10,13 @@
     
     <style>
         :root {
-            --bg-color: #000000; /* 纯黑底色，对标罗技高端电竞与Satechi深空灰 */
+            --bg-color: #000000;
             --card-bg: #0c0c0e;
             --accent-gold: #c5a880;
             --text-main: #f5f5f7;
             --text-muted: #86868b;
             --border-color: #1f1f23;
-            --nav-bg: rgba(0, 0, 0, 0.8);
+            --nav-bg: rgba(0, 0, 0, 0.85);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -28,10 +27,10 @@
             color: var(--text-main);
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
+            overflow-x: hidden; /* 严防手机端右侧漏白、横向滚动 */
         }
 
-        /* ⚡ 悬浮导航栏（全屏无边框设计） */
+        /* 悬浮导航栏 */
         nav {
             position: fixed;
             top: 0;
@@ -45,7 +44,7 @@
 
         .nav-container {
             width: 100%;
-            max-width: 1920px; /* 适配超宽大屏 */
+            max-width: 1920px;
             margin: 0 auto;
             padding: 0 40px;
             height: 60px;
@@ -76,17 +75,17 @@
 
         .nav-links a:hover { color: #fff; }
 
-        /* ⚡ 页面核心包装器：彻底干掉之前的宽度限制，直通两侧 */
+        /* 页面核心包装器 */
         .main-container {
             width: 100%;
-            padding-top: 60px; /* 给导航留空 */
+            padding-top: 60px;
         }
 
-        /* ⚡ 升级一：Satechi风全屏画报轮播图（无缝铺满屏幕） */
+        /* 宽幅画报轮播图 */
         .hero-slider {
             position: relative;
             width: 100%;
-            height: 70vh; /* 占据屏幕高度的 70%，电影感十足 */
+            height: 70vh;
             min-height: 500px;
             background-color: #000;
             overflow: hidden;
@@ -110,7 +109,7 @@
             content: '';
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%);
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%);
         }
 
         .slide-content {
@@ -161,36 +160,24 @@
         .arrow-left { left: 30px; }
         .arrow-right { right: 30px; }
 
-        /* 内容大网格包装（对标罗技Shop页面，1920宽幅大平层） */
+        /* 三栏内容网格区间 */
         .content-section {
             max-width: 1920px;
             margin: 0 auto;
             padding: 80px 40px;
         }
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-header h2 {
-            font-size: 2.2em;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        /* ⚡ 升级二：罗技/Satechi 标志性的宽幅三栏网格 */
+        /* 深度响应式布局：基于网格在手机上智能降维 */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 拉宽卡片尺寸 */
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 40px;
         }
 
         .category-box {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 0px; /* 干掉圆角，改用大厂最爱的工业风直角硬核线条 */
+            border-radius: 0px;
             transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
             display: flex;
             flex-direction: column;
@@ -199,7 +186,7 @@
 
         .card-image-wrapper {
             width: 100%;
-            height: 320px; /* 大幅度提升图片展现高度 */
+            height: 320px;
             overflow: hidden;
             position: relative;
         }
@@ -214,7 +201,7 @@
 
         .category-box:hover .card-image {
             filter: brightness(95%);
-            transform: scale(1.05); /* 大厂风微距变焦感 */
+            transform: scale(1.05);
         }
 
         .card-content {
@@ -265,7 +252,7 @@
         }
         .category-box:hover .article-link { color: var(--accent-gold); }
 
-        /* ⚡ 升级三：大厂流媒体剧场（完美融入全屏） */
+        /* 流媒体剧场 */
         .featured-theater {
             background-color: #050505;
             border-top: 1px solid var(--border-color);
@@ -307,11 +294,43 @@
             letter-spacing: 1px;
             background: #000;
         }
+
+        /* ==========================================================================
+           ⚡ 新增硬核补充：针对手机等移动设备的【媒体查询核心优化断点】
+           ========================================================================== */
+        @media screen and (max-width: 768px) {
+            /* 手机端间距缩紧 */
+            .nav-container { padding: 0 20px; }
+            .nav-links { display: none; } /* 手机端隐藏复杂PC导航，保持绝对极简 */
+            
+            /* 手机端首屏海报比例修正，防止背景图被压扁或字过大过长 */
+            .hero-slider { height: 380px; min-height: 380px; }
+            .slide { padding: 0 24px; }
+            .slide-title { font-size: 2.1em; margin-bottom: 12px; line-height: 1.2; }
+            .slide-desc { font-size: 0.95em; }
+            
+            /* 手机端干掉左右轮播指针，海外年轻一代更习惯直接“手指划动”或看其自动切换 */
+            .slider-arrow { display: none; }
+
+            /* 核心方块在手机端彻底切换为：单列瀑布流大牌体验 */
+            .content-section { padding: 40px 20px; }
+            .grid-container {
+                grid-template-columns: 1fr; /* 智能单列重组 */
+                gap: 24px;
+            }
+            .card-image-wrapper { height: 240px; } /* 缩小图片高度适配手机屏幕 */
+            .card-content { padding: 24px; }
+            .category-box h3 { font-size: 1.4em; }
+            .article-desc { font-size: 0.9em; margin-bottom: 20px; }
+
+            /* 手机端流媒体视频比例校准 */
+            .featured-theater { padding: 50px 20px; }
+            .theater-container h2 { font-size: 1.3em; margin-bottom: 20px; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- 顶层无缝导航栏 -->
     <nav>
         <div class="nav-container">
             <a href="#" class="nav-logo">NextGen Essentials</a>
@@ -326,12 +345,10 @@
 
     <div class="main-container">
 
-        <!-- ⚡ 首屏大厂风：无缝全景全屏画报 -->
         <div class="hero-slider">
             <button class="slider-arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
             <button class="slider-arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
 
-            <!-- 海报 1：对标罗技/Satechi的高精产品宏观感 -->
             <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1920')">
                 <div class="slide-content">
                     <span class="slide-tag">Industrial Horology</span>
@@ -340,7 +357,6 @@
                 </div>
             </div>
 
-            <!-- 海报 2：胶囊穿搭 -->
             <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1920')">
                 <div class="slide-content">
                     <span class="slide-tag">Minimalist Aesthetics</span>
@@ -349,7 +365,6 @@
                 </div>
             </div>
 
-            <!-- 海报 3：极致桌面 -->
             <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=1920')">
                 <div class="slide-content">
                     <span class="slide-tag">Tactical Setup</span>
@@ -359,11 +374,9 @@
             </div>
         </div>
 
-        <!-- ⚡ 核心栏目：偷师罗技商城的超宽三栏网格（工业级大图直角展现） -->
         <div class="content-section">
             <div class="grid-container">
                 
-                <!-- 卡片 1 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="Horology">
@@ -378,7 +391,6 @@
                     </div>
                 </div>
 
-                <!-- 卡片 2 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="Style">
@@ -393,7 +405,6 @@
                     </div>
                 </div>
 
-                <!-- 卡片 3 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800" alt="Tech">
@@ -411,7 +422,6 @@
             </div>
         </div>
 
-        <!-- 全屏融入式流媒体剧场 -->
         <div class="featured-theater">
             <div class="theater-container">
                 <h2>Featured Cinematic Experience</h2>
@@ -427,7 +437,6 @@
 
     </div>
 
-    <!-- 原生全屏轮播引擎 -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
