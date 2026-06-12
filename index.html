@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 你的谷歌所有权验证雷达 -->
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
     
     <title>NextGen Essentials | Premium Men's Horology, Style & Tech</title>
@@ -27,7 +28,7 @@
             color: var(--text-main);
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden; /* 严防手机端右侧漏白、横向滚动 */
+            overflow-x: hidden;
         }
 
         /* 悬浮导航栏 */
@@ -167,7 +168,6 @@
             padding: 80px 40px;
         }
 
-        /* 深度响应式布局：基于网格在手机上智能降维 */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -295,35 +295,20 @@
             background: #000;
         }
 
-        /* ==========================================================================
-           ⚡ 新增硬核补充：针对手机等移动设备的【媒体查询核心优化断点】
-           ========================================================================== */
         @media screen and (max-width: 768px) {
-            /* 手机端间距缩紧 */
             .nav-container { padding: 0 20px; }
-            .nav-links { display: none; } /* 手机端隐藏复杂PC导航，保持绝对极简 */
-            
-            /* 手机端首屏海报比例修正，防止背景图被压扁或字过大过长 */
+            .nav-links { display: none; }
             .hero-slider { height: 380px; min-height: 380px; }
             .slide { padding: 0 24px; }
             .slide-title { font-size: 2.1em; margin-bottom: 12px; line-height: 1.2; }
             .slide-desc { font-size: 0.95em; }
-            
-            /* 手机端干掉左右轮播指针，海外年轻一代更习惯直接“手指划动”或看其自动切换 */
             .slider-arrow { display: none; }
-
-            /* 核心方块在手机端彻底切换为：单列瀑布流大牌体验 */
             .content-section { padding: 40px 20px; }
-            .grid-container {
-                grid-template-columns: 1fr; /* 智能单列重组 */
-                gap: 24px;
-            }
-            .card-image-wrapper { height: 240px; } /* 缩小图片高度适配手机屏幕 */
+            .grid-container { grid-template-columns: 1fr; gap: 24px; }
+            .card-image-wrapper { height: 240px; }
             .card-content { padding: 24px; }
             .category-box h3 { font-size: 1.4em; }
             .article-desc { font-size: 0.9em; margin-bottom: 20px; }
-
-            /* 手机端流媒体视频比例校准 */
             .featured-theater { padding: 50px 20px; }
             .theater-container h2 { font-size: 1.3em; margin-bottom: 20px; }
         }
@@ -331,20 +316,22 @@
 </head>
 <body>
 
+    <!-- ⚡ 已经为你完全接通激活的全站导航 -->
     <nav>
         <div class="nav-container">
-            <a href="#" class="nav-logo">NextGen Essentials</a>
+            <a href="index.html" class="nav-logo">NextGen Essentials</a>
             <div class="nav-links">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="seiko-nh35-watch-modding-guide.html">Horology</a>
-                <a href="#">Style</a>
-                <a href="#">Gear</a>
+                <a href="menswear-capsule-wardrobe-guide.html">Style</a>
+                <a href="minimalist-desk-setup-gear-guide.html">Gear</a>
             </div>
         </div>
     </nav>
 
     <div class="main-container">
 
+        <!-- 首屏：画报轮播图 -->
         <div class="hero-slider">
             <button class="slider-arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
             <button class="slider-arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
@@ -377,6 +364,7 @@
         <div class="content-section">
             <div class="grid-container">
                 
+                <!-- 01 腕表 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="Horology">
@@ -391,6 +379,7 @@
                     </div>
                 </div>
 
+                <!-- 02 穿搭 ⚡ 已经成功替换跳转至新页面 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="Style">
@@ -401,10 +390,11 @@
                             <h3>The Capsule Wardrobe</h3>
                             <p class="article-desc">Stop overcomplicating fashion. Streamline your lifestyle with premium wardrobe essentials designed for precision styling.</p>
                         </div>
-                        <a class="article-link" href="#">View Wardrobe →</a>
+                        <a class="article-link" href="menswear-capsule-wardrobe-guide.html">View Wardrobe →</a>
                     </div>
                 </div>
 
+                <!-- 03 数码 ⚡ 已经成功替换跳转至新页面 -->
                 <div class="category-box">
                     <div class="card-image-wrapper">
                         <img class="card-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800" alt="Tech">
@@ -415,13 +405,14 @@
                             <h3>Tactical Gear Layout</h3>
                             <p class="article-desc">Curating high-performance hardware, server infrastructure, and clean minimalist workspace layouts for creators.</p>
                         </div>
-                        <a class="article-link" href="#">Discover Setup →</a>
+                        <a class="article-link" href="minimalist-desk-setup-gear-guide.html">Discover Setup →</a>
                     </div>
                 </div>
 
             </div>
         </div>
 
+        <!-- 融入式流媒体剧场 -->
         <div class="featured-theater">
             <div class="theater-container">
                 <h2>Featured Cinematic Experience</h2>
@@ -437,6 +428,7 @@
 
     </div>
 
+    <!-- 轮播驱动 -->
     <script>
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slide');
