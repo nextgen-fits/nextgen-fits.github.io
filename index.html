@@ -3,95 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 你的谷歌所有权验证雷达，永远焊死在这里 -->
+    <!-- 你的谷歌所有权验证雷达，永远焊死 -->
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
     
-    <title>NextGen Essentials | Premium Men's Horology, Style & Tech (18-40)</title>
-    <meta name="description" content="The definitive blueprint for the modern gentleman aged 18-40. Curated mechanical horology, minimalist capsule wardrobes, and high-performance 3C productivity setups.">
+    <title>NextGen Essentials | Premium Men's Horology, Style & Tech</title>
+    <meta name="description" content="The definitive blueprint for the modern gentleman aged 18-40. Expert mechanical horology, minimalist menswear capsule, and high-performance 3C desk setups.">
     
     <style>
         :root {
-            --bg-color: #000000; /* 极致纯黑，对标高端3C数码 */
+            --bg-color: #000000; /* 纯黑底色，对标罗技高端与Satechi深空灰 */
             --card-bg: #0c0c0e;
             --accent-gold: #c5a880;
             --text-main: #f5f5f7;
             --text-muted: #86868b;
             --border-color: #1f1f23;
-            --success-green: #24b47e; /* 安全支付标志性绿 */
+            --nav-bg: rgba(0, 0, 0, 0.85);
         }
-        
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-main);
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            padding: 100px 24px; /* 上下预留间距 */
+            overflow-x: hidden;
         }
-        
-        /* 页面核心包装器 */
-        .page-container { max-width: 1100px; margin: 0 auto; }
-        
-        /* 头部标识与副标题 */
-        header { text-align: center; margin-bottom: 80px; }
-        header h1 { font-size: 2.5em; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #fff; margin-bottom: 12px; }
-        header p { color: var(--text-muted); font-size: 1em; letter-spacing: 1px; font-weight: 300; }
-        
-        /* ⚡ 核心功能：三栏变现网格 */
-        .essentials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
-        }
-        
-        .column-box {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        
-        /* 偷师 Satechi 的直角硬核大图展现 */
-        .column-image {
+
+        /* ⚡ 悬浮导航栏（全屏无边框设计） */
+        nav {
+            position: fixed;
+            top: 0;
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            margin-bottom: 25px;
-            filter: brightness(80%);
-            border: 1px solid var(--border-color);
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
         }
-        
-        .box-title {
-            font-size: 1.5em;
-            font-weight: 600;
+
+        .nav-container {
+            width: 100%;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 0 40px;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 1.1em;
             color: #fff;
-            margin-bottom: 10px;
+            text-decoration: none;
         }
-        
-        .category-tag {
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            margin-left: 35px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: #fff; }
+
+        /* 页面核心包装器 */
+        .main-container {
+            width: 100%;
+            padding-top: 60px; /* 给导航留空 */
+        }
+
+        /* ⚡ 找回流失的灵感：Satechi风全屏画报轮播图（无缝铺满屏幕） */
+        .hero-slider {
+            position: relative;
+            width: 100%;
+            height: 70vh; /* 占据屏幕高度的 70%，电影感十足 */
+            min-height: 500px;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0;
+            transition: opacity 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+        }
+
+        .slide.active { opacity: 1; z-index: 10; }
+
+        .slide::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(90deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 60%);
+        }
+
+        .slide-content {
+            position: relative;
+            z-index: 20;
+            max-width: 650px;
+        }
+
+        .slide-tag {
             color: var(--accent-gold);
             font-size: 0.85em;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
             display: block;
         }
-        
-        .description-text {
+
+        .slide-title {
+            font-size: 3.2em;
+            font-weight: 700;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        .slide-desc {
             color: var(--text-muted);
-            font-size: 1.05em;
+            font-size: 1.1em;
             font-weight: 300;
-            text-align: justify;
-            margin-bottom: 30px;
-            flex-grow: 1;
+        }
+
+        .slider-arrow {
+            position: absolute;
+            top: 50%; transform: translateY(-50%);
+            z-index: 30;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.3s;
+        }
+        .slider-arrow:hover { background: #fff; color: #000; }
+        .arrow-left { left: 30px; }
+        .arrow-right { right: 30px; }
+
+        /* 内容板块包装 */
+        .content-section {
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 12px;
         }
         
-        /* ⚡ 变现按钮：亚马逊联盟、Stripe支付、YouTube导流 */
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1em;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
+        /* ⚡ 罗技/Satechi 风格的超宽变现卡片网格 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); /* 保持高清宽幅 */
+            gap: 40px;
+        }
+
+        .category-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 0px; /* 大厂最爱的工业风直角硬核线条 */
+            transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .card-image-wrapper {
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(75%);
+            transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), filter 0.8s;
+        }
+
+        .category-box:hover .card-image {
+            filter: brightness(95%);
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .category-num {
+            font-size: 0.8em;
+            color: var(--accent-gold);
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .category-box h3 {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .article-desc {
+            color: var(--text-muted);
+            font-size: 1em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* ⚡ 完美融入：亚马逊亮金变现按钮与线框支付按钮 */
         .monetize-link {
             display: block;
             width: 100%;
@@ -99,7 +266,7 @@
             padding: 14px;
             text-align: center;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 0.95em;
             font-weight: 600;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -108,96 +275,249 @@
             margin-bottom: 12px;
         }
         
-        /* 亚马逊联盟专用：亮金色按钮 */
         .amazon-affiliate { background-color: var(--accent-gold); color: #000; }
         .amazon-affiliate:hover { background-color: #dfbf93; color: #000; }
         
-        /* Stripe/PayPal专用：高透直角按钮 */
         .stripe-payment { background-color: transparent; border-color: var(--border-color); color: #fff; }
         .stripe-payment:hover { border-color: var(--text-main); color: #fff; }
-        
-        /* 手机移动端自适应优化 */
-        @media screen and (max-width: 768px) {
-            header h1 { font-size: 1.8em; letter-spacing: 2px; }
-            .essentials-grid { grid-template-columns: 1fr; gap: 24px; }
-            .column-image { height: 160px; }
-            .box-title { font-size: 1.3em; }
+
+        .category-box:hover {
+            border-color: #333;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
         }
-        
-        footer { margin-top: 80px; text-align: center; font-size: 0.85em; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 40px; }
+
+        /* 大厂流媒体剧场（全屏无缝嵌入） */
+        .featured-theater {
+            background-color: #050505;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 100px 8%;
+        }
+
+        .theater-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .theater-container h2 {
+            font-size: 1.8em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+
+        footer {
+            padding: 60px 40px;
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            letter-spacing: 1px;
+            background: #000;
+        }
+
+        /* 移动端完美适配响应式断点 */
+        @media screen and (max-width: 768px) {
+            .nav-container { padding: 0 20px; }
+            .nav-links { display: none; }
+            .hero-slider { height: 380px; min-height: 380px; }
+            .slide { padding: 0 24px; }
+            .slide-title { font-size: 2.1em; margin-bottom: 12px; line-height: 1.2; }
+            .slide-desc { font-size: 0.95em; }
+            .slider-arrow { display: none; }
+            .content-section { padding: 40px 20px; }
+            .section-header h2 { font-size: 1.8em; }
+            .grid-container { grid-template-columns: 1fr; gap: 24px; }
+            .card-image-wrapper { height: 240px; }
+            .card-content { padding: 24px; }
+            .category-box h3 { font-size: 1.4em; }
+            .article-desc { font-size: 0.9em; margin-bottom: 20px; }
+            .featured-theater { padding: 50px 20px; }
+            .theater-container h2 { font-size: 1.3em; margin-bottom: 20px; }
+        }
     </style>
 </head>
 <body>
-    
-    <div class="page-container">
-        
-        <header>
-            <h1>NextGen Essentials</h1>
-            <p>Horology &bull; Minimalism &bull; Tactical Tech</p>
-        </header>
-        
-        <div class="essentials-grid">
-            
-            <!-- 栏目 01：腕表变现（Teddy Baldassarre风格） -->
-            <div class="column-box">
-                <img class="column-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="Horology">
-                <span class="category-tag">01 / Horology Engineering</span>
-                <h2 class="box-title">Precision Modding</h2>
-                <p class="description-text">Deconstructing the Seiko NH35 caliber with macro aesthetics. Custom dials, cases, and step-by-step movement tutorials for modern purists.</p>
-                
-                <!-- ⚡ 变现接口：亚马逊联盟短链接 -->
-                <!-- 💡 技术细节：把下方 href 换成你的亚马逊 SKX007 短链接 -->
-                <a href="https://amzn.to/your_skx007_link" class="monetize-link amazon-affiliate" target="_blank">
-                    [ Amazon ] Seiko SKX007 Baselines →
-                </a>
-                
-                <!-- 💡 技术细节：把下方 href 换成你的 Stipe 高级改装咨询付款链接 -->
-                <a href="https://buy.stripe.com/your_modding_consult" class="monetize-link stripe-payment" target="_blank">
-                    Custom Modding Consult ($49) →
-                </a>
+
+    <!-- 顶层无缝悬浮导航栏 -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">NextGen Essentials</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="seiko-nh35-watch-modding-guide.html">Horology</a>
+                <a href="menswear-capsule-wardrobe-guide.html">Style</a>
+                <a href="minimalist-desk-setup-gear-guide.html">Gear</a>
             </div>
-            
-            <!-- 栏目 02：穿搭变现 -->
-            <div class="column-box">
-                <img class="column-image" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="Minimal Style">
-                <span class="category-tag">02 / Minimalist Style</span>
-                <h2 class="box-title">Capsule Wardrobe</h2>
-                <p class="description-text">Streamlining your visual identity. Deconstructing foundational menswear capsule pieces—heavy-weight cotton, premium raw denim, and silent textures.</p>
-                
-                <!-- 💡 技术细节：把下方 href 换成你的亚马逊极简T恤短链接 -->
-                <a href="https://amzn.to/your_minimal_tee_link" class="monetize-link amazon-affiliate" target="_blank">
-                    [ Amazon ] Premium Tee Matrix →
-                </a>
-                
-                <a href="https://pay.gumroad.com/your_capsule_pdf" class="monetize-link stripe-payment" target="_blank">
-                    Download Capsule Wardrobe PDF ($9) →
-                </a>
-            </div>
-            
-            <!-- 栏目 03：3C数码变现（罗技/Satechi风格） -->
-            <div class="column-box">
-                <img class="column-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800" alt="Tech Gear">
-                <span class="category-tag">03 / Tactical Gear</span>
-                <h2 class="box-title">Productivity Setup</h2>
-                <p class="description-text">Optimizing computing focus. Industrial-grade workstation blueprints, server monitoring nodes, and clean wire routing aesthetics for creator focus.</p>
-                
-                <!-- 💡 技术细节：把下方 href 换成你的亚马逊罗技鼠标短链接 -->
-                <a href="https://amzn.to/your_logitech_mx_link" class="monetize-link amazon-affiliate" target="_blank">
-                    [ Amazon ] Logitech MX Hub →
-                </a>
-                
-                <a href="seiko-nh35-watch-modding-guide.html" class="monetize-link stripe-payment">
-                    Read Teardown Article →
-                </a>
-            </div>
-            
         </div>
-        
+    </nav>
+
+    <div class="main-container">
+
+        <!-- 首屏：Satechi 级大图全景自动/手动两用轮播海报 -->
+        <div class="hero-slider">
+            <button class="slider-arrow arrow-left" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-arrow arrow-right" onclick="moveSlide(1)">&#10095;</button>
+
+            <!-- 海报 1 -->
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1920')">
+                <div class="slide-content">
+                    <span class="slide-tag">Industrial Horology</span>
+                    <h2 class="slide-title">The Engineering <br>Behind Time</h2>
+                    <p class="slide-desc">Deconstructing premium watch movements with high-contrast macro aesthetics.</p>
+                </div>
+            </div>
+
+            <!-- 海报 2 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1920')">
+                <div class="slide-content">
+                    <span class="slide-tag">Minimalist Aesthetics</span>
+                    <h2 class="slide-title">Form Follows <br>Function</h2>
+                    <p class="slide-desc">Curating an effortless capsule wardrobe designed for the independent creator.</p>
+                </div>
+            </div>
+
+            <!-- 海报 3 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=1920')">
+                <div class="slide-content">
+                    <span class="slide-tag">Tactical Setup</span>
+                    <h2 class="slide-title">Productivity <br>Infrastructure</h2>
+                    <p class="slide-desc">High-performance computing setups, server gear, and clean wire routing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心内容区 -->
+        <div class="content-section">
+            
+            <div class="section-header">
+                <h2>NextGen Essentials</h2>
+                <p>钟表学 &bull; 极简主义美学 &bull; 战术科技的终极蓝图</p>
+            </div>
+
+            <div class="grid-container">
+                
+                <!-- 01 腕表卡片（对标图片image_bb486e.png，中英结合且完美变现） -->
+                <div class="category-box">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="Horology">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="category-num">01 / 钟表工程</span>
+                            <h3>精密改装</h3>
+                            <p class="article-desc">以宏观美学视角解构精工NH35机芯。为现代纯粹主义者提供定制表盘、表壳和机芯分步教程。</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/your_skx007_link" class="monetize-link amazon-affiliate" target="_blank">
+                                [亚马逊] 精工 SKX007 BASELINES →
+                            </a>
+                            <a href="checkout-premium-service.html" class="monetize-link stripe-payment">
+                                定制改装咨询 (49美元) →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 02 穿搭卡片 -->
+                <div class="category-box">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="Style">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="category-num">02 / 极简风格</span>
+                            <h3>胶囊衣橱</h3>
+                            <p class="article-desc">简化您的视觉形象。解构男装胶囊系列的基础单品——厚重棉布、优质原生牛仔布和低调的纹理。</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/your_minimal_tee_link" class="monetize-link amazon-affiliate" target="_blank">
+                                [亚马逊] 高级T恤矩阵 →
+                            </a>
+                            <a href="menswear-capsule-wardrobe-guide.html" class="monetize-link stripe-payment">
+                                下载胶囊衣橱PDF (9美元) →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 03 数码卡片 -->
+                <div class="category-box">
+                    <div class="card-image-wrapper">
+                        <img class="card-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800" alt="Tech">
+                    </div>
+                    <div class="card-content">
+                        <div>
+                            <span class="category-num">03 / 战术装备</span>
+                            <h3>生产力设置</h3>
+                            <p class="article-desc">优化计算专注度。工业级工作站蓝图、服务器监控节点和简洁的布线美学，让创作者专注于工作。</p>
+                        </div>
+                        <div>
+                            <a href="https://amzn.to/your_logitech_mx_link" class="monetize-link amazon-affiliate" target="_blank">
+                                [亚马逊] 罗技 MX HUB →
+                            </a>
+                            <a href="minimalist-desk-setup-gear-guide.html" class="monetize-link stripe-payment">
+                                阅读拆解文章 →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 罗技风：融入式全景流媒体视频剧场 -->
+        <div class="featured-theater">
+            <div class="theater-container">
+                <h2>Featured Cinematic Experience</h2>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
         <footer>
-            <p>&copy; 2026 NextGen Essentials. All Rights Reserved. PCI-DSS Compliant Payment Pipeline.</p>
+            <p>&copy; 2026 NextGen Essentials. All Rights Reserved. Powered by GitHub Pages.</p>
         </footer>
-        
+
     </div>
-    
+
+    <!-- 纯原生全屏轮播引擎脚本 -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function moveSlide(step) {
+            showSlide(currentSlide + step);
+            resetTimer();
+        }
+
+        let autoTimer = setInterval(() => { moveSlide(1); }, 5000);
+
+        function resetTimer() {
+            clearInterval(autoTimer);
+            autoTimer = setInterval(() => { moveSlide(1); }, 5000);
+        }
+    </script>
+
 </body>
 </html>
