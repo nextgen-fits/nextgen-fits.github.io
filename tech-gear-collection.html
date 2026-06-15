@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curated Tech Gear & Desk Setup Essentials | NextGen Essentials</title>
+    <meta name="description" content="Discover premium, minimalist 3C accessories, mechanical keyboards, and desk styling items vetted for the modern digital creator.">
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #0c0c0e;
+            --accent-gold: #c5a880;
+            --text-main: #f5f5f7;
+            --text-muted: #86868b;
+            --border-color: #1f1f23;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 60px 40px;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        /* 货架头部 */
+        header { margin-bottom: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 30px; }
+        .back-home { color: var(--accent-gold); text-decoration: none; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; display: inline-block; margin-bottom: 20px; }
+        header h1 { font-size: 2.2em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
+        header p { color: var(--text-muted); font-size: 1em; margin-top: 5px; font-weight: 300; }
+
+        /* 4列工业级平铺网格 */
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .product-card:hover { border-color: #333; transform: translateY(-4px); }
+        
+        .img-box { width: 100%; height: 240px; overflow: hidden; border-bottom: 1px solid var(--border-color); }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; filter: brightness(80%); transition: filter 0.3s; }
+        .product-card:hover .img-box img { filter: brightness(95%); }
+        
+        .product-info { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .brand-tag { color: var(--accent-gold); font-size: 0.75em; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .product-info h3 { font-size: 1.25em; color: #fff; font-weight: 600; margin-bottom: 10px; }
+        .product-info p { color: var(--text-muted); font-size: 0.95em; font-weight: 300; margin-bottom: 20px; text-align: justify; }
+        
+        /* 亮金变现直达按钮 */
+        .amazon-btn {
+            display: block;
+            width: 100%;
+            background-color: var(--accent-gold);
+            color: #000;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        .amazon-btn:hover { background-color: #dfbf93; }
+
+        @media screen and (max-width: 768px) {
+            body { padding: 40px 20px; }
+            header h1 { font-size: 1.7em; }
+            .showcase-grid { grid-template-columns: 1fr; gap: 20px; }
+        }
+        footer { margin-top: 80px; text-align: center; font-size: 0.8em; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-home">← Back to Dashboard</a>
+        <header>
+            <h1>Productivity Infrastructure</h1>
+            <p>Curated Workspace Gear & Minimalist 3C Electronics</p>
+        </header>
+
+        <div class="showcase-grid">
+            
+            <!-- 商品 01：罗技鼠标 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=600" alt="Logitech MX Master 3S">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <span class="brand-tag">Logitech / Input</span>
+                        <h3>MX Master 3S Mouse</h3>
+                        <p>The gold standard for digital creators and quants. Ultra-quiet clicks combined with an ergonomic 8K DPI track-on-glass sensor.</p>
+                    </div>
+                    <!-- 💡 未来在指纹浏览器里拿到短链后，替换这里的 href 即可变现 -->
+                    <a href="https://amzn.to/your_mx3s_link" class="amazon-btn" target="_blank">View on Amazon →</a>
+                </div>
+            </div>
+
+            <!-- 商品 02：Satechi 拓展坞 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600" alt="Satechi USB-C Hub">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <span class="brand-tag">Satechi / Connectivity</span>
+                        <h3>Multi-Port V2 Hub</h3>
+                        <p>Premium sandblasted aluminum chassis designed to complement Apple space grey. Pass-through charging with crystal clear 4K HDMI routing.</p>
+                    </div>
+                    <a href="https://amzn.to/your_satechi_link" class="amazon-btn" target="_blank">View on Amazon →</a>
+                </div>
+            </div>
+
+            <!-- 商品 03：高级极简键盘 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=600" alt="Mechanical Keyboard">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <span class="brand-tag">Custom / Mechanical</span>
+                        <h3>75% Barebone Keyboard</h3>
+                        <p>Tactical high-density aluminum casing featuring hot-swappable sockets and gasket-mounted dampening for stealth acoustic typing.</p>
+                    </div>
+                    <a href="https://amzn.to/your_keyboard_link" class="amazon-btn" target="_blank">View on Amazon →</a>
+                </div>
+            </div>
+
+            <!-- 商品 04：战术固态硬盘盒 -->
+            <div class="product-card">
+                <div class="img-box">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" alt="NVMe SSD Enclosure">
+                </div>
+                <div class="product-info">
+                    <div>
+                        <span class="brand-tag">Storage / Infrastructure</span>
+                        <h3>USB4 M.2 NVMe Enclosure</h3>
+                        <p>Rugged, heavy-duty finned thermal design supporting blazing fast 40Gbps transfer speeds. Heavy infrastructure node for mobile creators.</p>
+                    </div>
+                    <a href="https://amzn.to/your_ssd_link" class="amazon-btn" target="_blank">View on Amazon →</a>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 NextGen Essentials. All Amazon Links are Tracking-Active.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
