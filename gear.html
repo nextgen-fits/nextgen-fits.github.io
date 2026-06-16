@@ -1,164 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 📊 Google GA4 Radar Core -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN2QCCZ8TL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FN2QCCZ8TL');
+    </script>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curated Tech Gear & Desk Setup Essentials | NextGen Essentials</title>
-    <meta name="description" content="Discover premium, minimalist 3C accessories, mechanical keyboards, and desk styling items vetted for the modern digital creator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- 🎯 SEO Content Hijack: Heavy long-tail keywords for Google Organic Traffic -->
+    <title>Desk Setups, Workspaces & Minimalist Tech Gear | NextGen Essentials</title>
+    <meta name="description" content="Explore cool minimalist desk setups, heavy-duty workspace ergonomics, aluminum USB4 docking stations, vertical smart mice, and premium tactical everyday carry tech gear grids for men.">
+    <meta name="keywords" content="minimalist desk setup gear, best workstation setup 2026, premium thunderbolt 4 docks, ergonomic tech gear men, tactical edc tech toolkit">
+
     <style>
-        :root {
-            --bg-color: #000000;
-            --card-bg: #0c0c0e;
-            --accent-gold: #c5a880;
-            --text-main: #f5f5f7;
-            --text-muted: #86868b;
-            --border-color: #1f1f23;
+        :root { 
+            --bg-color: #000000; 
+            --accent-gold: #d4af37; 
+            --text-main: #ffffff; 
+            --text-muted: #8e8e93; 
+            --card-bg: #09090b;
+            --border-color: #1c1c1e; 
         }
+        
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.5;
-            padding: 60px 40px;
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-main); 
+            line-height: 1.5; 
             -webkit-font-smoothing: antialiased;
         }
-        .container { max-width: 1400px; margin: 0 auto; }
         
-        /* 货架头部 */
-        header { margin-bottom: 50px; border-bottom: 1px solid var(--border-color); padding-bottom: 30px; }
-        .back-home { color: var(--accent-gold); text-decoration: none; font-size: 0.9em; letter-spacing: 1px; text-transform: uppercase; display: inline-block; margin-bottom: 20px; }
-        header h1 { font-size: 2.2em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
-        header p { color: var(--text-muted); font-size: 1em; margin-top: 5px; font-weight: 300; }
+        /* 📱 Fixed Mobile-Friendly Nav */
+        nav { 
+            position: fixed; top: 0; width: 100%; 
+            background: rgba(0,0,0,0.9); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); 
+            border-bottom: 1px solid var(--border-color); z-index: 1000; 
+        }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; height: 60px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 0.85em; }
+        .nav-logo span { color: var(--accent-gold); }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-left: 15px; }
+        .nav-links a.active { color: #fff; border-bottom: 1px solid var(--accent-gold); }
 
-        /* 4列工业级平铺网格 */
-        .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-        
-        .product-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .product-card:hover { border-color: #333; transform: translateY(-4px); }
-        
-        .img-box { width: 100%; height: 240px; overflow: hidden; border-bottom: 1px solid var(--border-color); }
-        .img-box img { width: 100%; height: 100%; object-fit: cover; filter: brightness(80%); transition: filter 0.3s; }
-        .product-card:hover .img-box img { filter: brightness(95%); }
-        
-        .product-info { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
-        .brand-tag { color: var(--accent-gold); font-size: 0.75em; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; display: block; }
-        .product-info h3 { font-size: 1.25em; color: #fff; font-weight: 600; margin-bottom: 10px; }
-        .product-info p { color: var(--text-muted); font-size: 0.95em; font-weight: 300; margin-bottom: 20px; text-align: justify; }
-        
-        /* 亮金变现直达按钮 */
-        .amazon-btn {
-            display: block;
-            width: 100%;
-            background-color: var(--accent-gold);
-            color: #000;
-            padding: 12px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 0.9em;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: background-color 0.3s;
-        }
-        .amazon-btn:hover { background-color: #dfbf93; }
+        .container { max-width: 900px; margin: 0 auto; padding: 100px 20px 60px 20px; }
 
-        @media screen and (max-width: 768px) {
-            body { padding: 40px 20px; }
-            header h1 { font-size: 1.7em; }
-            .showcase-grid { grid-template-columns: 1fr; gap: 20px; }
+        /* 📡 SEO Header Section */
+        .seo-intro { margin-bottom: 50px; border-left: 2px solid var(--accent-gold); padding-left: 15px; }
+        .seo-intro h1 { font-size: 1.8em; font-weight: 800; letter-spacing: -0.5px; text-transform: uppercase; margin-bottom: 10px; }
+        .seo-intro p { color: var(--text-muted); font-size: 0.9em; line-height: 1.5; }
+
+        /* 📰 Article Feed Waterfall Matrix */
+        .post-card { background: var(--card-bg); border: 1px solid var(--border-color); margin-bottom: 40px; overflow: hidden; }
+        .post-cover-wrapper { width: 100%; aspect-ratio: 16 / 9; background: #050505; overflow: hidden; }
+        .post-cover-wrapper img { width: 100%; height: 100%; object-fit: cover; filter: brightness(75%); }
+        
+        .post-body { padding: 25px; }
+        .post-date { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .post-title { font-size: 1.3em; font-weight: 700; color: #fff; margin-bottom: 12px; text-transform: uppercase; letter-spacing: -0.2px; }
+        .post-summary { color: var(--text-muted); font-size: 0.88em; line-height: 1.5; margin-bottom: 20px; font-weight: 500; text-align: justify; }
+        
+        /* 📖 Article Detailed Content Paragraphs */
+        .post-content { color: #d1d1d6; font-size: 0.85em; line-height: 1.6; padding-top: 15px; border-top: 1px dashed var(--border-color); margin-bottom: 25px; text-align: justify; }
+
+        /* 🛒 Integrated Affiliate Gear Matrix (0元智能化核心) */
+        .gear-box { background: #000000; border: 1px solid var(--border-color); padding: 20px; border-radius: 2px; }
+        .gear-box-title { font-size: 0.65em; font-weight: 700; color: #fff; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; display: flex; align-items: center; }
+        .gear-box-title::before { content: ''; display: inline-block; width: 6px; height: 6px; background: var(--accent-gold); margin-right: 8px; }
+        
+        .gear-list { list-style: none; }
+        .gear-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #121214; }
+        .gear-item:last-child { border-bottom: none; }
+        .gear-name { font-size: 0.8em; color: #fff; font-weight: 600; padding-right: 15px; }
+        
+        /* 📱 Big Touch Area For Mobile Affiliate Link */
+        .gear-link-btn { 
+            background: transparent; color: var(--accent-gold); 
+            border: 1px solid var(--accent-gold); 
+            padding: 8px 16px; text-decoration: none; 
+            font-size: 0.65em; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+            transition: all 0.2s ease;
+            white-space: nowrap;
         }
-        footer { margin-top: 80px; text-align: center; font-size: 0.8em; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 30px; }
+        
+        @media screen and (min-width: 769px) {
+            .seo-intro h1 { font-size: 2.4em; }
+            .post-body { padding: 35px; }
+            .post-title { font-size: 1.6em; }
+            .gear-link-btn:hover { background: var(--accent-gold); color: #000; }
+        }
+
+        footer { text-align: center; padding: 40px 0; font-size: 0.65em; color: var(--text-muted); border-top: 1px solid var(--border-color); letter-spacing: 1px; text-transform: uppercase; }
     </style>
 </head>
 <body>
 
+    <!-- NAV -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">NextGen <span>Essentials</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="watches.html">Watches</a>
+                <a href="apparel.html">Apparel</a>
+                <a href="gear.html" class="active">Gear</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT FIELD -->
     <div class="container">
-        <a href="index.html" class="back-home">← Back to Dashboard</a>
-        <header>
-            <h1>Productivity Infrastructure</h1>
-            <p>Curated Workspace Gear & Minimalist 3C Electronics</p>
-        </header>
+        
+        <!-- 📡 SEO Core Keyword Landing Signal -->
+        <div class="seo-intro">
+            <h1>Minimalist Desk Setups & EDC Blueprints</h1>
+            <p>Decoding professional workspace aesthetics, computing hardware infrastructure, and tactical high-performance everyday carry equipment lists. Clean layouts, engineered efficiency.</p>
+        </div>
 
-        <div class="showcase-grid">
-            
-            <!-- 商品 01：罗技鼠标 -->
-            <div class="product-card">
-                <div class="img-box">
-                    <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=600" alt="Logitech MX Master 3S">
-                </div>
-                <div class="product-info">
-                    <div>
-                        <span class="brand-tag">Logitech / Input</span>
-                        <h3>MX Master 3S Mouse</h3>
-                        <p>The gold standard for digital creators and quants. Ultra-quiet clicks combined with an ergonomic 8K DPI track-on-glass sensor.</p>
-                    </div>
-                    <!-- 💡 未来在指纹浏览器里拿到短链后，替换这里的 href 即可变现 -->
-                    <a href="https://amzn.to/your_mx3s_link" class="amazon-btn" target="_blank">View on Amazon →</a>
-                </div>
-            </div>
-
-            <!-- 商品 02：Satechi 拓展坞 -->
-            <div class="product-card">
-                <div class="img-box">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600" alt="Satechi USB-C Hub">
-                </div>
-                <div class="product-info">
-                    <div>
-                        <span class="brand-tag">Satechi / Connectivity</span>
-                        <h3>Multi-Port V2 Hub</h3>
-                        <p>Premium sandblasted aluminum chassis designed to complement Apple space grey. Pass-through charging with crystal clear 4K HDMI routing.</p>
-                    </div>
-                    <a href="https://amzn.to/your_satechi_link" class="amazon-btn" target="_blank">View on Amazon →</a>
-                </div>
-            </div>
-
-            <!-- 商品 03：高级极简键盘 -->
-            <div class="product-card">
-                <div class="img-box">
-                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=600" alt="Mechanical Keyboard">
-                </div>
-                <div class="product-info">
-                    <div>
-                        <span class="brand-tag">Custom / Mechanical</span>
-                        <h3>75% Barebone Keyboard</h3>
-                        <p>Tactical high-density aluminum casing featuring hot-swappable sockets and gasket-mounted dampening for stealth acoustic typing.</p>
-                    </div>
-                    <a href="https://amzn.to/your_keyboard_link" class="amazon-btn" target="_blank">View on Amazon →</a>
-                </div>
-            </div>
-
-            <!-- 商品 04：战术固态硬盘盒 -->
-            <div class="product-card">
-                <div class="img-box">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" alt="NVMe SSD Enclosure">
-                </div>
-                <div class="product-info">
-                    <div>
-                        <span class="brand-tag">Storage / Infrastructure</span>
-                        <h3>USB4 M.2 NVMe Enclosure</h3>
-                        <p>Rugged, heavy-duty finned thermal design supporting blazing fast 40Gbps transfer speeds. Heavy infrastructure node for mobile creators.</p>
-                    </div>
-                    <a href="https://amzn.to/your_ssd_link" class="amazon-btn" target="_blank">View on Amazon →</a>
-                </div>
-            </div>
-
+        <!-- 📰 ARTICLE WATERFALL TARGET AXIS -->
+        <div id="gear-feed-container">
+            <!-- 自动从 gear.json 异步拉取海量图文贴子，完美渲染在此处 -->
         </div>
 
         <footer>
-            <p>&copy; 2026 NextGen Essentials. All Amazon Links are Tracking-Active.</p>
+            <p>&copy; 2026 NextGen Essentials. Workspace Infrastructure Feed.</p>
         </footer>
     </div>
 
+    <!-- 🧠 智能内容异步流加载引擎 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const feedContainer = document.getElementById("gear-feed-container");
+
+            // 发起高性能Ajax雷达数据抓取，避开缓存
+            fetch('gear.json?v=' + new Date().getTime())
+                .then(response => response.json())
+                .then(posts => {
+                    feedContainer.innerHTML = ""; // 扫净废弃节点
+
+                    posts.forEach(post => {
+                        // 1. 全自动构建装备带货清单（Affiliate List Matrix）
+                        let gearItemsHTML = "";
+                        if(post.gear_list && post.gear_list.length > 0) {
+                            post.gear_list.forEach(gear => {
+                                gearItemsHTML += `
+                                    <li class="gear-item">
+                                        <span class="gear-name">${gear.name}</span>
+                                        <a href="${gear.url}" class="gear-link-btn" target="_blank">Get Gear →</a>
+                                    </li>
+                                `;
+                            });
+                        }
+
+                        // 2. 全自动渲染高权重图文内容至瀑布流
+                        const postHTML = `
+                            <article class="post-card" id="${post.id}">
+                                <div class="post-cover-wrapper">
+                                    <img src="${post.cover_img}" alt="${post.title}" loading="lazy">
+                                </div>
+                                <div class="post-body">
+                                    <span class="post-date">${post.date}</span>
+                                    <h2 class="post-title">${post.title}</h2>
+                                    <p class="post-summary">${post.summary}</p>
+                                    
+                                    <div class="post-content">
+                                        ${post.content}
+                                    </div>
+
+                                    <div class="gear-box">
+                                        <div class="gear-box-title">SETUP INVENTORY / GEAR BLUEPRINT</div>
+                                        <ul class="gear-list">
+                                            ${gearItemsHTML}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        `;
+                        feedContainer.innerHTML += postHTML;
+                    });
+                })
+                .catch(error => {
+                    console.error("Gear pipeline data load failed:", error);
+                    feedContainer.innerHTML = "<p style='color:red;text-align:center;'>Feed content is initializing...</p>";
+                });
+        });
+    </script>
 </body>
 </html>
