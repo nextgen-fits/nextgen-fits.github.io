@@ -30,12 +30,11 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         
         body { 
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; 
             background-color: var(--bg-color); 
             color: var(--text-main); 
             line-height: 1.4; 
             -webkit-font-smoothing: antialiased;
-            -webkit-tap-highlight-color: transparent;
         }
         
         nav { 
@@ -43,11 +42,10 @@
             background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); 
             border-bottom: 1px solid var(--border-color); z-index: 1000; 
         }
-        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; height: 60px; display: table; width: 100%; }
-        .nav-logo { display: table-cell; vertical-align: middle; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 0.85em; }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; height: 60px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 0.85em; }
         .nav-logo span { color: var(--accent-gold); }
-        .nav-links { display: table-cell; vertical-align: middle; text-align: right; }
-        .nav-links a { display: inline-block; color: var(--text-muted); text-decoration: none; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-left: 15px; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-left: 15px; }
         
         .main-container { width: 100%; padding-top: 60px; }
         
@@ -71,58 +69,60 @@
         .section-title { font-size: 0.65em; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 25px; padding-bottom: 8px; border-bottom: 1px solid var(--border-color); }
         
         .grid-3 { display: block; }
-        .showcase-card { 
-            background-color: var(--card-bg); 
-            display: block; 
-            overflow: hidden; 
-            margin-bottom: 25px; 
-            border: 1px solid var(--border-color); 
-            text-decoration: none;
-            transition: border-color 0.3s ease;
-        }
-        
+        .showcase-card { background-color: var(--card-bg); display: block; overflow: hidden; margin-bottom: 25px; border: 1px solid var(--border-color); text-decoration: none; }
         .card-img-wrapper { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-bottom: 1px solid var(--border-color); }
         .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%) contrast(110%); }
-        
-        .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; transition: border-left-color 0.3s ease; }
-        .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; letter-spacing: -0.2px; }
+        .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; }
+        .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; }
         .showcase-card p { color: var(--text-muted); font-size: 0.8em; line-height: 1.5; }
         
-        .section-hot { max-width: 1400px; margin: 0 auto; padding: 20px 20px 60px 20px; }
+        .section-hot { max-width: 1400px; margin: 0 auto; padding: 20px 20px; }
         .hot-grid { display: block; }
         .hot-item { background: var(--card-bg); display: block; border: 1px solid var(--border-color); padding: 15px; margin-bottom: 25px; }
         .hot-img-box { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #000; margin-bottom: 15px; border: 1px solid var(--border-color); }
         .hot-img-box img { width: 100%; height: 100%; object-fit: cover; }
         .hot-text-area { display: block; margin-bottom: 15px; }
         .hot-type { font-size: 0.55em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 5px; }
-        .hot-item h4 { font-size: 1em; color: #fff; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.2px; }
-        .hot-item p { color: var(--text-muted); font-size: 0.8em; line-height: 1.4; text-align: left; }
-        .amazon-buy-btn { 
-            display: block; width: 100%; 
-            background-color: var(--text-main); color: #000; 
-            border: 1px solid var(--text-main);
-            padding: 14px; text-align: center; text-decoration: none; 
-            font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
-            border-radius: 2px;
-        }
+        .hot-item h4 { font-size: 1em; color: #fff; font-weight: 700; margin-bottom: 6px; }
+        .hot-item p { color: var(--text-muted); font-size: 0.8em; line-height: 1.4; }
+        .amazon-buy-btn { display: block; width: 100%; background-color: var(--text-main); color: #000; border: 1px solid var(--text-main); padding: 14px; text-align: center; text-decoration: none; font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 
+        /* 📡 想法一：全新智能纯文字公告区（谷歌蜘蛛高频抓取池） */
+        .section-news { max-width: 1400px; margin: 0 auto; padding: 40px 20px; background: #020202; border-top: 1px solid var(--border-color); }
+        .news-list { list-style: none; }
+        .news-item { padding: 20px 0; border-bottom: 1px dashed var(--border-color); }
+        .news-item:last-child { border-bottom: none; }
+        .news-meta { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 5px; }
+        .news-item h4 { font-size: 1.05em; font-weight: 700; margin-bottom: 8px; }
+        .news-item h4 a { color: #fff; text-decoration: none; }
+        .news-item h4 a:hover { color: var(--accent-gold); }
+        .news-excerpt { font-size: 0.82em; color: var(--text-muted); line-height: 1.5; text-align: justify; }
+
+        /* 💬 想法二：全新黑金极简用户获客表单区 */
+        .section-contact { max-width: 1400px; margin: 0 auto; padding: 60px 20px; border-top: 1px solid var(--border-color); background: var(--card-bg); }
+        .contact-box { max-width: 600px; margin: 0 auto; }
+        .contact-box p { font-size: 0.85em; color: var(--text-muted); margin-bottom: 25px; text-align: center; }
+        .form-group { margin-bottom: 20px; }
+        .form-group input, .form-group textarea { width: 100%; background: #000; border: 1px solid var(--border-color); padding: 14px; color: #fff; font-size: 0.85em; font-family: inherit; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent-gold); outline: none; }
+        .submit-btn { width: 100%; background: transparent; border: 1px solid #fff; color: #fff; padding: 15px; font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+        .submit-btn:hover { background: #fff; color: #000; }
+
+        /* 💻 大屏适配 */
         @media screen and (min-width: 769px) {
             .hero-banner { min-height: 55vh; padding: 0 80px; display: flex; align-items: center; }
             .hero-title { font-size: 3.2em; }
-            
             .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
             .showcase-card { margin-bottom: 0; }
             .showcase-card:hover { border-color: #fff; }
             .showcase-card:hover .card-img { filter: brightness(75%) contrast(110%); }
             .showcase-card:hover .card-meta { border-left-color: var(--accent-gold); }
-            
             .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
             .hot-item { margin-bottom: 0; background: transparent; padding: 10px; }
             .hot-item:hover { border-color: var(--border-color); background: #050505; }
             .amazon-buy-btn { background-color: transparent; color: #fff; border-color: var(--border-color); padding: 11px; }
             .hot-item:hover .amazon-buy-btn { background-color: var(--text-main); color: #000; border-color: var(--text-main); }
         }
-
         footer { padding: 40px 20px; text-align: center; font-size: 0.65em; color: var(--text-muted); border-top: 1px solid var(--border-color); letter-spacing: 1px; text-transform: uppercase; }
     </style>
 </head>
@@ -146,41 +146,30 @@
             <div class="hero-content">
                 <p class="hero-subtitle">The Alpha Blueprint</p>
                 <h1 class="hero-title">Best Value Automatic Watches &<br>Minimalist Desk Setups</h1>
-                <p class="hero-desc">Curating the finest tactical deployment gear, premium mechanical watch mods under $200, and heavyweight boxy hoodies tailored for high-tier style architectures.</p>
+                <p class="hero-desc">Curating the finest tactical deployment gear, premium mechanical watch mods under $200, and heavyweight boxy hoodies.</p>
             </div>
         </div>
 
-        <!-- 📦 SHOWROOMS 入口区域：图片全面纠偏，完美杜绝风景照 -->
+        <!-- THE SHOWROOMS -->
         <div class="section-box">
             <div class="section-title">THE SHOWROOMS / ARCHITECTURE</div>
             <div class="grid-3">
-                <!-- 01 / 手表入口：硬核精密机芯与表盘构造特写 -->
                 <a href="watches.html" class="showcase-card">
-                    <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/9914310/pexels-photo-9914310.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
-                    </div>
+                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/9914310/pexels-photo-9914310.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
                     <div class="card-meta">
                         <h3>01 / Horology Mods</h3>
                         <p>An elite breakdown of affordable automatic movements, dial swaps, and tactical custom watch mods.</p>
                     </div>
                 </a>
-
-                <!-- 02 / 服装入口：高街廓形卫衣极简暗灰剪影 -->
                 <a href="apparel.html" class="showcase-card">
-                    <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
-                    </div>
+                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
                     <div class="card-meta">
                         <h3>02 / Streetwear Capsule</h3>
                         <p>High-density premium textiles decoding the official boxy fit and minimalist street garments.</p>
                     </div>
                 </a>
-
-                <!-- 03 / 数码桌面入口：🎯 彻底踢飞森林风景照！替换为纯正黑武士暗色极客桌面大图 -->
                 <a href="gear.html" class="showcase-card">
-                    <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/8412273/pexels-photo-8412273.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
-                    </div>
+                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/8412273/pexels-photo-8412273.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
                     <div class="card-meta">
                         <h3>03 / Minimal Desk Gear</h3>
                         <p>Hardcore workspace infrastructure, premium USB4 docks, vertical ergonomics, and tech EDC blueprints.</p>
@@ -189,11 +178,38 @@
             </div>
         </div>
 
-        <!-- 📡 AI LIVE RENDER PANEL -->
+        <!-- 📡 CURRENT DEPLOYMENT (HOT GRID) -->
         <div class="section-hot">
             <div class="section-title">THE CORE INDEX / CURRENT DEPLOYMENT</div>
-            <div class="hot-grid" id="live-products-grid">
-                <!-- 账本自动渲染 -->
+            <div class="hot-grid" id="live-products-grid"></div>
+        </div>
+
+        <!-- 📡 想法一：全新纯文字雷达公告区（数据全自动同步，劫持谷歌内链） -->
+        <div class="section-news">
+            <div class="section-title">LATEST INTEL / CONTENT INFRASTRUCTURE</div>
+            <ul class="news-list" id="auto-news-feed">
+                <!-- 由JavaScript雷达全自动跨文件夹抓取数据，一秒填充至此 -->
+            </ul>
+        </div>
+
+        <!-- 💬 想法二：全新私域表单变现区（0元获客，直达邮箱） -->
+        <div class="section-contact">
+            <div class="section-title">CONNECT / LEAVE AN INTEL</div>
+            <div class="contact-box">
+                <p>Looking for a custom mechanical watch mod or a tailored workspace architecture? Drop your info below. We respond within 24 hours.</p>
+                <!-- 💡 填入免费表单接收标记（此处暂用测试标记，老哥后续可以换成你自己的Formspree ID） -->
+                <form action="https://formspree.io/f/mnnqgqzo" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="YOUR NAME" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="4" placeholder="HOW CAN WE HELP YOU? (E.G., CUSTOM SEIKO MODS, DESK BLUEPRINTS)" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message →</button>
+                </form>
             </div>
         </div>
 
@@ -202,20 +218,20 @@
         </footer>
     </div>
 
+    <!-- 🧠 跨系统多源雷达渲染引擎 -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // 1. 渲染原本的商品九宫格
             const gridContainer = document.getElementById("live-products-grid");
             fetch('products.json?v=' + new Date().getTime())
-                .then(response => response.json())
+                .then(res => res.json())
                 .then(products => {
                     gridContainer.innerHTML = ""; 
                     products.forEach(item => {
-                        const productHTML = `
+                        gridContainer.innerHTML += `
                             <div class="hot-item">
                                 <div class="hot-text-area">
-                                    <div class="hot-img-box">
-                                        <img src="${item.img}" alt="${item.title}" loading="lazy">
-                                    </div>
+                                    <div class="hot-img-box"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
                                     <span class="hot-type">${item.type}</span>
                                     <h4>${item.title}</h4>
                                     <p>${item.desc}</p>
@@ -223,13 +239,41 @@
                                 <a href="${item.url}" class="amazon-buy-btn" target="_blank">Secure Link →</a>
                             </div>
                         `;
-                        gridContainer.innerHTML += productHTML;
                     });
-                })
-                .catch(error => {
-                    console.error("Data fetch fallback:", error);
-                    gridContainer.innerHTML = "<p style='color:red;padding:20px;text-align:center;'>Configuration Syncing...</p>";
                 });
+
+            // 2. ⚡ 跨组自动抓取数据：从数码和手表子账本里抽取最新文章，直接生成首页纯文字公告
+            const newsContainer = document.getElementById("auto-news-feed");
+            
+            Promise.all([
+                fetch('database/gear.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => []),
+                fetch('database/watches.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
+            ]).then(([gearPosts, watchPosts]) => {
+                newsContainer.innerHTML = "";
+                
+                // 各取最新的一个，混合编排
+                const latestGear = gearPosts[0];
+                const latestWatch = watchPosts[0];
+                
+                if(latestGear) {
+                    newsContainer.innerHTML += `
+                        <li class="news-item">
+                            <span class="news-meta">${latestGear.date} // DEPLOYMENT INTEL</span>
+                            <h4><a href="gear.html#${latestGear.id}">${latestGear.title}</a></h4>
+                            <p class="news-excerpt">${latestGear.summary}</p>
+                        </li>
+                    `;
+                }
+                if(latestWatch) {
+                    newsContainer.innerHTML += `
+                        <li class="news-item">
+                            <span class="news-meta">${latestWatch.date} // HOROLOGY REPORT</span>
+                            <h4><a href="watches.html#${latestWatch.id}">${latestWatch.title}</a></h4>
+                            <p class="news-excerpt">${latestWatch.summary}</p>
+                        </li>
+                    `;
+                }
+            });
         });
     </script>
 </body>
