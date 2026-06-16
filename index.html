@@ -37,22 +37,23 @@
             -webkit-tap-highlight-color: transparent;
         }
         
-        /* 📱 导航栏：手机端高度更紧凑，腾出首屏空间 */
+        /* 📱 导航栏：高度微调，边缘悬浮效果 */
         nav { 
             position: fixed; top: 0; width: 100%; 
-            background: rgba(0, 0, 0, 0.9); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); 
+            background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); 
             border-bottom: 1px solid var(--border-color); z-index: 1000; 
         }
         .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; height: 60px; display: table; width: 100%; }
         .nav-logo { display: table-cell; vertical-align: middle; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 0.85em; }
+        .nav-logo span { color: var(--accent-gold); }
         .nav-links { display: table-cell; vertical-align: middle; text-align: right; }
         .nav-links a { display: inline-block; color: var(--text-muted); text-decoration: none; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-left: 15px; }
         
         .main-container { width: 100%; padding-top: 60px; }
         
-        /* ⚡ 满版视觉 Banner：手机端高度自动缩放，文案居中对齐 */
+        /* ⚡ 满版硬朗 Banner */
         .hero-banner { 
-            position: relative; width: 100%; min-height: 50vh; 
+            position: relative; width: 100%; min-height: 45vh; 
             background: #000000 url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80') center/cover no-repeat; 
             display: block; padding: 60px 20px; text-align: left;
             border-bottom: 1px solid var(--border-color);
@@ -67,38 +68,40 @@
         .hero-title { font-size: 1.8em; font-weight: 800; letter-spacing: -0.5px; color: #fff; text-transform: uppercase; line-height: 1.2; }
         .hero-desc { color: var(--text-muted); font-size: 0.85em; max-width: 500px; margin-top: 15px; line-height: 1.5; }
 
-        /* 📦 频道入口：电脑端3列，手机端横向单排滑动/或单列堆叠 */
+        /* 📦 频道入口区域：重构为高级杂志级排版 */
         .section-box { max-width: 1400px; margin: 0 auto; padding: 40px 20px 20px 20px; }
         .section-title { font-size: 0.65em; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 25px; padding-bottom: 8px; border-bottom: 1px solid var(--border-color); }
         
         .grid-3 { display: block; }
-        .showcase-card { background-color: var(--card-bg); display: block; overflow: hidden; margin-bottom: 20px; border: 1px solid var(--border-color); text-decoration: none; }
+        .showcase-card { 
+            background-color: var(--card-bg); 
+            display: block; 
+            overflow: hidden; 
+            margin-bottom: 25px; 
+            border: 1px solid var(--border-color); 
+            text-decoration: none;
+            transition: border-color 0.3s ease;
+        }
         
-        .card-img-wrapper { width: 100%; height: 180px; overflow: hidden; background: #000; }
-        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(65%); }
+        /* 图片强制采用极客质感的 16:9 比例，并且暗化处理，突出专业调性 */
+        .card-img-wrapper { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-bottom: 1px solid var(--border-color); }
+        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%) contrast(110%); }
         
-        .card-meta { padding: 20px; }
-        .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 700; margin-bottom: 8px; text-transform: uppercase; }
-        .showcase-card p { color: var(--text-muted); font-size: 0.8em; margin-bottom: 15px; line-height: 1.4; }
+        /* 文字描述区：采用左边线代替按钮，档次瞬间拉开 */
+        .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; }
+        .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; letter-spacing: -0.2px; }
+        .showcase-card p { color: var(--text-muted); font-size: 0.8em; line-height: 1.5; }
         
-        .action-link { display: block; width: 100%; background: transparent; border: 1px solid #2c2c2e; padding: 12px; text-align: center; text-decoration: none; font-size: 0.7em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #fff; }
-
-        /* 🔥 核心带货九宫格：移动端单列铺满，完美防错位 */
+        /* 🔥 核心带货九宫格区域 */
         .section-hot { max-width: 1400px; margin: 0 auto; padding: 20px 20px 60px 20px; }
         .hot-grid { display: block; }
-        
         .hot-item { background: var(--card-bg); display: block; border: 1px solid var(--border-color); padding: 15px; margin-bottom: 25px; }
-        
-        /* 手机端图片强制 1:1 正方形对齐，边缘不留白 */
         .hot-img-box { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #000; margin-bottom: 15px; border: 1px solid var(--border-color); }
         .hot-img-box img { width: 100%; height: 100%; object-fit: cover; }
-        
         .hot-text-area { display: block; margin-bottom: 15px; }
         .hot-type { font-size: 0.55em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 5px; }
         .hot-item h4 { font-size: 1em; color: #fff; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.2px; }
         .hot-item p { color: var(--text-muted); font-size: 0.8em; line-height: 1.4; text-align: left; }
-        
-        /* 🌟 手机端黄金变现触控区：高度饱满，点击极度灵敏 */
         .amazon-buy-btn { 
             display: block; width: 100%; 
             background-color: var(--text-main); color: #000; 
@@ -108,20 +111,19 @@
             border-radius: 2px;
         }
 
-        /* 💻 大屏电脑端适配：使用媒体查询优雅扩展，绝不破坏原本的电脑质感 */
+        /* 💻 大屏电脑端适配：使用媒体查询完美舒展 */
         @media screen and (min-width: 769px) {
-            .hero-banner { min-height: 65vh; padding: 0 80px; display: flex; align-items: center; }
+            .hero-banner { min-height: 55vh; padding: 0 80px; display: flex; align-items: center; }
             .hero-title { font-size: 3.2em; }
-            .hero-desc { font-size: 1em; margin-top: 25px; }
             
             .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
             .showcase-card { margin-bottom: 0; }
-            .card-img-wrapper { height: 280px; }
-            .showcase-card:hover { border-color: var(--accent-gold); }
-            .showcase-card:hover .card-img { filter: brightness(75%); }
+            .showcase-card:hover { border-color: #fff; }
+            .showcase-card:hover .card-img { filter: brightness(75%) contrast(110%); }
+            .card-meta { border-left-color: var(--accent-gold); }
             
             .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-            .hot-item { margin-bottom: 0; background: transparent; padding: 10px; transition: border-color 0.3s; }
+            .hot-item { margin-bottom: 0; background: transparent; padding: 10px; }
             .hot-item:hover { border-color: var(--border-color); background: #050505; }
             .amazon-buy-btn { background-color: transparent; color: #fff; border-color: var(--border-color); padding: 11px; }
             .hot-item:hover .amazon-buy-btn { background-color: var(--text-main); color: #000; border-color: var(--text-main); }
@@ -134,7 +136,7 @@
 
     <nav>
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">NextGen Essentials</a>
+            <a href="index.html" class="nav-logo">NextGen <span>Essentials</span></a>
             <div class="nav-links">
                 <a href="watches.html">Watches</a>
                 <a href="apparel.html">Apparel</a>
@@ -157,29 +159,32 @@
             <div class="section-title">THE SHOWROOMS / ARCHITECTURE</div>
             <div class="grid-3">
                 <a href="watches.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/1908188/pexels-photo-1908188.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                    </div>
                     <div class="card-meta">
-                        <h3>01 / Watches & Mods</h3>
-                        <p>An elite breakdown of affordable automatic movements and tactical custom watch mods.</p>
-                        <div class="action-link">Explore Showroom →</div>
+                        <h3>01 / Horology Mods</h3>
+                        <p>An elite breakdown of affordable automatic movements, dial swaps, and tactical custom watch mods.</p>
                     </div>
                 </a>
 
                 <a href="apparel.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                    </div>
                     <div class="card-meta">
                         <h3>02 / Streetwear Capsule</h3>
-                        <p>High-density premium textiles decoding the official boxy fit style architecture.</p>
-                        <div class="action-link">Explore Showroom →</div>
+                        <p>High-density premium textiles decoding the official boxy fit and minimalist street garments.</p>
                     </div>
                 </a>
 
                 <a href="gear.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                    </div>
                     <div class="card-meta">
                         <h3>03 / Minimal Desk Gear</h3>
-                        <p>Hardcore minimalist desk setup essentials and heavy-duty everyday carry gear.</p>
-                        <div class="action-link">Explore Showroom →</div>
+                        <p>Hardcore workspace infrastructure, premium USB4 docks, vertical ergonomics, and tech EDC blueprints.</p>
                     </div>
                 </a>
             </div>
@@ -199,12 +204,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const gridContainer = document.getElementById("live-products-grid");
-            
             fetch('products.json?v=' + new Date().getTime())
                 .then(response => response.json())
                 .then(products => {
                     gridContainer.innerHTML = ""; 
-                    
                     products.forEach(item => {
                         const productHTML = `
                             <div class="hot-item">
@@ -223,7 +226,7 @@
                     });
                 })
                 .catch(error => {
-                    console.error("Data fetch fallback triggered:", error);
+                    console.error("Data fetch fallback:", error);
                     gridContainer.innerHTML = "<p style='color:red;padding:20px;text-align:center;'>Configuration Syncing...</p>";
                 });
         });
