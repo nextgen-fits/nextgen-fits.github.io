@@ -139,7 +139,7 @@
             const feedContainer = document.getElementById("gear-feed-container");
 
             // 发起高性能Ajax雷达数据抓取，避开缓存
-            fetch('gear.json?v=' + new Date().getTime())
+            fetch('database/gear.json?v=' + new Date().getTime())
                 .then(response => response.json())
                 .then(posts => {
                     feedContainer.innerHTML = ""; // 扫净废弃节点
