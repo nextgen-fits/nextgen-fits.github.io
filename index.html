@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 📊 谷歌 GA4 全球统计雷达通电（老哥的专属配置） -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-13W21TZ6CL');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
@@ -47,14 +56,13 @@
         
         .main-container { width: 100%; padding-top: 70px; }
         
-        /* 💎 极致大牌：黄金C位橱窗巨幕（带光影蒙版，拒绝傻大粗） */
+        /* 橱窗巨幕（带光影蒙版，拒绝傻大粗） */
         .hero-banner { 
             position: relative; width: 100%; height: 40vh; min-height: 320px; 
             background: #000000 url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; 
             display: flex; align-items: center; padding: 0 40px;
             border-bottom: 1px solid var(--border-color);
         }
-        /* 核心纯黑淡出光影蒙版，保证文字清晰度 */
         .hero-banner::before { 
             content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
             background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%); 
@@ -72,7 +80,6 @@
         .showcase-card { background-color: transparent; display: flex; flex-direction: column; overflow: hidden; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: pointer; border: 1px solid transparent; }
         .showcase-card:hover { animation: subtle-shiver 0.3s ease-in-out; }
         
-        /* 精致控制：卡片图片缩小包裹 */
         .card-img-wrapper { width: 100%; height: 200px; overflow: hidden; background: #09090b; border: 1px solid var(--border-color); }
         .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(75%); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
         .showcase-card:hover .card-img { transform: scale(1.01); filter: brightness(95%); }
@@ -84,7 +91,7 @@
         .action-link { display: block; width: 100%; background: transparent; border: 1px solid var(--border-color); padding: 12px; text-align: center; text-decoration: none; font-size: 0.8em; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #fff; transition: all 0.3s; }
         .showcase-card:hover .action-link { border-color: #fff; background: #fff; color: #000; }
 
-        /* 🔥 真·精细化对齐九宫格爆品区 */
+        /* 真·精细化对齐九宫格爆品区 */
         .section-hot { max-width: 1400px; margin: 0 auto; padding: 40px 40px 80px 40px; }
         .hot-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         
@@ -94,7 +101,6 @@
         .hot-item { background: transparent; display: flex; flex-direction: column; justify-content: space-between; height: 100%; border: 1px solid transparent; }
         .hot-item:hover { animation: subtle-shiver 0.3s ease-in-out; }
         
-        /* 精致化1:1正方形小产品窗 */
         .hot-img-box { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: #09090b; margin-bottom: 15px; border: 1px solid var(--border-color); }
         .hot-img-box img { width: 100%; height: 100%; object-fit: cover; filter: brightness(80%); transition: filter 0.3s; }
         .hot-item:hover .hot-img-box img { filter: brightness(100%); }
@@ -104,7 +110,6 @@
         .hot-item h4 { font-size: 1.05em; color: #fff; font-weight: 500; margin-bottom: 6px; }
         .hot-item p { color: var(--text-muted); font-size: 0.85em; margin-bottom: 20px; font-weight: 400; line-height: 1.4; text-align: justify; }
         
-        /* 沉稳高显按钮 */
         .amazon-buy-btn { 
             display: block; width: 100%; 
             background-color: var(--accent-gold); color: #000; 
@@ -127,7 +132,7 @@
     </nav>
 
     <div class="main-container">
-        <!-- 橱窗巨幕：大牌视觉荣耀回归 -->
+        <!-- 橱窗巨幕 -->
         <div class="hero-banner">
             <div class="hero-content">
                 <h1 class="hero-title">Tactical Infrastructure & <br><strong>Best Value Mechanical Watches</strong></h1>
