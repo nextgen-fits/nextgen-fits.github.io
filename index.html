@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 📊 Google GA4 Radar Core -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN2QCCZ8TL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -45,13 +46,14 @@
         .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; height: 60px; display: flex; justify-content: space-between; align-items: center; }
         .nav-logo { font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; text-decoration: none; font-size: 0.85em; }
         .nav-logo span { color: var(--accent-gold); }
-        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-left: 15px; }
+        .nav-links { display: flex; gap: 15px; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
         
         .main-container { width: 100%; padding-top: 60px; }
         
         .hero-banner { 
             position: relative; width: 100%; min-height: 45vh; 
-            background: #000000 url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80') center/cover no-repeat; 
+            background: #000000 url('https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat; 
             display: block; padding: 60px 20px; text-align: left;
             border-bottom: 1px solid var(--border-color);
         }
@@ -70,8 +72,11 @@
         
         .grid-3 { display: block; }
         .showcase-card { background-color: var(--card-bg); display: block; overflow: hidden; margin-bottom: 25px; border: 1px solid var(--border-color); text-decoration: none; }
+        
+        /* 📸 高清防爆 16:9 视觉槽位 */
         .card-img-wrapper { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-bottom: 1px solid var(--border-color); }
-        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%) contrast(110%); }
+        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%) contrast(105%); transition: all 0.3s ease; }
+        
         .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; }
         .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; }
         .showcase-card p { color: var(--text-muted); font-size: 0.8em; line-height: 1.5; }
@@ -87,9 +92,206 @@
         .hot-item p { color: var(--text-muted); font-size: 0.8em; line-height: 1.4; }
         .amazon-buy-btn { display: block; width: 100%; background-color: var(--text-main); color: #000; border: 1px solid var(--text-main); padding: 14px; text-align: center; text-decoration: none; font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 
-        /* 📡 情报公告区 */
+        /* 📡 内容情报雷达 */
         .section-news { max-width: 1400px; margin: 0 auto; padding: 40px 20px; background: #020202; border-top: 1px solid var(--border-color); }
         .news-list { list-style: none; }
         .news-item { padding: 20px 0; border-bottom: 1px dashed var(--border-color); }
         .news-item:last-child { border-bottom: none; }
-        .news-meta { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text
+        .news-meta { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 5px; }
+        .news-item h4 { font-size: 1.05em; font-weight: 700; margin-bottom: 8px; }
+        .news-item h4 a { color: #fff; text-decoration: none; }
+        .news-item h4 a:hover { color: var(--accent-gold); }
+        .news-excerpt { font-size: 0.82em; color: var(--text-muted); line-height: 1.5; text-align: justify; }
+
+        /* 💬 黑金获客交互表单区 */
+        .section-contact { max-width: 1400px; margin: 0 auto; padding: 60px 20px; border-top: 1px solid var(--border-color); background: #050507; }
+        .contact-box { max-width: 620px; margin: 0 auto; padding: 40px 30px; background: var(--card-bg); border: 1px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(212, 175, 55, 0.03); border-radius: 4px; }
+        .contact-box h3 { font-size: 1.3em; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #fff; text-align: center; margin-bottom: 10px; }
+        .contact-box p { font-size: 0.82em; color: var(--text-muted); margin-bottom: 30px; text-align: center; line-height: 1.6; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 0.55em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 8px; }
+        .form-group input, .form-group textarea { width: 100%; background: #000000; border: 1px solid #2c2c2e; padding: 16px; color: #fff; font-size: 0.85em; font-family: inherit; border-radius: 2px; transition: all 0.25s ease; }
+        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent-gold); background: var(--form-focus-bg); box-shadow: 0 0 10px rgba(212, 175, 55, 0.15); outline: none; }
+        .submit-btn { width: 100%; background: var(--accent-gold); border: 1px solid var(--accent-gold); color: #000000; padding: 16px; font-size: 0.78em; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; cursor: pointer; border-radius: 2px; transition: all 0.3s ease; margin-top: 10px; }
+        .submit-btn:hover { background: #ffffff; border-color: #ffffff; color: #000000; box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); }
+
+        @media screen and (min-width: 769px) {
+            .hero-banner { min-height: 55vh; padding: 0 80px; display: flex; align-items: center; }
+            .hero-title { font-size: 3.2em; }
+            .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+            .showcase-card { margin-bottom: 0; }
+            .showcase-card:hover { border-color: #fff; }
+            .showcase-card:hover .card-img { filter: brightness(75%) contrast(105%); }
+            .showcase-card:hover .card-meta { border-left-color: var(--accent-gold); }
+            .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+            .hot-item { margin-bottom: 0; background: transparent; padding: 10px; }
+            .hot-item:hover { border-color: var(--border-color); background: #050505; }
+            .amazon-buy-btn { background-color: transparent; color: #fff; border-color: var(--border-color); padding: 11px; }
+            .hot-item:hover .amazon-buy-btn { background-color: var(--text-main); color: #000; border-color: var(--text-main); }
+        }
+        footer { padding: 40px 20px; text-align: center; font-size: 0.65em; color: var(--text-muted); border-top: 1px solid var(--border-color); letter-spacing: 1px; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">NextGen <span>Essentials</span></a>
+            <div class="nav-links">
+                <a href="watches.html">Watches</a>
+                <a href="apparel.html">Apparel</a>
+                <a href="gear.html">Gear</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <!-- HERO BANNER -->
+        <div class="hero-banner">
+            <div class="hero-content">
+                <p class="hero-subtitle">The Alpha Blueprint</p>
+                <h1 class="hero-title">Best Value Automatic Watches &<br>Minimalist Desk Setups</h1>
+                <p class="hero-desc">Curating the finest tactical deployment gear, premium mechanical watch mods under $200, and heavyweight boxy hoodies.</p>
+            </div>
+        </div>
+
+        <!-- 📦 THE SHOWROOMS: 终极换血，死死锁定高清大牌资源 -->
+        <div class="section-box">
+            <div class="section-title">THE SHOWROOMS / ARCHITECTURE</div>
+            <div class="grid-3">
+                <!-- 01 / 手表入口：Unsplash 顶级机械表精密齿轮与金属架构特写 -->
+                <a href="watches.html" class="showcase-card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=600&q=80" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>01 / Horology Mods</h3>
+                        <p>An elite breakdown of affordable automatic movements, dial swaps, and tactical custom watch mods.</p>
+                    </div>
+                </a>
+
+                <!-- 02 / 服装入口：Unsplash 高清哑光暗色街头廓形穿搭大图 -->
+                <a href="apparel.html" class="showcase-card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=600&q=80" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>02 / Streetwear Capsule</h3>
+                        <p>High-density premium textiles decoding the official boxy fit and minimalist street garments.</p>
+                    </div>
+                </a>
+
+                <!-- 03 / 数码桌面入口：🎯 彻底粉碎风景照！Unsplash 原生顶级 4K 高阶哑光极客桌面矩阵 -->
+                <a href="gear.html" class="showcase-card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&w=600&q=80" loading="lazy">
+                    </div>
+                    <div class="card-meta">
+                        <h3>03 / Minimal Desk Gear</h3>
+                        <p>Hardcore workspace infrastructure, premium USB4 docks, vertical ergonomics, and tech EDC blueprints.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CURRENT DEPLOYMENT (HOT GRID) -->
+        <div class="section-hot">
+            <div class="section-title">THE CORE INDEX / CURRENT DEPLOYMENT</div>
+            <div class="hot-grid" id="live-products-grid"></div>
+        </div>
+
+        <!-- 情报公告区 -->
+        <div class="section-news">
+            <div class="section-title">LATEST INTEL / CONTENT INFRASTRUCTURE</div>
+            <ul class="news-list" id="auto-news-feed"></ul>
+        </div>
+
+        <!-- 变现表单 -->
+        <div class="section-contact">
+            <div class="contact-box">
+                <h3>Request Custom Intel</h3>
+                <p>Looking for a bespoke mechanical watch mod or a tailored workspace architecture blueprint? Drop your contact info. We reach out via email.</p>
+                
+                <form action="https://formspree.io/f/mnnqgqzo" method="POST">
+                    <input type="hidden" name="_replyto" value="nextgenlabs.us@gmail.com">
+                    <input type="hidden" name="_to" value="nextgenlabs.us@gmail.com">
+                    
+                    <div class="form-group">
+                        <label>Identity / Name</label>
+                        <input type="text" name="name" placeholder="E.G., ALEX OBERON" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Secure Email Address</label>
+                        <input type="email" name="email" placeholder="YOUR@EMAIL.COM" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Deployment Requirements</label>
+                        <textarea name="message" rows="4" placeholder="DESCRIBE YOUR MOD SPECIFICATIONS OR DESK BLUEPRINT NEEDS..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Intel Request →</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 NextGen Essentials. Blueprint Powered.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const gridContainer = document.getElementById("live-products-grid");
+            fetch('products.json?v=' + new Date().getTime())
+                .then(res => res.json())
+                .then(products => {
+                    gridContainer.innerHTML = ""; 
+                    products.forEach(item => {
+                        gridContainer.innerHTML += `
+                            <div class="hot-item">
+                                <div class="hot-text-area">
+                                    <div class="hot-img-box"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
+                                    <span class="hot-type">${item.type}</span>
+                                    <h4>${item.title}</h4>
+                                    <p>${item.desc}</p>
+                                </div>
+                                <a href="${item.url}" class="amazon-buy-btn" target="_blank">Secure Link →</a>
+                            </div>
+                        `;
+                    });
+                });
+
+            const newsContainer = document.getElementById("auto-news-feed");
+            Promise.all([
+                fetch('database/gear.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => []),
+                fetch('database/watches.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => []),
+                fetch('database/apparel.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
+            ]).then(([gearPosts, watchPosts, apparelPosts]) => {
+                newsContainer.innerHTML = "";
+                const taggedGear = gearPosts.map(p => ({ ...p, targetPage: 'gear.html', metaTag: 'GEAR INTEL' }));
+                const taggedWatches = watchPosts.map(p => ({ ...p, targetPage: 'watches.html', metaTag: 'HOROLOGY REPORT' }));
+                const taggedApparel = apparelPosts.map(p => ({ ...p, targetPage: 'apparel.html', metaTag: 'TEXTILE BLUEPRINT' }));
+                
+                const pool = [...taggedGear, taggedWatches, taggedApparel];
+                pool.sort((a, b) => new Date(b.date) - new Date(a.date));
+                const finalThree = pool.slice(0, 3);
+                
+                if(finalThree.length === 0) {
+                    newsContainer.innerHTML = "<p style='color:var(--text-muted);font-size:0.8em;'>Syncing fresh intel channel...</p>";
+                    return;
+                }
+                
+                finalThree.forEach(post => {
+                    newsContainer.innerHTML += `
+                        <li class="news-item">
+                            <span class="news-meta">${post.date} // ${post.metaTag}</span>
+                            <h4><a href="${post.targetPage}#${post.id}">${post.title}</a></h4>
+                            <p class="news-excerpt">${post.summary || post.desc}</p>
+                        </li>
+                    `;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
