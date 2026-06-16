@@ -67,7 +67,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const container = document.getElementById("apparel-feed-container");
-            fetch('apparel.json?v=' + new Date().getTime())
+            fetch('database/apparel.json?v=' + new Date().getTime())
                 .then(res => res.json())
                 .then(data => {
                     container.innerHTML = "";
