@@ -1,0 +1,38 @@
+[
+  {
+    "id": "post-001",
+    "date": "JUNE 15, 2026",
+    "title": "Minimalist Triple-Monitor Workspace Blueprint (2026)",
+    "summary": "Decoding the ultimate heavy-duty steel and matte black dual-computing matrix. A deep dive into balancing extreme 40Gbps Thunderbolt bandwidth with flawless aesthetic minimalism.",
+    "cover_img": "https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+    "content": "Achieving the perfect minimalist desk setup requires eliminating visual noise while maintaining extreme data infrastructure throughput. In this workspace setup, we anchored a dual-laptop system using a heavy-duty vertical alloy station to handle multiple 4K monitor arrays without latency drop. Clean cable routing and single-tonal ergonomics form the core architecture of this high-tier productivity station.",
+    "gear_list": [
+      {
+        "name": "UGREEN Revodok Max 13-in-1 Thunderbolt 4 Dock",
+        "url": "https://amzn.to/4oDpzac"
+      },
+      {
+        "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
+        "url": "https://amzn.to/4vnJegL"
+      }
+    ]
+  },
+  {
+    "id": "post-002",
+    "date": "MAY 28, 2026",
+    "title": "Tactical Everyday Carry (EDC) Tech Gear Essentials",
+    "summary": "Uncompromising heavy-metal tech utilities, acoustic isolation arrays, and high-density all-weather footwear engineered for modern nomadic digital execution.",
+    "cover_img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+    "content": "Your everyday carry equipment defines your daily deployment efficiency. Moving away from bulky accessories, this blueprint highlights matte black lightweight alloys, extreme acoustic noise cancellation headphones for remote studio execution, and high-grip technical footwear built for complex urban terrain architectures.",
+    "gear_list": [
+      {
+        "name": "Sony WH-CH720N Premium Noise Canceling Headphones",
+        "url": "https://amzn.to/4gt20yu"
+      },
+      {
+        "name": "Salomon Speedcross 6 Tactical Blackout Shoes",
+        "url": "https://amzn.to/44fYEYk"
+      }
+    ]
+  }
+]
