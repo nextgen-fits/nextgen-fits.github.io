@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 📊 Google GA4 Radar Core -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN2QCCZ8TL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,7 +38,6 @@
             -webkit-tap-highlight-color: transparent;
         }
         
-        /* 📱 导航栏：高度微调，边缘悬浮效果 */
         nav { 
             position: fixed; top: 0; width: 100%; 
             background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); 
@@ -51,7 +51,6 @@
         
         .main-container { width: 100%; padding-top: 60px; }
         
-        /* ⚡ 满版硬朗 Banner */
         .hero-banner { 
             position: relative; width: 100%; min-height: 45vh; 
             background: #000000 url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80') center/cover no-repeat; 
@@ -68,7 +67,6 @@
         .hero-title { font-size: 1.8em; font-weight: 800; letter-spacing: -0.5px; color: #fff; text-transform: uppercase; line-height: 1.2; }
         .hero-desc { color: var(--text-muted); font-size: 0.85em; max-width: 500px; margin-top: 15px; line-height: 1.5; }
 
-        /* 📦 频道入口区域：重构为高级杂志级排版 */
         .section-box { max-width: 1400px; margin: 0 auto; padding: 40px 20px 20px 20px; }
         .section-title { font-size: 0.65em; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 25px; padding-bottom: 8px; border-bottom: 1px solid var(--border-color); }
         
@@ -83,16 +81,13 @@
             transition: border-color 0.3s ease;
         }
         
-        /* 图片强制采用极客质感的 16:9 比例，并且暗化处理，突出专业调性 */
         .card-img-wrapper { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #000; border-bottom: 1px solid var(--border-color); }
         .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(60%) contrast(110%); }
         
-        /* 文字描述区：采用左边线代替按钮，档次瞬间拉开 */
-        .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; }
+        .card-meta { padding: 25px; border-left: 2px solid #fff; margin: 20px; padding-left: 15px; transition: border-left-color 0.3s ease; }
         .showcase-card h3 { font-size: 1.1em; color: #fff; font-weight: 800; margin-bottom: 8px; text-transform: uppercase; letter-spacing: -0.2px; }
         .showcase-card p { color: var(--text-muted); font-size: 0.8em; line-height: 1.5; }
         
-        /* 🔥 核心带货九宫格区域 */
         .section-hot { max-width: 1400px; margin: 0 auto; padding: 20px 20px 60px 20px; }
         .hot-grid { display: block; }
         .hot-item { background: var(--card-bg); display: block; border: 1px solid var(--border-color); padding: 15px; margin-bottom: 25px; }
@@ -111,7 +106,6 @@
             border-radius: 2px;
         }
 
-        /* 💻 大屏电脑端适配：使用媒体查询完美舒展 */
         @media screen and (min-width: 769px) {
             .hero-banner { min-height: 55vh; padding: 0 80px; display: flex; align-items: center; }
             .hero-title { font-size: 3.2em; }
@@ -120,7 +114,7 @@
             .showcase-card { margin-bottom: 0; }
             .showcase-card:hover { border-color: #fff; }
             .showcase-card:hover .card-img { filter: brightness(75%) contrast(110%); }
-            .card-meta { border-left-color: var(--accent-gold); }
+            .showcase-card:hover .card-meta { border-left-color: var(--accent-gold); }
             
             .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
             .hot-item { margin-bottom: 0; background: transparent; padding: 10px; }
@@ -147,6 +141,7 @@
 
     <div class="main-container">
         
+        <!-- HERO BANNER -->
         <div class="hero-banner">
             <div class="hero-content">
                 <p class="hero-subtitle">The Alpha Blueprint</p>
@@ -155,12 +150,14 @@
             </div>
         </div>
 
+        <!-- 📦 SHOWROOMS 入口区域：图片全面纠偏，完美杜绝风景照 -->
         <div class="section-box">
             <div class="section-title">THE SHOWROOMS / ARCHITECTURE</div>
             <div class="grid-3">
+                <!-- 01 / 手表入口：硬核精密机芯与表盘构造特写 -->
                 <a href="watches.html" class="showcase-card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                        <img class="card-img" src="https://images.pexels.com/photos/9914310/pexels-photo-9914310.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
                     </div>
                     <div class="card-meta">
                         <h3>01 / Horology Mods</h3>
@@ -168,9 +165,10 @@
                     </div>
                 </a>
 
+                <!-- 02 / 服装入口：高街廓形卫衣极简暗灰剪影 -->
                 <a href="apparel.html" class="showcase-card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                        <img class="card-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
                     </div>
                     <div class="card-meta">
                         <h3>02 / Streetwear Capsule</h3>
@@ -178,9 +176,10 @@
                     </div>
                 </a>
 
+                <!-- 03 / 数码桌面入口：🎯 彻底踢飞森林风景照！替换为纯正黑武士暗色极客桌面大图 -->
                 <a href="gear.html" class="showcase-card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
+                        <img class="card-img" src="https://images.pexels.com/photos/8412273/pexels-photo-8412273.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy">
                     </div>
                     <div class="card-meta">
                         <h3>03 / Minimal Desk Gear</h3>
@@ -190,10 +189,12 @@
             </div>
         </div>
 
+        <!-- 📡 AI LIVE RENDER PANEL -->
         <div class="section-hot">
             <div class="section-title">THE CORE INDEX / CURRENT DEPLOYMENT</div>
             <div class="hot-grid" id="live-products-grid">
-                </div>
+                <!-- 账本自动渲染 -->
+            </div>
         </div>
 
         <footer>
