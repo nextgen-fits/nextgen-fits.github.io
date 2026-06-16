@@ -37,7 +37,6 @@
             -webkit-font-smoothing: antialiased; 
         }
 
-        /* Luxury Cinema Shiver Effect */
         @keyframes subtle-shiver {
             0% { transform: translate(0, 0) scale(1.003); }
             20% { transform: translate(-0.2px, 0.2px) scale(1.003); }
@@ -60,16 +59,16 @@
         
         .main-container { width: 100%; padding-top: 75px; }
         
-        /* ⚡ FULL-SCREEN HERO BANNER */
+        /* ⚡ FULL-SCREEN HERO BANNER: Fixed Heavy Tactical Grid */
         .hero-banner { 
             position: relative; width: 100%; height: 85vh; 
-            background: #000000 url('https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; 
+            background: #000000 url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat; 
             display: flex; align-items: center; padding: 0 80px;
             border-bottom: 1px solid var(--border-color);
         }
         .hero-banner::before { 
             content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
-            background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.1) 100%); 
+            background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 35%, rgba(0,0,0,0.3) 100%); 
             z-index: 1;
         }
         .hero-content { position: relative; width: 100%; max-width: 1600px; margin: 0 auto; z-index: 2; border-left: 3px solid var(--accent-gold); padding-left: 35px; }
@@ -87,8 +86,8 @@
         .showcase-card:hover { animation: subtle-shiver 0.4s ease-in-out; border-color: var(--accent-gold); }
         
         .card-img-wrapper { width: 100%; height: 380px; overflow: hidden; background: #000; position: relative; }
-        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(65%); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
-        .showcase-card:hover .card-img { transform: scale(1.02); filter: brightness(85%); }
+        .card-img { width: 100%; height: 100%; object-fit: cover; filter: brightness(55%); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+        .showcase-card:hover .card-img { transform: scale(1.02); filter: brightness(75%); }
         
         .card-meta { padding: 35px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
         .showcase-card h3 { font-size: 1.3em; color: #fff; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.3px; text-transform: uppercase; line-height: 1.3; }
@@ -97,7 +96,7 @@
         .action-link { display: block; width: 100%; background: transparent; border: 1px solid #2c2c2e; padding: 15px; text-align: center; text-decoration: none; font-size: 0.75em; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #fff; transition: all 0.3s; }
         .showcase-card:hover .action-link { border-color: #fff; background: #fff; color: #000; }
 
-        /* 🔥 DISCIPLINED MICRO-GRID GALLERY (4 COLUMNS) */
+        /* 🔥 DISCIPLINED MICRO-GRID GALLERY */
         .section-hot { max-width: 1600px; margin: 0 auto; padding: 60px 50px 120px 50px; }
         .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
         
@@ -105,7 +104,7 @@
         .hot-item:hover { border-color: var(--border-color); background: #050505; }
         
         .hot-img-box { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background: var(--card-bg); margin-bottom: 20px; border: 1px solid var(--border-color); }
-        .hot-img-box img { width: 100%; height: 100%; object-fit: cover; filter: brightness(75%); transition: filter 0.3s, transform 0.5s; }
+        .hot-img-box img { width: 100%; height: 100%; object-fit: cover; filter: brightness(70%); transition: filter 0.3s, transform 0.5s; }
         .hot-item:hover .hot-img-box img { filter: brightness(95%); transform: scale(1.01); }
         
         .hot-text-area { display: flex; flex-direction: column; flex-grow: 1; justify-content: flex-start; }
@@ -161,7 +160,7 @@
                 
                 <div class="showcase-card" onclick="location.href='watches.html'">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=800" alt="best value automatic watches and mechanical custom watch mods">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&q=80&w=800" alt="best value automatic watches and mechanical custom watch mods">
                     </div>
                     <div class="card-meta">
                         <div>
@@ -174,7 +173,7 @@
 
                 <div class="showcase-card" onclick="location.href='apparel.html'">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=800" alt="heavyweight boxy drop shoulder hoodies and men streetwear style capsule wardrobe">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="heavyweight boxy drop shoulder hoodies and men streetwear style capsule wardrobe">
                     </div>
                     <div class="card-meta">
                         <div>
@@ -187,7 +186,7 @@
 
                 <div class="showcase-card" onclick="location.href='gear.html'">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=800" alt="cool minimalist desk setups and everyday carry tactical tech gear">
+                        <img class="card-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="cool minimalist desk setups and everyday carry tactical tech gear">
                     </div>
                     <div class="card-meta">
                         <div>
@@ -217,9 +216,9 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&q=80&w=600" alt="heavyweight 450g cotton boxy drop shoulder hoodie streetwear"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=600" alt="heavyweight 450g cotton boxy drop shoulder hoodie streetwear"></div>
                         <span class="hot-type">Streetwear Essential</span>
-                        <h4>Heavyweight 450G Fleece Hoodie</h4>
+                        <h4>14oz Heavyweight Boxy Hoodie</h4>
                         <p>Boxy drop-shoulder hoodie crafted with high-density architectural premium streetwear cotton weaving.</p>
                     </div>
                     <a href="#" class="amazon-buy-btn" target="_blank">Secure Link →</a>
@@ -227,7 +226,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?auto=format&fit=crop&q=80&w=600" alt="minimalist aesthetic desk setup wireless ergonomic tracking mouse"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&q=80&w=600" alt="minimalist aesthetic desk setup wireless ergonomic tracking mouse"></div>
                         <span class="hot-type">Desk Infrastructure</span>
                         <h4>Ergonomic Precision Smart Mouse</h4>
                         <p>The premium anchor for minimalist aesthetic desk setups. Ultra-low latency tracking matrix.</p>
@@ -237,7 +236,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" alt="all weather tactical tech sneaker daily capsule wardrobe footwear"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=600" alt="all weather tactical tech sneaker daily capsule wardrobe footwear"></div>
                         <span class="hot-type">Tactical Footwear</span>
                         <h4>All-Weather Technical Sneaker</h4>
                         <p>Water-resistant high-density tech textile. The foundational element for daily capsule wardrobe deployment.</p>
@@ -247,7 +246,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=600" alt="monochrome premium quartz mechanical racing chronograph watch"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=600" alt="monochrome premium quartz mechanical racing chronograph watch"></div>
                         <span class="hot-type">Horology Collection</span>
                         <h4>Monochrome Racing Chronograph</h4>
                         <p>Stealth dial array featuring architectural weight balancing and tactical mechanical chronograph stopwatch feedback.</p>
@@ -257,7 +256,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600" alt="premium active noise canceling wireless bluetooth anc studio headphones"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&q=80&w=600" alt="premium active noise canceling wireless bluetooth anc studio headphones"></div>
                         <span class="hot-type">Audio Tech Gear</span>
                         <h4>Premium ANC Wireless Headphone</h4>
                         <p>Active acoustic isolating sound design encased in premium matte space grey alloy studio infrastructure.</p>
@@ -267,7 +266,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&fit=crop&q=80&w=600" alt="anodized aluminum usb4 type c docking station multi monitor array setup"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1586210579191-e3b2c6752483?auto=format&fit=crop&q=80&w=600" alt="anodized aluminum usb4 type c docking station multi monitor array setup"></div>
                         <span class="hot-type">Desk Infrastructure</span>
                         <h4>Aluminum USB4 40Gbps Station</h4>
                         <p>Anodized heavy metal connectivity grid engineered for multi-monitor tactical desk setup arrays.</p>
@@ -277,7 +276,7 @@
 
                 <div class="hot-item">
                     <div class="hot-text-area">
-                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&q=80&w=600" alt="classic 200m automatic automatic mechanical diver watch under 200"></div>
+                        <div class="hot-img-box"><img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&q=80&w=600" alt="classic 200m automatic automatic mechanical diver watch under 200"></div>
                         <span class="hot-type">Horology Selection</span>
                         <h4>Classic 200M Automatic Diver</h4>
                         <p>Indestructible deep-sea high-beat mechanical diver watch build. Engineered like a main battle tank.</p>
