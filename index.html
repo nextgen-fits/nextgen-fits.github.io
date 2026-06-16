@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 📊 Google GA4 Radar Core -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN2QCCZ8TL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -25,6 +24,7 @@
             --text-muted: #8e8e93; 
             --card-bg: #09090b;
             --border-color: #1c1c1e; 
+            --form-focus-bg: #121214;
         }
         
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,194 +87,9 @@
         .hot-item p { color: var(--text-muted); font-size: 0.8em; line-height: 1.4; }
         .amazon-buy-btn { display: block; width: 100%; background-color: var(--text-main); color: #000; border: 1px solid var(--text-main); padding: 14px; text-align: center; text-decoration: none; font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
 
-        /* 📡 想法一：全新智能纯文字公告区（谷歌蜘蛛高频抓取池） */
+        /* 📡 情报公告区 */
         .section-news { max-width: 1400px; margin: 0 auto; padding: 40px 20px; background: #020202; border-top: 1px solid var(--border-color); }
         .news-list { list-style: none; }
         .news-item { padding: 20px 0; border-bottom: 1px dashed var(--border-color); }
         .news-item:last-child { border-bottom: none; }
-        .news-meta { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 5px; }
-        .news-item h4 { font-size: 1.05em; font-weight: 700; margin-bottom: 8px; }
-        .news-item h4 a { color: #fff; text-decoration: none; }
-        .news-item h4 a:hover { color: var(--accent-gold); }
-        .news-excerpt { font-size: 0.82em; color: var(--text-muted); line-height: 1.5; text-align: justify; }
-
-        /* 💬 想法二：全新黑金极简用户获客表单区 */
-        .section-contact { max-width: 1400px; margin: 0 auto; padding: 60px 20px; border-top: 1px solid var(--border-color); background: var(--card-bg); }
-        .contact-box { max-width: 600px; margin: 0 auto; }
-        .contact-box p { font-size: 0.85em; color: var(--text-muted); margin-bottom: 25px; text-align: center; }
-        .form-group { margin-bottom: 20px; }
-        .form-group input, .form-group textarea { width: 100%; background: #000; border: 1px solid var(--border-color); padding: 14px; color: #fff; font-size: 0.85em; font-family: inherit; }
-        .form-group input:focus, .form-group textarea:focus { border-color: var(--accent-gold); outline: none; }
-        .submit-btn { width: 100%; background: transparent; border: 1px solid #fff; color: #fff; padding: 15px; font-size: 0.75em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
-        .submit-btn:hover { background: #fff; color: #000; }
-
-        /* 💻 大屏适配 */
-        @media screen and (min-width: 769px) {
-            .hero-banner { min-height: 55vh; padding: 0 80px; display: flex; align-items: center; }
-            .hero-title { font-size: 3.2em; }
-            .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-            .showcase-card { margin-bottom: 0; }
-            .showcase-card:hover { border-color: #fff; }
-            .showcase-card:hover .card-img { filter: brightness(75%) contrast(110%); }
-            .showcase-card:hover .card-meta { border-left-color: var(--accent-gold); }
-            .hot-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-            .hot-item { margin-bottom: 0; background: transparent; padding: 10px; }
-            .hot-item:hover { border-color: var(--border-color); background: #050505; }
-            .amazon-buy-btn { background-color: transparent; color: #fff; border-color: var(--border-color); padding: 11px; }
-            .hot-item:hover .amazon-buy-btn { background-color: var(--text-main); color: #000; border-color: var(--text-main); }
-        }
-        footer { padding: 40px 20px; text-align: center; font-size: 0.65em; color: var(--text-muted); border-top: 1px solid var(--border-color); letter-spacing: 1px; text-transform: uppercase; }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">NextGen <span>Essentials</span></a>
-            <div class="nav-links">
-                <a href="watches.html">Watches</a>
-                <a href="apparel.html">Apparel</a>
-                <a href="gear.html">Gear</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="main-container">
-        
-        <!-- HERO BANNER -->
-        <div class="hero-banner">
-            <div class="hero-content">
-                <p class="hero-subtitle">The Alpha Blueprint</p>
-                <h1 class="hero-title">Best Value Automatic Watches &<br>Minimalist Desk Setups</h1>
-                <p class="hero-desc">Curating the finest tactical deployment gear, premium mechanical watch mods under $200, and heavyweight boxy hoodies.</p>
-            </div>
-        </div>
-
-        <!-- THE SHOWROOMS -->
-        <div class="section-box">
-            <div class="section-title">THE SHOWROOMS / ARCHITECTURE</div>
-            <div class="grid-3">
-                <a href="watches.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/9914310/pexels-photo-9914310.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
-                    <div class="card-meta">
-                        <h3>01 / Horology Mods</h3>
-                        <p>An elite breakdown of affordable automatic movements, dial swaps, and tactical custom watch mods.</p>
-                    </div>
-                </a>
-                <a href="apparel.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
-                    <div class="card-meta">
-                        <h3>02 / Streetwear Capsule</h3>
-                        <p>High-density premium textiles decoding the official boxy fit and minimalist street garments.</p>
-                    </div>
-                </a>
-                <a href="gear.html" class="showcase-card">
-                    <div class="card-img-wrapper"><img class="card-img" src="https://images.pexels.com/photos/8412273/pexels-photo-8412273.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" loading="lazy"></div>
-                    <div class="card-meta">
-                        <h3>03 / Minimal Desk Gear</h3>
-                        <p>Hardcore workspace infrastructure, premium USB4 docks, vertical ergonomics, and tech EDC blueprints.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!-- 📡 CURRENT DEPLOYMENT (HOT GRID) -->
-        <div class="section-hot">
-            <div class="section-title">THE CORE INDEX / CURRENT DEPLOYMENT</div>
-            <div class="hot-grid" id="live-products-grid"></div>
-        </div>
-
-        <!-- 📡 想法一：全新纯文字雷达公告区（数据全自动同步，劫持谷歌内链） -->
-        <div class="section-news">
-            <div class="section-title">LATEST INTEL / CONTENT INFRASTRUCTURE</div>
-            <ul class="news-list" id="auto-news-feed">
-                <!-- 由JavaScript雷达全自动跨文件夹抓取数据，一秒填充至此 -->
-            </ul>
-        </div>
-
-        <!-- 💬 想法二：全新私域表单变现区（0元获客，直达邮箱） -->
-        <div class="section-contact">
-            <div class="section-title">CONNECT / LEAVE AN INTEL</div>
-            <div class="contact-box">
-                <p>Looking for a custom mechanical watch mod or a tailored workspace architecture? Drop your info below. We respond within 24 hours.</p>
-                <!-- 💡 填入免费表单接收标记（此处暂用测试标记，老哥后续可以换成你自己的Formspree ID） -->
-                <form action="https://formspree.io/f/mnnqgqzo" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="YOUR NAME" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" rows="4" placeholder="HOW CAN WE HELP YOU? (E.G., CUSTOM SEIKO MODS, DESK BLUEPRINTS)" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message →</button>
-                </form>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 NextGen Essentials. Blueprint Powered.</p>
-        </footer>
-    </div>
-
-    <!-- 🧠 跨系统多源雷达渲染引擎 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // 1. 渲染原本的商品九宫格
-            const gridContainer = document.getElementById("live-products-grid");
-            fetch('products.json?v=' + new Date().getTime())
-                .then(res => res.json())
-                .then(products => {
-                    gridContainer.innerHTML = ""; 
-                    products.forEach(item => {
-                        gridContainer.innerHTML += `
-                            <div class="hot-item">
-                                <div class="hot-text-area">
-                                    <div class="hot-img-box"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
-                                    <span class="hot-type">${item.type}</span>
-                                    <h4>${item.title}</h4>
-                                    <p>${item.desc}</p>
-                                </div>
-                                <a href="${item.url}" class="amazon-buy-btn" target="_blank">Secure Link →</a>
-                            </div>
-                        `;
-                    });
-                });
-
-            // 2. ⚡ 跨组自动抓取数据：从数码和手表子账本里抽取最新文章，直接生成首页纯文字公告
-            const newsContainer = document.getElementById("auto-news-feed");
-            
-            Promise.all([
-                fetch('database/gear.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => []),
-                fetch('database/watches.json?v=' + new Date().getTime()).then(res => res.json()).catch(() => [])
-            ]).then(([gearPosts, watchPosts]) => {
-                newsContainer.innerHTML = "";
-                
-                // 各取最新的一个，混合编排
-                const latestGear = gearPosts[0];
-                const latestWatch = watchPosts[0];
-                
-                if(latestGear) {
-                    newsContainer.innerHTML += `
-                        <li class="news-item">
-                            <span class="news-meta">${latestGear.date} // DEPLOYMENT INTEL</span>
-                            <h4><a href="gear.html#${latestGear.id}">${latestGear.title}</a></h4>
-                            <p class="news-excerpt">${latestGear.summary}</p>
-                        </li>
-                    `;
-                }
-                if(latestWatch) {
-                    newsContainer.innerHTML += `
-                        <li class="news-item">
-                            <span class="news-meta">${latestWatch.date} // HOROLOGY REPORT</span>
-                            <h4><a href="watches.html#${latestWatch.id}">${latestWatch.title}</a></h4>
-                            <p class="news-excerpt">${latestWatch.summary}</p>
-                        </li>
-                    `;
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+        .news-meta { font-size: 0.6em; color: var(--accent-gold); font-weight: 700; letter-spacing: 1.5px; text
