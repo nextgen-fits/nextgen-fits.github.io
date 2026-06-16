@@ -67,7 +67,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const container = document.getElementById("watch-feed-container");
-            fetch('watches.json?v=' + new Date().getTime())
+            fetch('database/watches.json?v=' + new Date().getTime())
                 .then(res => res.json())
                 .then(data => {
                     container.innerHTML = "";
