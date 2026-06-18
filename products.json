@@ -1,66 +1,50 @@
 [
   {
-    "id": "item01",
-    "type": "Horology Selection",
-    "title": "Seiko 5 Sports Blackout Automatic",
-    "desc": "Brushed matte blackout stealth chassis hosting an unyielding premium Japanese mechanical watch engine.",
-    "img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    "type": "Watches",
+    "title": "Seiko 5 Sports SRPD Series",
+    "desc": "The most reliable entry point into automatic watches — proven NH36 movement, excellent parts ecosystem.",
+    "price": "$78",
+    "img": "https://images.pexels.com/photos/9979997/pexels-photo-9979997.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
     "url": "https://amzn.to/4xx2kTa"
   },
   {
-    "id": "item02",
-    "type": "Streetwear Essential",
-    "title": "Heavy Duty Off-White Boxy Hoodie",
-    "desc": "Premium 14oz architectural off-white fleece pullover featuring a clean, minimal neckline without drawstrings and structured dropped-shoulder geometry.",
-    "img": "https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    "type": "Watches",
+    "title": "Invicta Pro Diver 5053",
+    "desc": "NH35a-powered dive watch with a genuinely accurate 200m water resistance rating — rare at this price.",
+    "price": "$54",
+    "img": "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/3QILLlM"
+  },
+  {
+    "type": "Apparel",
+    "title": "14oz Heavyweight Boxy Hoodie",
+    "desc": "Dropped shoulder, dense knit construction. Holds shape after repeated washes — most hoodies at this price don't.",
+    "price": "$58",
+    "img": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
     "url": "https://amzn.to/3Q1jwiU"
   },
   {
-    "id": "item03",
-    "type": "Desk Infrastructure",
-    "title": "Logitech Lift Vertical Smart Mouse",
-    "desc": "The premier anchor for minimalist ergonomic desk setups, featuring a high-precision tracking matrix and tactical wavy contour architecture.",
-    "img": "https://images.pexels.com/photos/2115256/pexels-photo-2115256.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    "url": "https://amzn.to/4vnJegL"
-  },
-  {
-    "id": "item04",
-    "type": "Tactical Footwear",
-    "title": "Salomon Speedcross 6 Blackout",
-    "desc": "All-weather high-density technical textile wrapping an aggressive mud-shredding geometric chassis. Designed for extreme terrain architectures.",
-    "img": "https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    "type": "Apparel",
+    "title": "Salomon Speedcross 6 Trail Shoes",
+    "desc": "High-grip terrain footwear that anchors a minimalist outfit without looking purely technical.",
+    "price": "$110",
+    "img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
     "url": "https://amzn.to/44fYEYk"
   },
   {
-    "id": "item05",
-    "type": "Horology Collection",
-    "title": "Invicta Speedway Blackout Chronograph",
-    "desc": "Aggressive 48mm matte blackout steel chassis hosting tactical racing sub-dials and integrated precision tachymeter instrumentation feedback.",
-    "img": "https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    "url": "https://amzn.to/44amGE7"
-  },
-  {
-    "id": "item06",
-    "type": "Audio Tech Gear",
-    "title": "Sony WH-CH720N Premium ANC",
-    "desc": "Next-gen active acoustic isolating matrix encased in a lightweight matte black minimalist studio architecture, engineered with dual sensor noise cancellation.",
-    "img": "https://images.pexels.com/photos/3394656/pexels-photo-3394656.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    "url": "https://amzn.to/4gt20yu"
-  },
-  {
-    "id": "item07",
-    "type": "Desk Infrastructure",
-    "title": "UGREEN Revodok Max 13-in-1",
-    "desc": "Elite 40Gbps Thunderbolt matrix housed in a heavy anodized vertical alloy column. Engineered for multi-display infrastructure expansion without bandwidth drop.",
-    "img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    "type": "Gear",
+    "title": "UGREEN Revodok Max 13-in-1 Dock",
+    "desc": "True 40Gbps Thunderbolt 4 throughput. Runs dual 4K displays without the bandwidth compromises cheaper docks make.",
+    "price": "$190",
+    "img": "https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
     "url": "https://amzn.to/4oDpzac"
   },
   {
-    "id": "item08",
-    "type": "Horology Selection",
-    "title": "Invicta Pro Diver 5053 Automatic",
-    "desc": "Heavyweight 200M ocean-rated automatic deployment caliber encased in high-density main battle tank steel infrastructure with sharp tactile coin-edge rotating metrics.",
-    "img": "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
-    "url": "https://amzn.to/3QILLlM"
+    "type": "Gear",
+    "title": "Logitech Lift Vertical Mouse",
+    "desc": "A genuine ergonomic improvement, not just a marketing angle — noticeable after a few full work days.",
+    "price": "$70",
+    "img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/4vnJegL"
   }
 ]
