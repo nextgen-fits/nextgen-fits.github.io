@@ -1,19 +1,20 @@
+JSON
 [
   {
     "id": "watch-001",
     "date": "JUNE 16, 2026",
     "category": "MOD GUIDE",
-    "title": "Seiko 5 Sports Blackout Stealth Modding Blueprint",
-    "summary": "Breaking down the mechanics behind the ultimate blackout tactical build. We examine the NH36 movement stability, ceramic bezel insert integration, and sapphire crystal sourcing for under $200.",
-    "cover_img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
+    "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Worth Building Around?",
+    "summary": "A full breakdown of the blackout build everyone's copying right now — what the NH36 movement actually delivers, and where the aftermarket bezel and sapphire swap genuinely improves the watch.",
+    "cover_img": "https://images.pexels.com/photos/9979997/pexels-photo-9979997.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     "url": "https://amzn.to/4xx2kTa"
   },
   {
     "id": "watch-002",
     "date": "JUNE 02, 2026",
-    "category": "HARDCORE REVIEW",
-    "title": "Invicta Pro Diver 5053: The Best Entry Mechanical Tank?",
-    "summary": "An uncompromising 100-hour stress test on the legendary NH35a-powered dive watch. Is the coin-edge bezel and 200M ocean rating genuine or just marketing hype?",
+    "category": "REVIEW",
+    "title": "Invicta Pro Diver 5053: Is the NH35a Tank Real or Just Marketing?",
+    "summary": "100 hours on the watch most forum threads either love or dismiss outright. The coin-edge bezel and 200m rating are real — whether the rest of the watch matches that confidence is a different question.",
     "cover_img": "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     "url": "https://amzn.to/3QILLlM"
   }
