@@ -1,18 +1,50 @@
 [
   {
-    "id": "look-001",
-    "season": "ESSENTIAL SILHOUETTE / VOL. 01",
-    "description": "Architectural layering featuring an ultra-heavyweight 14oz dropped-shoulder boxy knit silhouette. Grounded by high-grip terrain technical footwear to anchor the aggressive techwear drop.",
-    "look_img": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
-    "breakdown": [
-      {
-        "piece": "Top: Heavy Duty Off-White Boxy Hoodie (14oz Knit)",
-        "url": "https://amzn.to/3Q1jwiU"
-      },
-      {
-        "piece": "Footwear: Salomon Speedcross 6 Blackout Trail Shoes",
-        "url": "https://amzn.to/44fYEYk"
-      }
-    ]
+    "type": "Watches",
+    "title": "Seiko 5 Sports SRPD Series",
+    "desc": "The most reliable entry point into automatic watches — proven NH36 movement, excellent parts ecosystem.",
+    "price": "$78",
+    "img": "https://images.pexels.com/photos/9979997/pexels-photo-9979997.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/4xx2kTa"
+  },
+  {
+    "type": "Watches",
+    "title": "Invicta Pro Diver 5053",
+    "desc": "NH35a-powered dive watch with a genuinely accurate 200m water resistance rating — rare at this price.",
+    "price": "$54",
+    "img": "https://images.pexels.com/photos/280250/pexels-photo-280250.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/3QILLlM"
+  },
+  {
+    "type": "Apparel",
+    "title": "14oz Heavyweight Boxy Hoodie",
+    "desc": "Dropped shoulder, dense knit construction. Holds shape after repeated washes — most hoodies at this price don't.",
+    "price": "$58",
+    "img": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/3Q1jwiU"
+  },
+  {
+    "type": "Apparel",
+    "title": "Salomon Speedcross 6 Trail Shoes",
+    "desc": "High-grip terrain footwear that anchors a minimalist outfit without looking purely technical.",
+    "price": "$110",
+    "img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/44fYEYk"
+  },
+  {
+    "type": "Gear",
+    "title": "UGREEN Revodok Max 13-in-1 Dock",
+    "desc": "True 40Gbps Thunderbolt 4 throughput. Runs dual 4K displays without the bandwidth compromises cheaper docks make.",
+    "price": "$190",
+    "img": "https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/4oDpzac"
+  },
+  {
+    "type": "Gear",
+    "title": "Logitech Lift Vertical Mouse",
+    "desc": "A genuine ergonomic improvement, not just a marketing angle — noticeable after a few full work days.",
+    "price": "$70",
+    "img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=500&q=80",
+    "url": "https://amzn.to/4vnJegL"
   }
 ]
