@@ -2,7 +2,7 @@
   {
     "type": "Watches",
     "title": "Seiko 5 Sports SRPD Series",
-    "desc": "The most reliable entry point into automatic watches — proven NH36 movement, excellent parts ecosystem.",
+    "desc": "The definitive modern entry to automatic horology. We chose the SRPD for its bulletproof NH36 movement and the legendary 4 o'clock crown. Note: It gains/loses a few seconds daily — that's mechanical charm, not a defect.",
     "price": "$78",
     "img": "images/seiko-srpd.jpg",
     "url": "https://amzn.to/4xx2kTa"
@@ -10,15 +10,15 @@
   {
     "type": "Watches",
     "title": "Invicta Pro Diver 5053",
-    "desc": "NH35a-powered dive watch with a genuinely accurate 200m water resistance rating — rare at this price.",
+    "desc": "Powered by Seiko's NH35a automatic calibre with a genuinely tested 200m water resistance. A classic, high-contrast coin-edge bezel dive watch that punches way above its price tag for daily wear.",
     "price": "$54",
     "img": "images/invicta-5053.jpg",
     "url": "https://amzn.to/3QILLlM"
   },
   {
     "type": "Watches",
-    "title": "Seiko 5 Sports Blackout Bezel Kit",
-    "desc": "Ceramic insert and sapphire crystal upgrade for the SRPD platform — the build everyone's copying right now.",
+    "title": "Seiko 5 Blackout Mod Kit",
+    "desc": "The ultimate upgrade path for your SRPD platform. This complete kit features a matte ceramic bezel insert and a scratch-resistant sapphire crystal. It's the exact stealth build dominating watch forums right now.",
     "price": "$42",
     "img": "images/blackout-kit.jpg",
     "url": "https://amzn.to/4xx2kTa"
@@ -26,73 +26,9 @@
   {
     "type": "Watches",
     "title": "Seiko NH36 Automatic Movement",
-    "desc": "The exact movement powering most of our top picks — 41-hour reserve, hacking and hand-winding.",
+    "desc": "The pure mechanical heart. Features 41 hours of power reserve, reliable hacking, and hand-winding capabilities. The absolute gold standard for custom modders and horology enthusiasts rebuilding their daily beaters.",
     "price": "$36",
     "img": "images/nh36-movement.jpg",
     "url": "https://amzn.to/4xx2kTa"
-  },
-  {
-    "type": "Apparel",
-    "title": "14oz Heavyweight Boxy Hoodie",
-    "desc": "Dropped shoulder, dense knit construction. Holds shape after repeated washes — most hoodies at this price don't.",
-    "price": "$58",
-    "img": "images/boxy-hoodie.jpg",
-    "url": "https://amzn.to/3Q1jwiU"
-  },
-  {
-    "type": "Apparel",
-    "title": "Salomon Speedcross 6 Trail Shoes",
-    "desc": "High-grip terrain footwear that anchors a minimalist outfit without looking purely technical.",
-    "price": "$110",
-    "img": "images/speedcross6.jpg",
-    "url": "https://amzn.to/44fYEYk"
-  },
-  {
-    "type": "Apparel",
-    "title": "Heavyweight Cotton Overshirt, Stone",
-    "desc": "Structured layering piece that holds its shape — the anchor for the three-piece cool-weather formula.",
-    "price": "$74",
-    "img": "images/cotton-overshirt.jpg",
-    "url": "https://amzn.to/3Q1jwiU"
-  },
-  {
-    "type": "Apparel",
-    "title": "Heavyweight Cotton Tee, Black (Boxy Fit)",
-    "desc": "Matte-finish heavyweight cotton built for the all-black formula — texture does the work color usually does.",
-    "price": "$36",
-    "img": "images/boxy-tee.jpg",
-    "url": "https://amzn.to/3Q1jwiU"
-  },
-  {
-    "type": "Gear",
-    "title": "UGREEN Revodok Max 13-in-1 Dock",
-    "desc": "True 40Gbps Thunderbolt 4 throughput. Runs dual 4K displays without the bandwidth compromises cheaper docks make.",
-    "price": "$190",
-    "img": "images/ugreen-dock.jpg",
-    "url": "https://amzn.to/4oDpzac"
-  },
-  {
-    "type": "Gear",
-    "title": "Logitech Lift Vertical Mouse",
-    "desc": "A genuine ergonomic improvement, not just a marketing angle — noticeable after a few full work days.",
-    "price": "$70",
-    "img": "images/logitech-mouse.jpg",
-    "url": "https://amzn.to/4vnJegL"
-  },
-  {
-    "type": "Gear",
-    "title": "Sony WH-CH720N Noise Canceling Headphones",
-    "desc": "Active noise cancellation that actually improves call clarity from inconsistent work environments.",
-    "price": "$98",
-    "img": "images/sony-headphones.jpg",
-    "url": "https://amzn.to/4gt20yu"
-  },
-  {
-    "type": "Gear",
-    "title": "Single-Monitor Vertical Stand",
-    "desc": "Eye-level mounting that keeps a one-screen setup from feeling like a compromise.",
-    "price": "$45",
-    "img": "images/monitor-stand.jpg",
-    "url": "https://amzn.to/4oDpzac"
   }
 ]
