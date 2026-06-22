@@ -13,22 +13,22 @@
     "desc": "Powered by Seiko's NH35a automatic calibre with a genuinely tested 200m water resistance. A classic, high-contrast coin-edge bezel dive watch that punches way above its price tag for daily wear.",
     "price": "$87.45",
     "img": "images/invicta-5053.jpg",
-    "url": "https://www.amazon.com/Invicta-8926OB-Stainless-Automatic-Bracelet/dp/B000JQFX1G/ref=sr_1_2?crid=3MA4EDRFUWZ4J&dib=eyJ2IjoiMSJ9.ttPxsd_x8s6Id3bqsMbOamM821TtNN9Sb7QlMZ7ISTEddPbIAgKDBpY-ryL2tXx3wANADq_xKJK8EiA-E6dnsApQ-86QejUK5pTSbyEKvQvlVzcMbo9_x0cQVlSXu38jf8eWdhS1IV5SDDQWxEqkpkEkeWP0M1T4iEk7KXFOeOCOPy7qRlD3KeNy_z81hyDz92N2G7g6jZg4kW8rzstTbKzaWcGJBAo6rKBDYY2lQBNZrbpG8JGR-Xd0969RK_y7yBsyAdfRWoy5rSUPfiaatiXcrD88RoyP6TMVBdWLrYU.U4f8dfzk_8-Ht2Oqh3eBofDt2hb9vVeGeSoENYBTLkU&dib_tag=se&keywords=Invicta%2B8926OB&qid=1782111547&sprefix=invicta%2B8926ob%2Caps%2C453&sr=8-2&th=1"
+    "url": "https://amzn.to/3QILLlM"
   },
   {
     "type": "Watches",
-    "title": "Seiko 5 Blackout Mod Kit",
-    "desc": "The ultimate upgrade path for your SRPD platform. This complete kit features a matte ceramic bezel insert and a scratch-resistant sapphire crystal. It's the exact stealth build dominating watch forums right now.",
-    "price": "$42",
-    "img": "images/blackout-kit.jpg",
-    "url": "https://amzn.to/4xx2kTa"
+    "title": "Citizen Eco-Drive Chandler",
+    "desc": "The ultimate set-it-and-forget-it military field watch. Powered by any light source via Citizen's legendary Eco-Drive tech. Features a rugged canvas strap and zero battery maintenance required.",
+    "price": "$125",
+    "img": "images/citizen-field.jpg",
+    "url": "https://amzn.to/3QILLlM"
   },
   {
     "type": "Watches",
-    "title": "Seiko NH36 Automatic Movement",
-    "desc": "The pure mechanical heart. Features 41 hours of power reserve, reliable hacking, and hand-winding capabilities. The absolute gold standard for custom modders and horology enthusiasts rebuilding their daily beaters.",
-    "price": "$36",
-    "img": "images/nh36-movement.jpg",
+    "title": "Casio G-Shock GA-2100 'CasiOak'",
+    "desc": "An absolute icon in modern watch design. Features the legendary G-Shock shock resistance wrapped in a slim, octagonal carbon core guard structure. The indestructible daily beater for minimalists.",
+    "price": "$99",
+    "img": "images/casio-oak.jpg",
     "url": "https://amzn.to/4xx2kTa"
   }
 ]
