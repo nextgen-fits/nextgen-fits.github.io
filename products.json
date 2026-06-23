@@ -27,8 +27,72 @@
     "type": "Watches",
     "title": "Casio G-Shock GA-2100 'CasiOak'",
     "desc": "An absolute icon in modern watch design. Features the legendary G-Shock shock resistance wrapped in a slim, octagonal carbon core guard structure. The indestructible daily beater for minimalists.",
-    "price": "$108",
+    "price": "$99",
     "img": "images/casio-oak.jpg",
     "url": "https://www.amazon.com/Casio-G-Shock-GA-2100-1A1DR-Analog-Quartz/dp/B07WGJ1JNW/ref=sr_1_3?crid=3BTJHP28NU9QN&dib=eyJ2IjoiMSJ9.GHm2Ly6FSNGk9XJeflcW7H7I6ASMowMARR_1ysVP3TIHzQm1NLpCtgZtreo4waEjejLG10qm0T9rFTdXwUmvoveltEJaE6Os-duIxgTefxFV4El3oi29Xbe33kAm6V7KaGMoo3NQ32ughMFy0q-3FT9DgjXD-2fyRFkYW9Ypj9m56ygf5TeR_T5mqk3hZ4oVA7lAeikYx7f5G26Qt95U3qxdasXn5izxx8WH5EyVRWuFFb6YzfO5uhaS9eObr1iAV-kaOi7C1u1cr61iXEppclPimvZMWLBFwPhOplekpA8.49oqs57KhLfmfmYaFm0SR-bN7Iat8R7sH6wsY0s2_Ak&dib_tag=se&keywords=Casio+G-Shock+GA-2100+%27CasiOak&qid=1782223857&sprefix=casio+g-shock+ga-2100+%27casioak%2Caps%2C336&sr=8-3"
+  },
+  {
+    "type": "Apparel",
+    "title": "14oz Heavyweight Boxy Hoodie",
+    "desc": "Dropped shoulder, dense knit construction. Holds shape after repeated washes — most hoodies at this price don't.",
+    "price": "$58",
+    "img": "images/boxy-hoodie.jpg",
+    "url": "https://amzn.to/3Q1jwiU"
+  },
+  {
+    "type": "Apparel",
+    "title": "Salomon Speedcross 6 Trail Shoes",
+    "desc": "High-grip terrain footwear that anchors a minimalist outfit without looking purely technical.",
+    "price": "$110",
+    "img": "images/speedcross6.jpg",
+    "url": "https://amzn.to/44fYEYk"
+  },
+  {
+    "type": "Apparel",
+    "title": "Heavyweight Cotton Overshirt, Stone",
+    "desc": "Structured layering piece that holds its shape — the anchor for the three-piece cool-weather formula.",
+    "price": "$74",
+    "img": "images/cotton-overshirt.jpg",
+    "url": "https://amzn.to/3Q1jwiU"
+  },
+  {
+    "type": "Apparel",
+    "title": "Heavyweight Cotton Tee, Black (Boxy Fit)",
+    "desc": "Matte-finish heavyweight cotton built for the all-black formula — texture does the work color usually does.",
+    "price": "$36",
+    "img": "images/boxy-tee.jpg",
+    "url": "https://amzn.to/3Q1jwiU"
+  },
+  {
+    "type": "Gear",
+    "title": "UGREEN Revodok Max 13-in-1 Dock",
+    "desc": "True 40Gbps Thunderbolt 4 throughput. Runs dual 4K displays without the bandwidth compromises cheaper docks make.",
+    "price": "$190",
+    "img": "images/ugreen-dock.jpg",
+    "url": "https://amzn.to/4oDpzac"
+  },
+  {
+    "type": "Gear",
+    "title": "Logitech Lift Vertical Mouse",
+    "desc": "A genuine ergonomic improvement, not just a marketing angle — noticeable after a few full work days.",
+    "price": "$70",
+    "img": "images/logitech-mouse.jpg",
+    "url": "https://amzn.to/4vnJegL"
+  },
+  {
+    "type": "Gear",
+    "title": "Sony WH-CH720N Noise Canceling Headphones",
+    "desc": "Active noise cancellation that actually improves call clarity from inconsistent work environments.",
+    "price": "$98",
+    "img": "images/sony-headphones.jpg",
+    "url": "https://amzn.to/4gt20yu"
+  },
+  {
+    "type": "Gear",
+    "title": "Single-Monitor Vertical Stand",
+    "desc": "Eye-level mounting that keeps a one-screen setup from feeling like a compromise.",
+    "price": "$45",
+    "img": "images/monitor-stand.jpg",
+    "url": "https://amzn.to/4oDpzac"
   }
 ]
