@@ -15,14 +15,14 @@
  
     <title>NextGen Essentials — Automatic Watches, Modern Apparel & Desk Gear for Men</title>
     <meta name="description" content="Editorial picks on automatic watches under $200, minimalist menswear, and considered desk setups. We test, wear, and review — then tell you exactly what's worth buying.">
-    <link rel="canonical" href="https://nextgen-fits.github.io/" />
+    <link rel="canonical" href="https://nxgenpicks.com/" />
  
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NextGen Essentials">
     <meta property="og:title" content="NextGen Essentials — Automatic Watches, Modern Apparel & Desk Gear for Men">
     <meta property="og:description" content="Editorial picks on automatic watches under $200, minimalist menswear, and considered desk setups.">
-    <meta property="og:url" content="https://nextgen-fits.github.io/">
-    <meta property="og:image" content="https://nextgen-fits.github.io/images/og-cover.jpg">
+    <meta property="og:url" content="https://nxgenpicks.com/">
+    <meta property="og:image" content="https://nxgenpicks.com/images/og-cover.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NextGen Essentials">
     <meta name="twitter:description" content="Automatic watches, modern apparel & desk gear for men — reviewed and ranked.">
@@ -33,17 +33,17 @@
       "@graph": [
         {
           "@type": "Organization",
-          "@id": "https://nextgen-fits.github.io/#organization",
+          "@id": "https://nxgenpicks.com/#organization",
           "name": "NextGen Essentials",
-          "url": "https://nextgen-fits.github.io/",
-          "logo": "https://nextgen-fits.github.io/images/logo.png"
+          "url": "https://nxgenpicks.com/",
+          "logo": "https://nxgenpicks.com/images/logo.png"
         },
         {
           "@type": "WebSite",
-          "@id": "https://nextgen-fits.github.io/#website",
-          "url": "https://nextgen-fits.github.io/",
+          "@id": "https://nxgenpicks.com/#website",
+          "url": "https://nxgenpicks.com/",
           "name": "NextGen Essentials",
-          "publisher": { "@id": "https://nextgen-fits.github.io/#organization" }
+          "publisher": { "@id": "https://nxgenpicks.com/#organization" }
         }
       ]
     }
@@ -201,10 +201,8 @@
         .shelf-view-all { font-size: 0.78rem; color: var(--steel); text-decoration: none; white-space: nowrap; }
         .shelf-view-all:hover { color: var(--gold); }
  
-        /* 核心修复点 1：默认2列布局，加入弹性盒对齐支撑 */
         .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
         
-        /* 核心修复点 2：将卡片容器声明为自适应 Flexbox，使内部元素可分配垂直剩余空间 */
         .product-card { 
             background: var(--card); 
             border: 1px solid var(--line); 
@@ -215,7 +213,6 @@
         .product-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #000; position: relative; }
         .product-img img { width: 100%; height: 100%; object-fit: cover; }
         
-        /* 核心修复点 3：让主体内容区域充满上下空间 */
         .product-body { 
             padding: 16px; 
             display: flex;
@@ -226,7 +223,6 @@
         .product-card h4 { font-size: 0.88rem; color: #fff; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
         .product-card p { color: var(--steel); font-size: 0.76rem; line-height: 1.5; margin-bottom: 16px; }
         
-        /* 核心修复点 4：强制将价格行和购买按钮一律推到货架卡片最底部 */
         .product-price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; margin-bottom: 12px; }
         .product-price { font-family: "Fraunces", serif; font-size: 1.05rem; color: var(--gold); }
         .buy-btn {
@@ -308,7 +304,6 @@
             .hero h1 { font-size: 3rem; }
             .hero-desc { font-size: 1rem; }
             .showroom-grid { grid-template-columns: repeat(3, 1fr); }
-            /* 核心修复点 5：大屏状态下，货架完美呈现为横向 4 列的高级排版 */
             .product-grid { grid-template-columns: repeat(4, 1fr); }
             .article-item { grid-template-columns: 200px 1fr; }
             .showroom-card:hover { border-color: var(--gold); }
@@ -348,7 +343,7 @@
                 <span class="hero-price-note">on Amazon, price may vary</span>
             </div>
             <div class="hero-cta-row">
-                <a href="https://amzn.to/4erbuJz" class="hero-cta-primary" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+                <span id="dynamic-hero-link"><a href="https://amzn.to/4erbuJz" class="hero-cta-primary" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a></span>
                 <a href="/watches.html#watch-001" class="hero-cta-secondary">Read the full review</a>
             </div>
         </div>
@@ -434,8 +429,7 @@
             <h2>Latest writing</h2>
             <span class="index-label">All categories</span>
         </div>
-        <ul class="article-list" id="auto-news-feed" style="list-style:none;">
-            </ul>
+        <ul class="article-list" id="auto-news-feed" style="list-style:none;"></ul>
     </div>
  
     <div class="contact-section">
@@ -485,94 +479,7 @@
         }
  
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('/products.json?v=' + Date.now())
-                .then(res => res.json())
-                .then(products => {
-                    const shelves = {
-                        "Watches": document.getElementById("shelf-watches"),
-                        "Apparel": document.getElementById("shelf-apparel"),
-                        "Gear": document.getElementById("shelf-gear")
-                    };
-                    Object.keys(shelves).forEach(type => { shelves[type].innerHTML = ""; });
-                    products.forEach(item => {
-                        const target = shelves[item.type];
-                        if (target) target.innerHTML += renderProductCard(item);
-                    });
-                });
- 
-            const newsContainer = document.getElementById("auto-news-feed");
-            Promise.all([
-                fetch('/database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('/database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('/database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
-            ]).then(([gearPosts, watchPosts, apparelPosts]) => {
-                newsContainer.innerHTML = "";
-                const taggedGear = (gearPosts || []).map(p => ({ ...p, targetPage: '/gear.html', metaTag: 'Workspace' }));
-                const taggedWatches = (watchPosts || []).map(p => ({ ...p, targetPage: '/watches.html', metaTag: 'Horology' }));
-                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, targetPage: '/apparel.html', metaTag: 'Wardrobe' }));
- 
-                const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
-                pool.sort((a, b) => new Date(b.date) - new Date(a.date));
-                const finalThree = pool.slice(0, 4);
- 
-                finalThree.forEach(post => {
-                    let linkedItems = [];
-                    if (post.gear_list && post.gear_list.length) {
-                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url }));
-                    } else if (post.breakdown && post.breakdown.length) {
-                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url }));
-                    } else if (post.url) {
-                        linkedItems = [{ name: post.title, url: post.url }];
-                    }
- 
-                    let miniBuyHTML = "";
-                    if (linkedItems.length) {
-                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
-                            <div class="article-buy-mini">
-                                <img src="${post.cover_img}" alt="${item.name}">
-                                <div class="mini-info">
-                                    <span class="mini-label">Featured in this post</span>
-                                    <span class="mini-name">${item.name}</span>
-                                </div>
-                                <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
-                            </div>
-                        `).join("") + `</div>`;
-                    }
- 
-                    newsContainer.innerHTML += `
-                        <li class="article-item">
-                            <div class="showroom-img" style="aspect-ratio:4/3;">
-                                <img src="${post.cover_img}" alt="${post.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
-                            </div>
-                            <div>
-                                <span class="article-meta">${post.date} — ${post.metaTag}</span>
-                                <h3><a href="${post.targetPage}#${post.id}">${post.title}</a></h3>
-                                <p class="article-excerpt">${post.summary || post.desc}</p>
-                                ${miniBuyHTML}
-                            </div>
-                        </li>
-                    `;
-                });
-            });
-        });
-   <script>
-        function renderProductCard(item) {
-            return `
-                <div class="product-card">
-                    <div class="product-img"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
-                    <div class="product-body">
-                        <span class="product-type">${item.type}</span>
-                        <h4>${item.title}</h4>
-                        <p>${item.desc}</p>
-                        <div class="product-price-row"><span class="product-price">${item.price || ''}</span></div>
-                        <a href="${item.url}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
-                    </div>
-                </div>
-            `;
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            // 修复点 1：去掉开头多余的斜杠，确保换了独立域名后相对路径绝对精准
+            // 终极路径对齐：确保彻底摆脱任何特定域名的绝对前缀死锁
             fetch('products.json?v=' + Date.now())
                 .then(res => res.json())
                 .then(products => {
@@ -587,24 +494,22 @@
                         if (target) target.innerHTML += renderProductCard(item);
                     });
                 }).catch(err => console.error("Error loading products:", err));
-
+ 
             const newsContainer = document.getElementById("auto-news-feed");
-            
-            // 修复点 2：把底层数据库拉取路径也同步对齐为标准相对路径
             Promise.all([
                 fetch('database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
                 fetch('database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
                 fetch('database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
             ]).then(([gearPosts, watchPosts, apparelPosts]) => {
                 newsContainer.innerHTML = "";
-                const taggedGear = (gearPosts || []).map(p => ({ ...p, targetPage: '/gear.html', metaTag: 'Workspace' }));
-                const taggedWatches = (watchPosts || []).map(p => ({ ...p, targetPage: '/watches.html', metaTag: 'Horology' }));
-                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, targetPage: '/apparel.html', metaTag: 'Wardrobe' }));
-
+                const taggedGear = (gearPosts || []).map(p => ({ ...p, targetPage: 'gear.html', metaTag: 'Workspace' }));
+                const taggedWatches = (watchPosts || []).map(p => ({ ...p, targetPage: 'watches.html', metaTag: 'Horology' }));
+                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, targetPage: 'apparel.html', metaTag: 'Wardrobe' }));
+ 
                 const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
                 pool.sort((a, b) => new Date(b.date) - new Date(a.date));
                 const finalThree = pool.slice(0, 4);
-
+ 
                 finalThree.forEach(post => {
                     let linkedItems = [];
                     if (post.gear_list && post.gear_list.length) {
@@ -614,7 +519,7 @@
                     } else if (post.url) {
                         linkedItems = [{ name: post.title, url: post.url }];
                     }
-
+ 
                     let miniBuyHTML = "";
                     if (linkedItems.length) {
                         miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
@@ -628,7 +533,7 @@
                             </div>
                         `).join("") + `</div>`;
                     }
-
+ 
                     newsContainer.innerHTML += `
                         <li class="article-item">
                             <div class="showroom-img" style="aspect-ratio:4/3;">
@@ -646,3 +551,5 @@
             }).catch(err => console.error("Error loading news feed:", err));
         });
     </script>
+</body>
+</html>
