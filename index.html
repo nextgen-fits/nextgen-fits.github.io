@@ -555,6 +555,94 @@
                 });
             });
         });
+   <script>
+        function renderProductCard(item) {
+            return `
+                <div class="product-card">
+                    <div class="product-img"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
+                    <div class="product-body">
+                        <span class="product-type">${item.type}</span>
+                        <h4>${item.title}</h4>
+                        <p>${item.desc}</p>
+                        <div class="product-price-row"><span class="product-price">${item.price || ''}</span></div>
+                        <a href="${item.url}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // 修复点 1：去掉开头多余的斜杠，确保换了独立域名后相对路径绝对精准
+            fetch('products.json?v=' + Date.now())
+                .then(res => res.json())
+                .then(products => {
+                    const shelves = {
+                        "Watches": document.getElementById("shelf-watches"),
+                        "Apparel": document.getElementById("shelf-apparel"),
+                        "Gear": document.getElementById("shelf-gear")
+                    };
+                    Object.keys(shelves).forEach(type => { shelves[type].innerHTML = ""; });
+                    products.forEach(item => {
+                        const target = shelves[item.type];
+                        if (target) target.innerHTML += renderProductCard(item);
+                    });
+                }).catch(err => console.error("Error loading products:", err));
+
+            const newsContainer = document.getElementById("auto-news-feed");
+            
+            // 修复点 2：把底层数据库拉取路径也同步对齐为标准相对路径
+            Promise.all([
+                fetch('database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
+            ]).then(([gearPosts, watchPosts, apparelPosts]) => {
+                newsContainer.innerHTML = "";
+                const taggedGear = (gearPosts || []).map(p => ({ ...p, targetPage: '/gear.html', metaTag: 'Workspace' }));
+                const taggedWatches = (watchPosts || []).map(p => ({ ...p, targetPage: '/watches.html', metaTag: 'Horology' }));
+                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, targetPage: '/apparel.html', metaTag: 'Wardrobe' }));
+
+                const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
+                pool.sort((a, b) => new Date(b.date) - new Date(a.date));
+                const finalThree = pool.slice(0, 4);
+
+                finalThree.forEach(post => {
+                    let linkedItems = [];
+                    if (post.gear_list && post.gear_list.length) {
+                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url }));
+                    } else if (post.breakdown && post.breakdown.length) {
+                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url }));
+                    } else if (post.url) {
+                        linkedItems = [{ name: post.title, url: post.url }];
+                    }
+
+                    let miniBuyHTML = "";
+                    if (linkedItems.length) {
+                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
+                            <div class="article-buy-mini">
+                                <img src="${post.cover_img}" alt="${item.name}">
+                                <div class="mini-info">
+                                    <span class="mini-label">Featured in this post</span>
+                                    <span class="mini-name">${item.name}</span>
+                                </div>
+                                <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
+                            </div>
+                        `).join("") + `</div>`;
+                    }
+
+                    newsContainer.innerHTML += `
+                        <li class="article-item">
+                            <div class="showroom-img" style="aspect-ratio:4/3;">
+                                <img src="${post.cover_img}" alt="${post.title}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                            </div>
+                            <div>
+                                <span class="article-meta">${post.date} — ${post.metaTag}</span>
+                                <h3><a href="${post.targetPage}#${post.id}">${post.title}</a></h3>
+                                <p class="article-excerpt">${post.summary || post.desc}</p>
+                                ${miniBuyHTML}
+                            </div>
+                        </li>
+                    `;
+                });
+            }).catch(err => console.error("Error loading news feed:", err));
+        });
     </script>
-</body>
-</html>
