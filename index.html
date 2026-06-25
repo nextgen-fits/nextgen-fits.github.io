@@ -177,15 +177,36 @@
         .hero-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
         .hero-price { font-family: "Fraunces", serif; font-size: 2.1rem; color: var(--gold); }
         .hero-price-note { font-size: 0.8rem; color: var(--steel); }
-        .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+        
+        /* 核心修复点 1：确保父容器内的所有元素（包括被span包裹的）都按中心线彻底切齐 */
+        .hero-cta-row { 
+            display: flex; 
+            gap: 14px; 
+            flex-wrap: wrap;
+            align-items: center; 
+        }
+        
+        /* 核心修复点 2：显式强制指定 48px 绝对高度，配合 inline-flex 让文字完美上下居中 */
         .hero-cta-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             background: var(--gold); color: var(--ink); text-decoration: none;
-            padding: 16px 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+            padding: 0 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
+            height: 48px;
+            box-sizing: border-box;
         }
         .hero-cta-primary:hover { background: #fff; }
+        
+        /* 核心修复点 3：同步对齐 48px 高度与 inline-flex 盒子模型，实现绝对平行线 */
         .hero-cta-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid var(--line); color: var(--steel); text-decoration: none;
-            padding: 16px 22px; font-size: 0.82rem; letter-spacing: 0.02em;
+            padding: 0 22px; font-size: 0.82rem; letter-spacing: 0.02em;
+            height: 48px;
+            box-sizing: border-box;
         }
         .hero-cta-secondary:hover { color: #fff; border-color: var(--steel); }
  
@@ -479,7 +500,6 @@
         }
  
         document.addEventListener("DOMContentLoaded", function () {
-            // 路径去除开头的斜杠，完美自适应相对路径
             fetch('products.json?v=' + Date.now())
                 .then(res => res.json())
                 .then(products => {
@@ -496,7 +516,6 @@
                 }).catch(err => console.error("Error loading products:", err));
  
             const newsContainer = document.getElementById("auto-news-feed");
-            // 核心修复点：将大写的 Gear.json、Watches.json、Apparel.json 彻底改为小写，无缝咬合真实文件名
             Promise.all([
                 fetch('database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
                 fetch('database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
