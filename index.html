@@ -480,7 +480,7 @@
  
         document.addEventListener("DOMContentLoaded", function () {
             // 终极路径对齐：确保彻底摆脱任何特定域名的绝对前缀死锁
-            fetch('products.json?v=' + Date.now())
+            fetch('/products.json?v=' + Date.now())
                 .then(res => res.json())
                 .then(products => {
                     const shelves = {
@@ -497,9 +497,9 @@
  
             const newsContainer = document.getElementById("auto-news-feed");
             Promise.all([
-                fetch('database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
+                fetch('/database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('/database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('/database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
             ]).then(([gearPosts, watchPosts, apparelPosts]) => {
                 newsContainer.innerHTML = "";
                 const taggedGear = (gearPosts || []).map(p => ({ ...p, targetPage: 'gear.html', metaTag: 'Workspace' }));
