@@ -4,8 +4,8 @@
     "date": "JUNE 15, 2026",
     "title": "Building a Minimalist Triple-Monitor Desk Setup Without the Cable Mess",
     "summary": "How to configure a dual-laptop multi-monitor workstation without visual noise. We review why true Thunderbolt 4 bandwidth is required for dual 4K displays and detail an efficient under-desk cable management plan for tech enthusiasts.",
-    "cover_img": "https://images.pexels.com/photos/7770011/pexels-photo-7770011.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
-    "content": "A minimalist desk setup isn't really about owning fewer things — it's about making the things you do own invisible until you need them. The biggest threat to that is bandwidth-starved docking stations that force you to choose between display count and data throughput.",
+    "cover_img": "images/blog/triple-monitor-setup.jpg",
+    "url": "https://amzn.to/4oDpzac",
     "gear_list": [
       {
         "name": "UGREEN Revodok Max 13-in-1 Thunderbolt 4 Dock",
@@ -23,7 +23,7 @@
     "title": "The Everyday Carry (EDC) Tech Setup for Remote Work and Travel",
     "summary": "Optimizing a travel friendly everyday carry gear list for digital nomads. From active noise canceling headphones for noisy coffee shops to rugged Gorpcore footwear, here is the minimalist remote work checklist that actually survives daily transitions.",
     "cover_img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
-    "content": "Everyday carry tech fails when it's chosen for how it looks rather than how often it's actually used. The real test is whether something survives three months of daily transitions between locations without you replacing it out of frustration.",
+    "url": "https://amzn.to/4gt20yu",
     "gear_list": [
       {
         "name": "Sony WH-CH720N Noise Canceling Headphones",
@@ -41,7 +41,7 @@
     "title": "The Single-Monitor Ergonomic Setup That Outperforms Multi-Screen Clutter",
     "summary": "Why a high-contrast one-screen setup outperforms heavy multi-display monitors for focus. We break down the window management advantages of an eye-level single monitor mount paired with an ergonomic vertical mouse.",
     "cover_img": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
-    "content": "A single well-chosen monitor at the right height and distance often outperforms a sprawling multi-screen setup for focus-heavy work — the constraint forces better window management instead of spreading attention across panels.",
+    "url": "https://amzn.to/4vnJegL",
     "gear_list": [
       {
         "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
