@@ -177,16 +177,16 @@
         .hero-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
         .hero-price { font-family: "Fraunces", serif; font-size: 2.1rem; color: var(--gold); }
         .hero-price-note { font-size: 0.8rem; color: var(--steel); }
-        
-        /* 核心修复点 1：确保父容器内的所有元素（包括被span包裹的）都按中心线彻底切齐 */
+         
+        /* 确保父容器内的所有元素都按中心线彻底切齐 */
         .hero-cta-row { 
             display: flex; 
             gap: 14px; 
             flex-wrap: wrap;
             align-items: center; 
         }
-        
-        /* 核心修复点 2：显式强制指定 48px 绝对高度，配合 inline-flex 让文字完美上下居中 */
+         
+        /* 显式强制指定 48px 绝对高度，配合 inline-flex 让文字完美上下居中 */
         .hero-cta-primary {
             display: inline-flex;
             align-items: center;
@@ -197,8 +197,8 @@
             box-sizing: border-box;
         }
         .hero-cta-primary:hover { background: #fff; }
-        
-        /* 核心修复点 3：同步对齐 48px 高度与 inline-flex 盒子模型，实现绝对平行线 */
+         
+        /* 同步对齐 48px 高度与 inline-flex 盒子模型，实现绝对平行线 */
         .hero-cta-secondary {
             display: inline-flex;
             align-items: center;
@@ -223,7 +223,7 @@
         .shelf-view-all:hover { color: var(--gold); }
  
         .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-        
+         
         .product-card { 
             background: var(--card); 
             border: 1px solid var(--line); 
@@ -233,7 +233,7 @@
         }
         .product-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #000; position: relative; }
         .product-img img { width: 100%; height: 100%; object-fit: cover; }
-        
+         
         .product-body { 
             padding: 16px; 
             display: flex;
@@ -243,7 +243,7 @@
         .product-type { font-size: 0.6rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 6px; }
         .product-card h4 { font-size: 0.88rem; color: #fff; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
         .product-card p { color: var(--steel); font-size: 0.76rem; line-height: 1.5; margin-bottom: 16px; }
-        
+         
         .product-price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; margin-bottom: 12px; }
         .product-price { font-family: "Fraunces", serif; font-size: 1.05rem; color: var(--gold); }
         .buy-btn {
@@ -419,7 +419,7 @@
                 <div class="showroom-body">
                     <span class="showroom-vol">Vol. 01 — Horology</span>
                     <h3>Automatic Watches</h3>
-                    <p>Movement breakdowns, honest reviews, and the best mechanical Watches under $200 — tested, not just photographed.</p>
+                    <p>Movement breakdowns, honest reviews, and the best mechanical watches under $200 — tested, not just photographed.</p>
                 </div>
             </a>
             <a href="apparel.html" class="showroom-card">
@@ -533,25 +533,32 @@
                 finalThree.forEach(post => {
                     let linkedItems = [];
                     if (post.gear_list && post.gear_list.length) {
-                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url }));
+                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img }));
                     } else if (post.breakdown && post.breakdown.length) {
-                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url }));
+                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img }));
                     } else if (post.url) {
-                        linkedItems = [{ name: post.title, url: post.url }];
+                        linkedItems = [{ name: post.title, url: post.url, img: post.cover_img }];
                     }
  
                     let miniBuyHTML = "";
                     if (linkedItems.length) {
-                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
-                            <div class="article-buy-mini">
-                                <img src="${post.cover_img}" alt="${item.name}">
-                                <div class="mini-info">
-                                    <span class="mini-label">Featured in this post</span>
-                                    <span class="mini-name">${item.name}</span>
+                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => {
+                            // 自动化路径逻辑：如果单品有独立配图(item.img)，则优先使用独立小图；若没有，则用文章大图(post.cover_img)兜底
+                            let thumbImg = item.img || post.cover_img;
+                            if (post.id === 'watch-001') {
+                                thumbImg = 'images/blog/seiko-5-thumb.jpg';
+                            }
+                            return `
+                                <div class="article-buy-mini">
+                                    <img src="${thumbImg}" alt="${item.name}">
+                                    <div class="mini-info">
+                                        <span class="mini-label">Featured in this post</span>
+                                        <span class="mini-name">${item.name}</span>
+                                    </div>
+                                    <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
                                 </div>
-                                <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
-                            </div>
-                        `).join("") + `</div>`;
+                            `;
+                        }).join("") + `</div>`;
                     }
  
                     newsContainer.innerHTML += `
