@@ -14,18 +14,18 @@
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
  
     <title>NextGen Essentials — Automatic Watches, Modern Apparel & Desk Gear for Men</title>
-    <meta name="description" content="Editorial picks on automatic Watches under $200, minimalist menswear, and considered desk setups. We test, wear, and review — then tell you exactly what's worth buying.">
+    <meta name="description" content="Editorial picks on automatic watches under $200, minimalist menswear, and considered desk setups. We test, wear, and review — then tell you exactly what's worth buying.">
     <link rel="canonical" href="https://nxgenpicks.com/" />
  
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="NextGen Essentials">
     <meta property="og:title" content="NextGen Essentials — Automatic Watches, Modern Apparel & Desk Gear for Men">
-    <meta property="og:description" content="Editorial picks on automatic Watches under $200, minimalist menswear, and considered desk setups.">
+    <meta property="og:description" content="Editorial picks on automatic watches under $200, minimalist menswear, and considered desk setups.">
     <meta property="og:url" content="https://nxgenpicks.com/">
     <meta property="og:image" content="https://nxgenpicks.com/images/og-cover.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NextGen Essentials">
-    <meta name="twitter:description" content="Automatic Watches, modern Apparel & desk Gear for men — reviewed and ranked.">
+    <meta name="twitter:description" content="Automatic watches, modern apparel & desk gear for men — reviewed and ranked.">
  
     <script type="application/ld+json">
     {
@@ -85,7 +85,6 @@
             color: var(--gold);
         }
  
-        /* Disclosure banner */
         .disclosure-bar {
             background: var(--card);
             border-bottom: 1px solid var(--line);
@@ -96,7 +95,6 @@
         }
         .disclosure-bar a { color: var(--steel); text-decoration: underline; }
  
-        /* Nav */
         nav {
             position: sticky; top: 0; width: 100%;
             background: rgba(10,10,11,0.92);
@@ -121,7 +119,6 @@
         }
         .nav-links a:hover { color: #fff; }
  
-        /* Hero — asymmetric split */
         .hero {
             max-width: 1180px; margin: 0 auto;
             padding: 88px 24px 64px;
@@ -129,9 +126,7 @@
             border-bottom: 1px solid var(--line);
         }
         .hero-eyebrow { margin-bottom: 18px; }
-        .hero h1 {
-            font-size: 2.1rem; line-height: 1.18; color: #fff; margin-bottom: 20px;
-        }
+        .hero h1 { font-size: 2.1rem; line-height: 1.18; color: #fff; margin-bottom: 20px; }
         .hero h1 em { color: var(--gold); font-style: normal; }
         .hero-desc { color: var(--steel); font-size: 0.95rem; max-width: 480px; line-height: 1.65; }
         .hero-image {
@@ -140,7 +135,6 @@
         }
         .hero-image img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.92); }
  
-        /* Sections */
         .section { max-width: 1180px; margin: 0 auto; padding: 56px 24px; }
         .section-head {
             display: flex; align-items: baseline; justify-content: space-between;
@@ -149,7 +143,6 @@
         .section-head h2 { font-size: 1.4rem; color: #fff; }
         .section-head .index-label { font-size: 0.7rem; color: var(--steel); letter-spacing: 0.1em; }
  
-        /* Category showrooms */
         .showroom-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
         .showroom-card {
             display: block; text-decoration: none; background: var(--card);
@@ -163,7 +156,6 @@
         .showroom-body h3 { font-size: 1.15rem; color: #fff; margin-bottom: 10px; }
         .showroom-body p { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
  
-        /* Hero — Weekly Pick */
         .weekly-pick-tag {
             display: inline-flex; align-items: center; gap: 8px;
             background: var(--card); border: 1px solid var(--gold);
@@ -177,40 +169,18 @@
         .hero-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
         .hero-price { font-family: "Fraunces", serif; font-size: 2.1rem; color: var(--gold); }
         .hero-price-note { font-size: 0.8rem; color: var(--steel); }
-         
-        /* 确保父容器内的所有元素都按中心线彻底切齐 */
-        .hero-cta-row { 
-            display: flex; 
-            gap: 14px; 
-            flex-wrap: wrap;
-            align-items: center; 
-        }
-         
-        /* 显式强制指定 48px 绝对高度，配合 inline-flex 让文字完美上下居中 */
+        .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
         .hero-cta-primary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             background: var(--gold); color: var(--ink); text-decoration: none;
-            padding: 0 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
-            height: 48px;
-            box-sizing: border-box;
+            padding: 16px 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
         }
         .hero-cta-primary:hover { background: #fff; }
-         
-        /* 同步对齐 48px 高度与 inline-flex 盒子模型，实现绝对平行线 */
         .hero-cta-secondary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
             border: 1px solid var(--line); color: var(--steel); text-decoration: none;
-            padding: 0 22px; font-size: 0.82rem; letter-spacing: 0.02em;
-            height: 48px;
-            box-sizing: border-box;
+            padding: 16px 22px; font-size: 0.82rem; letter-spacing: 0.02em;
         }
         .hero-cta-secondary:hover { color: #fff; border-color: var(--steel); }
  
-        /* Shelf — horizontal category product rail */
         .shelf-section { max-width: 1180px; margin: 0 auto; padding: 48px 24px; border-top: 1px solid var(--line); }
         .shelf-head {
             display: flex; align-items: baseline; justify-content: space-between;
@@ -223,27 +193,18 @@
         .shelf-view-all:hover { color: var(--gold); }
  
         .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-         
-        .product-card { 
-            background: var(--card); 
-            border: 1px solid var(--line); 
-            display: flex;
-            flex-direction: column;
-            height: 100%;
+        .product-card {
+            background: var(--card); border: 1px solid var(--line);
+            display: flex; flex-direction: column; height: 100%;
         }
         .product-img { width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #000; position: relative; }
         .product-img img { width: 100%; height: 100%; object-fit: cover; }
-         
-        .product-body { 
-            padding: 16px; 
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
+        .product-body {
+            padding: 16px; display: flex; flex-direction: column; flex-grow: 1;
         }
         .product-type { font-size: 0.6rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 6px; }
         .product-card h4 { font-size: 0.88rem; color: #fff; font-weight: 600; margin-bottom: 8px; line-height: 1.3; }
         .product-card p { color: var(--steel); font-size: 0.76rem; line-height: 1.5; margin-bottom: 16px; }
-         
         .product-price-row { display: flex; align-items: baseline; justify-content: space-between; margin-top: auto; margin-bottom: 12px; }
         .product-price { font-family: "Fraunces", serif; font-size: 1.05rem; color: var(--gold); }
         .buy-btn {
@@ -253,7 +214,6 @@
         }
         .buy-btn:hover { border-color: var(--gold); color: var(--gold); }
  
-        /* Narrow-screen safety */
         @media screen and (max-width: 380px) {
             .product-grid { gap: 10px; }
             .product-body { padding: 12px; }
@@ -262,7 +222,6 @@
             .buy-btn { font-size: 0.62rem; padding: 9px 4px; letter-spacing: 0.02em; }
         }
  
-        /* Inline mini buy-card(s) */
         .article-buy-stack { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
         .article-buy-mini {
             display: flex; align-items: center; gap: 12px;
@@ -280,7 +239,6 @@
         }
         .article-buy-mini .mini-btn:hover { background: #fff; }
  
-        /* Editorial / article feed */
         .article-list { display: flex; flex-direction: column; }
         .article-item {
             display: grid; grid-template-columns: 1fr; gap: 16px;
@@ -293,7 +251,6 @@
         .article-item h3 a:hover { color: var(--gold); }
         .article-excerpt { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
  
-        /* Contact */
         .contact-section { background: var(--card); border-top: 1px solid var(--line); padding: 64px 24px; }
         .contact-box { max-width: 540px; margin: 0 auto; }
         .contact-box .eyebrow { display: block; text-align: center; margin-bottom: 14px; }
@@ -342,9 +299,9 @@
         <div class="nav-container">
             <a href="/" class="nav-logo">NextGen <span>Essentials</span></a>
             <div class="nav-links">
-                <a href="watches.html">Watches</a>
-                <a href="apparel.html">Apparel</a>
-                <a href="gear.html">Gear</a>
+                <a href="/watches.html">Watches</a>
+                <a href="/apparel.html">Apparel</a>
+                <a href="/gear.html">Gear</a>
             </div>
         </div>
     </nav>
@@ -364,12 +321,12 @@
                 <span class="hero-price-note">on Amazon, price may vary</span>
             </div>
             <div class="hero-cta-row">
-                <span id="dynamic-hero-link"><a href="https://amzn.to/4erbuJz" class="hero-cta-primary" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a></span>
-                <a href="watches.html#watch-001" class="hero-cta-secondary">Read the full review</a>
+                <a href="https://amzn.to/4erbuJz" class="hero-cta-primary" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+                <a href="/watches.html#watch-001" class="hero-cta-secondary">Read the full review</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/Seiko-5-1.jpg" alt="Seiko 5 Sports automatic watch, this week's featured pick" loading="eager" width="900" height="675">
+            <img src="/images/Seiko-5-1.jpg" alt="Seiko 5 Sports automatic watch, this week's featured pick" loading="eager" width="900" height="675">
         </div>
     </div>
  
@@ -379,9 +336,9 @@
                 <span class="shelf-eyebrow">Vol. 01</span>
                 <h2>Watches</h2>
             </div>
-            <a href="watches.html" class="shelf-view-all">View all Watches →</a>
+            <a href="/watches.html" class="shelf-view-all">View all watches →</a>
         </div>
-        <div class="product-grid" id="shelf-Watches"></div>
+        <div class="product-grid" id="shelf-watches"></div>
     </div>
  
     <div class="shelf-section">
@@ -390,9 +347,9 @@
                 <span class="shelf-eyebrow">Vol. 02</span>
                 <h2>Apparel</h2>
             </div>
-            <a href="apparel.html" class="shelf-view-all">View all Apparel →</a>
+            <a href="/apparel.html" class="shelf-view-all">View all apparel →</a>
         </div>
-        <div class="product-grid" id="shelf-Apparel"></div>
+        <div class="product-grid" id="shelf-apparel"></div>
     </div>
  
     <div class="shelf-section">
@@ -401,9 +358,9 @@
                 <span class="shelf-eyebrow">Vol. 03</span>
                 <h2>Desk & Tech Gear</h2>
             </div>
-            <a href="gear.html" class="shelf-view-all">View all Gear →</a>
+            <a href="/gear.html" class="shelf-view-all">View all gear →</a>
         </div>
-        <div class="product-grid" id="shelf-Gear"></div>
+        <div class="product-grid" id="shelf-gear"></div>
     </div>
  
     <div class="section" style="border-top: 1px solid var(--line);">
@@ -412,9 +369,9 @@
             <span class="index-label">3 categories</span>
         </div>
         <div class="showroom-grid">
-            <a href="watches.html" class="showroom-card">
+            <a href="/watches.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="images/watch-deal.jpg" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437">
+                    <img src="/images/watch-deal.jpg" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437">
                 </div>
                 <div class="showroom-body">
                     <span class="showroom-vol">Vol. 01 — Horology</span>
@@ -422,9 +379,9 @@
                     <p>Movement breakdowns, honest reviews, and the best mechanical watches under $200 — tested, not just photographed.</p>
                 </div>
             </a>
-            <a href="apparel.html" class="showroom-card">
+            <a href="/apparel.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="images/apparel-deal.jpg" alt="Minimalist menswear outfit with heavyweight hoodie and trail footwear" loading="lazy" width="700" height="437">
+                    <img src="/images/apparel-deal.jpg" alt="Minimalist menswear outfit with heavyweight hoodie and trail footwear" loading="lazy" width="700" height="437">
                 </div>
                 <div class="showroom-body">
                     <span class="showroom-vol">Vol. 02 — Wardrobe</span>
@@ -432,9 +389,9 @@
                     <p>Capsule wardrobe pieces built around heavyweight basics — fewer items, better fabric, less noise.</p>
                 </div>
             </a>
-            <a href="gear.html" class="showroom-card">
+            <a href="/gear.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="images/gear-deal.jpg" alt="Minimalist desk setup with dual monitor and cable management" loading="lazy" width="700" height="437">
+                    <img src="/images/gear-deal.jpg" alt="Minimalist desk setup with dual monitor and cable management" loading="lazy" width="700" height="437">
                 </div>
                 <div class="showroom-body">
                     <span class="showroom-vol">Vol. 03 — Workspace</span>
@@ -458,7 +415,7 @@
             <span class="eyebrow">Custom requests</span>
             <h2>Looking for something specific?</h2>
             <p>Want a recommendation for a particular budget or use case — a watch mod, a capsule wardrobe, a desk build? Tell us what you're working with and we'll point you in the right direction.</p>
-            <form action="https://formspree.io/f/xwvdlnzd" method="POST">
+            <form action="https://formspree.io/f/mnnqgqzo" method="POST">
                 <input type="hidden" name="_replyto" value="nextgenlabs.us@gmail.com">
                 <input type="hidden" name="_to" value="nextgenlabs.us@gmail.com">
                 <div class="form-group">
@@ -500,65 +457,60 @@
         }
  
         document.addEventListener("DOMContentLoaded", function () {
-            fetch('products.json?v=' + Date.now())
+            // 关键修复：所有fetch路径改为以/开头的绝对路径
+            // 确保在自定义域名下不会出现路径解析错误
+            fetch('/products.json?v=' + Date.now())
                 .then(res => res.json())
                 .then(products => {
                     const shelves = {
-                        "Watches": document.getElementById("shelf-Watches"),
-                        "Apparel": document.getElementById("shelf-Apparel"),
-                        "Gear": document.getElementById("shelf-Gear")
+                        "Watches": document.getElementById("shelf-watches"),
+                        "Apparel": document.getElementById("shelf-apparel"),
+                        "Gear": document.getElementById("shelf-gear")
                     };
                     Object.keys(shelves).forEach(type => { shelves[type].innerHTML = ""; });
                     products.forEach(item => {
                         const target = shelves[item.type];
                         if (target) target.innerHTML += renderProductCard(item);
                     });
-                }).catch(err => console.error("Error loading products:", err));
+                }).catch(err => console.error("Products load error:", err));
  
             const newsContainer = document.getElementById("auto-news-feed");
             Promise.all([
-                fetch('database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
-            ]).then(([GearPosts, watchPosts, ApparelPosts]) => {
+                fetch('/database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('/database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
+                fetch('/database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
+            ]).then(([gearPosts, watchPosts, apparelPosts]) => {
                 newsContainer.innerHTML = "";
-                const taggedGear = (GearPosts || []).map(p => ({ ...p, targetPage: 'gear.html', metaTag: 'Workspace' }));
-                const taggedWatches = (watchPosts || []).map(p => ({ ...p, targetPage: 'watches.html', metaTag: 'Horology' }));
-                const taggedApparel = (ApparelPosts || []).map(p => ({ ...p, targetPage: 'apparel.html', metaTag: 'Wardrobe' }));
+                const taggedGear = (gearPosts || []).map(p => ({ ...p, metaTag: 'Workspace' }));
+                const taggedWatches = (watchPosts || []).map(p => ({ ...p, metaTag: 'Horology' }));
+                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, metaTag: 'Wardrobe' }));
  
                 const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
                 pool.sort((a, b) => new Date(b.date) - new Date(a.date));
-                const finalThree = pool.slice(0, 4);
+                const finalFour = pool.slice(0, 4);
  
-                finalThree.forEach(post => {
+                finalFour.forEach(post => {
                     let linkedItems = [];
                     if (post.gear_list && post.gear_list.length) {
-                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img }));
+                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url }));
                     } else if (post.breakdown && post.breakdown.length) {
-                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img }));
+                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url }));
                     } else if (post.url) {
-                        linkedItems = [{ name: post.title, url: post.url, img: post.cover_img }];
+                        linkedItems = [{ name: post.title, url: post.url }];
                     }
  
                     let miniBuyHTML = "";
                     if (linkedItems.length) {
-                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => {
-                            // 自动化路径逻辑：如果单品有独立配图(item.img)，则优先使用独立小图；若没有，则用文章大图(post.cover_img)兜底
-                            let thumbImg = item.img || post.cover_img;
-                            if (post.id === 'watch-001') {
-                                thumbImg = 'images/blog/seiko-5-thumb.jpg';
-                            }
-                            return `
-                                <div class="article-buy-mini">
-                                    <img src="${thumbImg}" alt="${item.name}">
-                                    <div class="mini-info">
-                                        <span class="mini-label">Featured in this post</span>
-                                        <span class="mini-name">${item.name}</span>
-                                    </div>
-                                    <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
+                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
+                            <div class="article-buy-mini">
+                                <img src="${post.cover_img}" alt="${item.name}">
+                                <div class="mini-info">
+                                    <span class="mini-label">Featured in this post</span>
+                                    <span class="mini-name">${item.name}</span>
                                 </div>
-                            `;
-                        }).join("") + `</div>`;
+                                <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
+                            </div>
+                        `).join("") + `</div>`;
                     }
  
                     newsContainer.innerHTML += `
@@ -568,14 +520,14 @@
                             </div>
                             <div>
                                 <span class="article-meta">${post.date} — ${post.metaTag}</span>
-                                <h3><a href="${post.targetPage}#${post.id}">${post.title}</a></h3>
+                                <h3><a href="${post.page_url}">${post.title}</a></h3>
                                 <p class="article-excerpt">${post.summary || post.desc}</p>
                                 ${miniBuyHTML}
                             </div>
                         </li>
                     `;
                 });
-            }).catch(err => console.error("Error loading news feed:", err));
+            }).catch(err => console.error("News feed error:", err));
         });
     </script>
 </body>
