@@ -2,30 +2,30 @@
   {
     "id": "apparel-001",
     "date": "JUNE 10, 2026",
-    "category": "WARDROBE",
     "title": "The 14oz Heavyweight Boxy Hoodie Review: Is Dense Knit Worth the Premium?",
     "summary": "An honest look into the trending dropped shoulder silhouette for minimalist menswear. We evaluate fabric durability, shrink-resistance, and whether a 14oz heavy-grade cotton knit holds its structure better than standard streetwear options.",
     "cover_img": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
     "url": "https://amzn.to/3Q1jwiU",
-    "breakdown": [
+    "gear_list": [
       {
-        "piece": "14oz Heavyweight Boxy Hoodie",
-        "url": "https://amzn.to/3Q1jwiU"
+        "name": "14oz Heavyweight Boxy Hoodie",
+        "url": "https://amzn.to/3Q1jwiU",
+        "img": "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
       }
     ]
   },
   {
     "id": "apparel-002",
     "date": "MAY 20, 2026",
-    "category": "GEAR ON FOOT",
     "title": "Salomon Speedcross 6 Trail Shoes: Gorpcore Icon or Pure Performance?",
     "summary": "Reviewing the technical terrain footwear that anchored the techwear and capsule wardrobe movement. Testing the aggressive Mud Contagrip lug pattern in urban environments and evaluating long-term walking comfort for daily rotation.",
     "cover_img": "https://images.pexels.com/photos/2113994/pexels-photo-2113994.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
     "url": "https://amzn.to/44fYEYk",
-    "breakdown": [
+    "gear_list": [
       {
-        "piece": "Salomon Speedcross 6 Trail Shoes",
-        "url": "https://amzn.to/44fYEYk"
+        "name": "Salomon Speedcross 6 Trail Shoes",
+        "url": "https://amzn.to/44fYEYk",
+        "img": "images/blog/salomon-shoes-thumb.jpg"
       }
     ]
   }
