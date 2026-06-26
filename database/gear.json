@@ -9,11 +9,13 @@
     "gear_list": [
       {
         "name": "UGREEN Revodok Max 13-in-1 Thunderbolt 4 Dock",
-        "url": "https://amzn.to/4oDpzac"
+        "url": "https://amzn.to/4oDpzac",
+        "img": "images/blog/ugreen-revodok-thumb.jpg"
       },
       {
         "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
-        "url": "https://amzn.to/4vnJegL"
+        "url": "https://amzn.to/4vnJegL",
+        "img": "images/blog/logitech-lift-thumb.jpg"
       }
     ]
   },
@@ -27,11 +29,13 @@
     "gear_list": [
       {
         "name": "Sony WH-CH720N Noise Canceling Headphones",
-        "url": "https://amzn.to/4gt20yu"
+        "url": "https://amzn.to/4gt20yu",
+        "img": "images/blog/sony-headphones-thumb.jpg"
       },
       {
         "name": "Salomon Speedcross 6 All-Weather Shoes",
-        "url": "https://amzn.to/44fYEYk"
+        "url": "https://amzn.to/44fYEYk",
+        "img": "images/blog/salomon-shoes-thumb.jpg"
       }
     ]
   },
@@ -45,7 +49,8 @@
     "gear_list": [
       {
         "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
-        "url": "https://amzn.to/4vnJegL"
+        "url": "https://amzn.to/4vnJegL",
+        "img": "images/blog/logitech-lift-thumb.jpg"
       }
     ]
   }
