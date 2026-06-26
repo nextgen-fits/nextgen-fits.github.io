@@ -3,13 +3,13 @@
     "id": "watch-001",
     "date": "JUNE 16, 2026",
     "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Automatic Movement Worth Building Around?",
-    "summary": "A comprehensive look into the tactical stealth aesthetic everyone is copying. We unpack the true performance of the NH36 automatic calibre and evaluate if an aftermarket coin-edge bezel and sapphire crystal upgrade genuinely elevate this iconic mechanical daily watch.",
+    "summary": "A comprehensive look at the tactical stealth build everyone is copying. We unpack the true performance of the NH36 automatic calibre and evaluate if the aftermarket bezel and sapphire crystal upgrade genuinely elevates this iconic daily watch.",
     "cover_img": "images/blog/seiko-5-blackout.jpg",
-    "url": "https://amzn.to/4xx2k",
+    "page_url": "/watches/seiko-5-blackout-mod-nh36-review.html",
     "gear_list": [
       {
         "name": "Seiko 5 Sports Automatic SRPD Series",
-        "url": "https://amzn.to/4xx2k",
+        "url": "https://amzn.to/4xx2kTa",
         "img": "images/blog/seiko-5-thumb.jpg"
       }
     ]
@@ -17,10 +17,10 @@
   {
     "id": "watch-002",
     "date": "JUNE 25, 2026",
-    "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch the Ultimate Ecosystem Alternative?",
-    "summary": "We spend 14 days testing the high-contrast ultra-large budget smartwatch that horizontal forums are talking about. With built-in GPS, robust fitness tracking calibration, and a 10-day battery capacity, we evaluate if its high performance justifies skipped premiums.",
+    "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch Worth It?",
+    "summary": "We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.",
     "cover_img": "images/blog/zhinengbiao.jpg",
-    "url": "https://www.amazon.com/dp/B0C7GJDZD7",
+    "page_url": "/watches/amazfit-bip-5-review.html",
     "gear_list": [
       {
         "name": "Amazfit Bip 5 Smartwatch with GPS",
