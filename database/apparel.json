@@ -2,6 +2,7 @@
   {
     "id": "apparel-001",
     "date": "JUNE 20, 2026",
+    "category": "WARDROBE",
     "title": "The 14oz Heavyweight Boxy Hoodie & Salomon Speedcross 6: Ultimate Minimalist Wardrobe",
     "summary": "An honest look at building a structured capsule wardrobe. We evaluate the durability of a 14oz heavy-grade cotton knit and test how aggressive trail shoes perform in urban daily rotation.",
     "cover_img": "images/blog/lianmaoshan.jpg",
@@ -15,9 +16,8 @@
       {
         "name": "Salomon Speedcross 6 Trail Shoes",
         "url": "https://amzn.to/44fYEYk",
-        "img": "salomon-shoes-thumb.jpg.jpg"
+        "img": "images/blog/salomon-shoes-thumb.jpg"
       }
     ]
   }
 ]
-
