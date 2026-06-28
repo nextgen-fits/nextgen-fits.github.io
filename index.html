@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -224,8 +225,8 @@
  
         .article-buy-stack { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
         .article-buy-mini {
-            display: flex; align-items: center; gap: 12px;
             background: var(--ink); border: 1px solid var(--line);
+            display: flex; align-items: center; gap: 12px;
             padding: 12px 14px;
         }
         .article-buy-mini img { width: 44px; height: 44px; object-fit: cover; border-radius: 2px; flex-shrink: 0; }
@@ -251,7 +252,8 @@
         .article-item h3 a:hover { color: var(--gold); }
         .article-excerpt { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
  
-        .contact-section { background: var(--card); border-top: 1px solid var(--line); padding: 64px 24px; }
+        /* 核心修复：背景变回深邃的纯黑，输入框改为微灰立体色 */
+        .contact-section { background: var(--ink); border-top: 1px solid var(--line); padding: 64px 24px; }
         .contact-box { max-width: 540px; margin: 0 auto; }
         .contact-box .eyebrow { display: block; text-align: center; margin-bottom: 14px; }
         .contact-box h2 { text-align: center; font-size: 1.5rem; margin-bottom: 12px; }
@@ -259,7 +261,7 @@
         .form-group { margin-bottom: 18px; }
         .form-group label { display: block; font-size: 0.7rem; color: var(--steel); margin-bottom: 8px; letter-spacing: 0.04em; }
         .form-group input, .form-group textarea {
-            width: 100%; background: var(--ink); border: 1px solid var(--line);
+            width: 100%; background: var(--card); border: 1px solid var(--line);
             padding: 14px; color: #fff; font-size: 0.88rem; font-family: inherit; border-radius: 2px;
         }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); }
@@ -363,6 +365,7 @@
         <div class="product-grid" id="shelf-gear"></div>
     </div>
  
+    <!-- 细节校准：洗刷掉此处的 background 残留 -->
     <div class="section" style="border-top: 1px solid var(--line);">
         <div class="section-head">
             <h2>Browse by category</h2>
@@ -402,7 +405,8 @@
         </div>
     </div>
  
-    <div class="section" style="border-top: 1px solid var(--line); background: var(--card);">
+    <!-- 细节校准：洗刷掉此处的 background 残留 -->
+    <div class="section" style="border-top: 1px solid var(--line);">
         <div class="section-head">
             <h2>Latest writing</h2>
             <span class="index-label">All categories</span>
@@ -493,7 +497,6 @@
                 finalFour.forEach(post => {
                     let linkedItems = [];
                     if (post.gear_list && post.gear_list.length) {
-                        // 核心防呆：优先抓取具体单品的 img 图片资产
                         linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img || post.cover_img }));
                     } else if (post.breakdown && post.breakdown.length) {
                         linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img || post.cover_img }));
@@ -515,7 +518,6 @@
                         `).join("") + `</div>`;
                     }
  
-                    // 强制清洗英文时间输出
                     let displayDate = post.date;
                     if(displayDate && displayDate.includes('年')) {
                         const match = displayDate.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
