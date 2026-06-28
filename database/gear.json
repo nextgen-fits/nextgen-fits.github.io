@@ -2,6 +2,7 @@
   {
     "id": "gear-001",
     "date": "JUNE 15, 2026",
+    "category": "WORKSPACE",
     "title": "Building a Minimalist Triple-Monitor Desk Setup Without the Cable Mess",
     "summary": "How to configure a dual-laptop multi-monitor workstation without visual noise. We review why true Thunderbolt 4 bandwidth is required for dual 4K displays and detail an efficient cable management plan.",
     "cover_img": "images/blog/triple-monitor-setup.jpg",
@@ -22,6 +23,7 @@
   {
     "id": "gear-002",
     "date": "MAY 28, 2026",
+    "category": "WORKSPACE",
     "title": "The Everyday Carry Tech Setup for Remote Work and Travel",
     "summary": "From active noise canceling headphones for noisy coffee shops to rugged footwear — the minimalist remote work checklist that actually survives daily transitions between locations.",
     "cover_img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
@@ -42,6 +44,7 @@
   {
     "id": "gear-003",
     "date": "MAY 09, 2026",
+    "category": "WORKSPACE",
     "title": "The Single-Monitor Ergonomic Setup That Outperforms Multi-Screen Clutter",
     "summary": "Why a one-screen setup often outperforms heavy multi-display configurations for focus-heavy work — and how to make it feel deliberate rather than minimal by necessity.",
     "cover_img": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
