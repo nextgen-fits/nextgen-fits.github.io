@@ -2,18 +2,13 @@
   {
     "id": "watch-001",
     "date": "JUNE 16, 2026",
-    "category": "HOROLOGY",
-    "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Automatic Movement Worth Building Around?",
-    "summary": "A comprehensive look at the tactical stealth build everyone is copying. We unpack the true performance of the NH36 automatic calibre and evaluate if the aftermarket bezel and sapphire crystal upgrade genuinely elevates this iconic daily watch.",
-    "cover_img": "images/blog/seiko-5-blackout.jpg",
-    "page_url": "/watches/seiko-5-blackout-mod-nh36-review.html",
-    "gear_list": [
-      {
-        "name": "Seiko 5 Sports Automatic SRPD Series",
-        "url": "https://amzn.to/4xx2kTa",
-        "img": "images/blog/seiko-5-thumb.jpg"
-      }
-    ]
+    "category": "MOD GUIDE",
+    "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Worth Building Around?",
+    "summary": "A full breakdown of the blackout build everyone's copying — what the NH36 movement actually delivers, and where the aftermarket bezel and sapphire swap genuinely improves the watch.",
+    "cover_img": "/images/Seiko-5-1.jpg",
+    "page_url": "/watches/seiko-5-sports-blackout-mod-nh36.html"
+  }
+]
   },
   {
     "id": "watch-002",
