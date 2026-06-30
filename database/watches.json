@@ -5,25 +5,16 @@
     "category": "MOD GUIDE",
     "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Worth Building Around?",
     "summary": "A full breakdown of the blackout build everyone's copying — what the NH36 movement actually delivers, and where the aftermarket bezel and sapphire swap genuinely improves the watch.",
-    "cover_img": "/images/Seiko-5-1.jpg",
-    "page_url": "/watches/seiko-5-sports-blackout-mod-nh36.html"
-  }
-]
+    "cover_img": "/images/blog/seiko-5-blackout.jpg",
+    "page_url": "/watches/seiko-5-blackout-mod-nh36-review.html"
   },
   {
     "id": "watch-002",
     "date": "JUNE 25, 2026",
-    "category": "HOROLOGY",
+    "category": "REVIEW",
     "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch Worth It?",
     "summary": "We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.",
-    "cover_img": "images/blog/zhinengbiao.jpg",
-    "page_url": "/watches/amazfit-bip-5-review.html",
-    "gear_list": [
-      {
-        "name": "Amazfit Bip 5 Smartwatch with GPS",
-        "url": "https://www.amazon.com/dp/B0C7GJDZD7",
-        "img": "images/blog/zhinengbiao.jpg"
-      }
-    ]
+    "cover_img": "/images/blog/zhinengbiao.jpg",
+    "page_url": "/watches/amazfit-bip-5-review.html"
   }
 ]
