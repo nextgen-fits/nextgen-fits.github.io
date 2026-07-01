@@ -5,18 +5,18 @@
     "category": "WORKSPACE",
     "title": "Building a Minimalist Triple-Monitor Desk Setup Without the Cable Mess",
     "summary": "How to configure a dual-laptop multi-monitor workstation without visual noise. We review why true Thunderbolt 4 bandwidth is required for dual 4K displays and detail an efficient cable management plan.",
-    "cover_img": "images/blog/triple-monitor-setup.jpg",
+    "cover_img": "/images/blog/triple-monitor-setup.jpg",
     "page_url": "/gear/minimalist-triple-monitor-setup.html",
     "gear_list": [
       {
         "name": "UGREEN Revodok Max 13-in-1 Thunderbolt 4 Dock",
         "url": "https://amzn.to/4oDpzac",
-        "img": "images/blog/ugreen-revodok-thumb.jpg"
+        "img": "/images/blog/ugreen-revodok-thumb.jpg"
       },
       {
         "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
         "url": "https://amzn.to/4vnJegL",
-        "img": "images/blog/logitech-lift-thumb.jpg"
+        "img": "/images/blog/logitech-lift-thumb.jpg"
       }
     ]
   },
@@ -26,13 +26,13 @@
     "category": "WORKSPACE",
     "title": "The Everyday Carry Tech Setup for Remote Work and Travel",
     "summary": "From active noise canceling headphones for noisy coffee shops to rugged tech — the minimalist remote work checklist that actually survives daily transitions between locations.",
-    "cover_img": "images/blog/yidongbangong.jpg",
+    "cover_img": "/images/blog/yidongbangong.jpg",
     "page_url": "/gear/edc-tech-setup-remote-work.html",
     "gear_list": [
       {
         "name": "Sony WH-CH720N Noise Canceling Headphones",
         "url": "https://amzn.to/4gt20yu",
-        "img": "images/blog/sony-headphones-thumb.jpg"
+        "img": "/images/blog/sony-headphones-thumb.jpg"
       }
     ]
   },
@@ -48,7 +48,7 @@
       {
         "name": "Logitech Lift Vertical Ergonomic Wireless Mouse",
         "url": "https://amzn.to/4vnJegL",
-        "img": "images/blog/logitech-lift-thumb.jpg"
+        "img": "/images/blog/logitech-lift-thumb.jpg"
       }
     ]
   }
