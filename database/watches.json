@@ -1,5 +1,21 @@
 [
   {
+    "id": "watch-003",
+    "date": "JUNE 30, 2026",
+    "category": "REVIEW",
+    "title": "The Undisputed Value King: Why the Orient Kamasu is the Best Automatic Watch Under $200",
+    "summary": "An honest, long-form expert review of the Orient Kamasu automatic watch. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.",
+    "cover_img": "/images/blog/orient-kamasu-hero.jpg",
+    "page_url": "/watches/orient-kamasu-automatic-diver-review.html",
+    "gear_list": [
+      {
+        "name": "Orient Kamasu Automatic Diver Watch",
+        "url": "https://amzn.to/3W9L8Wp",
+        "img": "/images/blog/seiko-5-thumb.jpg"
+      }
+    ]
+  },
+  {
     "id": "watch-001",
     "date": "JUNE 16, 2026",
     "category": "MOD GUIDE",
