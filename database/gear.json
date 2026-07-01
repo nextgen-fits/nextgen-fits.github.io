@@ -25,19 +25,14 @@
     "date": "MAY 28, 2026",
     "category": "WORKSPACE",
     "title": "The Everyday Carry Tech Setup for Remote Work and Travel",
-    "summary": "From active noise canceling headphones for noisy coffee shops to rugged footwear — the minimalist remote work checklist that actually survives daily transitions between locations.",
-    "cover_img": "https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+    "summary": "From active noise canceling headphones for noisy coffee shops to rugged tech — the minimalist remote work checklist that actually survives daily transitions between locations.",
+    "cover_img": "images/blog/yidongbangong.jpg",
     "page_url": "/gear/edc-tech-setup-remote-work.html",
     "gear_list": [
       {
         "name": "Sony WH-CH720N Noise Canceling Headphones",
         "url": "https://amzn.to/4gt20yu",
         "img": "images/blog/sony-headphones-thumb.jpg"
-      },
-      {
-        "name": "Salomon Speedcross 6 All-Weather Shoes",
-        "url": "https://amzn.to/44fYEYk",
-        "img": "images/blog/salomon-shoes-thumb.jpg"
       }
     ]
   },
