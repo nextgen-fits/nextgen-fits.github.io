@@ -1,46 +1,92 @@
 [
+
   {
+
     "id": "watch-004",
+
     "date": "JULY 3, 2026",
+
     "category": "ROUNDUP GUIDE",
+
     "title": "The Beginner Watch Matrix: 10 Best Mechanical Watches Reviewed",
+
     "summary": "The definitive 2026 expert matrix for beginners. We test and rank 10 incredible mechanical timepieces from TIME100, Seiko, and Orient to Tissot to find the absolute maximum value for your dollar.",
-    "cover_img": "/images/blog/Seiko-5.jpg",
+
+    "cover_img": "/images/Blog/watch-citizen-fugu.jpg",
+
     "page_url": "/watches/top-10-beginner-mechanical-watches-2026.html",
+
     "gear_list": []
+
   },
+
   {
+
     "id": "watch-003",
+
     "date": "JUNE 30, 2026",
+
     "category": "REVIEW",
+
     "title": "The Undisputed Value King: Why the Orient Kamasu is the Best Automatic Watch Under $200",
+
     "summary": "An honest, long-form expert review of the Orient Kamasu automatic watch. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.",
+
     "cover_img": "/images/watch-deal.jpg",
+
     "page_url": "/watches/orient-kamasu-automatic-diver-review.html",
+
     "gear_list": [
+
       {
+
         "name": "Orient Kamasu Automatic Diver Watch",
+
         "url": "https://amzn.to/4vboF69",
+
         "img": "/images/watch-deal.jpg"
+
       }
+
     ]
+
   },
+
   {
+
     "id": "watch-001",
+
     "date": "JUNE 16, 2026",
+
     "category": "MOD GUIDE",
+
     "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Worth Building Around?",
+
     "summary": "A full breakdown of the blackout build everyone's copying — what the NH36 movement actually delivers, and where the aftermarket bezel and sapphire swap genuinely improves the watch.",
-    "cover_img": "/images/blog/Seiko-5-1.jpg",
+
+    "cover_img": "/images/Blog/watch-deal.jpg",
+
     "page_url": "/watches/seiko-5-blackout-mod-nh36-review.html"
+
   },
+
   {
+
     "id": "watch-002",
+
     "date": "JUNE 25, 2026",
+
     "category": "REVIEW",
+
     "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch Worth It?",
+
     "summary": "We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.",
-    "cover_img": "/images/blog/casio-oak.jpg",
+
+    "cover_img": "/images/Blog/watch-deal.jpg",
+
     "page_url": "/watches/amazfit-bip-5-review.html"
+
   }
-]
+
+] 
+
