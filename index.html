@@ -33,15 +33,15 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
           "@id": "https://nxgenpicks.com/#organization",
+          "@type": "Organization",
           "name": "NextGen Essentials",
           "url": "https://nxgenpicks.com/",
           "logo": "https://nxgenpicks.com/images/logo.png"
         },
         {
-          "@type": "WebSite",
           "@id": "https://nxgenpicks.com/#website",
+          "@type": "WebSite",
           "url": "https://nxgenpicks.com/",
           "name": "NextGen Essentials",
           "publisher": { "@id": "https://nxgenpicks.com/#organization" }
@@ -252,7 +252,6 @@
         .article-item h3 a:hover { color: var(--gold); }
         .article-excerpt { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
  
-        /* 核心修复：背景变回深邃的纯黑，输入框改为微灰立体色 */
         .contact-section { background: var(--ink); border-top: 1px solid var(--line); padding: 64px 24px; }
         .contact-box { max-width: 540px; margin: 0 auto; }
         .contact-box .eyebrow { display: block; text-align: center; margin-bottom: 14px; }
@@ -365,7 +364,6 @@
         <div class="product-grid" id="shelf-gear"></div>
     </div>
  
-    <!-- 细节校准：洗刷掉此处的 background 残留 -->
     <div class="section" style="border-top: 1px solid var(--line);">
         <div class="section-head">
             <h2>Browse by category</h2>
@@ -374,7 +372,8 @@
         <div class="showroom-grid">
             <a href="/watches.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="/images/watch-deal.jpg" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437">
+                    <!-- 🚀 核心修正：完美更新这里的大分类卡片封面路径，去掉了 watches/ 前缀 -->
+                    <img src="images/blog/orient-kamasu-hero.png" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437">
                 </div>
                 <div class="showroom-img-body" style="padding: 26px; border-top: 1px solid var(--line);">
                     <span class="showroom-vol">Vol. 01 — Horology</span>
@@ -405,7 +404,6 @@
         </div>
     </div>
  
-    <!-- 细节校准：洗刷掉此处的 background 残留 -->
     <div class="section" style="border-top: 1px solid var(--line);">
         <div class="section-head">
             <h2>Latest writing</h2>
