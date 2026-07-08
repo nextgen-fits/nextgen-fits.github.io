@@ -63,7 +63,7 @@
         .article-card:first-child { padding-top: 0; }
         .article-card:hover { opacity: 0.8; }
         .card-thumb { width: 160px; aspect-ratio: 16/10; overflow: hidden; background: var(--card); border: 1px solid var(--line); flex-shrink: 0; }
-        .card-thumb img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88); }
+        .card-thumb img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88); background-color: var(--card); }
         .card-body { display: flex; flex-direction: column; justify-content: center; }
         .card-meta { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 8px; }
         .card-title { font-size: 1.15rem; color: #fff; margin-bottom: 10px; line-height: 1.3; }
@@ -105,8 +105,17 @@
             <p>No RGB, no clutter — just the hardware that actually changes how a workday feels. Every article links directly to the exact pieces we used.</p>
         </div>
         <div class="article-index">
+
+            <!-- ============================================================ -->
+            <!-- 文章 1：三屏桌面搭建 -->
+            <!-- ============================================================ -->
             <a href="/gear/minimalist-triple-monitor-setup.html" class="article-card">
-                <div class="card-thumb"><img src="/images/blog/triple-monitor-setup.jpg" alt="Minimalist triple-monitor desk setup with Thunderbolt dock and cable management" loading="eager"></div>
+                <div class="card-thumb">
+                    <img src="/images/blog/triple-monitor-setup.jpg" 
+                         alt="Minimalist triple-monitor desk setup with Thunderbolt dock and cable management" 
+                         loading="eager"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                </div>
                 <div class="card-body">
                     <span class="card-meta">JUNE 15, 2026 — WORKSPACE BUILD</span>
                     <h2 class="card-title">Building a Minimalist Triple-Monitor Setup Without the Cable Mess</h2>
@@ -114,8 +123,18 @@
                     <span class="card-read-more">Read full review →</span>
                 </div>
             </a>
+
+            <!-- ============================================================ -->
+            <!-- 文章 2：EDC 远程办公装备 -->
+            <!-- 建议：将图片下载到本地 /images/blog/edc-tech-setup.jpg -->
+            <!-- ============================================================ -->
             <a href="/gear/edc-tech-setup-remote-work.html" class="article-card">
-                <div class="card-thumb"><img src="https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=400&q=80" alt="Everyday carry tech gear flat lay including headphones and accessories" loading="lazy"></div>
+                <div class="card-thumb">
+                    <img src="https://images.pexels.com/photos/400678/pexels-photo-400678.jpeg?auto=compress&cs=tinysrgb&w=400&q=80" 
+                         alt="Everyday carry tech gear flat lay including headphones and accessories" 
+                         loading="lazy"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                </div>
                 <div class="card-body">
                     <span class="card-meta">MAY 28, 2026 — EDC</span>
                     <h2 class="card-title">The Everyday Carry Tech Setup for Remote Work and Travel</h2>
@@ -123,8 +142,18 @@
                     <span class="card-read-more">Read full review →</span>
                 </div>
             </a>
+
+            <!-- ============================================================ -->
+            <!-- 文章 3：单屏人体工学搭建 -->
+            <!-- 建议：将图片下载到本地 /images/blog/single-monitor-setup.jpg -->
+            <!-- ============================================================ -->
             <a href="/gear/single-monitor-ergonomic-setup.html" class="article-card">
-                <div class="card-thumb"><img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&q=80" alt="Clean minimalist home office desk with single monitor and warm lighting" loading="lazy"></div>
+                <div class="card-thumb">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400&q=80" 
+                         alt="Clean minimalist home office desk with single monitor and warm lighting" 
+                         loading="lazy"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                </div>
                 <div class="card-body">
                     <span class="card-meta">MAY 09, 2026 — WORKSPACE BUILD</span>
                     <h2 class="card-title">The Single-Monitor Ergonomic Setup That Outperforms Multi-Screen Clutter</h2>
@@ -132,6 +161,7 @@
                     <span class="card-read-more">Read full review →</span>
                 </div>
             </a>
+
         </div>
     </div>
     <footer>
