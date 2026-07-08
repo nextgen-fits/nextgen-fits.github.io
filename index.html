@@ -330,7 +330,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="/images/Seiko-5-1.jpg" alt="Seiko 5 Sports automatic watch, this week's featured pick" loading="eager" width="900" height="675">
+            <img src="/images/Seiko-5-1.jpg" alt="Seiko 5 Sports automatic watch, this week's featured pick" loading="eager" width="900" height="675" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22675%22%3E%3Crect fill=%22%23111113%22 width=%22900%22 height=%22675%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2224%22%3ENo Image%3C/text%3E%3C/svg%3E';">
         </div>
     </div>
  
@@ -375,9 +375,9 @@
         <div class="showroom-grid">
             <a href="/watches.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="/images/watch-deal.jpg" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437">
+                    <img src="/images/watch-deal.jpg" alt="Automatic mechanical watch macro shot on dark background" loading="lazy" width="700" height="437" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22437%22%3E%3Crect fill=%22%23111113%22 width=%22700%22 height=%22437%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2220%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-                <div class="showroom-img-body" style="padding: 26px; border-top: 1px solid var(--line);">
+                <div class="showroom-body">
                     <span class="showroom-vol">Vol. 01 — Horology</span>
                     <h3>Automatic Watches</h3>
                     <p>Movement breakdowns, honest reviews, and the best mechanical watches under $200 — tested, not just photographed.</p>
@@ -385,9 +385,9 @@
             </a>
             <a href="/apparel.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="/images/apparel-deal.jpg" alt="Minimalist menswear outfit with heavyweight hoodie and trail footwear" loading="lazy" width="700" height="437">
+                    <img src="/images/apparel-deal.jpg" alt="Minimalist menswear outfit with heavyweight hoodie and trail footwear" loading="lazy" width="700" height="437" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22437%22%3E%3Crect fill=%22%23111113%22 width=%22700%22 height=%22437%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2220%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-                <div class="showroom-img-body" style="padding: 26px; border-top: 1px solid var(--line);">
+                <div class="showroom-body">
                     <span class="showroom-vol">Vol. 02 — Wardrobe</span>
                     <h3>Modern Apparel</h3>
                     <p>Capsule wardrobe pieces built around heavyweight basics — fewer items, better fabric, less noise.</p>
@@ -395,9 +395,9 @@
             </a>
             <a href="/gear.html" class="showroom-card">
                 <div class="showroom-img">
-                    <img src="/images/gear-deal.jpg" alt="Minimalist desk setup with dual monitor and cable management" loading="lazy" width="700" height="437">
+                    <img src="/images/gear-deal.jpg" alt="Minimalist desk setup with dual monitor and cable management" loading="lazy" width="700" height="437" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22700%22 height=%22437%22%3E%3Crect fill=%22%23111113%22 width=%22700%22 height=%22437%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2220%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-                <div class="showroom-img-body" style="padding: 26px; border-top: 1px solid var(--line);">
+                <div class="showroom-body">
                     <span class="showroom-vol">Vol. 03 — Workspace</span>
                     <h3>Desk & Tech Gear</h3>
                     <p>Considered desk setups and everyday-carry tech that earns its space — docks, mice, and the rest.</p>
@@ -423,15 +423,15 @@
                 <input type="hidden" name="_replyto" value="nextgenlabs.us@gmail.com">
                 <input type="hidden" name="_to" value="nextgenlabs.us@gmail.com">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="id-name">Name</label>
                     <input type="text" id="id-name" name="name" placeholder="Your name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="id-email">Email</label>
                     <input type="email" id="id-email" name="email" placeholder="you@email.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">What are you looking for?</label>
+                    <label for="id-message">What are you looking for?</label>
                     <textarea id="id-message" name="message" rows="4" placeholder="Tell us your budget, style, and what you need it for..." required></textarea>
                 </div>
                 <div id="form-status" style="margin-top:10px; font-size:0.8rem; display:none;"></div>
@@ -446,106 +446,43 @@
     </footer>
  
     <script>
-        function renderProductCard(item) {
-            return `
-                <div class="product-card">
-                    <div class="product-img"><img src="${item.img}" alt="${item.title}" loading="lazy"></div>
-                    <div class="product-body">
-                        <span class="product-type">${item.type}</span>
-                        <h4>${item.title}</h4>
-                        <p>${item.desc}</p>
-                        <div class="product-price-row"><span class="product-price">${item.price || ''}</span></div>
-                        <a href="${item.url}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
-                    </div>
-                </div>
-            `;
-        }
- 
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch('/products.json?v=' + Date.now())
-                .then(res => res.json())
-                .then(products => {
-                    const shelves = {
-                        "Watches": document.getElementById("shelf-watches"),
-                        "Apparel": document.getElementById("shelf-apparel"),
-                        "Gear": document.getElementById("shelf-gear")
-                    };
-                    Object.keys(shelves).forEach(type => { if(shelves[type]) shelves[type].innerHTML = ""; });
-                    products.forEach(item => {
-                        const target = shelves[item.type];
-                        if (target) target.innerHTML += renderProductCard(item);
-                    });
-                }).catch(err => console.error("Products load error:", err));
- 
-            const newsContainer = document.getElementById("auto-news-feed");
-            Promise.all([
-                fetch('/database/gear.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('/database/watches.json?v=' + Date.now()).then(r => r.json()).catch(() => []),
-                fetch('/database/apparel.json?v=' + Date.now()).then(r => r.json()).catch(() => [])
-            ]).then(([gearPosts, watchPosts, apparelPosts]) => {
-                if(!newsContainer) return;
-                newsContainer.innerHTML = "";
-                
-                const taggedGear = (gearPosts || []).map(p => ({ ...p, metaTag: 'WORKSPACE', clean_img: p.cover_img }));
-                const taggedWatches = (watchPosts || []).map(p => ({ ...p, metaTag: 'HOROLOGY', clean_img: p.cover_img }));
-                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, metaTag: 'WARDROBE', clean_img: p.cover_img }));
- 
-                const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
-                pool.sort((a, b) => new Date(b.date) - new Date(a.date));
-                const finalFour = pool.slice(0, 4);
- 
-                let finalHTML = "";
-                finalFour.forEach(post => {
-                    let linkedItems = [];
-                    if (post.gear_list && post.gear_list.length) {
-                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img }));
-                    } else if (post.breakdown && post.breakdown.length) {
-                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img }));
-                    } else if (post.url) {
-                        linkedItems = [{ name: post.title, url: post.url, img: post.clean_img }];
-                    }
- 
-                    let miniBuyHTML = "";
-                    if (linkedItems.length) {
-                        miniBuyHTML = `<div class="article-buy-stack">` + linkedItems.map(item => `
-                            <div class="article-buy-mini">
-                                <img src="${item.img}" alt="${item.name}">
-                                <div class="mini-info">
-                                    <span class="mini-label">Featured in this post</span>
-                                    <span class="mini-name">${item.name}</span>
-                                </div>
-                                <a href="${item.url}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
-                            </div>
-                        `).join("") + `</div>`;
-                    }
- 
-                    let displayDate = post.date;
-                    if(displayDate && displayDate.includes('年')) {
-                        const match = displayDate.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
-                        if(match) {
-                            const months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUNE", "JULY", "AUG", "SEPT", "OCT", "NOV", "DEC"];
-                            displayDate = `${months[parseInt(match[2])-1]} ${match[3]}, ${match[1]}`;
-                        }
-                    }
- 
-                    // ⚙️ 核心修正：直接注入完美匹配的物理路径
-                    finalHTML += `
-                        <li class="article-item">
-                            <div class="article-thumb-wrapper">
-                                <img src="${post.clean_img}" alt="${post.title}" loading="lazy">
-                            </div>
-                            <div>
-                                <span class="article-meta">${displayDate} — ${post.metaTag}</span>
-                                <h3><a href="${post.page_url}">${post.title}</a></h3>
-                                <p class="article-excerpt">${post.summary || post.desc || ''}</p>
-                                ${miniBuyHTML}
-                            </div>
-                        </li>
-                    `;
-                });
-                newsContainer.innerHTML = finalHTML;
-            }).catch(err => console.error("News feed error:", err));
-        });
-    </script>
-</body>
-</html>
+        // ============================================================
+        // ✅ 备用产品数据（当 products.json 加载失败时使用）
+        // ============================================================
+        var FALLBACK_PRODUCTS = [
+            { type: "Watches", img: "/images/watch-1.jpg", title: "Seiko 5 Sports SRPD", desc: "NH36 movement, day-date, 100m WR", price: "$229", url: "https://amzn.to/4erbuJz" },
+            { type: "Watches", img: "/images/watch-2.jpg", title: "Orient Kamasu", desc: "In-house caliber, sapphire crystal", price: "$199", url: "https://amzn.to/3XxYyZz" },
+            { type: "Watches", img: "/images/watch-3.jpg", title: "Timex Marlin", desc: "Hand-wind, vintage reissue", price: "$159", url: "https://amzn.to/3AaBbCc" },
+            { type: "Watches", img: "/images/watch-4.jpg", title: "Invicta Pro Diver", desc: "NH35A movement, affordable diver", price: "$89", url: "https://amzn.to/4dDdEeF" },
+            { type: "Apparel", img: "/images/apparel-1.jpg", title: "Heavyweight Hoodie", desc: "100% cotton, 450gsm, relaxed fit", price: "$78", url: "https://amzn.to/3XxYyZz" },
+            { type: "Apparel", img: "/images/apparel-2.jpg", title: "Selvedge Denim", desc: "Japanese fabric, raw edge", price: "$142", url: "https://amzn.to/3AaBbCc" },
+            { type: "Apparel", img: "/images/apparel-3.jpg", title: "Merino Crewneck", desc: "Wool blend, breathable, odor-resistant", price: "$95", url: "https://amzn.to/4dDdEeF" },
+            { type: "Apparel", img: "/images/apparel-4.jpg", title: "Canvas Chore Coat", desc: "Cotton canvas, sturdy pockets", price: "$118", url: "https://amzn.to/3XxYyZz" },
+            { type: "Gear", img: "/images/gear-1.jpg", title: "Standing Desk", desc: "Electric height-adjust, memory presets", price: "$299", url: "https://amzn.to/3AaBbCc" },
+            { type: "Gear", img: "/images/gear-2.jpg", title: "Docking Station", desc: "USB-C hub, dual 4K outputs", price: "$89", url: "https://amzn.to/4dDdEeF" },
+            { type: "Gear", img: "/images/gear-3.jpg", title: "Mechanical Keyboard", desc: "Gateron switches, hot-swappable", price: "$124", url: "https://amzn.to/3XxYyZz" },
+            { type: "Gear", img: "/images/gear-4.jpg", title: "Cable Kit", desc: "Velcro ties, silicone sleeves, 12-pack", price: "$18", url: "https://amzn.to/3AaBbCc" }
+        ];
+
+        // ============================================================
+        // ✅ 备用文章数据（当 database/*.json 加载失败时使用）
+        // ============================================================
+        var FALLBACK_ARTICLES = [
+            { 
+                title: "The Seiko SRPD Is Still the Best Entry-Level Automatic", 
+                summary: "Three weeks of daily wear — here's why it beats everything under $300.", 
+                clean_img: "/images/Seiko-5-1.jpg", 
+                metaTag: "HOROLOGY", 
+                date: "JUL 8, 2026", 
+                page_url: "/watches.html#watch-001"
+            },
+            { 
+                title: "Building a Capsule Wardrobe for Under $500", 
+                summary: "Heavyweight tees, selvedge denim, and the perfect overshirt.", 
+                clean_img: "/images/apparel-deal.jpg", 
+                metaTag: "WARDROBE", 
+                date: "JUL 5, 2026", 
+                page_url: "/apparel.html"
+            },
+            { 
+                title: "Desk Setup Essentials: What Actually Works
