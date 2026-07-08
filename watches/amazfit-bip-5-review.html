@@ -16,7 +16,6 @@
     <meta name="description" content="We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.">
     <link rel="canonical" href="https://nxgenpicks.com/watches/amazfit-bip-5-review.html" />
     
-    <!-- 谷歌结构化数据硬核补丁版（完美修复 GSC 报警） -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,6 +70,8 @@
         body { background-color: var(--ink); color: #fff; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; line-height: 1.65; -webkit-font-smoothing: antialiased; }
         h1, h2, h3, .serif { font-family: "Fraunces", Georgia, serif; font-weight: 500; }
         a { color: inherit; }
+        .disclosure-bar { background: var(--card); border-bottom: 1px solid var(--line); text-align: center; padding: 9px 20px; font-size: 0.72rem; color: var(--steel); }
+        .disclosure-bar a { color: var(--steel); text-decoration: underline; }
         nav { position: sticky; top: 0; width: 100%; background: rgba(10,10,11,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); z-index: 1000; }
         .nav-container { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; justify-content: space-between; align-items: center; }
         .nav-logo { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; text-decoration: none; color: #fff; }
@@ -78,6 +79,7 @@
         .nav-links { display: flex; gap: 28px; }
         .nav-links a { text-decoration: none; color: var(--steel); font-size: 0.8rem; letter-spacing: 0.02em; }
         .nav-links a:hover { color: #fff; }
+        .nav-links a.active { color: #fff; }
         .article-wrap { max-width: 680px; margin: 0 auto; padding: 56px 24px 88px; }
         .breadcrumb { font-size: 0.7rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
         .breadcrumb a { text-decoration: none; color: var(--steel); }
@@ -85,7 +87,7 @@
         h1.post-title { font-size: 2.2rem; line-height: 1.2; margin-bottom: 20px; }
         .post-meta { font-size: 0.78rem; color: var(--steel); padding-bottom: 32px; border-bottom: 1px solid var(--line); margin-bottom: 40px; }
         .post-hero-img { width: 100%; aspect-ratio: 16/10; overflow: hidden; background: var(--card); border: 1px solid var(--line); margin-bottom: 40px; }
-        .post-hero-img img { width: 100%; height: 100%; object-fit: cover; }
+        .post-hero-img img { width: 100%; height: 100%; object-fit: cover; background-color: var(--card); }
         .post-content p { font-size: 1rem; color: #d6d6d8; margin-bottom: 24px; }
         .post-content strong { color: #fff; font-weight: 600; }
         .post-content h2 { font-size: 1.45rem; color: #fff; margin: 48px 0 18px; }
@@ -93,23 +95,33 @@
         .gear-showcase-box h4 { font-size: 0.72rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; font-weight: 600; }
         .gear-item-card { display: flex; gap: 20px; align-items: center; background: var(--ink); border: 1px solid var(--line); padding: 16px; margin-bottom: 12px; }
         .gear-item-card:last-child { margin-bottom: 0; }
-        .gear-item-card img { width: 64px; height: 64px; object-fit: cover; border-radius: 2px; flex-shrink: 0; }
+        .gear-item-card img { width: 64px; height: 64px; object-fit: cover; border-radius: 2px; flex-shrink: 0; background-color: var(--card); }
         .gear-item-info { flex: 1; min-width: 0; }
         .gear-item-name { font-size: 0.9rem; color: #fff; font-weight: 600; margin-bottom: 4px; }
         .gear-item-desc { font-size: 0.78rem; color: var(--steel); line-height: 1.4; }
-        .gear-item-btn { background: var(--gold); color: var(--ink); text-decoration: none; padding: 10px 18px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+        .gear-item-btn { background: var(--gold); color: var(--ink); text-decoration: none; padding: 10px 18px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; border: none; cursor: pointer; }
         .gear-item-btn:hover { background: #fff; }
         footer { padding: 48px 24px; text-align: center; font-size: 0.72rem; color: var(--steel); border-top: 1px solid var(--line); margin-top: auto; }
+        footer a { color: var(--steel); text-decoration: underline; }
+
+        @media screen and (max-width: 540px) {
+            h1.post-title { font-size: 1.6rem; }
+            .gear-item-card { flex-wrap: wrap; }
+            .gear-item-btn { width: 100%; text-align: center; }
+        }
     </style>
 </head>
 <body>
+
+    <!-- 添加披露栏 -->
+    <div class="disclosure-bar">As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Learn more</a></div>
 
     <nav>
         <div class="nav-container">
             <a href="/" class="nav-logo">NextGen <span>Essentials</span></a>
             <div class="nav-links">
                 <a href="/">Home</a>
-                <a href="/watches.html">Watches</a>
+                <a href="/watches.html" class="active">Watches</a>
                 <a href="/apparel.html">Apparel</a>
                 <a href="/gear.html">Gear</a>
             </div>
@@ -125,7 +137,9 @@
         <div class="post-meta">Published on June 25, 2026 — Written by Editorial Team</div>
         
         <div class="post-hero-img">
-            <img src="/images/blog/zhinengbiao.jpg" alt="Amazfit Bip 5 smartwatch tracking presentation layout">
+            <img src="/images/blog/zhinengbiao.jpg" 
+                 alt="Amazfit Bip 5 smartwatch tracking presentation layout"
+                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22680%22 height=%22425%22%3E%3Crect fill=%22%23111113%22 width=%22680%22 height=%22425%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2220%22%3ENo Image%3C/text%3E%3C/svg%3E';">
         </div>
         
         <div class="post-content">
@@ -134,12 +148,13 @@
             <h2>The Standout Grid: Independent Multi-System GPS</h2>
             <p>The core asset that separates this device from generic budget fitness trackers is its <strong>built-in high-precision GPS tracking system</strong>. You can leave your smartphone completely behind during outdoor runs or tactical trail movements, and the hardware logs flawless telemetry data to sink with your metrics later.</p>
 
-            <!-- 精准咬合华米智能表的亚马逊购买链接，移除多余反斜杠 -->
             <div class="gear-showcase-box">
                 <h4>Featured Essentials In This Breakdown</h4>
                 
                 <div class="gear-item-card">
-                    <img src="/images/blog/zhinengbiao.jpg" alt="Amazfit Bip 5 Smartwatch with GPS">
+                    <img src="/images/blog/zhinengbiao.jpg" 
+                         alt="Amazfit Bip 5 Smartwatch with GPS"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2264%22 height=%2264%22%3E%3Crect fill=%22%23111113%22 width=%2264%22 height=%2264%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2210%22%3ENo%3C/text%3E%3C/svg%3E';">
                     <div class="gear-item-info">
                         <div class="gear-item-name">Amazfit Bip 5 Smartwatch with GPS</div>
                         <div class="gear-item-desc">Featuring an ultra-large 1.91-inch display, 4-satellite positioning systems, Bluetooth calling, and an uncompromised 10-day battery engine.</div>
@@ -154,7 +169,8 @@
     </article>
 
     <footer>
-        <p>&copy; 2026 NextGen Essentials. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
+        <p>&copy; 2026 NextGen Essentials.</p>
+        <p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
     </footer>
 
 </body>
