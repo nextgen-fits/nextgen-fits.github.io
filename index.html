@@ -485,4 +485,196 @@
                 page_url: "/apparel.html"
             },
             { 
-                title: "Desk Setup Essentials: What Actually Works
+                title: "Desk Setup Essentials: What Actually Works", 
+                summary: "From the standing desk to the cable kit — we tested 15 products.", 
+                clean_img: "/images/gear-deal.jpg", 
+                metaTag: "WORKSPACE", 
+                date: "JUL 2, 2026", 
+                page_url: "/gear.html"
+            },
+            { 
+                title: "Orient Kamasu vs Seiko SRPD: Which One Wins?", 
+                summary: "Sapphire vs Hardlex, in-house vs NH36 — we break it down.", 
+                clean_img: "/images/watch-deal.jpg", 
+                metaTag: "HOROLOGY", 
+                date: "JUN 28, 2026", 
+                page_url: "/watches.html"
+            }
+        ];
+
+        // ============================================================
+        // ✅ 渲染产品卡片
+        // ============================================================
+        function renderProductCard(item) {
+            return `
+                <div class="product-card">
+                    <div class="product-img"><img src="${item.img}" alt="${item.title}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';"></div>
+                    <div class="product-body">
+                        <span class="product-type">${item.type}</span>
+                        <h4>${item.title}</h4>
+                        <p>${item.desc}</p>
+                        <div class="product-price-row"><span class="product-price">${item.price || ''}</span></div>
+                        <a href="${item.url}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // ============================================================
+        // ✅ 渲染文章列表
+        // ============================================================
+        function renderArticles(articles, container) {
+            container.innerHTML = "";
+            var html = "";
+            for (var i = 0; i < articles.length; i++) {
+                var post = articles[i];
+                var linkedItems = [];
+                if (post.gear_list && post.gear_list.length) {
+                    linkedItems = post.gear_list;
+                } else if (post.breakdown && post.breakdown.length) {
+                    linkedItems = post.breakdown;
+                } else if (post.url) {
+                    linkedItems = [{ name: post.title, url: post.url, img: post.clean_img }];
+                }
+
+                var miniBuyHTML = "";
+                if (linkedItems.length > 0) {
+                    miniBuyHTML = '<div class="article-buy-stack">';
+                    for (var j = 0; j < linkedItems.length; j++) {
+                        var item = linkedItems[j];
+                        var itemName = item.name || item.piece || '';
+                        var itemUrl = item.url || '#';
+                        var itemImg = item.img || '/images/fallback.jpg';
+                        miniBuyHTML += `
+                            <div class="article-buy-mini">
+                                <img src="${itemImg}" alt="${itemName}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2244%22 height=%2244%22%3E%3Crect fill=%22%23111113%22 width=%2244%22 height=%2244%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%228%22%3ENo%3C/text%3E%3C/svg%3E';">
+                                <div class="mini-info">
+                                    <span class="mini-label">Featured in this post</span>
+                                    <span class="mini-name">${itemName}</span>
+                                </div>
+                                <a href="${itemUrl}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
+                            </div>
+                        `;
+                    }
+                    miniBuyHTML += '</div>';
+                }
+
+                var displayDate = post.date || "JUL 8, 2026";
+                var metaTag = post.metaTag || post.category || 'FEATURED';
+                var pageUrl = post.page_url || '#';
+                var title = post.title || '';
+                var summary = post.summary || post.desc || '';
+                var cleanImg = post.clean_img || post.cover_img || '/images/fallback.jpg';
+
+                html += `
+                    <li class="article-item">
+                        <div class="article-thumb-wrapper">
+                            <img src="${cleanImg}" alt="${title}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                        </div>
+                        <div>
+                            <span class="article-meta">${displayDate} — ${metaTag}</span>
+                            <h3><a href="${pageUrl}">${title}</a></h3>
+                            <p class="article-excerpt">${summary}</p>
+                            ${miniBuyHTML}
+                        </div>
+                    </li>
+                `;
+            }
+            container.innerHTML = html;
+        }
+
+        // ============================================================
+        // ✅ 页面加载主逻辑
+        // ============================================================
+        document.addEventListener("DOMContentLoaded", function () {
+            var shelves = {
+                "Watches": document.getElementById("shelf-watches"),
+                "Apparel": document.getElementById("shelf-apparel"),
+                "Gear": document.getElementById("shelf-gear")
+            };
+
+            // ----- 加载产品 -----
+            fetch('/products.json?v=' + Date.now())
+                .then(function(res) {
+                    if (!res.ok) throw new Error('products.json not found');
+                    return res.json();
+                })
+                .then(function(products) {
+                    for (var type in shelves) {
+                        if (shelves[type]) shelves[type].innerHTML = "";
+                    }
+                    for (var i = 0; i < products.length; i++) {
+                        var item = products[i];
+                        var target = shelves[item.type];
+                        if (target) target.innerHTML += renderProductCard(item);
+                    }
+                })
+                .catch(function(err) {
+                    console.warn("Products load failed, using fallback data:", err);
+                    for (var type in shelves) {
+                        if (shelves[type]) shelves[type].innerHTML = "";
+                    }
+                    for (var i = 0; i < FALLBACK_PRODUCTS.length; i++) {
+                        var item = FALLBACK_PRODUCTS[i];
+                        var target = shelves[item.type];
+                        if (target) target.innerHTML += renderProductCard(item);
+                    }
+                });
+
+            // ----- 加载文章 -----
+            var newsContainer = document.getElementById("auto-news-feed");
+            if (!newsContainer) return;
+
+            Promise.all([
+                fetch('/database/gear.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : Promise.reject('gear.json missing'); }),
+                fetch('/database/watches.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : Promise.reject('watches.json missing'); }),
+                fetch('/database/apparel.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : Promise.reject('apparel.json missing'); })
+            ])
+            .then(function(results) {
+                var gearPosts = results[0] || [];
+                var watchPosts = results[1] || [];
+                var apparelPosts = results[2] || [];
+
+                var taggedGear = [];
+                for (var i = 0; i < gearPosts.length; i++) {
+                    var p = gearPosts[i];
+                    taggedGear.push({ 
+                        ...p, 
+                        metaTag: 'WORKSPACE', 
+                        clean_img: p.cover_img || '/images/gear-deal.jpg' 
+                    });
+                }
+                var taggedWatches = [];
+                for (var i = 0; i < watchPosts.length; i++) {
+                    var p = watchPosts[i];
+                    taggedWatches.push({ 
+                        ...p, 
+                        metaTag: 'HOROLOGY', 
+                        clean_img: p.cover_img || '/images/watch-deal.jpg' 
+                    });
+                }
+                var taggedApparel = [];
+                for (var i = 0; i < apparelPosts.length; i++) {
+                    var p = apparelPosts[i];
+                    taggedApparel.push({ 
+                        ...p, 
+                        metaTag: 'WARDROBE', 
+                        clean_img: p.cover_img || '/images/apparel-deal.jpg' 
+                    });
+                }
+
+                var pool = taggedGear.concat(taggedWatches).concat(taggedApparel);
+                pool.sort(function(a, b) {
+                    return new Date(b.date) - new Date(a.date);
+                });
+                var finalFour = pool.slice(0, 4);
+                renderArticles(finalFour, newsContainer);
+            })
+            .catch(function(err) {
+                console.warn("Articles load failed, using fallback data:", err);
+                renderArticles(FALLBACK_ARTICLES, newsContainer);
+            });
+        });
+    </script>
+</body>
+</html>
