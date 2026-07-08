@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -252,7 +251,6 @@
         .article-item h3 a:hover { color: var(--gold); }
         .article-excerpt { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
         
-        /* 独立文章专用的图片缩略容器（绝不乱借 showroom-img 样式） */
         .article-thumb-wrapper { width: 100%; aspect-ratio: 16/10; overflow: hidden; background: var(--card); border: 1px solid var(--line); }
         .article-thumb-wrapper img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88); }
  
@@ -436,6 +434,7 @@
                     <label for="message">What are you looking for?</label>
                     <textarea id="id-message" name="message" rows="4" placeholder="Tell us your budget, style, and what you need it for..." required></textarea>
                 </div>
+                <div id="form-status" style="margin-top:10px; font-size:0.8rem; display:none;"></div>
                 <button type="submit" class="submit-btn">Send request</button>
             </form>
         </div>
@@ -487,10 +486,9 @@
                 if(!newsContainer) return;
                 newsContainer.innerHTML = "";
                 
-                // 🛠️ 核心路径路由转换：自动对齐老哥的物理分类子目录，洗清错位裂图
-                const taggedGear = (gearPosts || []).map(p => ({ ...p, metaTag: 'WORKSPACE', cover_img: p.cover_img.startsWith('/') ? p.cover_img : '/gear' + (p.cover_img.startsWith('./') ? p.cover_img.slice(1) : '/' + p.cover_img) }));
-                const taggedWatches = (watchPosts || []).map(p => ({ ...p, metaTag: 'HOROLOGY', cover_img: p.cover_img.startsWith('/') ? p.cover_img : '/watches' + (p.cover_img.startsWith('./') ? p.cover_img.slice(1) : '/' + p.cover_img) }));
-                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, metaTag: 'WARDROBE', cover_img: p.cover_img.startsWith('/') ? p.cover_img : '/apparel' + (p.cover_img.startsWith('./') ? p.cover_img.slice(1) : '/' + p.cover_img) }));
+                const taggedGear = (gearPosts || []).map(p => ({ ...p, metaTag: 'WORKSPACE', clean_img: p.cover_img }));
+                const taggedWatches = (watchPosts || []).map(p => ({ ...p, metaTag: 'HOROLOGY', clean_img: p.cover_img }));
+                const taggedApparel = (apparelPosts || []).map(p => ({ ...p, metaTag: 'WARDROBE', clean_img: p.cover_img }));
  
                 const pool = [...taggedGear, ...taggedWatches, ...taggedApparel];
                 pool.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -500,11 +498,11 @@
                 finalFour.forEach(post => {
                     let linkedItems = [];
                     if (post.gear_list && post.gear_list.length) {
-                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img ? (g.img.startsWith('/') ? g.img : (post.metaTag === 'HOROLOGY' ? '/watches/' : post.metaTag === 'WORKSPACE' ? '/gear/' : '/apparel/') + (g.img.startsWith('./') ? g.img.slice(2) : g.img)) : post.cover_img }));
+                        linkedItems = post.gear_list.map(g => ({ name: g.name, url: g.url, img: g.img }));
                     } else if (post.breakdown && post.breakdown.length) {
-                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img ? (b.img.startsWith('/') ? b.img : (post.metaTag === 'HOROLOGY' ? '/watches/' : post.metaTag === 'WORKSPACE' ? '/gear/' : '/apparel/') + (b.img.startsWith('./') ? b.img.slice(2) : b.img)) : post.cover_img }));
+                        linkedItems = post.breakdown.map(b => ({ name: b.piece, url: b.url, img: b.img }));
                     } else if (post.url) {
-                        linkedItems = [{ name: post.title, url: post.url, img: post.cover_img }];
+                        linkedItems = [{ name: post.title, url: post.url, img: post.clean_img }];
                     }
  
                     let miniBuyHTML = "";
@@ -530,10 +528,11 @@
                         }
                     }
  
+                    // ⚙️ 核心修正：直接注入完美匹配的物理路径
                     finalHTML += `
                         <li class="article-item">
                             <div class="article-thumb-wrapper">
-                                <img src="${post.cover_img}" alt="${post.title}" loading="lazy">
+                                <img src="${post.clean_img}" alt="${post.title}" loading="lazy">
                             </div>
                             <div>
                                 <span class="article-meta">${displayDate} — ${post.metaTag}</span>
