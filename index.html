@@ -469,6 +469,8 @@
                 <a href="/watches.html">Watches</a>
                 <a href="/apparel.html">Apparel</a>
                 <a href="/gear.html">Gear</a>
+                <a href="/about.html">About</a>
+                <a href="/subscribe.html">Subscribe</a>
             </div>
         </div>
     </nav>
@@ -615,6 +617,15 @@
                     <label for="id-message">What are you looking for?</label>
                     <textarea id="id-message" name="message" rows="4" placeholder="Tell us your budget, style, and what you need it for..." required></textarea>
                 </div>
+
+                <!-- ★ 新增：订阅勾选框 ★ -->
+                <div class="form-group" style="display: flex; align-items: center; gap: 10px; margin-bottom: 18px;">
+                    <input type="checkbox" id="subscribe-checkbox" name="subscribe" value="yes" checked style="width: 18px; height: 18px; accent-color: var(--gold); cursor: pointer;">
+                    <label for="subscribe-checkbox" style="color: var(--steel); font-size: 0.8rem; cursor: pointer;">
+                        ✅ Also subscribe me to the weekly newsletter (no spam)
+                    </label>
+                </div>
+
                 <div id="form-status" style="margin-top:10px; font-size:0.8rem; display:none;"></div>
                 <button type="submit" class="submit-btn">Send request</button>
             </form>
