@@ -3,35 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Affiliate Disclosure | NextGen Essentials</title>
-    <meta name="description" content="NextGen Essentials affiliate disclosure — how we earn from product recommendations as an Amazon Associate.">
-    <link rel="canonical" href="https://nextgen-fits.github.io/affiliate-disclosure.html" />
-    <meta name="robots" content="noindex, follow">
+
+    <!-- ★ SEO优化标题 ★ -->
+    <title>Affiliate Disclosure — How NextGen Essentials Recommends Products</title>
+    <meta name="description" content="NextGen Essentials earns a small commission when you buy through our links — at no extra cost to you. Read our full affiliate disclosure and editorial policy.">
+
+    <link rel="canonical" href="https://nxgenpicks.com/affiliate-disclosure.html" />
+
+    <!-- ★ 结构化数据：让Google理解这是一个政策页面 ★ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Affiliate Disclosure — NextGen Essentials",
+      "description": "NextGen Essentials earns a small commission when you buy through our links — at no extra cost to you. Read our full affiliate disclosure and editorial policy.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NextGen Essentials",
+        "url": "https://nxgenpicks.com/"
+      }
+    }
+    </script>
+
     <style>
-        :root { --ink: #0A0A0B; --gold: #C9A961; --steel: #6B6D70; --line: #232325; --card: #111113; }
+        :root {
+            --ink: #0A0A0B;
+            --gold: #C9A961;
+            --steel: #6B6D70;
+            --line: #232325;
+            --card: #111113;
+        }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif; background: var(--ink); color: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-        h1 { font-family: "Fraunces", Georgia, serif; font-weight: 500; }
-        a { color: var(--gold); text-decoration: underline; }
-        nav { position: sticky; top: 0; width: 100%; background: rgba(10,10,11,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
-        .nav-container { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; }
-        .nav-logo { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; text-decoration: none; color: #fff; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+            background: var(--ink);
+            color: #fff;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2 {
+            font-family: "Fraunces", Georgia, serif;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+        }
+
+        a {
+            color: var(--gold);
+            text-decoration: underline;
+        }
+
+        .disclosure-bar {
+            background: var(--card);
+            border-bottom: 1px solid var(--line);
+            text-align: center;
+            padding: 9px 20px;
+            font-size: 0.72rem;
+            color: var(--steel);
+        }
+        .disclosure-bar a { color: var(--steel); text-decoration: underline; }
+
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: rgba(10,10,11,0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--line);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: "Fraunces", serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-decoration: none;
+            color: #fff;
+        }
         .nav-logo span { color: var(--gold); }
-        .container { max-width: 640px; margin: 0 auto; padding: 64px 24px 80px; }
-        h1 { font-size: 1.8rem; margin-bottom: 24px; }
-        p { color: #c8c8cc; font-size: 0.92rem; margin-bottom: 18px; }
-        footer { text-align: center; padding: 36px 24px; font-size: 0.72rem; color: var(--steel); border-top: 1px solid var(--line); }
+
+        .nav-links { display: flex; gap: 28px; }
+        .nav-links a {
+            color: var(--steel);
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover { color: #fff; }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 64px 24px 80px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .subhead {
+            font-size: 0.92rem;
+            color: var(--steel);
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #fff;
+            margin-top: 40px;
+            margin-bottom: 14px;
+        }
+
+        p {
+            color: #D1D2D4;
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: var(--card);
+            border-left: 2px solid var(--gold);
+            padding: 20px 24px;
+            margin: 28px 0 32px;
+            border-radius: 2px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 0.92rem;
+        }
+
+        .highlight-box strong {
+            color: #fff;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--line);
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            font-size: 0.72rem;
+            color: var(--steel);
+            border-top: 1px solid var(--line);
+        }
+        footer a { color: var(--steel); text-decoration: underline; }
+        footer p { margin-bottom: 6px; }
+
+        @media screen and (max-width: 640px) {
+            .container { padding: 40px 16px 60px; }
+            h1 { font-size: 1.6rem; }
+            .nav-links { gap: 14px; }
+            .nav-links a { font-size: 0.7rem; }
+        }
     </style>
 </head>
 <body>
-    <nav><div class="nav-container"><a href="/" class="nav-logo">NextGen <span>Essentials</span></a></div></nav>
-    <div class="container">
-        <h1>Affiliate Disclosure</h1>
-        <p>NextGen Essentials is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.</p>
-        <p>As an Amazon Associate, we earn from qualifying purchases. This means that if you click a product link on this site and make a purchase, we may receive a small commission at no additional cost to you.</p>
-        <p>We only recommend products we have personally researched, tested, or have a genuine basis to evaluate. Our editorial opinions are our own and are not influenced by whether a product link generates a commission.</p>
-        <p>If you have questions about our recommendations or this disclosure, you can reach us through the contact form on our <a href="/">homepage</a>.</p>
+
+    <div class="disclosure-bar">
+        As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Learn more</a>
     </div>
-    <footer><p>&copy; 2026 NextGen Essentials.</p></footer>
+
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">NextGen <span>Essentials</span></a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/watches.html">Watches</a>
+                <a href="/apparel.html">Apparel</a>
+                <a href="/gear.html">Gear</a>
+                <a href="/about.html">About</a>
+                <a href="/subscribe.html">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Affiliate Disclosure</h1>
+        <div class="subhead">How we make money and why you can trust what we recommend.</div>
+
+        <p>NextGen Essentials is a <strong>participant in the Amazon Services LLC Associates Program</strong>, an affiliate advertising program designed to provide a way for sites to earn advertising fees by linking to Amazon.com.</p>
+
+        <p>In plain English: <strong>when you click a product link on our site and make a purchase, we may earn a small commission — at absolutely no extra cost to you.</strong></p>
+
+        <div class="highlight-box">
+            <p><strong>This doesn't change the price you pay.</strong> Amazon sets the price. Our commission comes out of Amazon's cut, not your pocket. You pay the same whether you click our link or go directly to Amazon.</p>
+        </div>
+
+        <h2>Why We Only Recommend What We'd Actually Buy</h2>
+
+        <p>Here's the thing: we only recommend products we've <strong>personally researched, tested, or have a genuine basis to evaluate</strong>. We don't recommend things just because they generate a commission.</p>
+
+        <p>Every product we feature — watches, apparel, desk gear — has either been <strong>worn, used, or tested</strong> by someone on our team. We buy things ourselves. We wear them for weeks. We break them in, break them down, and write about what we find.</p>
+
+        <p>Our editorial opinions are <strong>entirely our own</strong>. No brand pays us for coverage. No manufacturer has influence over what we recommend. The only thing that dictates what ends up on this site is whether we genuinely think it's worth your money.</p>
+
+        <h2>What This Means for You</h2>
+
+        <p>When you shop through our links, you're <strong>supporting independent, honest content</strong>. The small commission we earn helps keep this site running — pays for hosting, helps us buy more products to test, and allows us to continue writing real reviews instead of recycled press releases.</p>
+
+        <p>You get honest recommendations. We get to keep doing what we do. And <strong>you don't pay a cent more</strong> than you would going direct. It's a fair exchange.</p>
+
+        <hr class="divider">
+
+        <p style="font-size: 0.85rem; color: var(--steel);">
+            If you have questions about our recommendations or this disclosure, feel free to <a href="/">reach out through our contact form</a>.
+        </p>
+
+        <p style="font-size: 0.85rem; color: var(--steel); margin-top: 4px;">
+            Last updated: July 2026
+        </p>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NextGen Essentials.</p>
+        <p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
+    </footer>
+
 </body>
 </html>
