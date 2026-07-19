@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You're Subscribed — NextGen Essentials</title>
+    <meta name="description" content="Thanks for subscribing to the NextGen Essentials newsletter. You'll hear from us soon." />
+    <link rel="canonical" href="https://nxgenpicks.com/subscribe-success.html" />
+
+    <style>
+        /* ── 全局变量（和你其他页面保持一致） ── */
+        :root {
+            --ink: #0A0A0B;
+            --gold: #C9A961;
+            --steel: #6B6D70;
+            --line: #232325;
+            --card: #111113;
+        }
+
+        /* ── 重置 & 基础 ── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--ink);
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── 成功卡片 ── */
+        .success-card {
+            max-width: 480px;
+            width: 100%;
+            background: var(--card);
+            border: 1px solid var(--line);
+            padding: 48px 40px;
+            border-radius: 4px;
+            text-align: center;
+            transition: border-color 0.3s ease;
+        }
+
+        .success-card:hover {
+            border-color: rgba(201, 169, 97, 0.3);
+        }
+
+        /* ── Logo ── */
+        .logo {
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: -0.01em;
+            margin-bottom: 8px;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        /* ── 图标 ── */
+        .success-icon {
+            font-size: 3.2rem;
+            margin: 12px 0 8px;
+            display: block;
+        }
+
+        /* ── 标题 ── */
+        .success-title {
+            font-family: "Fraunces", Georgia, serif;
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        /* ── 描述 ── */
+        .success-desc {
+            color: #D1D2D4;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        .success-desc-light {
+            color: var(--steel);
+            font-size: 0.85rem;
+            margin-top: 4px;
+        }
+
+        /* ── 分隔线 ── */
+        .divider {
+            border: none;
+            border-top: 1px solid var(--line);
+            margin: 28px 0;
+        }
+
+        /* ── 按钮 ── */
+        .btn-home {
+            display: inline-block;
+            background: var(--gold);
+            color: #000;
+            padding: 12px 32px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.2s ease, transform 0.15s ease;
+            margin-top: 4px;
+        }
+
+        .btn-home:hover {
+            background: #D9B971;
+            transform: translateY(-1px);
+        }
+
+        .btn-home:active {
+            transform: translateY(0);
+        }
+
+        /* ── 底部链接 ── */
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--steel);
+            font-size: 0.78rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .back-link:hover {
+            color: #fff;
+            border-bottom-color: var(--gold);
+        }
+
+        .disclosure-mini {
+            font-size: 0.65rem;
+            color: var(--steel);
+            margin-top: 16px;
+        }
+
+        /* ── 响应式 ── */
+        @media (max-width: 500px) {
+            .success-card {
+                padding: 32px 20px;
+            }
+
+            .success-title {
+                font-size: 1.4rem;
+            }
+
+            .success-icon {
+                font-size: 2.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-card">
+        <!-- Logo -->
+        <div class="logo">NextGen <span>Essentials</span></div>
+
+        <!-- 成功图标 -->
+        <span class="success-icon">✅</span>
+
+        <!-- 标题 -->
+        <h1 class="success-title">You're Subscribed!</h1>
+
+        <!-- 描述 -->
+        <p class="success-desc">Thanks for joining the NextGen Essentials newsletter.</p>
+        <p class="success-desc-light">You'll hear from us soon — keep an eye on your inbox.</p>
+
+        <hr class="divider" />
+
+        <!-- 主要操作按钮 -->
+        <a href="/" class="btn-home">← Back to Home</a>
+
+        <!-- 次要链接 -->
+        <br />
+        <a href="/watches.html" class="back-link">Browse watches →</a>
+
+        <div class="disclosure-mini">As an Amazon Associate, we earn from qualifying purchases.</div>
+    </div>
+</body>
+</html>
