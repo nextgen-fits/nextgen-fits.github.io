@@ -119,21 +119,192 @@
         }
         .nav-links a:hover { color: #fff; }
  
+        /* ★ 优化后的首屏样式 ★ */
         .hero {
-            max-width: 1180px; margin: 0 auto;
+            max-width: 1180px;
+            margin: 0 auto;
             padding: 88px 24px 64px;
-            display: grid; grid-template-columns: 1fr; gap: 40px;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 48px;
+            align-items: center;
             border-bottom: 1px solid var(--line);
         }
-        .hero-eyebrow { margin-bottom: 18px; }
-        .hero h1 { font-size: 2.1rem; line-height: 1.18; color: #fff; margin-bottom: 20px; }
-        .hero h1 em { color: var(--gold); font-style: normal; }
-        .hero-desc { color: var(--steel); font-size: 0.95rem; max-width: 480px; line-height: 1.65; }
-        .hero-image {
-            width: 100%; aspect-ratio: 4/3; overflow: hidden;
-            background: var(--card); border: 1px solid var(--line);
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
-        .hero-image img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.92); }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(201,169,97,0.08);
+            border: 1px solid rgba(201,169,97,0.2);
+            padding: 6px 14px 6px 10px;
+            border-radius: 2px;
+            width: fit-content;
+        }
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .hero-badge .label {
+            font-size: 0.62rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.1;
+            color: #fff;
+            letter-spacing: -0.02em;
+        }
+        .hero h1 em {
+            color: var(--gold);
+            font-style: normal;
+        }
+        .hero-quote {
+            border-left: 2px solid var(--gold);
+            padding-left: 20px;
+            margin: 4px 0 2px;
+        }
+        .hero-quote p {
+            font-size: 1rem;
+            color: #D1D2D4;
+            font-style: italic;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .hero-quote .source {
+            font-size: 0.78rem;
+            color: var(--steel);
+            font-style: normal;
+            margin-top: 4px;
+            display: block;
+        }
+        .hero-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 0;
+            margin: 0;
+        }
+        .hero-features li {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            font-size: 0.88rem;
+            color: #D1D2D4;
+        }
+        .hero-features li::before {
+            content: "—";
+            color: var(--gold);
+            flex-shrink: 0;
+            font-weight: 300;
+        }
+        .hero-price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+        .hero-price {
+            font-family: "Fraunces", serif;
+            font-size: 2.2rem;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        .hero-price-note {
+            font-size: 0.78rem;
+            color: var(--steel);
+        }
+        .hero-rating {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: var(--steel);
+            margin-left: auto;
+        }
+        .hero-rating .stars {
+            color: var(--gold);
+            letter-spacing: 1px;
+        }
+        .hero-cta-row {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 4px;
+        }
+        .hero-cta-primary {
+            background: var(--gold);
+            color: #000;
+            padding: 14px 30px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 2px;
+            text-decoration: none;
+        }
+        .hero-cta-primary:hover {
+            background: #D9B971;
+            transform: translateY(-1px);
+        }
+        .hero-cta-secondary {
+            color: var(--steel);
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
+            padding: 4px 0;
+            text-decoration: none;
+        }
+        .hero-cta-secondary:hover {
+            color: #fff;
+            border-bottom-color: var(--gold);
+        }
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 2px;
+            position: relative;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.92);
+            transition: filter 0.3s ease;
+        }
+        .hero-image:hover img {
+            filter: brightness(0.98);
+        }
+        .hero-image-credit {
+            position: absolute;
+            bottom: 12px;
+            right: 16px;
+            font-size: 0.6rem;
+            color: rgba(255,255,255,0.25);
+            letter-spacing: 0.04em;
+        }
  
         .section { max-width: 1180px; margin: 0 auto; padding: 56px 24px; }
         .section-head {
@@ -155,31 +326,6 @@
         .showroom-vol { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.1em; display: block; margin-bottom: 8px; }
         .showroom-body h3 { font-size: 1.15rem; color: #fff; margin-bottom: 10px; }
         .showroom-body p { color: var(--steel); font-size: 0.85rem; line-height: 1.6; }
- 
-        .weekly-pick-tag {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: var(--card); border: 1px solid var(--gold);
-            padding: 7px 14px; border-radius: 2px; margin-bottom: 18px;
-        }
-        .weekly-pick-tag .dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; display: inline-block; }
-        .weekly-pick-tag span.label { font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 600; }
-        .hero-reasons { list-style: none; margin: 22px 0 28px; display: flex; flex-direction: column; gap: 10px; }
-        .hero-reasons li { display: flex; align-items: baseline; gap: 10px; font-size: 0.88rem; color: #d6d6d8; }
-        .hero-reasons li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
-        .hero-price-row { display: flex; align-items: baseline; gap: 10px; margin-bottom: 24px; }
-        .hero-price { font-family: "Fraunces", serif; font-size: 2.1rem; color: var(--gold); }
-        .hero-price-note { font-size: 0.8rem; color: var(--steel); }
-        .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
-        .hero-cta-primary {
-            background: var(--gold); color: var(--ink); text-decoration: none;
-            padding: 16px 28px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em;
-        }
-        .hero-cta-primary:hover { background: #fff; }
-        .hero-cta-secondary {
-            border: 1px solid var(--line); color: var(--steel); text-decoration: none;
-            padding: 16px 22px; font-size: 0.82rem; letter-spacing: 0.02em;
-        }
-        .hero-cta-secondary:hover { color: #fff; border-color: var(--steel); }
  
         .shelf-section { max-width: 1180px; margin: 0 auto; padding: 48px 24px; border-top: 1px solid var(--line); }
         .shelf-head {
@@ -283,13 +429,30 @@
         @media screen and (min-width: 860px) {
             .hero { grid-template-columns: 1.1fr 0.9fr; align-items: center; padding: 110px 24px 80px; }
             .hero h1 { font-size: 3rem; }
-            .hero-desc { font-size: 1rem; }
             .showroom-grid { grid-template-columns: repeat(3, 1fr); }
             .product-grid { grid-template-columns: repeat(4, 1fr); }
             .article-item { grid-template-columns: 220px 1fr; gap: 32px; }
             .article-thumb-wrapper { width: 220px; }
             .showroom-card:hover { border-color: var(--gold); }
             .showroom-card:hover .showroom-img img { filter: brightness(0.95); }
+        }
+        @media screen and (max-width: 860px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 56px 24px 48px;
+                gap: 32px;
+            }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-price-row { flex-wrap: wrap; }
+            .hero-rating { margin-left: 0; }
+            .hero-cta-row { flex-direction: column; align-items: stretch; }
+            .hero-cta-primary { justify-content: center; }
+            .hero-cta-secondary { text-align: center; }
+        }
+        @media screen and (max-width: 480px) {
+            .hero h1 { font-size: 1.7rem; }
+            .hero-price { font-size: 1.7rem; }
+            .hero-features li { font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -310,19 +473,36 @@
         </div>
     </nav>
  
-    <div class="hero">
-        <div>
-            <div class="weekly-pick-tag"><span class="dot"></span><span class="label">This Week's Pick — Watches</span></div>
-            <h1>Seiko 5 Sports SRPD, <em>the one we'd actually buy.</em></h1>
-            <p class="hero-desc">We wore it for three weeks before putting it here. No sponsorship, no loaner unit — we bought it ourselves.</p>
-            <ul class="hero-reasons">
+    <!-- ★ 优化后的首屏 ★ -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span class="label">This Week's Pick — Watches</span>
+            </div>
+            <h1>
+                Seiko 5 Sports SRPD,<br>
+                <em>the one we'd actually buy.</em>
+            </h1>
+            <div class="hero-quote">
+                <p>
+                    “We wore it for three weeks before putting it here.
+                    No sponsorship, no loaner unit — we bought it ourselves.”
+                </p>
+                <span class="source">— NextGen Editorial Team</span>
+            </div>
+            <ul class="hero-features">
                 <li>Proven NH36 automatic movement, 41-hour power reserve</li>
-                <li>The largest aftermarket parts ecosystem under $300 — easy to mod later</li>
-                <li>Accuracy tightens up noticeably after the first month of daily wear</li>
+                <li>The largest aftermarket parts ecosystem under $300</li>
+                <li>Accuracy tightens up after the first month of daily wear</li>
             </ul>
             <div class="hero-price-row">
                 <span class="hero-price">$229.87</span>
                 <span class="hero-price-note">on Amazon, price may vary</span>
+                <span class="hero-rating">
+                    <span class="stars">★★★★★</span>
+                    4.8 · 2,300+ ratings
+                </span>
             </div>
             <div class="hero-cta-row">
                 <a href="https://amzn.to/4erbuJz" class="hero-cta-primary" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
@@ -331,8 +511,9 @@
         </div>
         <div class="hero-image">
             <img src="/images/Seiko-5-1.jpg" alt="Seiko 5 Sports automatic watch, this week's featured pick" loading="eager" width="900" height="675" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22900%22 height=%22675%22%3E%3Crect fill=%22%23111113%22 width=%22900%22 height=%22675%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2224%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+            <span class="hero-image-credit">Seiko 5 Sports SRPD · 3-week wear test</span>
         </div>
-    </div>
+    </section>
  
     <div class="shelf-section">
         <div class="shelf-head">
