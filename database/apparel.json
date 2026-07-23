@@ -5,28 +5,28 @@
     "category": "WARDROBE",
     "title": "Minimalist Outfit Under $150: 4 Amazon Essentials for Men (2026)",
     "summary": "Build a minimalist capsule wardrobe for under $150. We picked 4 Amazon bestsellers — hoodie, pants, shoes, and a cap. Simple, affordable, and looks great.",
-    "cover_img": "/images/minimalist-outfit-hero.jpg",
+    "cover_img": "/apparel/images/blog/minimalist-outfit-hero.jpg",
     "page_url": "/apparel/minimalist-outfit-under-150.html",
     "breakdown": [
       {
         "piece": "Under Armour Blitzing 3.0 Cap",
         "url": "https://amzn.to/4wT5jnG",
-        "img": "/images/under-armour-cap.jpg"
+        "img": "/apparel/images/blog/under-armour-cap.jpg"
       },
       {
         "piece": "Gildan Fleece Hoodie",
         "url": "#",
-        "img": "/images/gildan-hoodie.jpg"
+        "img": "/apparel/images/blog/gildan-hoodie.jpg"
       },
       {
         "piece": "Amazon Essentials 5-Pocket Pants",
         "url": "#",
-        "img": "/images/amazon-essentials-pants.jpg"
+        "img": "/apparel/images/blog/amazon-essentials-pants.jpg"
       },
       {
         "piece": "New Balance 608 V5 Sneakers",
         "url": "#",
-        "img": "/images/new-balance-608-v5.jpg"
+        "img": "/apparel/images/blog/new-balance-608-v5.jpg"
       }
     ]
   },
