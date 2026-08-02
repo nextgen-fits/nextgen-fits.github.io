@@ -765,6 +765,9 @@
                 "Gear": document.getElementById("shelf-gear")
             };
 
+            var watchesAlreadyRendered = shelves.Watches && shelves.Watches.children.length > 0;
+            if (watchesAlreadyRendered) return;
+            
             fetch('/products.json?v=' + Date.now())
                 .then(function(res) {
                     if (!res.ok) throw new Error('products.json not found');
@@ -794,6 +797,7 @@
 
             var newsContainer = document.getElementById("auto-news-feed");
             if (!newsContainer) return;
+            if (newsContainer.children.length > 0) return;
 
             Promise.all([
                 fetch('/database/gear.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : Promise.reject('gear.json missing'); }),
@@ -837,7 +841,7 @@
                 pool.sort(function(a, b) {
                     return new Date(b.date) - new Date(a.date);
                 });
-                var finalFour = pool.slice(0, 4);
+                var finalFour = pool.slice(0, 6);
                 renderArticles(finalFour, newsContainer);
             })
             .catch(function(err) {
