@@ -41,74 +41,6 @@
     }
     </script>
 
-    <!-- ⭐ 新增：文章列表结构化数据 (ItemList) 提升 SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Watch Reviews & Guides",
-      "description": "In-depth mechanical watch reviews, movement guides, and buying advice for horology enthusiasts.",
-      "url": "https://nxgenpicks.com/watches.html",
-      "numberOfItems": 9,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "url": "https://nxgenpicks.com/watches/casio-classic-digital-watch-review.html",
-          "name": "Casio Classic Digital Watch Showdown – F-91W vs A158WA vs AE-1200WH vs A168WA"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "url": "https://nxgenpicks.com/watches/tissot-prx-powermatic-80-review.html",
-          "name": "Tissot PRX Powermatic 80 Review: Best Alternatives Under $150"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "url": "https://nxgenpicks.com/gear/minimalist-monitor-setup.html",
-          "name": "Best Minimalist Monitor Under $500: 10 Top Picks Tested"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "url": "https://nxgenpicks.com/watches/nh36-vs-4r36-difference.html",
-          "name": "NH36 vs 4R36: What's the Difference? Seiko Movement Guide"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "url": "https://nxgenpicks.com/watches/amazfit-bip-6-review.html",
-          "name": "Amazfit Bip 6 Review: Best Smartwatch Under $200 in 2026?"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "url": "https://nxgenpicks.com/watches/best-first-automatic-watch-under-200.html",
-          "name": "Best First Automatic Watch Under $300: 2026 Beginner's Guide"
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "url": "https://nxgenpicks.com/watches/top-10-beginner-mechanical-watches-2026.html",
-          "name": "The Beginner Watch Matrix: 10 Best Mechanical Watches Reviewed"
-        },
-        {
-          "@type": "ListItem",
-          "position": 8,
-          "url": "https://nxgenpicks.com/watches/orient-kamasu-automatic-diver-review.html",
-          "name": "Orient Kamasu Review: Best Automatic Watch Under $200"
-        },
-        {
-          "@type": "ListItem",
-          "position": 9,
-          "url": "https://nxgenpicks.com/watches/seiko-5-blackout-mod-nh36-review.html",
-          "name": "Seiko 5 Sports Blackout Mod: NH36 Build Guide"
-        }
-      ]
-    }
-    </script>
-
     <style>
         :root { --ink: #0A0A0B; --gold: #C9A961; --steel: #6B6D70; --line: #232325; --card: #111113; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -142,7 +74,7 @@
         .card-summary { color: var(--steel); font-size: 0.85rem; line-height: 1.6; margin-bottom: 14px; }
         .card-read-more { font-size: 0.75rem; color: var(--gold); letter-spacing: 0.06em; }
 
-        /* ⭐ 新增：置顶标签样式 */
+        /* 新增：置顶标签 */
         .card-badge { display: inline-block; background: var(--gold); color: #000; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 10px; border-radius: 2px; margin-left: 10px; vertical-align: middle; }
 
         footer { text-align: center; padding: 40px 24px; font-size: 0.72rem; color: var(--steel); border-top: 1px solid var(--line); }
@@ -204,7 +136,7 @@
         <div class="article-index">
 
             <!-- ============================================================ -->
-            <!-- ⭐ 置顶 NEW：Casio 四款经典电子表终极测评（新发布）-->
+            <!-- ⭐ 新增 1：Casio 四款经典电子表测评（置顶）-->
             <!-- ============================================================ -->
             <a href="/watches/casio-classic-digital-watch-review.html" class="article-card">
 
@@ -230,7 +162,33 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 2：Tissot PRX 评测 -->
+            <!-- ⭐ 新增 2：10款 Minimalist 显示器榜单 -->
+            <!-- ============================================================ -->
+            <a href="/gear/minimalist-monitor-setup.html" class="article-card">
+
+                <div class="card-thumb">
+                    <img src="/watches/images/blog/minimalist-monitor-roundup.jpg" 
+                         alt="Best minimalist monitors under $500 roundup" 
+                         loading="lazy"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                </div>
+
+                <div class="card-body">
+
+                    <span class="card-meta">AUGUST 1, 2026 — ROUNDUP GUIDE</span>
+
+                    <h2 class="card-title">Best Minimalist Monitor Under $500: 10 Top Picks Tested for a Clean Desk</h2>
+
+                    <p class="card-summary">We tested 20+ minimalist monitors under $500 — these 10 actually deliver on design, color accuracy, and value. Find the perfect clean desk monitor from $89 to $429.</p>
+
+                    <span class="card-read-more">Read full review →</span>
+
+                </div>
+
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- ⭐ 原有文章 1（原置顶）：Tissot PRX 评测 -->
             <!-- ============================================================ -->
             <a href="/watches/tissot-prx-powermatic-80-review.html" class="article-card">
 
@@ -256,7 +214,7 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 3：NH36 vs 4R36 对比 -->
+            <!-- 原有文章 2：NH36 vs 4R36 对比 -->
             <!-- ============================================================ -->
             <a href="/watches/nh36-vs-4r36-difference.html" class="article-card">
 
@@ -282,7 +240,7 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 4：Amazfit Bip 6 评测 -->
+            <!-- 原有文章 3：Amazfit Bip 6 评测 -->
             <!-- ============================================================ -->
             <a href="/watches/amazfit-bip-6-review.html" class="article-card">
 
@@ -308,12 +266,12 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 5：新手最佳选择 -->
+            <!-- 原有文章 4：新手最佳选择 -->
             <!-- ============================================================ -->
             <a href="/watches/best-first-automatic-watch-under-200.html" class="article-card">
 
                 <div class="card-thumb">
-                    <img src="/watches/images/blog/seiko-5-sports.jpg" 
+                    <img src="/images/Seiko-5-1.jpg" 
                          alt="Best first automatic watch under $300 — Seiko 5 Sports and Orient Kamasu comparison" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
@@ -334,12 +292,12 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 6：10大合集 -->
+            <!-- 原有文章 5：10大合集 -->
             <!-- ============================================================ -->
             <a href="/watches/top-10-beginner-mechanical-watches-2026.html" class="article-card">
 
                 <div class="card-thumb">
-                    <img src="/watches/images/blog/watch-collection-curated.jpg" 
+                    <img src="/images/blog/watch-citizen-fugu-dark.jpg" 
                          alt="Collection of luxury mechanical watches curated for beginners" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
@@ -351,7 +309,7 @@
 
                     <h2 class="card-title">The Beginner Watch Matrix: 10 Best Mechanical Watches Reviewed</h2>
 
-                    <p class="card-summary">The definitive 2026 expert matrix for beginners. We test and rank 10 incredible mechanical timepieces from Seiko, Orient, and Tissot to find the absolute maximum value for your dollar.</p>
+                    <p class="card-summary">The definitive 2026 expert matrix for beginners. We test and rank 10 incredible mechanical timepieces from TIME100, Seiko, and Orient to Tissot to find the absolute maximum value for your dollar.</p>
 
                     <span class="card-read-more">Read full guide →</span>
 
@@ -360,12 +318,12 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 7：Orient Kamasu -->
+            <!-- 原有文章 6：Orient Kamasu -->
             <!-- ============================================================ -->
             <a href="/watches/orient-kamasu-automatic-diver-review.html" class="article-card">
 
                 <div class="card-thumb">
-                    <img src="/watches/images/blog/orient-kamasu-hero.jpg" 
+                    <img src="/images/blog/orient-kamasu-hero.png" 
                          alt="Orient Kamasu automatic watch black dial mechanical hands-on review" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
@@ -375,9 +333,9 @@
 
                     <span class="card-meta">JUNE 30, 2026 — REVIEW</span>
 
-                    <h2 class="card-title">Orient Kamasu Review: The Best Automatic Diver Under $200</h2>
+                    <h2 class="card-title">The Undisputed Value King: Why the Orient Kamasu is the Best Automatic Watch Under $200</h2>
 
-                    <p class="card-summary">An honest, long-form expert review of the Orient Kamasu automatic diver. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.</p>
+                    <p class="card-summary">An honest, long-form expert review of the Orient Kamasu automatic watch. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.</p>
 
                     <span class="card-read-more">Read full review →</span>
 
@@ -386,12 +344,12 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 8：Seiko 5 Blackout Mod -->
+            <!-- 原有文章 7：Seiko 5 Blackout Mod -->
             <!-- ============================================================ -->
             <a href="/watches/seiko-5-blackout-mod-nh36-review.html" class="article-card">
 
                 <div class="card-thumb">
-                    <img src="/watches/images/blog/seiko-5-blackout.jpg" 
+                    <img src="/images/blog/seiko-5-blackout.jpg" 
                          alt="Seiko 5 Sports automatic watch blackout mod with ceramic bezel on dark surface" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
@@ -412,12 +370,12 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 文章 9：Amazfit Bip 5 -->
+            <!-- 原有文章 8：Amazfit Bip 5 -->
             <!-- ============================================================ -->
             <a href="/watches/amazfit-bip-5-review.html" class="article-card">
 
                 <div class="card-thumb">
-                    <img src="/watches/images/blog/amazfit-bip-5-hero.jpg" 
+                    <img src="/images/blog/zhinengbiao.jpg" 
                          alt="Amazfit Bip 5 smartwatch with large display and GPS" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
