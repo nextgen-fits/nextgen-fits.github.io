@@ -1,33 +1,32 @@
 // scripts/build.js
-// 在 GitHub Actions 里跑：把 JSON 数据预渲染进静态 HTML，
-// 输出到 dist/，交给 GitHub Pages 部署。
+// 在 GitHub Actions 里跑：
+// 1. 把 JSON 数据预渲染进静态 HTML（首页商品/文章、articles.html 全量列表）
+// 2. 自动扫描 watches/apparel/gear 文件夹，生成 sitemap.xml，
+//    lastmod 直接取每个文件在 Git 里真实的最后提交日期
 // 不需要任何 npm 依赖，纯 Node 内置模块。
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
+const SITE_URL = 'https://nxgenpicks.com';
 
-// 构建时不需要复制进 dist 的东西
 const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore']);
 
-// ---------- 1. 把仓库整体复制到 dist ----------
+// ---------- 复制仓库到 dist ----------
 function copyDir(src, dest) {
   fs.mkdirSync(dest, { recursive: true });
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
     if (EXCLUDE.has(entry.name)) continue;
     const s = path.join(src, entry.name);
     const d = path.join(dest, entry.name);
-    if (entry.isDirectory()) {
-      copyDir(s, d);
-    } else {
-      fs.copyFileSync(s, d);
-    }
+    if (entry.isDirectory()) copyDir(s, d);
+    else fs.copyFileSync(s, d);
   }
 }
 
-// ---------- 2. 读取数据 ----------
 function readJsonSafe(p) {
   try {
     return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -38,7 +37,6 @@ function readJsonSafe(p) {
 }
 
 const products = readJsonSafe(path.join(ROOT, 'products.json'));
-
 const gearPosts = readJsonSafe(path.join(ROOT, 'database', 'gear.json'))
   .map(p => ({ ...p, metaTag: 'WORKSPACE', clean_img: p.cover_img || '/images/gear-deal.jpg' }));
 const watchPosts = readJsonSafe(path.join(ROOT, 'database', 'watches.json'))
@@ -49,7 +47,6 @@ const apparelPosts = readJsonSafe(path.join(ROOT, 'database', 'apparel.json'))
 const allArticles = [...gearPosts, ...watchPosts, ...apparelPosts]
   .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-// ---------- 3. 渲染函数（与前端 JS 保持一致的输出结构） ----------
 function esc(s) {
   return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -118,13 +115,9 @@ function renderArticleItem(post) {
         </li>`;
 }
 
-// ---------- 4. 把渲染结果注入 HTML 模板 ----------
-// 依赖模板里这些"空容器"的精确写法，和现有 index.html 源码一致。
 function injectHomepage(html) {
   const byType = { Watches: [], Apparel: [], Gear: [] };
-  for (const p of products) {
-    if (byType[p.type]) byType[p.type].push(p);
-  }
+  for (const p of products) if (byType[p.type]) byType[p.type].push(p);
 
   html = html.replace(
     '<div class="product-grid" id="shelf-watches"></div>',
@@ -139,7 +132,6 @@ function injectHomepage(html) {
     `<div class="product-grid" id="shelf-gear">${byType.Gear.map(renderProductCard).join('')}</div>`
   );
 
-  // 首页展示最新 6 篇（原来前端 JS 是 4 篇，这里改成 6）
   const homepageArticles = allArticles.slice(0, 6);
   html = html.replace(
     '<ul class="article-list" id="auto-news-feed" style="list-style:none;"></ul>',
@@ -149,9 +141,7 @@ function injectHomepage(html) {
   return html;
 }
 
-// ---------- 5. 生成 /articles.html（全量文章列表） ----------
 function buildArticlesPage(indexHtmlRaw) {
-  // 用 index.html 的 <head> + nav + footer 作为骨架，正文换成全量文章列表
   const headMatch = indexHtmlRaw.match(/<head>[\s\S]*?<\/head>/);
   const navMatch = indexHtmlRaw.match(/<nav>[\s\S]*?<\/nav>/);
   const footerMatch = indexHtmlRaw.match(/<footer>[\s\S]*?<\/footer>/);
@@ -160,7 +150,7 @@ function buildArticlesPage(indexHtmlRaw) {
   const head = headMatch ? headMatch[0]
     .replace(/<title>[\s\S]*?<\/title>/, '<title>All Reviews & Guides — NextGen Essentials</title>')
     .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Every watch, apparel, and gear review from NextGen Essentials, sorted by newest first.">')
-    .replace(/<link rel="canonical"[^>]*>/, '<link rel="canonical" href="https://nxgenpicks.com/articles.html" />')
+    .replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${SITE_URL}/articles.html" />`)
     : '';
   const nav = navMatch ? navMatch[0] : '';
   const footer = footerMatch ? footerMatch[0] : '';
@@ -186,6 +176,82 @@ ${footer}
 </html>`;
 }
 
+// ---------- sitemap 自动生成 ----------
+const TODAY = new Date().toISOString().slice(0, 10);
+
+function getLastCommitDate(relPath) {
+  try {
+    const out = execSync(`git log -1 --format=%cd --date=short -- "${relPath}"`, {
+      cwd: ROOT,
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).toString().trim();
+    if (out) return out;
+  } catch (e) {
+    // git 不可用，或该文件还没被提交过
+  }
+  return TODAY;
+}
+
+function listHtmlFiles(dir) {
+  const full = path.join(ROOT, dir);
+  if (!fs.existsSync(full)) return [];
+  return fs.readdirSync(full)
+    .filter(f => f.endsWith('.html'))
+    .map(f => `${dir}/${f}`);
+}
+
+function buildSitemap() {
+  const entries = [];
+
+  // 首页 + 汇总/分类页（内容每次构建都可能更新，lastmod 用构建当天）
+  entries.push({ loc: '/', lastmod: TODAY, changefreq: 'daily', priority: '1.0' });
+  entries.push({ loc: '/watches.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
+  entries.push({ loc: '/apparel.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
+  entries.push({ loc: '/gear.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
+  entries.push({ loc: '/articles.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
+
+  // 静态政策/信息页（用文件在 Git 里真实的最后修改日期）
+  const staticPages = [
+    { file: 'about.html', priority: '0.4', changefreq: 'monthly' },
+    { file: 'subscribe.html', priority: '0.4', changefreq: 'monthly' },
+    { file: 'affiliate-disclosure.html', priority: '0.2', changefreq: 'yearly' },
+  ];
+  for (const p of staticPages) {
+    if (!fs.existsSync(path.join(ROOT, p.file))) continue;
+    entries.push({
+      loc: `/${p.file}`,
+      lastmod: getLastCommitDate(p.file),
+      changefreq: p.changefreq,
+      priority: p.priority,
+    });
+  }
+
+  // 扫描 watches/ apparel/ gear/ 文件夹，自动收录所有文章页
+  for (const dir of ['watches', 'apparel', 'gear']) {
+    for (const relPath of listHtmlFiles(dir)) {
+      entries.push({
+        loc: `/${relPath}`,
+        lastmod: getLastCommitDate(relPath),
+        changefreq: 'weekly',
+        priority: '0.8',
+      });
+    }
+  }
+
+  const body = entries.map(e => `  <url>
+    <loc>${SITE_URL}${e.loc}</loc>
+    <lastmod>${e.lastmod}</lastmod>
+    <changefreq>${e.changefreq}</changefreq>
+    <priority>${e.priority}</priority>
+  </url>`).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${body}
+</urlset>
+`;
+}
+
 // ---------- 主流程 ----------
 console.log('[build] 复制静态文件到 dist/ ...');
 copyDir(ROOT, DIST);
@@ -200,5 +266,9 @@ console.log('[build] 已写入预渲染后的 index.html');
 
 fs.writeFileSync(path.join(DIST, 'articles.html'), buildArticlesPage(indexRaw), 'utf8');
 console.log('[build] 已生成 articles.html');
+
+const sitemapXml = buildSitemap();
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemapXml, 'utf8');
+console.log('[build] 已自动生成 sitemap.xml');
 
 console.log('[build] 完成。');
