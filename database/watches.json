@@ -1,5 +1,46 @@
 [
   {
+    "id": "watch-009",
+    "date": "AUGUST 2, 2026",
+    "category": "BUYERS GUIDE",
+    "title": "Casio F-91W vs A158WA vs AE-1200WH vs A168WA – Ultimate Budget Watch Showdown",
+    "summary": "We bought every Casio under $30 and tested them head-to-head. F-91W, A158WA, AE-1200WH, A168WA – which iconic digital watch fits your wrist? Full specs, pros/cons, and buying guide inside.",
+    "cover_img": "/watches/images/blog/casio-f91w.jpg",
+    "page_url": "/watches/casio-classic-digital-watch-review.html",
+    "gear_list": [
+      {
+        "name": "Casio F-91W Digital Watch",
+        "url": "https://amzn.to/452LQ8l",
+        "img": "/watches/images/blog/casio-f91w.jpg"
+      },
+      {
+        "name": "Casio A158WA-1 Stainless Steel Watch",
+        "url": " https://amzn.to/4g4Ns7M",
+        "img": "/watches/images/blog/casio-a158wa.jpg"
+      },
+      {
+        "name": "Casio AE-1200WH-1A World Time Watch",
+        "url": "https://amzn.to/45yNqPl",
+        "img": "/watches/images/blog/casio-ae1200wh.jpg"
+      },
+      {
+        "name": "Casio A168WA-1 EL Backlight Watch",
+        "url": "https://amzn.to/45vL97E",
+        "img": "/watches/images/blog/casio-a168wa.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watch-010",
+    "date": "AUGUST 1, 2026",
+    "category": "ROUNDUP GUIDE",
+    "title": "Best Minimalist Monitor Under $500: 10 Top Picks Tested for a Clean Desk",
+    "summary": "We tested 20+ minimalist monitors under $500 — these 10 actually deliver on design, color accuracy, and value. Find the perfect clean desk monitor from $89 to $429.",
+    "cover_img": "/watches/images/blog/minimalist-monitor-roundup.jpg",
+    "page_url": "/gear/minimalist-monitor-setup.html",
+    "gear_list": []
+  },
+  {
     "id": "watch-008",
     "date": "JULY 25, 2026",
     "category": "REVIEW",
@@ -47,13 +88,13 @@
     "category": "BUYERS GUIDE",
     "title": "Best First Automatic Watch Under $300: 2026 Beginner's Guide",
     "summary": "Looking for your first automatic watch? We compare the best mechanical watches under $300 — Seiko 5 Sports, Orient Kamasu, Bambino & more. Expert picks for beginners.",
-    "cover_img": "/images/Seiko-5-1.jpg",
+    "cover_img": "/watches/images/blog/seiko-5-sports.jpg",
     "page_url": "/watches/best-first-automatic-watch-under-200.html",
     "gear_list": [
       {
         "name": "Seiko 5 Sports Automatic Diver",
         "url": "https://amzn.to/4vboF69",
-        "img": "/images/Seiko-5-1.jpg"
+        "img": "/watches/images/blog/seiko-5-sports.jpg"
       }
     ]
   },
@@ -63,7 +104,7 @@
     "category": "ROUNDUP GUIDE",
     "title": "The Beginner Watch Matrix: 10 Best Mechanical Watches Reviewed",
     "summary": "The definitive 2026 expert matrix for beginners. We test and rank 10 incredible mechanical timepieces from TIME100, Seiko, and Orient to Tissot to find the absolute maximum value for your dollar.",
-    "cover_img": "/images/blog/watch-citizen-fugu-dark.jpg",
+    "cover_img": "/watches/images/blog/watch-collection-curated.jpg",
     "page_url": "/watches/top-10-beginner-mechanical-watches-2026.html",
     "gear_list": []
   },
@@ -71,15 +112,31 @@
     "id": "watch-003",
     "date": "JUNE 30, 2026",
     "category": "REVIEW",
-    "title": "The Undisputed Value King: Why the Orient Kamasu is the Best Automatic Watch Under $200",
-    "summary": "An honest, long-form expert review of the Orient Kamasu automatic watch. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.",
-    "cover_img": "/images/blog/orient-kamasu-hero.png",
+    "title": "Orient Kamasu Review: The Best Automatic Diver Under $200",
+    "summary": "An honest, long-form expert review of the Orient Kamasu automatic diver. We break down the pricing on Amazon, complete technical specifications, and real-world social proof.",
+    "cover_img": "/watches/images/blog/orient-kamasu-hero.jpg",
     "page_url": "/watches/orient-kamasu-automatic-diver-review.html",
     "gear_list": [
       {
         "name": "Orient Kamasu Automatic Diver Watch",
         "url": "https://amzn.to/4vboF69",
-        "img": "/images/blog/orient-kamasu-hero.png"
+        "img": "/watches/images/blog/orient-kamasu-hero.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watch-002",
+    "date": "JUNE 25, 2026",
+    "category": "REVIEW",
+    "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch Worth It?",
+    "summary": "We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.",
+    "cover_img": "/watches/images/blog/amazfit-bip-5-hero.jpg",
+    "page_url": "/watches/amazfit-bip-5-review.html",
+    "gear_list": [
+      {
+        "name": "Amazfit Bip 5 Smartwatch",
+        "url": "https://amzn.to/3TGl7Ma",
+        "img": "/watches/images/blog/amazfit-bip-5-hero.jpg"
       }
     ]
   },
@@ -89,24 +146,8 @@
     "category": "MOD GUIDE",
     "title": "Seiko 5 Sports Blackout Mod: Is the NH36 Worth Building Around?",
     "summary": "A full breakdown of the blackout build everyone's copying — what the NH36 movement actually delivers, and where the aftermarket bezel and sapphire swap genuinely improves the watch.",
-    "cover_img": "/images/blog/seiko-5-blackout.jpg",
+    "cover_img": "/watches/images/blog/seiko-5-blackout.jpg",
     "page_url": "/watches/seiko-5-blackout-mod-nh36-review.html",
     "gear_list": []
-  },
-  {
-    "id": "watch-002",
-    "date": "JUNE 25, 2026",
-    "category": "REVIEW",
-    "title": "Amazfit Bip 5 Review: Is This Ultra-Budget Smartwatch Worth It?",
-    "summary": "We spend 14 days testing the budget smartwatch that forums are talking about. Built-in GPS, robust fitness tracking, and a 10-day battery — we evaluate if the performance justifies skipping the premiums.",
-    "cover_img": "/images/blog/zhinengbiao.jpg",
-    "page_url": "/watches/amazfit-bip-5-review.html",
-    "gear_list": [
-      {
-        "name": "Amazfit Bip 5 Smartwatch",
-        "url": "https://amzn.to/3TGl7Ma",
-        "img": "/images/blog/zhinengbiao.jpg"
-      }
-    ]
   }
 ]
