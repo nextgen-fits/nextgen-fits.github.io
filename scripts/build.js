@@ -1,7 +1,8 @@
 // scripts/build.js
 // 在 GitHub Actions 里跑：
 // 1. 把 JSON 数据预渲染进静态 HTML（首页商品/文章、articles.html 全量列表）
-// 2. 自动扫描 watches/apparel/gear 文件夹，生成 sitemap.xml，
+// 2. 为商品自动注入符合 Google 规范的 JSON-LD 结构化数据（解决 GSC hasMerchantReturnPolicy 警告）
+// 3. 自动扫描 watches/apparel/gear 文件夹，生成 sitemap.xml，
 //    lastmod 直接取每个文件在 Git 里真实的最后提交日期
 // 不需要任何 npm 依赖，纯 Node 内置模块。
 
@@ -115,6 +116,43 @@ function renderArticleItem(post) {
         </li>`;
 }
 
+// ---------- 生成合规的 Product Schema JSON-LD (解决 GSC 警告) ----------
+function generateProductsSchema(productList) {
+  if (!productList || !productList.length) return '';
+
+  const schemaItems = productList.map(item => {
+    // 提取数字价格，去掉 $ 符号
+    const rawPrice = item.price ? String(item.price).replace(/[^0-9.]/g, '') : '0.00';
+    const imageUrl = item.img && item.img.startsWith('http') ? item.img : `${SITE_URL}${item.img || ''}`;
+
+    return {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": item.title,
+      "image": imageUrl,
+      "description": item.desc,
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": rawPrice || "0.00",
+        "availability": "https://schema.org/InStock",
+        "url": item.url,
+        // 👇 彻底消除 GSC 未填写 hasMerchantReturnPolicy 警告的必备结构
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        }
+      }
+    };
+  });
+
+  return `<script type="application/ld+json">\n${JSON.stringify(schemaItems, null, 2)}\n</script>`;
+}
+
 function injectHomepage(html) {
   const byType = { Watches: [], Apparel: [], Gear: [] };
   for (const p of products) if (byType[p.type]) byType[p.type].push(p);
@@ -137,6 +175,12 @@ function injectHomepage(html) {
     '<ul class="article-list" id="auto-news-feed" style="list-style:none;"></ul>',
     `<ul class="article-list" id="auto-news-feed" style="list-style:none;">${homepageArticles.map(renderArticleItem).join('')}</ul>`
   );
+
+  // 在 </body> 标签前自动注入补全退换货政策的 Schema 结构化数据
+  const schemaScript = generateProductsSchema(products);
+  if (schemaScript) {
+    html = html.replace('</body>', `${schemaScript}\n</body>`);
+  }
 
   return html;
 }
@@ -262,7 +306,7 @@ const indexPath = path.join(DIST, 'index.html');
 const indexRaw = fs.readFileSync(indexPath, 'utf8');
 
 fs.writeFileSync(indexPath, injectHomepage(indexRaw), 'utf8');
-console.log('[build] 已写入预渲染后的 index.html');
+console.log('[build] 已写入预渲染后的 index.html (已自动插入 Product Schema)');
 
 fs.writeFileSync(path.join(DIST, 'articles.html'), buildArticlesPage(indexRaw), 'utf8');
 console.log('[build] 已生成 articles.html');
