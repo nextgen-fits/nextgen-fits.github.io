@@ -1,5 +1,41 @@
 [
   {
+    "id": "watch-010",
+    "date": "AUGUST 15, 2026",
+    "category": "BUYERS GUIDE",
+    "title": "Best Watches Under $100 (2026): 6 Tested Picks — Real Pros & Cons",
+    "summary": "From the $27 indestructible G-Shock and a 200m diver to genuine Seiko and Invicta automatics. We analyzed thousands of verified owner reviews to deliver the real pros, cons, and current pricing.",
+    "cover_img": "/images/gear-deal.jpg",
+    "page_url": "/watches/best-watches-under-100-2026.html",
+    "gear_list": [
+      {
+        "name": "Casio G-Shock DW5600E-1V ($26.99)",
+        "url": "https://amzn.to/4hwCtVX",
+        "img": "/images/gear-deal.jpg"
+      },
+      {
+        "name": "Casio Duro MDV106-1AV (~$95.00)",
+        "url": "https://amzn.to/4iaMEj6",
+        "img": "/images/gear-deal.jpg"
+      },
+      {
+        "name": "Timex Weekender (~$40.00)",
+        "url": "https://amzn.to/4ws7Zbq",
+        "img": "/images/gear-deal.jpg"
+      },
+      {
+        "name": "Invicta Pro Diver 8926OB ($64.95)",
+        "url": "https://amzn.to/4xIzr5K",
+        "img": "/images/gear-deal.jpg"
+      },
+      {
+        "name": "Seiko 5 SNK809 Automatic (~$100-200)",
+        "url": "https://amzn.to/3RVkluy",
+        "img": "/images/gear-deal.jpg"
+      }
+    ]
+  },
+  {
     "id": "watch-009",
     "date": "AUGUST 2, 2026",
     "category": "BUYERS GUIDE",
