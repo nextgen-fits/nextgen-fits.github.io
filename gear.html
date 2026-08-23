@@ -52,7 +52,7 @@
         .eyebrow { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 14px; }
         .page-intro h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 16px; color: #fff; }
         .page-intro p { color: var(--steel); font-size: 0.92rem; line-height: 1.6; max-width: 600px; }
- 
+
         .article-index { display: flex; flex-direction: column; gap: 0; }
         .article-card {
             display: grid; grid-template-columns: 160px 1fr; gap: 24px;
@@ -65,15 +65,16 @@
         .card-thumb { width: 160px; aspect-ratio: 16/10; overflow: hidden; background: var(--card); border: 1px solid var(--line); flex-shrink: 0; }
         .card-thumb img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.88); background-color: var(--card); }
         .card-body { display: flex; flex-direction: column; justify-content: center; }
-        .card-meta { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 8px; }
-        .card-title { font-size: 1.15rem; color: #fff; margin-bottom: 10px; line-height: 1.3; }
+        .card-meta { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; display: block; margin-bottom: 8px; font-weight: 600; }
+        .card-title { font-size: 1.15rem; color: #fff; margin-bottom: 10px; line-height: 1.3; font-family: "Fraunces", Georgia, serif; }
         .card-summary { color: var(--steel); font-size: 0.85rem; line-height: 1.6; margin-bottom: 14px; }
-        .card-read-more { font-size: 0.75rem; color: var(--gold); letter-spacing: 0.06em; }
- 
+        .card-read-more { font-size: 0.75rem; color: var(--gold); letter-spacing: 0.06em; font-weight: 600; }
+        .card-badge { display: inline-block; background: var(--gold); color: #000; font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 10px; border-radius: 2px; margin-left: 10px; vertical-align: middle; }
+
         footer { text-align: center; padding: 40px 24px; font-size: 0.72rem; color: var(--steel); border-top: 1px solid var(--line); }
         footer a { color: var(--steel); text-decoration: underline; }
         footer p { margin-bottom: 6px; }
- 
+
         @media screen and (min-width: 860px) {
             .page-intro h1 { font-size: 2.6rem; }
             .article-card { grid-template-columns: 220px 1fr; gap: 32px; }
@@ -95,7 +96,6 @@
                 <a href="/watches.html">Watches</a>
                 <a href="/apparel.html">Apparel</a>
                 <a href="/gear.html" class="active">Gear</a>
-                <!-- ★ About 和 Subscribe 链接 ★ -->
                 <a href="/about.html">About</a>
                 <a href="/subscribe.html">Subscribe</a>
             </div>
@@ -110,112 +110,97 @@
         <div class="article-index">
 
             <!-- ============================================================ -->
-            <!-- ⭐ 新文章：极简桌搭10件套 -->
+            <!-- ⭐ 新增置顶：解决桌面痛点的 10 款配件指南 (SEO + GEO 版) -->
             <!-- ============================================================ -->
-            <a href="/gear/minimalist-desk-setup-10-picks-2026.html" class="article-card">
-
+            <a href="/gear/pc-accessories-that-solve-desk-problems-2026.html" class="article-card">
                 <div class="card-thumb">
-                    <img src="gear/images/blog/Claiks-Electric-Standing-Desk.jpg" 
-                         alt="Minimalist desk setup with monitor, arm, mouse and desk mat" 
+                    <img src="/gear/images/blog/benq-screenbar-scene.jpg" 
+                         alt="Functional desk setup with BenQ monitor light bar and problem-solving accessories" 
                          loading="eager"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-
                 <div class="card-body">
-
-                    <span class="card-meta">AUGUST 7, 2026 — BUYING GUIDE</span>
-
-                    <h2 class="card-title">Minimalist Desk Setup 2026: 10 Best Amazon Picks for a Clean Workspace</h2>
-
-                    <p class="card-summary">3 monitors, 2 monitor arms, 2 mice, 2 leather desk mats, and one standing desk — a complete minimalist desk setup, all sourced from Amazon.</p>
-
+                    <span class="card-meta">AUGUST 22, 2026 — BUYING GUIDE <span class="card-badge">NEW</span></span>
+                    <h2 class="card-title">10 PC Accessories That Actually Fix Desk Problems (2026 Guide)</h2>
+                    <p class="card-summary">Not another generic gear list — 10 PC and desk accessories, each mapped to a specific problem it solves: eye strain, cable chaos, dead phone batteries, and bad posture. Tested for real transactional value.</p>
                     <span class="card-read-more">Read full guide →</span>
-
                 </div>
-
             </a>
 
             <!-- ============================================================ -->
-            <!-- ⭐ 新文章 0（置顶）：10款极简显示器深度评测 -->
-            <!-- 修复：链接从 //gear/ 改为 /gear/ -->
+            <!-- 极简桌搭10件套 -->
+            <!-- ============================================================ -->
+            <a href="/gear/minimalist-desk-setup-10-picks-2026.html" class="article-card">
+                <div class="card-thumb">
+                    <img src="/gear/images/blog/Claiks-Electric-Standing-Desk.jpg" 
+                         alt="Minimalist desk setup with monitor, arm, mouse and desk mat" 
+                         loading="lazy"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
+                </div>
+                <div class="card-body">
+                    <span class="card-meta">AUGUST 7, 2026 — BUYING GUIDE</span>
+                    <h2 class="card-title">Minimalist Desk Setup 2026: 10 Best Amazon Picks for a Clean Workspace</h2>
+                    <p class="card-summary">3 monitors, 2 monitor arms, 2 mice, 2 leather desk mats, and one standing desk — a complete minimalist desk setup, all sourced from Amazon.</p>
+                    <span class="card-read-more">Read full guide →</span>
+                </div>
+            </a>
+
+            <!-- ============================================================ -->
+            <!-- 10款极简显示器深度评测 -->
             <!-- ============================================================ -->
             <a href="/gear/best-minimalist-monitors-2026.html" class="article-card">
-
                 <div class="card-thumb">
                     <img src="/gear/images/blog/monitor-gigabyte-go27q24g.jpg" 
                          alt="10 best minimalist monitors 2026 in-depth review" 
-                         loading="eager"
+                         loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-
                 <div class="card-body">
-
                     <span class="card-meta">JULY 27, 2026 — MONITOR ROUNDUP</span>
-
                     <h2 class="card-title">10 Best Minimalist Monitors 2026: In-Depth Reviews &amp; User Ratings</h2>
-
                     <p class="card-summary">Deep-dive reviews of the 10 best minimalist monitors for 2026. Real user ratings, expert analysis, pros &amp; cons, and buying advice for every budget — from $80 to $1,100.</p>
-
                     <span class="card-read-more">Read full guide →</span>
-
                 </div>
-
             </a>
 
             <!-- ============================================================ -->
-            <!-- 文章 1：Amazon Basics 24" 显示器评测 -->
+            <!-- Amazon Basics 24" 显示器评测 -->
             <!-- ============================================================ -->
             <a href="/gear/amazon-basics-24-inch-monitor-review.html" class="article-card">
-
                 <div class="card-thumb">
                     <img src="/gear/images/blog/monitor-amazon-basics3-24.jpg" 
                          alt="Amazon Basics 24-inch 100Hz IPS monitor review budget minimalist display" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-
                 <div class="card-body">
-
                     <span class="card-meta">JULY 18, 2026 — MONITOR REVIEW</span>
-
                     <h2 class="card-title">Amazon Basics 24" 100Hz Monitor Review: Best Budget IPS Display?</h2>
-
                     <p class="card-summary">We tested the Amazon Basics 24-inch 100Hz IPS monitor. 1080p, VESA mount, built-in speakers, and a clean minimalist design. Read our honest review before you buy.</p>
-
                     <span class="card-read-more">Read full review →</span>
-
                 </div>
-
             </a>
 
             <!-- ============================================================ -->
-            <!-- 文章 2：10款极简显示器评测 -->
+            <!-- 10款极简显示器评测 (Minimalist Guide) -->
             <!-- ============================================================ -->
             <a href="/gear/minimalist-monitor-setup.html" class="article-card">
-
                 <div class="card-thumb">
                     <img src="/gear/images/blog/monitor-amazon-basics2-24.jpg" 
                          alt="10 best minimalist monitors for clean desk setup" 
                          loading="lazy"
                          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E';">
                 </div>
-
                 <div class="card-body">
-
                     <span class="card-meta">JULY 12, 2026 — MINIMALIST</span>
-
                     <h2 class="card-title">10 Best Minimalist Monitors for a Clean Desk Setup (2026 Guide)</h2>
-
                     <p class="card-summary">Looking for a minimalist monitor for your clean desk setup? We review 10 best minimalist monitors from $89 to $429 — Amazon Basics, Dell, LG, Asus & more. Find the perfect clean desk monitor.</p>
-
                     <span class="card-read-more">Read full guide →</span>
-
                 </div>
-
             </a>
 
             <!-- ============================================================ -->
-            <!-- 文章 3：三屏桌面搭建 -->
+            <!-- 三屏桌面搭建 -->
             <!-- ============================================================ -->
             <a href="/gear/minimalist-triple-monitor-setup.html" class="article-card">
                 <div class="card-thumb">
@@ -233,7 +218,7 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- 文章 4：EDC 远程办公装备 -->
+            <!-- EDC 远程办公装备 -->
             <!-- ============================================================ -->
             <a href="/gear/edc-tech-setup-remote-work.html" class="article-card">
                 <div class="card-thumb">
@@ -251,7 +236,7 @@
             </a>
 
             <!-- ============================================================ -->
-            <!-- 文章 5：单屏人体工学搭建 -->
+            <!-- 单屏人体工学搭建 -->
             <!-- ============================================================ -->
             <a href="/gear/single-monitor-ergonomic-setup.html" class="article-card">
                 <div class="card-thumb">
@@ -271,7 +256,7 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2026 NextGen Essentials.</p>
+        <p>&copy; 2026 NextGen Essentials. All rights reserved.</p>
         <p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
     </footer>
 </body>
