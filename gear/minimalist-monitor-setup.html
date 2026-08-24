@@ -33,7 +33,7 @@
     <meta property="og:image" content="https://nxgenpicks.com/gear/images/blog/minimalist-monitor-hero.jpg">
     <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Multi-Schema JSON-LD (Review + ItemList + FAQ for Rich Snippets & Star Ratings) -->
+    <!-- Multi-Schema JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -391,7 +391,7 @@
         .content-wrap h2 { font-size: 1.3rem; color: #fff; margin: 40px 0 10px; padding-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
         .content-wrap h2:first-of-type { border-top: none; padding-top: 0; margin-top: 4px; }
 
-        /* ★ 高级交互评测卡片 ★ */
+        /* ★ 高级评测卡片 (优化图片比例与响应式布局) ★ */
         .review-card {
             background: var(--card);
             border: 1px solid var(--line);
@@ -410,14 +410,33 @@
             }
         }
         
-        .rev-top-row { display: grid; grid-template-columns: 140px 1fr; gap: 18px; margin-bottom: 14px; align-items: center; }
-        .rev-img { 
-            width: 100%; aspect-ratio: 16/10; overflow: hidden; background: #000; 
-            border-radius: 3px; border: 1px solid var(--line); 
-            box-shadow: inset 0 0 12px rgba(0,0,0,0.8);
+        /* 桌面端：左侧清晰 180px 预览大图，右侧信息 */
+        .rev-top-row { 
+            display: grid; 
+            grid-template-columns: 180px 1fr; 
+            gap: 20px; 
+            margin-bottom: 16px; 
+            align-items: center; 
         }
-        .rev-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; filter: brightness(0.9); }
-        .review-card:hover .rev-img img { transform: scale(1.04); }
+        .rev-img { 
+            width: 100%; 
+            aspect-ratio: 16/10; 
+            overflow: hidden; 
+            background: #000; 
+            border-radius: 4px; 
+            border: 1px solid var(--line); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .rev-img img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            object-position: center;
+            transition: transform 0.4s ease; 
+            filter: brightness(0.92) contrast(1.02); 
+            display: block;
+        }
+        .review-card:hover .rev-img img { transform: scale(1.03); }
         
         .rev-top { display: flex; flex-direction: column; justify-content: center; }
         .rev-name { font-size: 1.15rem; color: #fff; font-weight: 600; margin-bottom: 3px; line-height: 1.3; }
@@ -434,7 +453,7 @@
         }
 
         /* 价格与动态现货徽章 */
-        .rev-price-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .rev-price-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 2px; }
         .rev-price { font-family: "Fraunces", serif; font-size: 1.3rem; color: var(--gold); font-weight: 600; }
         .stock-badge {
             display: inline-flex; align-items: center; gap: 5px;
@@ -545,9 +564,19 @@
         footer a { color: var(--steel); text-decoration: underline; }
         footer p { margin-bottom: 6px; }
 
-        @media screen and (max-width: 560px) {
-            .article-header h1 { font-size: 1.6rem; }
-            .rev-top-row { grid-template-columns: 100px 1fr; gap: 12px; }
+        /* ★ 核心修复：移动端图片 100% 满宽通栏展示，彻底解决发虚拉小问题 ★ */
+        @media screen and (max-width: 600px) {
+            .article-header h1 { font-size: 1.55rem; }
+            .review-card { padding: 16px 14px; }
+            .rev-top-row { 
+                grid-template-columns: 1fr; /* 手机端强制单列：图片在上，文字在下 */
+                gap: 14px; 
+            }
+            .rev-img { 
+                width: 100%; 
+                aspect-ratio: 16/10; /* 宽屏黄金视觉比 */
+                border-radius: 4px;
+            }
             .rev-cols { grid-template-columns: 1fr; }
             .verdict-dual-box { grid-template-columns: 1fr; }
             .qr-row { flex-direction: column; gap: 2px; }
@@ -672,7 +701,7 @@
         <h2 id="amazon-24">1. Amazon Basics 24" 100Hz: The Purest $89 Clean Desk Entry</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics3-24.jpg" alt="Amazon Basics 24-inch 100Hz IPS monitor clean minimalist setup" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics3-24.jpg" alt="Amazon Basics 24-inch 100Hz IPS monitor clean minimalist setup" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Amazon Basics 24" 100Hz Monitor</span>
                     <span class="rev-tagline">1080p IPS Panel with 1500:1 Contrast Ratio</span>
@@ -697,7 +726,7 @@
             </p>
             <div class="rev-cols">
                 <div class="rev-col pros">
-                    <h4>What owners love</h4>
+                    <h4>What owners like</h4>
                     <ul>
                         <li>Unbeatable $89 price tag with clean, unbranded front bezels</li>
                         <li>100Hz refresh rate reduces visual eye fatigue noticeably</li>
@@ -732,7 +761,7 @@
         <h2 id="hp-27">2. HP Series 3 27" FHD: Expansive 3-Sided Micro-Edge Screen</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-hp-series3-27.jpg" alt="HP Series 3 27-inch monitor minimalist micro-edge design" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-hp-series3-27.jpg" alt="HP Series 3 27-inch monitor minimalist micro-edge design" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">HP Series 3 27" FHD Monitor</span>
                     <span class="rev-tagline">100Hz IPS with HP Eye Ease Blue Light Hardware Filtering</span>
@@ -791,7 +820,7 @@
         <h2 id="dell-24">3. Dell P2425H 24" Professional: Ergonomic Stand &amp; USB-C Clean Connectivity</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics2-24.jpg" alt="Dell P2425H monitor on adjustable ergonomic stand" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics2-24.jpg" alt="Dell P2425H monitor on adjustable ergonomic stand" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Dell P2425H Professional</span>
                     <span class="rev-tagline">100Hz IPS with Full 4-Way Ergonomic Articulation</span>
@@ -850,7 +879,7 @@
         <h2 id="amazon-27">4. Amazon Basics 27" 100Hz: Maximum Desk Area Under $150</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics2-27.jpg" alt="Amazon Basics 27-inch clean desk monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-amazon-basics2-27.jpg" alt="Amazon Basics 27-inch clean desk monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Amazon Basics 27" 100Hz Monitor</span>
                     <span class="rev-tagline">Clean IPS Display with Integrated Stereo Audio</span>
@@ -909,7 +938,7 @@
         <h2 id="lg-4k">5. LG 27US500-W 4K: The Clean White Retina-Grade Minimalist Pick</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-lg-27us500-w.jpg" alt="LG 27US500-W 4K white minimalist monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-lg-27us500-w.jpg" alt="LG 27US500-W 4K white minimalist monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">LG 27US500-W 4K UHD</span>
                     <span class="rev-tagline">3840×2160 IPS Panel with Matte White Chassis Aesthetic</span>
@@ -969,7 +998,7 @@
         <h2 id="asus-1440p">6. Asus ROG Strix XG27ACS: 1440p 180Hz Performance with Clean Stealth Design</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-xg27acs.jpg" alt="Asus ROG Strix XG27ACS 1440p 180Hz monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-xg27acs.jpg" alt="Asus ROG Strix XG27ACS 1440p 180Hz monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Asus ROG Strix XG27ACS</span>
                     <span class="rev-tagline">2560×1440 Fast IPS with 180Hz &amp; USB-C Alt Mode</span>
@@ -1028,7 +1057,7 @@
         <h2 id="dell-4k">7. Dell S2725QS 27" 4K: Fluid 120Hz Refresh with Ash-White Minimalist Finish</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-dell-s2725qs.jpg" alt="Dell S2725QS 4K 120Hz ash white monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-dell-s2725qs.jpg" alt="Dell S2725QS 4K 120Hz ash white monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Dell S2725QS 4K 120Hz</span>
                     <span class="rev-tagline">3840×2160 IPS with 120Hz &amp; HDMI 2.1 in Ash-White</span>
@@ -1087,7 +1116,7 @@
         <h2 id="aoc-miniled">8. AOC Q27G3XMN: True HDR1000 with 336-Zone Full-Array Local Dimming</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-aoc-q27g3xmn.jpg" alt="AOC Q27G3XMN Mini-LED monitor with deep black contrast" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-aoc-q27g3xmn.jpg" alt="AOC Q27G3XMN Mini-LED monitor with deep black contrast" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">AOC Q27G3XMN Mini-LED</span>
                     <span class="rev-tagline">2560×1440 QHD with 336 Local Dimming Zones &amp; HDR1000</span>
@@ -1146,7 +1175,7 @@
         <h2 id="acer-4k160">9. Acer Predator XB273K V5: 4K 160Hz Precision Gaming Powerhouse</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-proart1-pa279crv.jpg" alt="Acer Predator XB273K V5 4K 160Hz gaming monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-proart1-pa279crv.jpg" alt="Acer Predator XB273K V5 4K 160Hz gaming monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Acer Predator XB273K V5</span>
                     <span class="rev-tagline">3840×2160 4K UHD with 160Hz Fast IPS Panel</span>
@@ -1205,7 +1234,7 @@
         <h2 id="asus-proart">10. Asus ProArt PA279CRV: The Color-Calibrated 4K Creative Studio Hub</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-proart-pa279crv.jpg" alt="Asus ProArt PA279CRV 4K color accurate creative monitor" loading="lazy" width="140" height="88" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%2288%22%3E%3Crect fill=%22%23111113%22 width=%22140%22 height=%2288%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/gear/images/blog/monitor-asus-proart-pa279crv.jpg" alt="Asus ProArt PA279CRV 4K color accurate creative monitor" loading="lazy" width="800" height="500" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22500%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Asus ProArt PA279CRV</span>
                     <span class="rev-tagline">3840×2160 Factory-Calibrated (ΔE &lt; 2) with 96W USB-C PD</span>
