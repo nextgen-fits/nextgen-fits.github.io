@@ -351,7 +351,7 @@
         .content-wrap h2 { font-size: 1.3rem; color: #fff; margin: 40px 0 10px; padding-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 80px; }
         .content-wrap h2:first-of-type { border-top: none; padding-top: 0; margin-top: 4px; }
 
-        /* ★ 高级交互评测卡片 ★ */
+        /* ★ 高级服饰卡片与图片优化 ★ */
         .review-card {
             background: var(--card);
             border: 1px solid var(--line);
@@ -370,14 +370,33 @@
             }
         }
         
-        .rev-top-row { display: grid; grid-template-columns: 130px 1fr; gap: 16px; margin-bottom: 14px; align-items: center; }
-        .rev-img { 
-            width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #000; 
-            border-radius: 3px; border: 1px solid var(--line); 
-            box-shadow: inset 0 0 12px rgba(0,0,0,0.8);
+        /* 桌面端：左侧 180px 4:3 比例展示服饰上身效果 */
+        .rev-top-row { 
+            display: grid; 
+            grid-template-columns: 180px 1fr; 
+            gap: 20px; 
+            margin-bottom: 16px; 
+            align-items: center; 
         }
-        .rev-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-        .review-card:hover .rev-img img { transform: scale(1.04); }
+        .rev-img { 
+            width: 100%; 
+            aspect-ratio: 4/3; 
+            overflow: hidden; 
+            background: #000; 
+            border-radius: 4px; 
+            border: 1px solid var(--line); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .rev-img img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            object-position: center;
+            transition: transform 0.4s ease; 
+            filter: brightness(0.92) contrast(1.02); 
+            display: block;
+        }
+        .review-card:hover .rev-img img { transform: scale(1.03); }
         
         .rev-top { display: flex; flex-direction: column; justify-content: center; }
         .rev-name { font-size: 1.15rem; color: #fff; font-weight: 600; margin-bottom: 3px; line-height: 1.3; }
@@ -394,7 +413,7 @@
         }
 
         /* 价格与动态现货徽章 */
-        .rev-price-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .rev-price-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 2px; }
         .rev-price { font-family: "Fraunces", serif; font-size: 1.3rem; color: var(--gold); font-weight: 600; }
         .stock-badge {
             display: inline-flex; align-items: center; gap: 5px;
@@ -438,7 +457,7 @@
         .verdict-item.buy strong { color: var(--success); }
         .verdict-item.skip strong { color: var(--danger); }
 
-        /* ★ 流光动效购物车购买按钮 (High-Conversion Buy CTA) ★ */
+        /* ★ 流光动效购物车购买按钮 ★ */
         .buy-btn-cart {
             display: flex; align-items: center; justify-content: center; gap: 9px;
             width: 100%; text-align: center; text-decoration: none;
@@ -505,9 +524,19 @@
         footer a { color: var(--steel); text-decoration: underline; }
         footer p { margin-bottom: 6px; }
 
-        @media screen and (max-width: 560px) {
-            .article-header h1 { font-size: 1.6rem; }
-            .rev-top-row { grid-template-columns: 95px 1fr; gap: 12px; }
+        /* ★ 核心修复：移动端图片 100% 满宽通栏展示 ★ */
+        @media screen and (max-width: 600px) {
+            .article-header h1 { font-size: 1.55rem; }
+            .review-card { padding: 16px 14px; }
+            .rev-top-row { 
+                grid-template-columns: 1fr; /* 手机端强制单列：图片在上，文字在下 */
+                gap: 14px; 
+            }
+            .rev-img { 
+                width: 100%; 
+                aspect-ratio: 4/3; /* 服饰上身最佳展示比 */
+                border-radius: 4px;
+            }
             .rev-cols { grid-template-columns: 1fr; }
             .verdict-dual-box { grid-template-columns: 1fr; }
             .qr-row { flex-direction: column; gap: 2px; }
@@ -632,7 +661,7 @@
         <h2 id="carhartt-jacket">1. Carhartt Flannel-Lined Duck Active Jacket: 10-Year Outerwear Armor</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/carhartt-jacket.jpg" alt="Carhartt Duck Canvas Active Jacket in Carhartt Brown" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/carhartt-jacket.jpg" alt="Carhartt Duck Canvas Active Jacket in Carhartt Brown" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Carhartt Duck Active Jacket</span>
                     <span class="rev-tagline">12 oz. 100% Ring-Spun Cotton Duck Canvas (22,300+ Ratings)</span>
@@ -657,7 +686,7 @@
             </p>
             <div class="rev-cols">
                 <div class="rev-col pros">
-                    <h4>What owners love</h4>
+                    <h4>What owners like</h4>
                     <ul>
                         <li>Nearly indestructible canvas shell resists wind, abrasions, and sparks</li>
                         <li>Thermal flannel lining keeps core warm without bulky puffiness</li>
@@ -682,7 +711,6 @@
                     You strictly require an ultralight, packable nylon down jacket.
                 </div>
             </div>
-            <!-- 高级购物车购买按钮 -->
             <a href="https://amzn.to/4gY0W1v" class="buy-btn-cart" target="_blank" rel="nofollow sponsored noopener">
                 <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
                 Buy on Amazon ($119.99) →
@@ -693,7 +721,7 @@
         <h2 id="levis-505">2. Levi's 505 Regular Fit Straight Leg: The Antidote to Outdated Skinny Cuts</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/levis-505.jpg" alt="Levi's 505 Regular Straight Leg Jeans dark stone wash" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/levis-505.jpg" alt="Levi's 505 Regular Straight Leg Jeans dark stone wash" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Levi's 505 Regular Fit Jeans</span>
                     <span class="rev-tagline">The Definitive Straight Leg Revival (127,000+ Ratings)</span>
@@ -718,7 +746,7 @@
             </p>
             <div class="rev-cols">
                 <div class="rev-col pros">
-                    <h4>What owners love</h4>
+                    <h4>What owners like</h4>
                     <ul>
                         <li>Flattering straight leg cut pairs perfectly with boots, retro runners, and loafers</li>
                         <li>Available in 100% rigid cotton or 99% cotton / 1% elastane comfort stretch</li>
@@ -753,7 +781,7 @@
         <h2 id="quarter-zip">3. Heavyweight Quarter-Zip Fleece: The Workday Mid-Layer Essential</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/quarter-zip.jpg" alt="Men's Heavyweight Fleece Quarter-Zip Sweatshirt in Charcoal" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/quarter-zip.jpg" alt="Men's Heavyweight Fleece Quarter-Zip Sweatshirt in Charcoal" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Heavyweight Fleece Quarter-Zip</span>
                     <span class="rev-tagline">Smart-casual versatility with thermal comfort</span>
@@ -812,7 +840,7 @@
         <h2 id="champion-hoodie">4. Champion Reverse Weave Pullover: The 12 oz. Heavyweight Standard</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/champion-hoodie.jpg" alt="Champion Reverse Weave Heavyweight Pullover Hoodie in Oxford Grey" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/champion-hoodie.jpg" alt="Champion Reverse Weave Heavyweight Pullover Hoodie in Oxford Grey" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Champion Reverse Weave Hoodie</span>
                     <span class="rev-tagline">12 oz. Cross-Grain Cut Heavyweight Fleece (58,000+ Ratings)</span>
@@ -871,7 +899,7 @@
         <h2 id="carhartt-k87">5. Carhartt K87 Heavyweight Pocket Tee: Stop Bacon-Collaring Forever</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/carhartt-k87.jpg" alt="Carhartt K87 Heavyweight Pocket T-Shirt in Black" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/carhartt-k87.jpg" alt="Carhartt K87 Heavyweight Pocket T-Shirt in Black" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Carhartt K87 Heavyweight Tee</span>
                     <span class="rev-tagline">6.75 oz. 100% Heavy Cotton Jersey (95,000+ Ratings)</span>
@@ -930,7 +958,7 @@
         <h2 id="dickies-874">6. Dickies 874 Original Twill: The $30 Indestructible Everyday Pant</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/dickies-874.jpg" alt="Dickies 874 Original Fit Work Pant in Khaki" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/dickies-874.jpg" alt="Dickies 874 Original Fit Work Pant in Khaki" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Dickies 874 Original Fit Pant</span>
                     <span class="rev-tagline">8.5 oz. Heavyweight Stain-Release Twill (86,000+ Ratings)</span>
@@ -989,7 +1017,7 @@
         <h2 id="ratchet-belt">7. CHAOREN Leather Ratchet Belt: Micro-Adjustable Comfort Without Hole Sag</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/ratchet-belt.jpg" alt="CHAOREN leather ratchet belt with matte black automatic buckle" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/ratchet-belt.jpg" alt="CHAOREN leather ratchet belt with matte black automatic buckle" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">CHAOREN Leather Ratchet Belt</span>
                     <span class="rev-tagline">1/5-inch micro-adjustments with zero hole creasing</span>
@@ -1048,7 +1076,7 @@
         <h2 id="timberland-boot">8. Timberland 6-Inch Premium Waterproof Boot: The All-Weather Work Footwear</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/timberland-boot.jpg" alt="Timberland 6-Inch Premium Waterproof Boot in Wheat Nubuck" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/timberland-boot.jpg" alt="Timberland 6-Inch Premium Waterproof Boot in Wheat Nubuck" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Timberland 6-Inch Waterproof Boot</span>
                     <span class="rev-tagline">Seam-Sealed Premium Nubuck Leather (45,000+ Ratings)</span>
@@ -1107,7 +1135,7 @@
         <h2 id="carhartt-beanie">9. Carhartt Acrylic Watch Hat: The $20 Cold-Weather Headwear Staple</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/carhartt-beanie.jpg" alt="Carhartt Acrylic Watch Hat Ribbed Beanie in Black" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/carhartt-beanie.jpg" alt="Carhartt Acrylic Watch Hat Ribbed Beanie in Black" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Carhartt Acrylic Watch Hat</span>
                     <span class="rev-tagline">100% Heavy Ribbed Stretch Knit (160,000+ Ratings)</span>
@@ -1166,7 +1194,7 @@
         <h2 id="carhartt-backpack">10. Carhartt 25L Classic Backpack: The Commuter Work Utility Pack</h2>
         <div class="review-card">
             <div class="rev-top-row">
-                <div class="rev-img"><img src="/apparel/images/blog/carhartt-backpack.jpg" alt="Carhartt 25L Classic Everyday Laptop Backpack with Rain Defender finish" loading="lazy" width="130" height="130" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22130%22 height=%22130%22%3E%3Crect fill=%22%23111113%22 width=%22130%22 height=%22130%22/%3E%3C/svg%3E';"></div>
+                <div class="rev-img"><img src="/apparel/images/blog/carhartt-backpack.jpg" alt="Carhartt 25L Classic Everyday Laptop Backpack with Rain Defender finish" loading="lazy" width="800" height="600" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%23111113%22 width=%22800%22 height=%22600%22/%3E%3C/svg%3E';"></div>
                 <div class="rev-top">
                     <span class="rev-name">Carhartt 25L Classic Backpack</span>
                     <span class="rev-tagline">500D DWR Polyester with 15-Inch Padded Laptop Sleeve</span>
