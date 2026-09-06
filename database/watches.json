@@ -1,5 +1,26 @@
 [
   {
+    "id": "watch-011",
+    "date": "SEPTEMBER 5, 2026",
+    "category": "BUYERS GUIDE",
+    "title": "10 Best Everyday Tool & Field Watches Under $250 (2026): Indestructible Classics",
+    "summary": "Smartwatches become obsolete e-waste in 3 years. We test and break down 10 battle-tested solar, diver, and mechanical field watches built for daily abuse without charging friction.",
+    "cover_img": "/watches/images/blog/watch-casio-gab2100-black.webp.jpg",
+    "page_url": "/watches/best-everyday-tool-watches-under-200-2026.html",
+    "gear_list": [
+      { "name": "Casio G-Shock GA-B2100 Solar (~$150.00)", "url": "https://amzn.to/4xye7QG", "img": "/watches/images/blog/watch-casio-gab2100-black.webp.jpg" },
+      { "name": "Citizen Eco-Drive Garrison Field (~$135.00)", "url": "https://amzn.to/4placeholder2", "img": "/watches/images/blog/watch-citizen-garrison-green.webp.jpg" },
+      { "name": "Seiko 5 Sports SRPD63 Green (~$195.00)", "url": "https://amzn.to/4placeholder3", "img": "/watches/images/blog/watch-seiko-5sports-srpd63-green.webp.jpg" },
+      { "name": "Timex Expedition North Post Solar 41mm ($209.00)", "url": "https://amzn.to/4hay2iJ", "img": "/watches/images/blog/watch-timex-expedition-solar-blue.webp.jpg" },
+      { "name": "Casio Duro MDV-106 Batman ($95.00)", "url": "https://amzn.to/4yeg30K", "img": "/watches/images/blog/watch-casio-duro-mdv106-batman.webp.jpg" },
+      { "name": "Bertucci A-1S Super Field 10602 ($165.00)", "url": "https://amzn.to/4gVN9eJ", "img": "/watches/images/blog/watch-bertucci-a1s-10602-olive.webp.jpg" },
+      { "name": "Orient Bambino V7 Small Seconds 38.4mm ($249.00)", "url": "https://amzn.to/4xEPXUz", "img": "/watches/images/blog/watch-orient-bambino-v7-smallseconds.webp.jpg" },
+      { "name": "Casio AE-1200WH Royale ($36.50)", "url": "https://amzn.to/4gSKqmr", "img": "/watches/images/blog/watch-casio-ae1200wh-royale-silver.webp.jpg" },
+      { "name": "Invicta Pro Diver 5053 Automatic ($94.99)", "url": "https://amzn.to/3SOdFP2", "img": "/watches/images/blog/watch-invicta-prodiver-automatic-black.webp.jpg" },
+      { "name": "Timex Weekender 38mm Cream ($34.21)", "url": "https://amzn.to/3SUaLbJ", "img": "/watches/images/blog/watch-timex-weekender-cream-black.webp.jpg" }
+    ]
+  },
+  {
     "id": "watch-010",
     "date": "AUGUST 15, 2026",
     "category": "BUYERS GUIDE",
@@ -39,7 +60,9 @@
     "summary": "Tissot PRX Powermatic 80 review — is it worth the price? Plus the best Casio Edifice EFV-160D alternative.",
     "cover_img": "/watches/images/blog/tissot-prx-hero.jpg",
     "page_url": "/watches/tissot-prx-powermatic-80-review.html",
-    "gear_list": [{ "name": "Casio Edifice", "url": "https://amzn.to/4fPPP6J", "img": "/watches/images/blog/tissot-prx-hero.jpg" }]
+    "gear_list": [
+      { "name": "Casio Edifice", "url": "https://amzn.to/4fPPP6J", "img": "/watches/images/blog/tissot-prx-hero.jpg" }
+    ]
   },
   {
     "id": "watch-007",
@@ -59,7 +82,9 @@
     "summary": "We tested the Amazfit Bip 6 for 14 days. 1.97-inch AMOLED, 14-day battery life, and built-in GPS.",
     "cover_img": "/watches/images/blog/amazfit-bip-6-hero.jpg",
     "page_url": "/watches/amazfit-bip-6-review.html",
-    "gear_list": [{ "name": "Amazfit Bip 6", "url": "https://amzn.to/4fogAFG", "img": "/watches/images/blog/amazfit-bip-6-hero.jpg" }]
+    "gear_list": [
+      { "name": "Amazfit Bip 6", "url": "https://amzn.to/4fogAFG", "img": "/watches/images/blog/amazfit-bip-6-hero.jpg" }
+    ]
   },
   {
     "id": "watch-005",
@@ -69,6 +94,8 @@
     "summary": "Looking for your first automatic watch? We compare Seiko 5 Sports, Orient Kamasu, and more.",
     "cover_img": "/images/Seiko-5-1.jpg",
     "page_url": "/watches/best-first-automatic-watch-under-200.html",
-    "gear_list": [{ "name": "Seiko 5 Sports", "url": "https://amzn.to/4vboF69", "img": "/images/Seiko-5-1.jpg" }]
+    "gear_list": [
+      { "name": "Seiko 5 Sports", "url": "https://amzn.to/4vboF69", "img": "/images/Seiko-5-1.jpg" }
+    ]
   }
 ]
