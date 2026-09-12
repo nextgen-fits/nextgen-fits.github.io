@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-13W21TZ6CL');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ★ SEO优化标题 ★ -->
-    <title>Affiliate Disclosure — How NextGen Essentials Recommends Products</title>
-    <meta name="description" content="NextGen Essentials earns a small commission when you buy through our links — at no extra cost to you. Read our full affiliate disclosure and editorial policy.">
+    <!-- Favicons & Google Search SERP Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/web-app-manifest-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
+    <!-- ★ SEO优化标题与元数据 ★ -->
+    <title>Affiliate Disclosure &amp; Editorial Transparency — NextGen Essentials</title>
+    <meta name="description" content="Read NextGen Essentials' affiliate disclosure and editorial policy. Learn how we maintain strict independence while earning a small commission on Amazon recommendations at no extra cost to you.">
     <link rel="canonical" href="https://nxgenpicks.com/affiliate-disclosure.html" />
 
-    <!-- ★ 结构化数据：让Google理解这是一个政策页面 ★ -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Open Graph & Social Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NextGen Essentials">
+    <meta property="og:title" content="Affiliate Disclosure &amp; Editorial Transparency">
+    <meta property="og:description" content="How NextGen Essentials makes recommendations, earns commissions, and maintains complete editorial integrity.">
+    <meta property="og:url" content="https://nxgenpicks.com/affiliate-disclosure.html">
+    <meta property="og:image" content="https://nxgenpicks.com/images/og-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ★ 结构化数据：Policy / WebPage Schema ★ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Affiliate Disclosure — NextGen Essentials",
-      "description": "NextGen Essentials earns a small commission when you buy through our links — at no extra cost to you. Read our full affiliate disclosure and editorial policy.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "NextGen Essentials",
-        "url": "https://nxgenpicks.com/"
-      }
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://nxgenpicks.com/affiliate-disclosure.html#webpage",
+          "url": "https://nxgenpicks.com/affiliate-disclosure.html",
+          "name": "Affiliate Disclosure — NextGen Essentials",
+          "description": "NextGen Essentials affiliate disclosure, commercial partnership transparency, and editorial ethics policy.",
+          "publisher": {
+            "@type": "Organization",
+            "@id": "https://nxgenpicks.com/#organization",
+            "name": "NextGen Essentials",
+            "url": "https://nxgenpicks.com/"
+          }
+        }
+      ]
     }
     </script>
 
@@ -29,9 +64,10 @@
         :root {
             --ink: #0A0A0B;
             --gold: #C9A961;
-            --steel: #6B6D70;
-            --line: #232325;
-            --card: #111113;
+            --steel: #8E9094;
+            --line: #202024;
+            --card: #121215;
+            --card-subtle: #17171C;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,7 +75,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
             background: var(--ink);
-            color: #fff;
+            color: #F0F1F3;
             line-height: 1.7;
             -webkit-font-smoothing: antialiased;
         }
@@ -47,7 +83,7 @@
         h1, h2 {
             font-family: "Fraunces", Georgia, serif;
             font-weight: 500;
-            letter-spacing: -0.01em;
+            letter-spacing: -0.015em;
         }
 
         a {
@@ -87,11 +123,20 @@
         }
 
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-family: "Fraunces", serif;
             font-weight: 600;
             font-size: 1.05rem;
             text-decoration: none;
             color: #fff;
+        }
+        .nav-logo img {
+            width: 26px;
+            height: 26px;
+            border-radius: 3px;
+            border: 1px solid var(--line);
         }
         .nav-logo span { color: var(--gold); }
 
@@ -102,24 +147,35 @@
             text-decoration: none;
             transition: color 0.2s ease;
         }
-        .nav-links a:hover { color: #fff; }
+        .nav-links a:hover, .nav-links a.active { color: #fff; }
 
         .container {
-            max-width: 680px;
+            max-width: 720px;
             margin: 0 auto;
             padding: 64px 24px 80px;
         }
 
+        .eyebrow {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 12px;
+        }
+
         h1 {
-            font-size: 2rem;
-            margin-bottom: 8px;
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 10px;
             color: #fff;
         }
 
         .subhead {
             font-size: 0.92rem;
             color: var(--steel);
-            margin-bottom: 32px;
+            margin-bottom: 36px;
             border-bottom: 1px solid var(--line);
             padding-bottom: 24px;
         }
@@ -133,22 +189,24 @@
 
         p {
             color: #D1D2D4;
-            font-size: 0.95rem;
-            margin-bottom: 18px;
+            font-size: 0.96rem;
+            margin-bottom: 20px;
             line-height: 1.7;
         }
 
         .highlight-box {
             background: var(--card);
-            border-left: 2px solid var(--gold);
+            border: 1px solid var(--line);
+            border-left: 3px solid var(--gold);
             padding: 20px 24px;
             margin: 28px 0 32px;
-            border-radius: 2px;
+            border-radius: 3px;
         }
 
         .highlight-box p {
             margin-bottom: 0;
-            font-size: 0.92rem;
+            font-size: 0.94rem;
+            color: #E2E3E5;
         }
 
         .highlight-box strong {
@@ -173,9 +231,8 @@
 
         @media screen and (max-width: 640px) {
             .container { padding: 40px 16px 60px; }
-            h1 { font-size: 1.6rem; }
-            .nav-links { gap: 14px; }
-            .nav-links a { font-size: 0.7rem; }
+            h1 { font-size: 1.7rem; }
+            .nav-links { gap: 14px; overflow-x: auto; white-space: nowrap; }
         }
     </style>
 </head>
@@ -187,7 +244,10 @@
 
     <nav>
         <div class="nav-container">
-            <a href="/" class="nav-logo">NextGen <span>Essentials</span></a>
+            <a href="/" class="nav-logo">
+                <img src="/images/favicon-96x96.png" alt="NextGen Essentials Gold NP Monogram" width="26" height="26">
+                NextGen <span>Essentials</span>
+            </a>
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/watches.html">Watches</a>
@@ -201,45 +261,46 @@
 
     <div class="container">
 
+        <span class="eyebrow">Commercial Transparency &amp; Ethics</span>
         <h1>Affiliate Disclosure</h1>
-        <div class="subhead">How we make money and why you can trust what we recommend.</div>
+        <div class="subhead">How we fund independent reviews and why our recommendations remain objective.</div>
 
-        <p>NextGen Essentials is a <strong>participant in the Amazon Services LLC Associates Program</strong>, an affiliate advertising program designed to provide a way for sites to earn advertising fees by linking to Amazon.com.</p>
+        <p>NextGen Essentials is a <strong>participant in the Amazon Services LLC Associates Program</strong>, an affiliate advertising program structured to provide a mechanism for independent sites to earn advertising fees by linking to Amazon.com and affiliated storefronts.</p>
 
-        <p>In plain English: <strong>when you click a product link on our site and make a purchase, we may earn a small commission — at absolutely no extra cost to you.</strong></p>
+        <p>In direct terms: <strong>when you click an outbound purchase link on our publication and complete a transaction, we may receive a small advertising commission — at absolute zero additional cost to you.</strong></p>
 
         <div class="highlight-box">
-            <p><strong>This doesn't change the price you pay.</strong> Amazon sets the price. Our commission comes out of Amazon's cut, not your pocket. You pay the same whether you click our link or go directly to Amazon.</p>
+            <p><strong>This mechanism never alters your final purchase price.</strong> Retail pricing is determined entirely by Amazon vendors. Our commission is paid out of merchant marketing budgets, ensuring you pay the identical amount whether you navigate via our links or direct browse.</p>
         </div>
 
-        <h2>Why We Only Recommend What We'd Actually Buy</h2>
+        <h2>Why Our Recommendations Are Uncompromising</h2>
 
-        <p>Here's the thing: we only recommend products we've <strong>personally researched, tested, or have a genuine basis to evaluate</strong>. We don't recommend things just because they generate a commission.</p>
+        <p>We believe user trust is our core capital. For this reason, <strong>we only recommend hardware, timepieces, and apparel we have personally vetted, wear-tested, or verified through strict empirical review standards</strong>. We never feature items simply because they offer high commission tiers.</p>
 
-        <p>Every product we feature — watches, apparel, desk gear — has either been <strong>worn, used, or tested</strong> by someone on our team. We buy things ourselves. We wear them for weeks. We break them in, break them down, and write about what we find.</p>
+        <p>Every product showcased on NextGen Essentials undergoes rigorous examination. We buy the items with our own capital, live with them through weeks of daily friction, and evaluate their long-term value against competing alternatives in the market.</p>
 
-        <p>Our editorial opinions are <strong>entirely our own</strong>. No brand pays us for coverage. No manufacturer has influence over what we recommend. The only thing that dictates what ends up on this site is whether we genuinely think it's worth your money.</p>
+        <p>Our editorial stances are <strong>strictly independent</strong>. No manufacturer or brand purchases editorial placement, and no entity dictates our final ratings or technical criticisms.</p>
 
-        <h2>What This Means for You</h2>
+        <h2>What Commercial Support Enables</h2>
 
-        <p>When you shop through our links, you're <strong>supporting independent, honest content</strong>. The small commission we earn helps keep this site running — pays for hosting, helps us buy more products to test, and allows us to continue writing real reviews instead of recycled press releases.</p>
+        <p>Affiliate partnerships allow us to operate as an independent publication. The modest revenue generated from qualifying orders directly covers critical overhead—server hosting infrastructure, precision testing equipment, and independent product procurement.</p>
 
-        <p>You get honest recommendations. We get to keep doing what we do. And <strong>you don't pay a cent more</strong> than you would going direct. It's a fair exchange.</p>
+        <p>You secure unbiased editorial research, practical buying advice, and transparent testing metrics. We secure the means to sustain independent journalism. <strong>Zero markup costs for you, total integrity for our readers.</strong></p>
 
         <hr class="divider">
 
         <p style="font-size: 0.85rem; color: var(--steel);">
-            If you have questions about our recommendations or this disclosure, feel free to <a href="/">reach out through our contact form</a>.
+            If you have questions regarding our commercial partnerships, testing methodology, or disclosure policies, please feel free to reach out through our <a href="/about.html">about page</a>.
         </p>
 
         <p style="font-size: 0.85rem; color: var(--steel); margin-top: 4px;">
-            Last updated: July 2026
+            Last updated: September 2026
         </p>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 NextGen Essentials.</p>
+        <p>&copy; 2026 NextGen Essentials (nxgenpicks.com). All rights reserved.</p>
         <p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
     </footer>
 
