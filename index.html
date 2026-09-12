@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -11,9 +12,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons & Google Search SERP Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/web-app-manifest-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="Sq7uUjG0xX4rPywv6nQM93y_XzEYhK5cRc3REXnJsWc" />
 
     <title>NextGen Essentials — Automatic Watches, Modern Apparel & Desk Gear for Men</title>
@@ -202,7 +211,6 @@
         .buy-btn { display: block; text-align: center; text-decoration: none; border: 1px solid var(--line); color: #fff; padding: 10px; font-size: 0.7rem; letter-spacing: 0.08em; }
         .buy-btn:hover { border-color: var(--gold); color: var(--gold); }
 
-        /* 移动端特殊适配 */
         @media screen and (max-width: 380px) {
             .product-grid { gap: 10px; }
             .product-body { padding: 12px; }
@@ -247,7 +255,6 @@
         footer a { color: var(--steel); text-decoration: underline; }
         footer p { margin-bottom: 6px; }
 
-        /* 移动端修复补丁：处理导航栏横向溢出 */
         @media screen and (max-width: 768px) {
             .nav-container { padding: 0 16px; }
             .nav-links {
@@ -255,9 +262,9 @@
                 overflow-x: auto;
                 white-space: nowrap;
                 -webkit-overflow-scrolling: touch;
-                scrollbar-width: none; /* 隐藏火狐滚动条 */
+                scrollbar-width: none;
             }
-            .nav-links::-webkit-scrollbar { display: none; } /* 隐藏 Chrome/Safari 滚动条 */
+            .nav-links::-webkit-scrollbar { display: none; }
         }
 
         @media screen and (min-width: 860px) {
