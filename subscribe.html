@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicons & Google Search SERP Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/images/web-app-manifest-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
     <title>Subscribe — NextGen Essentials</title>
     <meta name="description" content="Subscribe to the NextGen Essentials newsletter — one email a week, no spam, just honest gear reviews." />
     <link rel="canonical" href="https://nxgenpicks.com/subscribe.html" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
+
     <!-- 页面样式 -->
     <style>
-        /* ── 全局变量（和你其他页面保持一致） ── */
+        /* ── 全局变量 ── */
         :root {
             --ink: #0A0A0B;
             --gold: #C9A961;
@@ -55,14 +68,28 @@
             border-color: rgba(201, 169, 97, 0.3);
         }
 
-        /* ── Logo ── */
+        /* ── Logo 样式升级：图文结合 ── */
+        .logo-wrapper {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            margin-bottom: 16px;
+        }
+
+        .logo-wrapper img {
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            border: 1px solid var(--line);
+        }
+
         .logo {
             font-family: "Fraunces", Georgia, serif;
             font-size: 1.3rem;
             font-weight: 600;
             color: #fff;
             letter-spacing: -0.01em;
-            margin-bottom: 6px;
         }
 
         .logo span {
@@ -185,7 +212,10 @@
 <body>
     <div class="subscribe-card">
         <!-- Logo -->
-        <div class="logo">NextGen <span>Essentials</span></div>
+        <a href="/" class="logo-wrapper">
+            <img src="/images/favicon-96x96.png" alt="NextGen Essentials Gold NP Monogram" width="32" height="32">
+            <div class="logo">NextGen <span>Essentials</span></div>
+        </a>
 
         <!-- 标题 -->
         <h1 class="sub-title">📬 Get the Newsletter</h1>
