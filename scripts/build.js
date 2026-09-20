@@ -77,7 +77,7 @@ function renderArticleItem(post) {
 
   let miniBuyHTML = '';
   if (linkedItems.length > 0) {
-    miniBuyHTML = '<div class="article-buy-stack">';
+    miniBuyHTML = '<details class="article-products"><summary>Explore the featured products</summary><div class="article-buy-stack">';
     for (const item of linkedItems) {
       const itemName = item.name || item.piece || '';
       const itemUrl = item.url || '#';
@@ -92,7 +92,7 @@ function renderArticleItem(post) {
                 <a href="${esc(itemUrl)}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
             </div>`;
     }
-    miniBuyHTML += '</div>';
+    miniBuyHTML += '</div></details>';
   }
 
   const displayDate = post.date || '';
@@ -316,3 +316,5 @@ fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemapXml, 'utf8');
 console.log('[build] 已自动生成 sitemap.xml');
 
 console.log('[build] 完成。');
+
+require('./editorial')(DIST);
