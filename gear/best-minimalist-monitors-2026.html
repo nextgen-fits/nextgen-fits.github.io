@@ -63,8 +63,8 @@
             --gold-hover: #DFBE76;
             --gold-glow: rgba(168,62,40, 0.25);
             --steel: #66685f;
-            --line: #eae8df;
-            --card: #f4f2eb;
+            --line: #d3d3c8;
+            --card: #ffffff; /* 修正：卡片背景强制为纯白 */
             --card-subtle: #eae8df;
             --success: #2ECC71;
             --danger: #E74C3C;
@@ -85,7 +85,7 @@
         }
 
         .eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
-        .disclosure-bar { background: var(--card); border-bottom: 1px solid var(--line); text-align: center; padding: 8px 16px; font-size: 0.72rem; color: var(--steel); }
+        .disclosure-bar { background: #eae8df; border-bottom: 1px solid var(--line); text-align: center; padding: 8px 16px; font-size: 0.72rem; color: var(--steel); }
         .disclosure-bar a { color: var(--steel); text-decoration: underline; }
 
         nav { position: sticky; top: 0; width: 100%; background: rgba(10,10,11,0.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); z-index: 1000; }
@@ -110,10 +110,10 @@
         .share-btn { background: transparent; border: 1px solid #d9d8d0; color: #55574f; padding: 6px 10px; font-size: .7rem; border-radius: 3px; transition: all .2s; cursor: pointer; font-weight: 600; }
         .share-btn:hover { border-color: var(--gold); color: var(--gold); }
 
-        .intro-box { background: #fff; border: 1px solid #deddd5; border-left: 2px solid var(--gold); padding: 20px 22px; border-radius: 3px; margin-bottom: 28px; box-shadow: 0 4px 24px rgba(0,0,0,.04); }
+        .intro-box { background: var(--card); border: 1px solid var(--line); border-left: 2px solid var(--gold); padding: 20px 22px; border-radius: 3px; margin-bottom: 28px; box-shadow: 0 4px 24px rgba(0,0,0,.04); }
         .intro-box p { margin-bottom: 0; color: #20231f; }
 
-        .quick-compare { overflow-x: auto; margin-bottom: 28px; background: #fff; border: 1px solid #deddd5; border-radius: 3px; padding: 4px; box-shadow: 0 4px 24px rgba(0,0,0,.04); }
+        .quick-compare { overflow-x: auto; margin-bottom: 28px; background: var(--card); border: 1px solid var(--line); border-radius: 3px; padding: 4px; box-shadow: 0 4px 24px rgba(0,0,0,.04); }
         .quick-compare table { width: 100%; border-collapse: collapse; font-size: .78rem; min-width: 700px; }
         .quick-compare th, .quick-compare td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
         .quick-compare th { color: var(--steel); font-weight: 600; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; background: transparent; }
@@ -122,7 +122,7 @@
         .quick-compare tr:hover td { background: rgba(168,62,40,.025); }
 
         .review-card {
-            background: #fff; border: 1px solid #deddd5; padding: 22px 20px;
+            background: var(--card); border: 1px solid var(--line); padding: 22px 20px;
             margin-bottom: 26px; border-radius: 4px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
             position: relative; transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
