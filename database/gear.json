@@ -1,5 +1,58 @@
 [
   {
+    "id": "gear-014",
+    "date": "SEPTEMBER 20, 2026",
+    "category": "MASTERPIECE",
+    "title": "7 Essential Minimalist Desk Setup Gear for 2026: Elevate Your Workspace & Productivity",
+    "summary": "Discover 7 essential luxury-grade minimalist desk setup upgrades for 2026 — featuring cable management boxes, ergonomic monitor arms, smart LED light bars, and MagSafe power stations from $29.99.",
+    "cover_img": "/gear/images/blog/87f9233a-4895-49dd-9664-2fb099130a27.jpg",
+    "page_url": "/minimalist-desk-setup-essentials-2026.html",
+    "gear_list": [
+      {
+        "name": "Yecaye Cable Management Box Set",
+        "price": "$35.99",
+        "url": "https://amzn.to/4xYU3ak",
+        "img": "/gear/images/blog/87f9233a-4895-49dd-9664-2fb099130a27.jpg"
+      },
+      {
+        "name": "Anker 8-in-1 Multiport Ethernet Hub",
+        "price": "$33.83",
+        "url": "https://amzn.to/4xCYRBs",
+        "img": "/gear/images/blog/15badfca-f63a-4a91-9540-ae97d1550440.jpg"
+      },
+      {
+        "name": "BenQ ScreenBar Pro LED Light Bar",
+        "price": "$139.00",
+        "url": "https://amzn.to/4y8urrI",
+        "img": "/gear/images/blog/db14f9c6-ab82-4ca5-9497-0ca5c07f7ee3.jpg"
+      },
+      {
+        "name": "HUANUO FlowLift Pro Monitor Arm",
+        "price": "$29.99",
+        "url": "https://amzn.to/4hhu9rp",
+        "img": "/gear/images/blog/400df72e-436b-473d-942e-20bfa1cb7d0c.jpg"
+      },
+      {
+        "name": "Logitech Lift Vertical Ergonomic Mouse",
+        "price": "$69.95",
+        "url": "https://amzn.to/4AnBezg",
+        "img": "/gear/images/blog/8b4e1772-c6ef-4e67-8ca9-c80a7970e8f3.jpg"
+      },
+      {
+        "name": "BONTEC Walnut Dual Monitor Stand Riser",
+        "price": "$29.99",
+        "url": "https://amzn.to/4hdTodR",
+        "img": "/gear/images/blog/b4b1c0b7-8164-4632-9172-382026d6715b.jpg"
+      },
+      {
+        "name": "Anker MagGo 3-in-1 Qi2 Charging Station",
+        "price": "$79.99",
+        "url": "https://amzn.to/4cSk3Mf",
+        "img": "/gear/images/blog/watermarked_img_12598464844922895175.jpg"
+      }
+    ]
+  },
+  {
     "id": "gear-013",
     "date": "SEPTEMBER 11, 2026",
     "category": "BUYING GUIDE",
