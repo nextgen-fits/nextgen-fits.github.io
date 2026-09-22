@@ -68,7 +68,7 @@
         :root { 
             --ink: #0A0A0B; 
             --gold: #C9A961; 
-            --steel: #6B6D70; 
+            --steel: #8E9094; 
             --line: #232325; 
             --card: #111113; 
             --green: #4CAF50;
@@ -103,12 +103,12 @@
         .intro-box { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--gold); padding: 22px 24px; border-radius: 2px; margin-bottom: 36px; }
         .intro-box p { margin-bottom: 0; color: #D1D2D4; }
 
-        /* 快速对比表格 */
+        /* 快速对比表格（已强制修复暗黑下文字颜色） */
         .quick-compare { overflow-x: auto; margin-bottom: 40px; background: var(--card); border: 1px solid var(--line); border-radius: 2px; padding: 4px; }
         .quick-compare table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 700px; }
-        .quick-compare th, .quick-compare td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
-        .quick-compare th { color: var(--steel); font-weight: 600; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; background: transparent; }
-        .quick-compare td { color: #D1D2D4; }
+        .quick-compare th, .quick-compare td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); color: #D1D2D4; }
+        .quick-compare th { color: var(--gold); font-weight: 600; font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; background: #161619; }
+        .quick-compare td strong { color: #fff; }
         .quick-compare .highlight { color: var(--gold); font-family: "Fraunces", serif; font-weight: 600; }
         .quick-compare tr:hover td { background: rgba(201,169,97,.025); }
 
