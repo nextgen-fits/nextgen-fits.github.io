@@ -1,5 +1,53 @@
 [
   {
+    "id": "watches-20260925-06",
+    "date": "SEPTEMBER 25, 2026",
+    "category": "EVERYDAY WATCH GUIDE",
+    "title": "Automatic vs Solar Watch for Everyday Wear: Which Movement Fits Your Life?",
+    "summary": "A practical movement guide for choosing the charm of an automatic watch or the low-maintenance reliability of a light-powered watch.",
+    "cover_img": "/watches/images/blog/guides-2026/automatic-vs-solar-watch-hero.webp",
+    "page_url": "/watches/automatic-vs-solar-watch-everyday-wear.html",
+    "gear_list": [
+      {
+        "name": "Citizen Eco-Drive Chandler",
+        "url": "https://amzn.to/4v1dc9x",
+        "img": "/images/citizen-field.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260925-07",
+    "date": "SEPTEMBER 25, 2026",
+    "category": "FIT AND PROPORTION GUIDE",
+    "title": "Watch Size Guide: 38mm vs 40mm vs 42mm on the Wrist",
+    "summary": "Case diameter is only the beginning. This guide explains why lug-to-lug, dial opening, thickness, and wrist shape decide how a watch really wears.",
+    "cover_img": "/watches/images/blog/guides-2026/watch-size-guide-38-40-42-hero.webp",
+    "page_url": "/watches/watch-size-guide-38mm-vs-40mm-vs-42mm.html",
+    "gear_list": [
+      {
+        "name": "Seiko 5 Sports SRPD Series",
+        "url": "https://amzn.to/4xx2kTa",
+        "img": "/images/Seiko-5-1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260925-08",
+    "date": "SEPTEMBER 25, 2026",
+    "category": "MATERIALS FIELD GUIDE",
+    "title": "Sapphire vs Mineral vs Acrylic Watch Crystal: The Real Tradeoffs",
+    "summary": "Scratch resistance is only one part of a watch crystal. Here is how sapphire, mineral glass, and acrylic differ in daily use and repair.",
+    "cover_img": "/watches/images/blog/guides-2026/watch-crystal-sapphire-mineral-acrylic-hero.webp",
+    "page_url": "/watches/sapphire-vs-mineral-vs-acrylic-watch-crystal.html",
+    "gear_list": [
+      {
+        "name": "Seiko 5 Sports SRPD Series",
+        "url": "https://amzn.to/4xx2kTa",
+        "img": "/images/Seiko-5-1.jpg"
+      }
+    ]
+  },
+  {
     "id": "watch-011",
     "date": "SEPTEMBER 5, 2026",
     "category": "BUYERS GUIDE",
@@ -8,16 +56,56 @@
     "cover_img": "/watches/images/blog/watch-casio-gab2100-black.webp.jpg",
     "page_url": "/watches/mens-workwear-capsule-wardrobe-2026.html",
     "gear_list": [
-      { "name": "Casio G-Shock GA-B2100 Solar (~$150.00)", "url": "https://amzn.to/4xye7QG", "img": "/watches/images/blog/watch-casio-gab2100-black.webp.jpg" },
-      { "name": "Citizen Eco-Drive Garrison Field (~$135.00)", "url": "https://amzn.to/4placeholder2", "img": "/watches/images/blog/watch-citizen-garrison-green.webp.jpg" },
-      { "name": "Seiko 5 Sports SRPD63 Green (~$195.00)", "url": "https://amzn.to/4placeholder3", "img": "/watches/images/blog/watch-seiko-5sports-srpd63-green.webp.jpg" },
-      { "name": "Timex Expedition North Post Solar 41mm ($209.00)", "url": "https://amzn.to/4hay2iJ", "img": "/watches/images/blog/watch-timex-expedition-solar-blue.webp.jpg" },
-      { "name": "Casio Duro MDV-106 Batman ($95.00)", "url": "https://amzn.to/4yeg30K", "img": "/watches/images/blog/watch-casio-duro-mdv106-batman.webp.jpg" },
-      { "name": "Bertucci A-1S Super Field 10602 ($165.00)", "url": "https://amzn.to/4gVN9eJ", "img": "/watches/images/blog/watch-bertucci-a1s-10602-olive.webp.jpg" },
-      { "name": "Orient Bambino V7 Small Seconds 38.4mm ($249.00)", "url": "https://amzn.to/4xEPXUz", "img": "/watches/images/blog/watch-orient-bambino-v7-smallseconds.webp.jpg" },
-      { "name": "Casio AE-1200WH Royale ($36.50)", "url": "https://amzn.to/4gSKqmr", "img": "/watches/images/blog/watch-casio-ae1200wh-royale-silver.webp.jpg" },
-      { "name": "Invicta Pro Diver 5053 Automatic ($94.99)", "url": "https://amzn.to/3SOdFP2", "img": "/watches/images/blog/watch-invicta-prodiver-automatic-black.webp.jpg" },
-      { "name": "Timex Weekender 38mm Cream ($34.21)", "url": "https://amzn.to/3SUaLbJ", "img": "/watches/images/blog/watch-timex-weekender-cream-black.webp.jpg" }
+      {
+        "name": "Casio G-Shock GA-B2100 Solar (~$150.00)",
+        "url": "https://amzn.to/4xye7QG",
+        "img": "/watches/images/blog/watch-casio-gab2100-black.webp.jpg"
+      },
+      {
+        "name": "Citizen Eco-Drive Garrison Field (~$135.00)",
+        "url": "https://amzn.to/4placeholder2",
+        "img": "/watches/images/blog/watch-citizen-garrison-green.webp.jpg"
+      },
+      {
+        "name": "Seiko 5 Sports SRPD63 Green (~$195.00)",
+        "url": "https://amzn.to/4placeholder3",
+        "img": "/watches/images/blog/watch-seiko-5sports-srpd63-green.webp.jpg"
+      },
+      {
+        "name": "Timex Expedition North Post Solar 41mm ($209.00)",
+        "url": "https://amzn.to/4hay2iJ",
+        "img": "/watches/images/blog/watch-timex-expedition-solar-blue.webp.jpg"
+      },
+      {
+        "name": "Casio Duro MDV-106 Batman ($95.00)",
+        "url": "https://amzn.to/4yeg30K",
+        "img": "/watches/images/blog/watch-casio-duro-mdv106-batman.webp.jpg"
+      },
+      {
+        "name": "Bertucci A-1S Super Field 10602 ($165.00)",
+        "url": "https://amzn.to/4gVN9eJ",
+        "img": "/watches/images/blog/watch-bertucci-a1s-10602-olive.webp.jpg"
+      },
+      {
+        "name": "Orient Bambino V7 Small Seconds 38.4mm ($249.00)",
+        "url": "https://amzn.to/4xEPXUz",
+        "img": "/watches/images/blog/watch-orient-bambino-v7-smallseconds.webp.jpg"
+      },
+      {
+        "name": "Casio AE-1200WH Royale ($36.50)",
+        "url": "https://amzn.to/4gSKqmr",
+        "img": "/watches/images/blog/watch-casio-ae1200wh-royale-silver.webp.jpg"
+      },
+      {
+        "name": "Invicta Pro Diver 5053 Automatic ($94.99)",
+        "url": "https://amzn.to/3SOdFP2",
+        "img": "/watches/images/blog/watch-invicta-prodiver-automatic-black.webp.jpg"
+      },
+      {
+        "name": "Timex Weekender 38mm Cream ($34.21)",
+        "url": "https://amzn.to/3SUaLbJ",
+        "img": "/watches/images/blog/watch-timex-weekender-cream-black.webp.jpg"
+      }
     ]
   },
   {
@@ -29,12 +117,36 @@
     "cover_img": "/watches/images/blog/ScreenShot_2026-08-15_141251_523.png",
     "page_url": "/watches/best-watches-under-100-2026.html",
     "gear_list": [
-      { "name": "Casio G-Shock DW5600E-1V ($26.99)", "url": "https://amzn.to/4hwCtVX", "img": "/watches/images/blog/ScreenShot_2026-08-15_141251_523.png" },
-      { "name": "Casio Duro MDV106-1AV (~$95.00)", "url": "https://amzn.to/4iaMEj6", "img": "/watches/images/blog/ScreenShot_2026-08-15_141326_174.png" },
-      { "name": "Timex Weekender (~$40.00)", "url": "https://amzn.to/4ws7Zbq", "img": "/watches/images/blog/ScreenShot_2026-08-15_141348_389.png" },
-      { "name": "Invicta Pro Diver 8926OB ($64.95)", "url": "https://amzn.to/4xIzr5K", "img": "/watches/images/blog/ScreenShot_2026-08-15_141412_160.png" },
-      { "name": "Seiko 5 SNK809 Automatic (~$100-200)", "url": "https://amzn.to/3RVkluy", "img": "/watches/images/blog/ScreenShot_2026-08-15_141445_130.png" },
-      { "name": "Fossil Minimalist Three-Hand (~$75-95)", "url": "https://amzn.to/3RVdGk1", "img": "/watches/images/blog/ScreenShot_2026-08-15_141503_626.png" }
+      {
+        "name": "Casio G-Shock DW5600E-1V ($26.99)",
+        "url": "https://amzn.to/4hwCtVX",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141251_523.png"
+      },
+      {
+        "name": "Casio Duro MDV106-1AV (~$95.00)",
+        "url": "https://amzn.to/4iaMEj6",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141326_174.png"
+      },
+      {
+        "name": "Timex Weekender (~$40.00)",
+        "url": "https://amzn.to/4ws7Zbq",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141348_389.png"
+      },
+      {
+        "name": "Invicta Pro Diver 8926OB ($64.95)",
+        "url": "https://amzn.to/4xIzr5K",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141412_160.png"
+      },
+      {
+        "name": "Seiko 5 SNK809 Automatic (~$100-200)",
+        "url": "https://amzn.to/3RVkluy",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141445_130.png"
+      },
+      {
+        "name": "Fossil Minimalist Three-Hand (~$75-95)",
+        "url": "https://amzn.to/3RVdGk1",
+        "img": "/watches/images/blog/ScreenShot_2026-08-15_141503_626.png"
+      }
     ]
   },
   {
@@ -46,10 +158,26 @@
     "cover_img": "/watches/images/blog/casio-f91w.jpg",
     "page_url": "/watches/casio-classic-digital-watch-review.html",
     "gear_list": [
-      { "name": "Casio F-91W", "url": "https://amzn.to/452LQ8l", "img": "/watches/images/blog/casio-f91w.jpg" },
-      { "name": "Casio A158WA-1", "url": "https://amzn.to/4g4Ns7M", "img": "/watches/images/blog/casio-a158wa.jpg" },
-      { "name": "Casio AE-1200WH-1A", "url": "https://amzn.to/45yNqPl", "img": "/watches/images/blog/casio-ae1200wh.jpg" },
-      { "name": "Casio A168WA-1", "url": "https://amzn.to/45vL97E", "img": "/watches/images/blog/casio-a168wa.jpg" }
+      {
+        "name": "Casio F-91W",
+        "url": "https://amzn.to/452LQ8l",
+        "img": "/watches/images/blog/casio-f91w.jpg"
+      },
+      {
+        "name": "Casio A158WA-1",
+        "url": "https://amzn.to/4g4Ns7M",
+        "img": "/watches/images/blog/casio-a158wa.jpg"
+      },
+      {
+        "name": "Casio AE-1200WH-1A",
+        "url": "https://amzn.to/45yNqPl",
+        "img": "/watches/images/blog/casio-ae1200wh.jpg"
+      },
+      {
+        "name": "Casio A168WA-1",
+        "url": "https://amzn.to/45vL97E",
+        "img": "/watches/images/blog/casio-a168wa.jpg"
+      }
     ]
   },
   {
@@ -61,7 +189,11 @@
     "cover_img": "/watches/images/blog/tissot-prx-hero.jpg",
     "page_url": "/watches/tissot-prx-powermatic-80-review.html",
     "gear_list": [
-      { "name": "Casio Edifice", "url": "https://amzn.to/4fPPP6J", "img": "/watches/images/blog/tissot-prx-hero.jpg" }
+      {
+        "name": "Casio Edifice",
+        "url": "https://amzn.to/4fPPP6J",
+        "img": "/watches/images/blog/tissot-prx-hero.jpg"
+      }
     ]
   },
   {
@@ -83,7 +215,11 @@
     "cover_img": "/watches/images/blog/amazfit-bip-6-hero.jpg",
     "page_url": "/watches/amazfit-bip-6-review.html",
     "gear_list": [
-      { "name": "Amazfit Bip 6", "url": "https://amzn.to/4fogAFG", "img": "/watches/images/blog/amazfit-bip-6-hero.jpg" }
+      {
+        "name": "Amazfit Bip 6",
+        "url": "https://amzn.to/4fogAFG",
+        "img": "/watches/images/blog/amazfit-bip-6-hero.jpg"
+      }
     ]
   },
   {
@@ -95,7 +231,11 @@
     "cover_img": "/images/Seiko-5-1.jpg",
     "page_url": "/watches/best-first-automatic-watch-under-200.html",
     "gear_list": [
-      { "name": "Seiko 5 Sports", "url": "https://amzn.to/4vboF69", "img": "/images/Seiko-5-1.jpg" }
+      {
+        "name": "Seiko 5 Sports",
+        "url": "https://amzn.to/4vboF69",
+        "img": "/images/Seiko-5-1.jpg"
+      }
     ]
   }
 ]

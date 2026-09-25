@@ -1,5 +1,37 @@
 [
   {
+    "id": "apparel-20260925-09",
+    "date": "SEPTEMBER 25, 2026",
+    "category": "WARDROBE MATERIALS GUIDE",
+    "title": "Heavyweight T-Shirt GSM Guide: 180 vs 240 vs 300 GSM",
+    "summary": "What fabric weight changes—and what it does not—when choosing a substantial T-shirt for a practical capsule wardrobe.",
+    "cover_img": "/apparel/images/blog/guides-2026/heavyweight-tshirt-gsm-guide-hero.webp",
+    "page_url": "/apparel/heavyweight-tshirt-gsm-guide.html",
+    "breakdown": [
+      {
+        "piece": "Shaka Wear 7.5 oz Max Heavyweight Tee",
+        "url": "https://amzn.to/4uWSmbi",
+        "img": "/images/blog/21_46_24.png"
+      }
+    ]
+  },
+  {
+    "id": "apparel-20260925-10",
+    "date": "SEPTEMBER 25, 2026",
+    "category": "CAPSULE WARDROBE GUIDE",
+    "title": "Overshirt Fit and Layering Guide for a Small Capsule Wardrobe",
+    "summary": "How one well-fitted overshirt can bridge a T-shirt and jacket without becoming another rarely worn layer.",
+    "cover_img": "/apparel/images/blog/guides-2026/overshirt-layering-guide-hero.webp",
+    "page_url": "/apparel/overshirt-fit-layering-capsule-wardrobe.html",
+    "breakdown": [
+      {
+        "piece": "Carhartt Rugged Flex Overshirt",
+        "url": "https://amzn.to/4wfCdyJ",
+        "img": "/images/blog/1d3dde7f77d8.png"
+      }
+    ]
+  },
+  {
     "id": "apparel-002",
     "date": "JULY 20, 2026",
     "category": "WARDROBE",
