@@ -240,7 +240,7 @@ function listHtmlFiles(dir) {
   const full = path.join(ROOT, dir);
   if (!fs.existsSync(full)) return [];
   return fs.readdirSync(full)
-    .filter(f => f.endsWith('.html'))
+    .filter(f => f.endsWith('.html') && !(dir === 'watches' && f === 'mens-workwear-capsule-wardrobe-2026.html'))
     .map(f => `${dir}/${f}`);
 }
 
