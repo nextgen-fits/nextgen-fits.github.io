@@ -1,5 +1,69 @@
 [
   {
+    "id": "apparel-20260927-01",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "WARDROBE FABRIC GUIDE",
+    "title": "Best Heavyweight T-Shirts Under $40: Fabric, Fit and Value Guide",
+    "summary": "A heavyweight T-shirt can drape cleanly and feel substantial, but GSM alone does not guarantee quality or comfort. Under $40, compare fabric weight, cotton type, shrinkage guidance, collar construction, fit measurements and return policy. Choose a shirt that suits your climate and layering habits rather than treating the thickest fabric as automatically best.",
+    "cover_img": "/images/editorial-guides-2026/apparel-heavy-tee.jpg",
+    "page_url": "/apparel/best-heavyweight-tshirts-under-40.html",
+    "breakdown": [
+      {
+        "piece": "heavyweight cotton T-shirt under $40",
+        "url": "https://www.amazon.com/s?k=heavyweight%20cotton%20T-shirt%20under%20%2440&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/apparel-heavy-tee.jpg"
+      }
+    ]
+  },
+  {
+    "id": "apparel-20260927-02",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "LAYERING FIELD GUIDE",
+    "title": "Overshirt vs Chore Jacket: Choose the Right Layer for Everyday Wear",
+    "summary": "An overshirt is usually the lighter, softer layer for indoor comfort and mild weather; a chore jacket is often more structured, durable and pocket-forward. Labels vary by brand, so compare fabric weight, lining, cut and intended season. Try the layer over the clothes you actually wear and check movement, sleeve length and pocket use.",
+    "cover_img": "/images/editorial-guides-2026/apparel-layering.jpg",
+    "page_url": "/apparel/overshirt-vs-chore-jacket.html",
+    "breakdown": [
+      {
+        "piece": "men overshirt and chore jacket",
+        "url": "https://www.amazon.com/s?k=men%20overshirt%20and%20chore%20jacket&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/apparel-layering.jpg"
+      }
+    ]
+  },
+  {
+    "id": "apparel-20260927-03",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "TRAVEL WARDROBE GUIDE",
+    "title": "Men’s Travel Capsule Wardrobe: A Practical Packing List for a Week",
+    "summary": "A useful one-week travel capsule starts with the weather, activities and laundry access, then repeats a small set of compatible colors. A practical baseline is two trousers, one optional short, four or five tops, one versatile outer layer and two shoe choices. Adjust for formal plans, climate and baggage limits rather than packing a fixed internet checklist.",
+    "cover_img": "/images/editorial-guides-2026/apparel-travel.jpg",
+    "page_url": "/apparel/mens-travel-capsule-wardrobe.html",
+    "breakdown": [
+      {
+        "piece": "men travel capsule wardrobe essentials",
+        "url": "https://www.amazon.com/s?k=men%20travel%20capsule%20wardrobe%20essentials&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/apparel-travel.jpg"
+      }
+    ]
+  },
+  {
+    "id": "apparel-20260927-04",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "DENIM BUYING GUIDE",
+    "title": "Selvedge vs Stretch Denim: Comfort, Construction and Care Explained",
+    "summary": "Selvedge describes a clean self-finished edge created by a particular weaving method; stretch describes fabric with added elasticity. They are not opposites, and some denim can combine selvedge construction with stretch fibers. Choose by fit, comfort, fabric weight and care—not by assuming selvedge is automatically stronger or stretch denim is disposable.",
+    "cover_img": "/images/editorial-guides-2026/apparel-denim.jpg",
+    "page_url": "/apparel/selvedge-vs-stretch-denim.html",
+    "breakdown": [
+      {
+        "piece": "selvedge denim and stretch jeans",
+        "url": "https://www.amazon.com/s?k=selvedge%20denim%20and%20stretch%20jeans&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/apparel-denim.jpg"
+      }
+    ]
+  },
+  {
     "id": "apparel-20260925-09",
     "date": "SEPTEMBER 25, 2026",
     "category": "WARDROBE MATERIALS GUIDE",

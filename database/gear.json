@@ -1,5 +1,165 @@
 [
   {
+    "id": "gear-20260927-01",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "SMALL-SPACE DISPLAY GUIDE",
+    "title": "Best Monitors for Small Desks: A Space-First Buying Guide",
+    "summary": "For a compact desk, start with usable viewing distance and stand depth, then choose 24–27 inches based on resolution and eyesight. A slim 24-inch display is the safer fit for shallow worktops; a 27-inch QHD screen earns its footprint when you need more readable workspace. Measure before shopping, including the base, cables and keyboard zone.",
+    "cover_img": "/images/editorial-guides-2026/gear-small-space-monitor.jpg",
+    "page_url": "/gear/best-monitors-for-small-desks-2026.html",
+    "gear_list": [
+      {
+        "name": "24-inch monitor for a small desk",
+        "url": "https://www.amazon.com/s?k=24-inch%20monitor%20for%20a%20small%20desk&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-small-space-monitor.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-02",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "COMPACT MONITOR BUYING GUIDE",
+    "title": "Best 24-Inch Monitors for a Small Workspace: What to Check",
+    "summary": "A well-chosen 24-inch monitor is a practical default for a compact desk: it is easier to place than a large display, but the stand, panel resolution and ports still determine whether it feels like an upgrade. Compare complete dimensions, height adjustment, text clarity and return terms before choosing by refresh rate or marketing labels.",
+    "cover_img": "/images/editorial-guides-2026/gear-minimalist-monitor-guide.jpg",
+    "page_url": "/gear/best-24-inch-monitor-small-workspace.html",
+    "gear_list": [
+      {
+        "name": "24-inch IPS monitor",
+        "url": "https://www.amazon.com/s?k=24-inch%20IPS%20monitor&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-minimalist-monitor-guide.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-03",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "RESOLUTION DECISION GUIDE",
+    "title": "27-Inch 4K vs QHD Monitor for Productivity: Which Makes Sense?",
+    "summary": "At 27 inches, QHD is usually the balanced productivity choice when you want more workspace without heavy scaling or a demanding graphics connection. 4K gives finer detail and more pixels, but may require operating-system scaling and a capable computer. Choose by text comfort, apps, viewing distance and workflow—not by pixel count alone.",
+    "cover_img": "/images/editorial-guides-2026/gear-4k-qhd-pixel.jpg",
+    "page_url": "/gear/27-inch-4k-vs-qhd-monitor-productivity.html",
+    "gear_list": [
+      {
+        "name": "27-inch QHD and 4K monitor comparison",
+        "url": "https://www.amazon.com/s?k=27-inch%20QHD%20and%204K%20monitor%20comparison&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-4k-qhd-pixel.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-04",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "DESK SPACE FIELD GUIDE",
+    "title": "Monitor Arm vs Stand for a Shallow Desk: Which Saves More Space?",
+    "summary": "A monitor arm can free the desk surface and move a screen closer to the wall, but only when the desk edge, clamp clearance, mounting pattern and arm reach are compatible. A stand is easier and often steadier. Measure the actual footprint and solve the posture problem first; space savings alone do not justify an unsafe or awkward mount.",
+    "cover_img": "/images/editorial-guides-2026/gear-arm-vs-stand.jpg",
+    "page_url": "/gear/monitor-arm-vs-stand-shallow-desk.html",
+    "gear_list": [
+      {
+        "name": "monitor arm for shallow desk",
+        "url": "https://www.amazon.com/s?k=monitor%20arm%20for%20shallow%20desk&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-arm-vs-stand.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-05",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "WORKSTATION SETUP GUIDE",
+    "title": "Monitor Distance and Desk Depth: Set Up a Comfortable Viewing Position",
+    "summary": "There is no single perfect monitor distance for everyone. OSHA gives a general preferred range of about 20–40 inches, while stressing readable text and neutral posture. Start by centering the monitor, sitting back with support, and adjusting text size so you do not lean forward. Desk depth should accommodate that comfortable position plus keyboard space.",
+    "cover_img": "/images/editorial-guides-2026/gear-monitor-distance.jpg",
+    "page_url": "/gear/monitor-distance-and-desk-depth-guide.html",
+    "gear_list": [
+      {
+        "name": "monitor riser for desk setup",
+        "url": "https://www.amazon.com/s?k=monitor%20riser%20for%20desk%20setup&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-monitor-distance.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-06",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "ONE-CABLE SETUP GUIDE",
+    "title": "USB-C Monitor vs Dock: Build a One-Cable Laptop Setup Without Guesswork",
+    "summary": "A USB-C monitor can replace a separate dock when it supports the video mode, charging wattage and downstream ports your laptop needs. A dock is more flexible for several displays and peripherals. USB-C describes a connector, not a guaranteed feature set, so verify the exact laptop, monitor, cable and dock capabilities as a complete chain.",
+    "cover_img": "/images/editorial-guides-2026/gear-usbc-dock.jpg",
+    "page_url": "/gear/usb-c-monitor-vs-dock-one-cable-setup.html",
+    "gear_list": [
+      {
+        "name": "USB-C dock for laptop monitor",
+        "url": "https://www.amazon.com/s?k=USB-C%20dock%20for%20laptop%20monitor&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-usbc-dock.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-07",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "DUAL-COMPUTER WORKSPACE",
+    "title": "Monitor with Built-In KVM vs Separate KVM Switch: Which Fits Two Computers?",
+    "summary": "A built-in monitor KVM is convenient when two computers share one display and a keyboard/mouse, but its USB routing and video inputs must match your setup. A standalone KVM provides more flexibility across monitors and peripherals. Draw the actual signal path before buying and confirm resolution, refresh, USB switching and laptop charging separately.",
+    "cover_img": "/images/editorial-guides-2026/gear-kvm.jpg",
+    "page_url": "/gear/built-in-kvm-monitor-vs-kvm-switch.html",
+    "gear_list": [
+      {
+        "name": "KVM switch for two computers and one monitor",
+        "url": "https://www.amazon.com/s?k=KVM%20switch%20for%20two%20computers%20and%20one%20monitor&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-kvm.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-08",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "PANEL TECHNOLOGY GUIDE",
+    "title": "IPS vs VA vs OLED for Office Monitors: Match the Panel to Your Room",
+    "summary": "For general office work, a good IPS monitor is a dependable all-rounder; VA can suit users who value contrast, while OLED delivers deep blacks and fast pixel response at a higher price and with different long-term-use considerations. Exact models matter more than panel labels. Compare measured performance, text appearance, room lighting, warranty and your workload.",
+    "cover_img": "/images/editorial-guides-2026/gear-display-tech.jpg",
+    "page_url": "/gear/ips-vs-va-vs-oled-monitor-office.html",
+    "gear_list": [
+      {
+        "name": "office monitor panel technology comparison",
+        "url": "https://www.amazon.com/s?k=office%20monitor%20panel%20technology%20comparison&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-display-tech.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-09",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "DESK LIGHTING GUIDE",
+    "title": "Monitor Light Bar vs Desk Lamp: Reduce Glare and Light the Work Area",
+    "summary": "A monitor light bar is a space-saving way to light the desk without a lamp base, while a desk lamp offers wider placement and can illuminate paper or objects more flexibly. Neither guarantees glare-free viewing. Choose a light source you can aim away from the screen, control for brightness and color, and position alongside the window and monitor.",
+    "cover_img": "/images/editorial-guides-2026/gear-lighting.jpg",
+    "page_url": "/gear/monitor-light-bar-vs-desk-lamp.html",
+    "gear_list": [
+      {
+        "name": "monitor light bar and adjustable desk lamp",
+        "url": "https://www.amazon.com/s?k=monitor%20light%20bar%20and%20adjustable%20desk%20lamp&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-lighting.jpg"
+      }
+    ]
+  },
+  {
+    "id": "gear-20260927-10",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "SCREEN FINISH GUIDE",
+    "title": "Matte vs Glossy Monitor in a Bright Room: Manage Reflections First",
+    "summary": "In a bright room, a matte monitor finish is often easier to live with because it diffuses reflections, while glossy screens can look more vivid in controlled lighting. Neither finish makes glare disappear. First position the display perpendicular to windows, adjust blinds and test at your normal seat; then compare the exact coating and room conditions.",
+    "cover_img": "/images/editorial-guides-2026/gear-matte-gloss.jpg",
+    "page_url": "/gear/matte-vs-glossy-monitor-bright-room.html",
+    "gear_list": [
+      {
+        "name": "matte monitor for bright office",
+        "url": "https://www.amazon.com/s?k=matte%20monitor%20for%20bright%20office&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/gear-matte-gloss.jpg"
+      }
+    ]
+  },
+  {
     "id": "gear-20260925-01",
     "date": "SEPTEMBER 25, 2026",
     "category": "WORKSPACE FIELD GUIDE",

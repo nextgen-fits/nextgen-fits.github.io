@@ -1,5 +1,101 @@
 [
   {
+    "id": "watches-20260927-01",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "WATCH FIT BUYING GUIDE",
+    "title": "Best Small Automatic Watches Under $300: A Fit-First Shortlist",
+    "summary": "For a smaller-wrist automatic under $300, prioritize case diameter, lug-to-lug length, thickness and lug shape before movement names or brand prestige. A compact watch with a short lug span can wear smaller than its diameter suggests. Prices and availability change, so treat this as a measurement-led shortlist and confirm exact dimensions on the current listing.",
+    "cover_img": "/images/editorial-guides-2026/watch-small-wrist.jpg",
+    "page_url": "/watches/best-small-automatic-watches-under-300.html",
+    "gear_list": [
+      {
+        "name": "small automatic watch under $300",
+        "url": "https://www.amazon.com/s?k=small%20automatic%20watch%20under%20%24300&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-small-wrist.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260927-02",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "SOLAR WATCH COMPARISON",
+    "title": "Citizen Eco-Drive vs Casio Tough Solar: Two Solar Watch Approaches",
+    "summary": "Citizen Eco-Drive and Casio Tough Solar both use light to power watches, but they serve different design priorities across broad product families. Eco-Drive spans many analog styles; Casio solar models often pair charging with digital features or rugged designs. Compare the exact reference, display, charging guidance, reserve, service options and current price.",
+    "cover_img": "/images/editorial-guides-2026/watch-solar.jpg",
+    "page_url": "/watches/citizen-eco-drive-vs-casio-tough-solar.html",
+    "gear_list": [
+      {
+        "name": "Citizen Eco-Drive and Casio solar watches",
+        "url": "https://www.amazon.com/s?k=Citizen%20Eco-Drive%20and%20Casio%20solar%20watches&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-solar.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260927-03",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "AUTOMATIC WATCH COMPARISON",
+    "title": "Seiko 5 vs Orient Kamasu: Compare Use, Fit and Water Rating",
+    "summary": "Seiko 5 and Orient Kamasu are not one-to-one alternatives: Seiko 5 covers a broad range of casual sports watches, while Kamasu references are more explicitly diver-style. Compare the exact case dimensions, crystal, water-resistance marking, movement, bracelet and price. Choose by intended use and fit, not by brand generalizations.",
+    "cover_img": "/images/editorial-guides-2026/watch-divers.jpg",
+    "page_url": "/watches/seiko-5-vs-orient-kamasu.html",
+    "gear_list": [
+      {
+        "name": "Seiko 5 Sports and Orient Kamasu automatic watches",
+        "url": "https://www.amazon.com/s?k=Seiko%205%20Sports%20and%20Orient%20Kamasu%20automatic%20watches&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-divers.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260927-04",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "TRAVEL WATCH GUIDE",
+    "title": "Best Travel Watches: GMT vs World Time and the Features Worth Paying For",
+    "summary": "Choose a GMT watch if you regularly track a second time zone; choose a world-time display if you need to scan several cities quickly. For occasional travel, a clear 24-hour hand or reliable phone may be enough. Compare the exact setting method, legibility, case comfort, local availability and daylight-saving behavior before paying for complications.",
+    "cover_img": "/images/editorial-guides-2026/watch-travel.jpg",
+    "page_url": "/watches/best-travel-watches-world-time-gmt.html",
+    "gear_list": [
+      {
+        "name": "GMT travel watch and world-time watch",
+        "url": "https://www.amazon.com/s?k=GMT%20travel%20watch%20and%20world-time%20watch&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-travel.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260927-05",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "WATCH STRAP COMPARISON",
+    "title": "Watch Bracelet vs Leather vs Nylon: Comfort, Climate and Care",
+    "summary": "A bracelet is durable and easy to rinse but can feel heavier; leather is comfortable and formal but dislikes sweat and water; nylon is light and quick-drying but may feel casual and collect dirt. The right choice depends on climate, watch case weight, skin comfort and whether the strap can be changed safely.",
+    "cover_img": "/images/editorial-guides-2026/watch-straps.jpg",
+    "page_url": "/watches/watch-bracelet-vs-leather-vs-nylon.html",
+    "gear_list": [
+      {
+        "name": "watch straps bracelet leather nylon",
+        "url": "https://www.amazon.com/s?k=watch%20straps%20bracelet%20leather%20nylon&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-straps.jpg"
+      }
+    ]
+  },
+  {
+    "id": "watches-20260927-06",
+    "date": "SEPTEMBER 27, 2026",
+    "category": "WATER-RESISTANCE GUIDE",
+    "title": "100m vs 200m Water Resistance: What Watch Ratings Actually Tell You",
+    "summary": "A 100m or 200m marking is a laboratory-rated pressure specification, not permission to dive to that depth in ordinary conditions. Use the exact manufacturer instructions, check crown and gasket condition, and distinguish everyday water resistance from a certified diver’s watch. The extra rating is useful margin, but it does not replace maintenance or correct use.",
+    "cover_img": "/images/editorial-guides-2026/watch-water.jpg",
+    "page_url": "/watches/100m-vs-200m-water-resistance-watch.html",
+    "gear_list": [
+      {
+        "name": "100m and 200m water resistant watches",
+        "url": "https://www.amazon.com/s?k=100m%20and%20200m%20water%20resistant%20watches&tag=nextgenlabs04-20",
+        "img": "/images/editorial-guides-2026/watch-water.jpg"
+      }
+    ]
+  },
+  {
     "id": "watches-20260925-06",
     "date": "SEPTEMBER 25, 2026",
     "category": "EVERYDAY WATCH GUIDE",
