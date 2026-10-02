@@ -322,13 +322,49 @@
   },
   {
     "id": "gear-010",
-    "date": "JULY 27, 2026",
-    "category": "MONITOR ROUNDUP",
-    "title": "10 Best Minimalist Monitors 2026: In-Depth Reviews & User Ratings",
-    "summary": "Deep-dive reviews of the 10 best minimalist monitors for 2026. Real user ratings, expert analysis, pros & cons, and buying advice for every budget — from $80 to $1,100.",
-    "cover_img": "/gear/images/blog/monitor-gigabyte-go27q24g.jpg",
-    "page_url": "/gear/best-minimalist-monitors-2026.html",
-    "gear_list": []
+    "date": "OCTOBER 2, 2026",
+    "category": "BUYING GUIDE",
+    "title": "7 Minimalist Desk Setup Essentials for 2026: Practical Gear & Buying Checks",
+    "summary": "Compare seven desk accessories by the problem they solve, fit and compatibility checks, dated Amazon rating snapshots and real trade-offs. No hands-on testing claims.",
+    "cover_img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/minimalist-desk-hero.jpg",
+    "page_url": "/gear/minimalist-desk-setup-essentials-2026.html",
+    "gear_list": [
+      {
+        "name": "YUANYE 128-Piece Cable Management Box Kit",
+        "url": "https://amzn.to/4xYU3ak",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/cable-management-box.jpg"
+      },
+      {
+        "name": "Anker PowerExpand 8-in-1 USB-C Hub",
+        "url": "https://amzn.to/4xCYRBs",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/usb-c-hub.jpg"
+      },
+      {
+        "name": "BenQ ScreenBar Pro Monitor Light",
+        "url": "https://amzn.to/4y8urrI",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/monitor-light-bar.jpg"
+      },
+      {
+        "name": "HUANUO FlowLift Pro Single Monitor Arm",
+        "url": "https://amzn.to/4hhu9rp",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/monitor-arm.jpg"
+      },
+      {
+        "name": "Logitech Lift Vertical Ergonomic Mouse",
+        "url": "https://amzn.to/4AnBezg",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/vertical-mouse.jpg"
+      },
+      {
+        "name": "BONTEC Adjustable Dual Monitor Stand Riser",
+        "url": "https://amzn.to/4hdTodR",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/monitor-riser.jpg"
+      },
+      {
+        "name": "Anker MagGo 3-in-1 Qi2 Magnetic Charging Station",
+        "url": "https://amzn.to/4cSk3Mf",
+        "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/wireless-charging-station.jpg"
+      }
+    ]
   },
   {
     "id": "gear-005",

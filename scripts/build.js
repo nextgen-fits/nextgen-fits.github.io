@@ -240,7 +240,10 @@ function listHtmlFiles(dir) {
   const full = path.join(ROOT, dir);
   if (!fs.existsSync(full)) return [];
   return fs.readdirSync(full)
-    .filter(f => f.endsWith('.html') && !(dir === 'watches' && f === 'mens-workwear-capsule-wardrobe-2026.html'))
+    .filter(f => f.endsWith('.html')
+      && !(dir === 'watches' && f === 'mens-workwear-capsule-wardrobe-2026.html')
+      // These legacy desk-guide URLs are noindex redirect shims; only their canonical replacement belongs in the sitemap.
+      && !(dir === 'gear' && ['best-minimalist-monitors-2026.html', 'best-minimalist-desk-accessories-2026.html'].includes(f)))
     .map(f => `${dir}/${f}`);
 }
 
