@@ -58,7 +58,7 @@ const PLACEHOLDER =
 function renderProductCard(item) {
   return `
     <div class="product-card">
-        <div class="product-img"><img src="${esc(item.img)}" alt="${esc(item.title)}" loading="lazy" width="300" height="300" onerror="this.src='${PLACEHOLDER}';"></div>
+        <div class="product-img"><img src="${esc(item.img)}" alt="${esc(item.img_alt || item.title)}" loading="lazy" width="300" height="300" onerror="this.src='${PLACEHOLDER}';"></div>
         <div class="product-body">
             <span class="product-type">${esc(item.type)}</span>
             <h4>${esc(item.title)}</h4>
@@ -321,3 +321,4 @@ console.log('[build] 已自动生成 sitemap.xml');
 console.log('[build] 完成。');
 
 require('./editorial')(DIST);
+

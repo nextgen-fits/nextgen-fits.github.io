@@ -1,196 +1,110 @@
 [
-
   {
-
     "type": "Watches",
-
     "title": "Seiko 5 Sports SRPD Series",
-
     "desc": "The definitive modern entry to automatic horology. We chose the SRPD for its bulletproof NH36 movement and the legendary 4 o'clock crown. Note: It gains/loses a few seconds daily — that's mechanical charm, not a defect.",
-
     "price": "$229.87",
-
-    "img": "/images/Seiko-5-1.jpg",
-
-    "url": "https://amzn.to/4xx2kTa"
-
+    "img": "/assets/editorial-2026/watch-seiko-editorial.png",
+    "url": "https://amzn.to/4xx2kTa",
+    "img_alt": "Editorial illustration: stainless steel automatic dive-style watch with a navy dial."
   },
-
   {
-
     "type": "Watches",
-
     "title": "Invicta Pro Diver 5053",
-
     "desc": "Powered by Seiko's NH35a automatic calibre with a genuinely tested 200m water resistance. A classic, high-contrast coin-edge bezel dive watch that punches way above its price tag for daily wear and ultimate durability.",
-
     "price": "$87.45",
-
-    "img": "/images/invicta-5053.jpg",
-
-    "url": "https://amzn.to/4uV3JQK"
-
+    "img": "/assets/editorial-2026/watch-invicta-editorial.png",
+    "url": "https://amzn.to/4uV3JQK",
+    "img_alt": "Editorial illustration: stainless steel dive-style watch with a black dial."
   },
-
   {
-
     "type": "Watches",
-
     "title": "Citizen Eco-Drive Chandler",
-
     "desc": "The ultimate set-it-and-forget-it light-powered field watch. Built with absolute rugged durability for a seamless minimalist daily rotation.",
-
     "price": "$350",
-
-    "img": "/images/citizen-field.jpg",
-
-    "url": "https://amzn.to/4v1dc9x"
-
+    "img": "/assets/editorial-2026/watch-citizen-editorial.png",
+    "url": "https://amzn.to/4v1dc9x",
+    "img_alt": "Editorial illustration: field watch with a dark dial and olive fabric strap."
   },
-
   {
-
     "type": "Watches",
-
     "title": "Casio G-Shock GA-2100 'CasiOak'",
-
     "desc": "An absolute icon in modern watch design. Features the legendary G-Shock shock resistance wrapped in a slim, octagonal carbon core guard structure. The indestructible daily beater for minimalists.",
-
     "price": "$99",
-
-    "img": "/images/blog/3dba3317-8143-4f81-8c52-836781f15ccf.jpg",
-
-    "url": "https://amzn.to/43YgHCt"
-
+    "img": "/assets/editorial-2026/watch-casio-editorial.png",
+    "url": "https://amzn.to/43YgHCt",
+    "img_alt": "Editorial illustration: black octagonal resin sport watch worn on the wrist."
   },
-
   {
-
     "type": "Apparel",
-
     "title": "14oz Heavyweight Boxy Hoodie",
-
     "desc": "Dropped shoulder, dense knit construction. Holds shape after repeated washes — most hoodies at this price don't.",
-
     "price": "$41.78",
-
-    "img": "/images/blog/82f54a7e7f7f.png",
-
-    "url": "https://amzn.to/4vwRc7e"
-
+    "img": "/assets/editorial-2026/apparel-hoodie-editorial.png",
+    "url": "https://amzn.to/4vwRc7e",
+    "img_alt": "Editorial illustration: heavyweight black boxy hoodie worn outdoors."
   },
-
   {
-
     "type": "Apparel",
-
     "title": "Salomon Speedcross 6 Trail Shoes",
-
     "desc": "The benchmark in functional Gorpcore footwear. Features an aggressive Mud Contagrip lug pattern that anchors a minimalist technical outfit flawlessly without looking purely like standard running shoes.",
-
     "price": "$145.00",
-
-    "img": "/images/blog/bc23-9da7e5ffbe55.png",
-
-    "url": "https://amzn.to/4f3lfO5"
-
+    "img": "/assets/editorial-2026/apparel-trail-shoe-editorial.png",
+    "url": "https://amzn.to/4f3lfO5",
+    "img_alt": "Editorial illustration: dark trail-running shoe with deep lugs on a forest path."
   },
-
   {
-
     "type": "Apparel",
-
     "title": "Carhartt Rugged Flex Heavyweight Overshirt",
-
     "desc": "The ultimate structured layering piece for transition seasons. Built from rugged, heavy-grade cotton twill with stretch canvas that acts as the hard-wearing foundation for the classic three-piece casual capsule wardrobe formula.",
-
     "price": "$109.99",
-
-    "img": "/images/blog/1d3dde7f77d8.png",
-
-    "url": "https://amzn.to/4wfCdyJ"
-
+    "img": "/assets/editorial-2026/apparel-overshirt-editorial.png",
+    "url": "https://amzn.to/4wfCdyJ",
+    "img_alt": "Editorial illustration: tobacco-brown canvas overshirt worn in a workshop."
   },
-
   {
-
     "type": "Apparel",
-
     "title": "Shaka Wear 7.5oz Max Heavyweight Tee",
-
     "desc": "Cut from ultra-dense 7.5 oz matte-finish cotton built specifically for the minimalist aesthetic. A tight, retro mock-neck collar ensures the silhouette stays perfectly structured even after intensive daily rotation.",
-
     "price": "$10.76",
-
-    "img": "/images/blog/21_46_24.png",
-
-    "url": "https://amzn.to/4uWSmbi"
-
+    "img": "/assets/editorial-2026/apparel-heavyweight-tee-editorial.png",
+    "url": "https://amzn.to/4uWSmbi",
+    "img_alt": "Editorial illustration: heavyweight black crew-neck T-shirt."
   },
-
   {
-
     "type": "Gear",
-
     "title": "UGREEN Revodok Max 13-in-1 Dock",
-
     "desc": "True 40Gbps Thunderbolt 4 throughput. Runs dual 4K displays without the bandwidth compromises cheaper docks make.",
-
     "price": "$199.49",
-
-    "img": "/images/ugreen-dock.jpg",
-
-    "url": "https://amzn.to/3SKWuNX"
-
+    "img": "/assets/editorial-2026/gear-dock-editorial.png",
+    "url": "https://amzn.to/3SKWuNX",
+    "img_alt": "Editorial illustration: aluminum USB-C docking station beside a laptop."
   },
-
   {
-
     "type": "Gear",
-
     "title": "Logitech Lift Vertical Mouse",
-
     "desc": "A genuine ergonomic improvement, not just a marketing angle — noticeable after a few full work days.",
-
     "price": "$70",
-
-    "img": "/images/logitech-mouse.jpg",
-
-    "url": "https://amzn.to/4vnJegL"
-
+    "img": "/assets/editorial-2026/gear-vertical-mouse-editorial.png",
+    "url": "https://amzn.to/4vnJegL",
+    "img_alt": "Editorial illustration: charcoal vertical ergonomic mouse on a wood desk."
   },
-
   {
-
     "type": "Gear",
-
     "title": "Sony WH-CH720N Noise Canceling Headphones",
-
     "desc": "Active noise cancellation that actually improves call clarity from inconsistent work environments.",
-
     "price": "$98",
-
-    "img": "/images/sony-headphones.jpg",
-
-    "url": "https://amzn.to/4gt20yu"
-
+    "img": "/assets/editorial-2026/gear-headphones-editorial.png",
+    "url": "https://amzn.to/4gt20yu",
+    "img_alt": "Editorial illustration: black over-ear headphones on a desk mat."
   },
-
   {
-
     "type": "Gear",
-
     "title": "Single-Monitor Vertical Stand",
-
     "desc": "Eye-level mounting that keeps a one-screen setup from feeling like a compromise.",
-
     "price": "$43.99",
-
-    "img": "/images/monitor-stand.jpg",
-
-    "url": "https://amzn.to/3R2Vaph"
-
+    "img": "/assets/editorial-2026/gear-monitor-arm-editorial.png",
+    "url": "https://amzn.to/3R2Vaph",
+    "img_alt": "Editorial illustration: single monitor on a black adjustable arm."
   }
-
-] 
-
+]
