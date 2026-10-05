@@ -1,5 +1,50 @@
 [
   {
+    "id": "practical-20261005-accuracy",
+    "date": "OCTOBER 5, 2026",
+    "category": "WATCH CARE · MEASUREMENT",
+    "title": "Seiko 4R36 Accuracy: How to Measure a Watch That Runs Fast or Slow",
+    "summary": "Measure Seiko 4R36 accuracy with a seven-day log. Learn daily rate versus total offset, check useful patterns, and know what to tell a watch service center.",
+    "cover_img": "/images/practical-guides-2026-10/accuracy-768.webp",
+    "page_url": "/watches/seiko-4r36-accuracy-running-fast-slow.html"
+  },
+  {
+    "id": "practical-20261005-calendar",
+    "date": "OCTOBER 5, 2026",
+    "category": "WATCH CARE · STEP BY STEP",
+    "title": "How to Set the Day and Date on a Seiko 4R36 or NH36 Watch",
+    "summary": "Set the day, date and AM/PM on a 4R36 or NH36 watch. Follow crown positions, avoid the calendar quickset window, and troubleshoot changes at noon.",
+    "cover_img": "/images/practical-guides-2026-10/calendar-768.webp",
+    "page_url": "/watches/seiko-4r36-nh36-day-date-setting.html"
+  },
+  {
+    "id": "practical-20261005-movements",
+    "date": "OCTOBER 5, 2026",
+    "category": "MOVEMENT KNOWLEDGE · COMPARISON",
+    "title": "NH35 vs Miyota 9015: What Changes in Daily Use?",
+    "summary": "Compare NH35 and Miyota 9015 frequency, thickness, reserve and accuracy specifications. Learn what the movement can—and cannot—tell you about a finished watch.",
+    "cover_img": "/images/practical-guides-2026-10/movements-768.webp",
+    "page_url": "/watches/nh35-vs-miyota-9015.html"
+  },
+  {
+    "id": "practical-20261005-overnight",
+    "date": "OCTOBER 5, 2026",
+    "category": "WATCH CARE · TROUBLESHOOTING",
+    "title": "Why Does My Automatic Watch Stop Overnight? A Practical Checklist",
+    "summary": "Separate insufficient winding from a repeatable fault. Learn how to record overnight stops, check the correct manual and prepare a useful service inquiry.",
+    "cover_img": "/images/practical-guides-2026-10/overnight-768.webp",
+    "page_url": "/watches/automatic-watch-stops-overnight.html"
+  },
+  {
+    "id": "practical-20261005-microbrand",
+    "date": "OCTOBER 5, 2026",
+    "category": "WATCH KNOWLEDGE · BUYING PROCESS",
+    "title": "How to Evaluate a Watch Microbrand Before Buying",
+    "summary": "Ten practical checks for a microbrand watch purchase: seller identity, fit, movement details, service, spare parts, returns and preorder terms.",
+    "cover_img": "/images/practical-guides-2026-10/microbrand-768.webp",
+    "page_url": "/watches/watch-microbrand-buying-checklist.html"
+  },
+  {
     "id": "watches-20260927-01",
     "date": "SEPTEMBER 27, 2026",
     "category": "WATCH FIT BUYING GUIDE",

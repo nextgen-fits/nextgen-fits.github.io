@@ -1,0 +1,25 @@
+How to Measure a T-Shirt for Online Shopping: Chest, Length and Shoulders
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/apparel/how-to-measure-t-shirt-size.html
+
+[ ] Identify body versus garment chart and units.
+[ ] Choose a dry washed reference with a fit you understand.
+[ ] Match the seller chest line and record flat width.
+[ ] Match length, shoulder and sleeve endpoints.
+[ ] Compare all dimensions, cut and stated tolerances.
+[ ] Check returns and preserve the allowed fit-check condition.
+
+Reference shirt / care state: __________
+Chart type / units / source: __________
+Dimension | Reference | Candidate 1 | Candidate 2 | Exact method
+Chest     | _________ | ___________ | ___________ | ____________
+Length    | _________ | ___________ | ___________ | ____________
+Shoulders | _________ | ___________ | ___________ | ____________
+Sleeves   | _________ | ___________ | ___________ | ____________
+Fit preference / tolerance / returns: __________
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.

@@ -1,0 +1,18 @@
+USB-C Monitor Not Detected? Check the Port, Cable and Input
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/gear/usb-c-monitor-no-signal.html
+
+[ ] Confirm the exact computer port supports the required video mode.
+[ ] Confirm the cable supports that mode and intended display settings.
+[ ] Find the monitor’s designated upstream/video input.
+[ ] Power the display as prescribed and select that input.
+[ ] Test one direct connection, without a dock.
+[ ] Record the result before changing a single part.
+
+
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.

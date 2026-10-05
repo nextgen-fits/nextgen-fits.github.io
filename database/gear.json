@@ -1,5 +1,50 @@
 [
   {
+    "id": "practical-20261005-usb-c",
+    "date": "OCTOBER 5, 2026",
+    "category": "DESK TROUBLESHOOTING · CONNECTIONS",
+    "title": "USB-C Monitor Not Detected? Check the Port, Cable and Input",
+    "summary": "Troubleshoot a USB-C monitor with no signal. Check video support, cable capability, monitor input and direct connection before replacing a cable or dock.",
+    "cover_img": "/images/practical-guides-2026-10/usb-c-768.webp",
+    "page_url": "/gear/usb-c-monitor-no-signal.html"
+  },
+  {
+    "id": "practical-20261005-blurry",
+    "date": "OCTOBER 5, 2026",
+    "category": "DESK TROUBLESHOOTING · READABILITY",
+    "title": "Blurry Text on an External Monitor: Windows and Mac Checks",
+    "summary": "Check blurry external-monitor text in Windows and macOS. Separate resolution, scaling, one-app issues and pixel density before deciding you need a new monitor.",
+    "cover_img": "/images/practical-guides-2026-10/blurry-768.webp",
+    "page_url": "/gear/external-monitor-blurry-text.html"
+  },
+  {
+    "id": "practical-20261005-dual-mac",
+    "date": "OCTOBER 5, 2026",
+    "category": "DESK TROUBLESHOOTING · MAC DISPLAYS",
+    "title": "Two Monitors Show the Same Image on a MacBook: What to Check",
+    "summary": "Separate mirror settings, MacBook native display limits, MST hubs and DisplayLink. Diagnose two monitors showing the same image before buying another dock.",
+    "cover_img": "/images/practical-guides-2026-10/dual-mac-768.webp",
+    "page_url": "/gear/macbook-dual-monitors-mirrored.html"
+  },
+  {
+    "id": "practical-20261005-disconnect",
+    "date": "OCTOBER 5, 2026",
+    "category": "USB-C · TROUBLESHOOTING",
+    "title": "USB-C Hub Keeps Disconnecting: Isolate the Cause Before Replacing It",
+    "summary": "Find whether a disconnect affects one device, the whole hub, video or charging. Build a direct baseline, add one device at a time and document the result.",
+    "cover_img": "/images/practical-guides-2026-10/disconnect-768.webp",
+    "page_url": "/gear/usb-c-hub-keeps-disconnecting.html"
+  },
+  {
+    "id": "practical-20261005-charging",
+    "date": "OCTOBER 5, 2026",
+    "category": "USB-C · POWER EXPLAINED",
+    "title": "Laptop Charging Slowly Through a USB-C Monitor or Dock? Check the Power Path",
+    "summary": "Understand charger input, dock output, cable capability and laptop requirements. Compare a direct charger before replacing a slow-charging monitor or dock.",
+    "cover_img": "/images/practical-guides-2026-10/charging-768.webp",
+    "page_url": "/gear/usb-c-monitor-dock-slow-charging.html"
+  },
+  {
     "id": "gear-20260927-01",
     "date": "SEPTEMBER 27, 2026",
     "category": "SMALL-SPACE DISPLAY GUIDE",

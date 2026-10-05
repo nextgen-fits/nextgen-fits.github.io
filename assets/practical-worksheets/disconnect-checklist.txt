@@ -1,0 +1,22 @@
+USB-C Hub Keeps Disconnecting: Isolate the Cause Before Replacing It
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/gear/usb-c-hub-keeps-disconnecting.html
+
+[ ] Name what disappears: one USB device, all USB, video or charging.
+[ ] Save work and protect storage before comparisons.
+[ ] Test the affected device directly where supported.
+[ ] Test the hub with minimal supported devices and correct power.
+[ ] Add one device at a time while keeping the task constant.
+[ ] Record versions, timing and the smallest repeatable failure.
+
+Host / OS: __________
+Hub / firmware / upstream cable: __________
+Power supply: __________
+Configuration | Task | Observation duration | Devices lost | Next change
+_____________ | ____ | ____________________ | ____________ | ___________
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.

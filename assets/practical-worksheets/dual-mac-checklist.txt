@@ -1,0 +1,18 @@
+Two Monitors Show the Same Image on a MacBook: What to Check
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/gear/macbook-dual-monitors-mirrored.html
+
+[ ] Record exact Mac model, chip and operating system.
+[ ] Count independently configurable displays in Displays settings.
+[ ] Check Use as for each separately detected display.
+[ ] Verify native limits at the intended resolutions and refresh rates.
+[ ] Identify MST, Thunderbolt or DisplayLink technology for each dock output.
+[ ] Test each display alone, then a documented supported dual path.
+
+
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.

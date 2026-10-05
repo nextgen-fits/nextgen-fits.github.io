@@ -1,5 +1,50 @@
 [
   {
+    "id": "practical-20261005-shrink",
+    "date": "OCTOBER 5, 2026",
+    "category": "CLOTHING CARE · FIT",
+    "title": "Do Cotton Hoodies Shrink? How to Check Fit and Reduce Further Shrinkage",
+    "summary": "Measure hoodie length and width before and after washing, calculate dimensional change and choose a care routine based on the garment’s own label.",
+    "cover_img": "/images/practical-guides-2026-10/shrink-768.webp",
+    "page_url": "/apparel/do-cotton-hoodies-shrink.html"
+  },
+  {
+    "id": "practical-20261005-fading",
+    "date": "OCTOBER 5, 2026",
+    "category": "CLOTHING CARE · DARK COLORS",
+    "title": "How to Keep Black Clothes from Fading: A Care-Label-First Routine",
+    "summary": "Distinguish actual fading from residue and lint, then build a label-approved wash and drying routine for black T-shirts, hoodies and everyday clothing.",
+    "cover_img": "/images/practical-guides-2026-10/fading-768.webp",
+    "page_url": "/apparel/keep-black-clothes-from-fading.html"
+  },
+  {
+    "id": "practical-20261005-pilling",
+    "date": "OCTOBER 5, 2026",
+    "category": "CLOTHING CARE · SURFACE REPAIR",
+    "title": "How to Remove Pilling from Hoodies and Sweaters Without Damaging the Fabric",
+    "summary": "Distinguish pills from lint and snags, assess the fabric, test a suitable tool on a small area and know when to stop before damaging a hoodie or sweater.",
+    "cover_img": "/images/practical-guides-2026-10/pilling-768.webp",
+    "page_url": "/apparel/remove-pilling-hoodies-sweaters.html"
+  },
+  {
+    "id": "practical-20261005-tee-size",
+    "date": "OCTOBER 5, 2026",
+    "category": "CLOTHING FIT · MEASURING GUIDE",
+    "title": "How to Measure a T-Shirt for Online Shopping: Chest, Length and Shoulders",
+    "summary": "Use a shirt you already like to compare online garment measurements. Learn chest width, body length, shoulder and sleeve methods without confusing body charts.",
+    "cover_img": "/images/practical-guides-2026-10/tee-size-768.webp",
+    "page_url": "/apparel/how-to-measure-t-shirt-size.html"
+  },
+  {
+    "id": "practical-20261005-blend",
+    "date": "OCTOBER 5, 2026",
+    "category": "FABRIC KNOWLEDGE · EVERYDAY USE",
+    "title": "Cotton vs Cotton-Polyester Hoodies: Fabric, Drying and Everyday Use",
+    "summary": "Compare hoodie fabric beyond percentages: construction, surface, fit, care, drying conditions and the evidence needed for shrinkage or performance claims.",
+    "cover_img": "/images/practical-guides-2026-10/blend-768.webp",
+    "page_url": "/apparel/cotton-vs-cotton-polyester-hoodie.html"
+  },
+  {
     "id": "apparel-20260927-01",
     "date": "SEPTEMBER 27, 2026",
     "category": "WARDROBE FABRIC GUIDE",

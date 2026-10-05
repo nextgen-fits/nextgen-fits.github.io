@@ -1,0 +1,18 @@
+Blurry Text on an External Monitor: Windows and Mac Checks
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/gear/external-monitor-blurry-text.html
+
+[ ] Select the correct external display in system settings.
+[ ] Establish the recommended/default resolution and a comfortable scale.
+[ ] Compare a system window, browser text and the affected app.
+[ ] Restart/update only the affected app when the problem is isolated.
+[ ] Test a supported direct connection if expected modes are missing.
+[ ] Record density and viewing distance before considering replacement.
+
+
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.

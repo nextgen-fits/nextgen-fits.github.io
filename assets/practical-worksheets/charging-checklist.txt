@@ -1,0 +1,22 @@
+Laptop Charging Slowly Through a USB-C Monitor or Dock? Check the Power Path
+Prepared: October 5, 2026
+Full guide: https://nxgenpicks.com/gear/usb-c-monitor-dock-slow-charging.html
+
+[ ] Read battery status and charge-limit messages.
+[ ] Confirm exact laptop charging requirements and port.
+[ ] Record accessory input and specified host-output ratings.
+[ ] Use a suitable cable and designated power connections.
+[ ] Compare the approved direct charger under similar conditions.
+[ ] Send model details, warnings and comparison to support.
+
+Laptop model / required supply: __________
+Accessory input / host output: __________
+Cable / ports: __________
+Connection | Start level | Workload | Time window | End level | Status
+__________ | ___________ | ________ | ___________ | _________ | ______
+
+Model / reference: ______________________________
+Connection / routine: ___________________________
+Observation and next action: ____________________
+
+Use the exact model manual. This checklist is not a diagnosis or compatibility certification.
