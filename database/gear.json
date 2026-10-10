@@ -1,5 +1,32 @@
 [
   {
+    "id": "deep-20261010-monitor",
+    "date": "OCTOBER 10, 2026",
+    "category": "SMALL WORKSPACE · DISPLAY GUIDE",
+    "title": "Best 24-Inch Monitor for a Small Workspace: Three Practical Routes",
+    "summary": "Compare Dell P2425H, P2425HE and ASUS PA248QV for a small desk. Check stand depth, 16:10 workspace, USB-C video and charging before you buy.",
+    "cover_img": "/images/deep-guides-20261010/monitor-hero-768.webp",
+    "page_url": "/gear/best-24-inch-monitor-small-workspace.html"
+  },
+  {
+    "id": "deep-20261010-dock",
+    "date": "OCTOBER 10, 2026",
+    "category": "CONNECTION KNOWLEDGE · DOCK OR HUB",
+    "title": "USB-C Hub vs Thunderbolt 4 Dock: Buy for Your Actual Setup",
+    "summary": "Choose a USB-C hub or Thunderbolt 4 dock using host limits, display modes, laptop power and cable checks. Includes a practical route selector and TS4 example.",
+    "cover_img": "/images/deep-guides-20261010/dock-hero-768.webp",
+    "page_url": "/gear/usb-c-hub-vs-thunderbolt-4-dock.html"
+  },
+  {
+    "id": "deep-20261010-arm",
+    "date": "OCTOBER 10, 2026",
+    "category": "DESK PLANNING · MONITOR MOUNTING",
+    "title": "Monitor Arm vs Stand for a Shallow Desk: Measure Before Buying",
+    "summary": "Choose a monitor arm or stand for a shallow desk. Check screen-plane position, minimum payload, VESA access, desktop construction and clamp clearance.",
+    "cover_img": "/images/deep-guides-20261010/arm-hero-768.webp",
+    "page_url": "/gear/monitor-arm-vs-stand-shallow-desk.html"
+  },
+  {
     "id": "practical-20261005-usb-c",
     "date": "OCTOBER 5, 2026",
     "category": "DESK TROUBLESHOOTING · CONNECTIONS",
@@ -61,22 +88,6 @@
     ]
   },
   {
-    "id": "gear-20260927-02",
-    "date": "SEPTEMBER 27, 2026",
-    "category": "COMPACT MONITOR BUYING GUIDE",
-    "title": "Best 24-Inch Monitors for a Small Workspace: What to Check",
-    "summary": "A well-chosen 24-inch monitor is a practical default for a compact desk: it is easier to place than a large display, but the stand, panel resolution and ports still determine whether it feels like an upgrade. Compare complete dimensions, height adjustment, text clarity and return terms before choosing by refresh rate or marketing labels.",
-    "cover_img": "/images/editorial-guides-2026/gear-minimalist-monitor-guide.jpg",
-    "page_url": "/gear/best-24-inch-monitor-small-workspace.html",
-    "gear_list": [
-      {
-        "name": "24-inch IPS monitor",
-        "url": "https://www.amazon.com/s?k=24-inch%20IPS%20monitor&tag=nextgenlabs04-20",
-        "img": "/images/editorial-guides-2026/gear-minimalist-monitor-guide.jpg"
-      }
-    ]
-  },
-  {
     "id": "gear-20260927-03",
     "date": "SEPTEMBER 27, 2026",
     "category": "RESOLUTION DECISION GUIDE",
@@ -89,22 +100,6 @@
         "name": "27-inch QHD and 4K monitor comparison",
         "url": "https://www.amazon.com/s?k=27-inch%20QHD%20and%204K%20monitor%20comparison&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-4k-qhd-pixel.jpg"
-      }
-    ]
-  },
-  {
-    "id": "gear-20260927-04",
-    "date": "SEPTEMBER 27, 2026",
-    "category": "DESK SPACE FIELD GUIDE",
-    "title": "Monitor Arm vs Stand for a Shallow Desk: Which Saves More Space?",
-    "summary": "A monitor arm can free the desk surface and move a screen closer to the wall, but only when the desk edge, clamp clearance, mounting pattern and arm reach are compatible. A stand is easier and often steadier. Measure the actual footprint and solve the posture problem first; space savings alone do not justify an unsafe or awkward mount.",
-    "cover_img": "/images/editorial-guides-2026/gear-arm-vs-stand.jpg",
-    "page_url": "/gear/monitor-arm-vs-stand-shallow-desk.html",
-    "gear_list": [
-      {
-        "name": "monitor arm for shallow desk",
-        "url": "https://www.amazon.com/s?k=monitor%20arm%20for%20shallow%20desk&tag=nextgenlabs04-20",
-        "img": "/images/editorial-guides-2026/gear-arm-vs-stand.jpg"
       }
     ]
   },
@@ -233,22 +228,6 @@
         "name": "Amazon Basics 24-inch 100Hz IPS Monitor",
         "url": "https://amzn.to/4yiKm74",
         "img": "/gear/images/blog/monitor-amazon-basics3-24.jpg"
-      }
-    ]
-  },
-  {
-    "id": "gear-20260925-03",
-    "date": "SEPTEMBER 25, 2026",
-    "category": "ONE-CABLE DESK GUIDE",
-    "title": "USB-C Hub vs Thunderbolt 4 Dock: Which One Does Your Desk Need?",
-    "summary": "A plain-language guide to choosing a portable USB-C hub or full Thunderbolt 4 dock based on the devices you actually connect.",
-    "cover_img": "/gear/images/blog/guides-2026/usb-c-hub-vs-thunderbolt-dock-hero.webp",
-    "page_url": "/gear/usb-c-hub-vs-thunderbolt-4-dock.html",
-    "gear_list": [
-      {
-        "name": "Anker 555 USB-C Hub (8-in-1)",
-        "url": "https://amzn.to/3UMVIB2",
-        "img": "/gear/images/blog/Anker-555.jpg"
       }
     ]
   },

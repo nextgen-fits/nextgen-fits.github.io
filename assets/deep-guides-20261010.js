@@ -1,0 +1,16 @@
+(()=>{'use strict';
+document.querySelectorAll('[data-dg-form]').forEach(form=>form.addEventListener('submit',event=>{
+ event.preventDefault();if(!form.reportValidity())return;const d=new FormData(form),v=n=>Number(d.get(n));let result='';
+ if(form.dataset.dgForm==='budget'){const total=v('price')*(1+v('tax')/100)+v('shipping')+v('extras'),remaining=v('limit')-total;result=`Estimated total: $${total.toFixed(2)}. ${remaining>=0?`$${remaining.toFixed(2)} remains within your limit.`:`$${(-remaining).toFixed(2)} above your limit.`} Use actual checkout charges; tax here applies to the item price only.`;}
+ if(form.dataset.dgForm==='width'){const spare=v('desk')-v('monitor');result=spare<0?`The monitor body is ${(-spare).toFixed(1)} cm wider than the entered space. Revise the layout.`:`${spare.toFixed(1)} cm remains in total, or ${(spare/2).toFixed(1)} cm on each side if centred. This does not reserve space for other objects.`;}
+ if(form.dataset.dgForm==='depth'){const spare=v('desk')-v('rear')-v('keyboard')-v('front');result=spare<0?`Reservations overlap by ${(-spare).toFixed(1)} cm. Revise your planned layout.`:`${spare.toFixed(1)} cm of depth is unallocated in this top-down plan. Check all physical clearances; this is not viewing distance or installation approval.`;}
+ if(form.dataset.dgForm==='dock'){const host=d.get('host'),screens=d.get('screens'),demand=d.get('demand');result=host==='unknown'?'Identify the exact host and port capabilities before choosing a hub or dock.':host==='no'?'Start with a documented USB-C hub or other supported connection route. A Thunderbolt label cannot add unsupported host capabilities.':screens==='two'||demand==='yes'?'Investigate a powered Thunderbolt dock, then verify exact host display limits, output method, power and cable requirements.':'A documented USB-C hub may meet this modest requirement. Compare convenience and complete cost with a compatible Thunderbolt dock.';}
+ form.querySelector('output').textContent=result;
+}));
+document.querySelectorAll('[data-dg-checklist]').forEach(group=>{const boxes=[...group.querySelectorAll('input')],output=group.querySelector('output');group.addEventListener('change',()=>output.textContent=`${boxes.filter(x=>x.checked).length} of ${boxes.length} checks recorded. Unchecked items are questions to resolve.`);});
+document.querySelectorAll('[data-print-guide]').forEach(b=>b.addEventListener('click',()=>window.print()));
+const dialog=document.querySelector('.dg-zoom');if(dialog&&typeof dialog.showModal==='function'){
+ document.querySelectorAll('[data-dg-zoom]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const img=dialog.querySelector('img');img.src=a.href;img.alt=a.querySelector('img').alt;dialog.showModal();}));dialog.querySelector('button').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
+}
+const progress=document.querySelector('.dg-progress');if(progress){const update=()=>{const span=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${span>0?Math.min(100,Math.max(0,scrollY/span*100)):0}%`;};addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();}
+})();

@@ -1,5 +1,32 @@
 [
   {
+    "id": "deep-20261010-budget",
+    "date": "OCTOBER 10, 2026",
+    "category": "FIRST AUTOMATIC · BUYING GUIDE",
+    "title": "Best Automatic Watches Under $200: A Budget-Honest Buying Guide",
+    "summary": "Choose an automatic watch under $200 with verified model information, conditional sale picks, fit checks, seller questions and a complete-cost calculator.",
+    "cover_img": "/images/deep-guides-20261010/invicta-8926ob-768.webp",
+    "page_url": "/watches/best-first-automatic-watch-under-200.html"
+  },
+  {
+    "id": "deep-20261010-kamasu",
+    "date": "OCTOBER 10, 2026",
+    "category": "MODEL STUDY · ORIENT KAMASU",
+    "title": "Orient Kamasu Review: Sapphire, Fit and the Details That Matter",
+    "summary": "A researched Orient Kamasu RA-AA0001B39B review covering sapphire glass, wrist fit, F6922 ownership, bracelet checks and how to assess the actual seller offer.",
+    "cover_img": "/images/deep-guides-20261010/kamasu-front-768.webp",
+    "page_url": "/watches/orient-kamasu-automatic-diver-review.html"
+  },
+  {
+    "id": "deep-20261010-movement",
+    "date": "OCTOBER 10, 2026",
+    "category": "MOVEMENT KNOWLEDGE · NH36 / 4R36",
+    "title": "NH36 vs 4R36: Specifications, Accuracy and Modding Checks",
+    "summary": "Compare NH36 and 4R36 functions and accuracy conditions. Learn how to read timing evidence, check mod compatibility and evaluate the complete watch.",
+    "cover_img": "/images/deep-guides-20261010/seiko-srpd55-768.webp",
+    "page_url": "/watches/nh36-vs-4r36-difference.html"
+  },
+  {
     "id": "practical-20261005-accuracy",
     "date": "OCTOBER 5, 2026",
     "category": "WATCH CARE · MEASUREMENT",
@@ -338,16 +365,6 @@
     ]
   },
   {
-    "id": "watch-007",
-    "date": "JULY 20, 2026",
-    "category": "MOVEMENT GUIDE",
-    "title": "NH36 vs 4R36: What's the Difference? Seiko Movement Guide",
-    "summary": "We break down the differences between these popular Seiko calibers, including branding, availability, and cost.",
-    "cover_img": "/watches/images/blog/seiko-movement-comparison.jpg",
-    "page_url": "/watches/nh36-vs-4r36-difference.html",
-    "gear_list": []
-  },
-  {
     "id": "watch-006",
     "date": "JULY 18, 2026",
     "category": "REVIEW",
@@ -360,22 +377,6 @@
         "name": "Amazfit Bip 6",
         "url": "https://amzn.to/4fogAFG",
         "img": "/watches/images/blog/amazfit-bip-6-hero.jpg"
-      }
-    ]
-  },
-  {
-    "id": "watch-005",
-    "date": "JULY 11, 2026",
-    "category": "BUYERS GUIDE",
-    "title": "How to Choose Your First Automatic Watch: A Beginner’s Guide",
-    "summary": "Learn how to choose an automatic watch by fit, movement, water resistance and upkeep, with practical starter picks and trade-offs.",
-    "cover_img": "/images/Seiko-5-1.jpg",
-    "page_url": "/watches/best-first-automatic-watch-under-200.html",
-    "gear_list": [
-      {
-        "name": "Seiko 5 Sports",
-        "url": "https://amzn.to/4vboF69",
-        "img": "/images/Seiko-5-1.jpg"
       }
     ]
   }
