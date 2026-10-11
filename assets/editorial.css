@@ -25,3 +25,4 @@ body>nav{position:sticky;top:0;z-index:1000;background:rgba(244,242,235,.97);bac
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .image-context-note{margin:16px 0 0;text-align:right;font-size:10px;line-height:1.6;color:var(--steel);letter-spacing:.01em}@media(max-width:760px){.image-context-note{text-align:left;font-size:9px}}
+@media(min-width:761px) and (max-width:1150px){.nav-container{padding:0 22px!important;gap:20px}.nav-links{gap:16px!important}.brand-sub{display:none!important}.brand-word{font-size:26px}.nav-links a{font-size:11px}.nav-links a.nav-subscribe{margin-left:2px;padding:10px 12px}.footer-links{gap:16px;flex-wrap:wrap}.footer-brand{font-size:45px}}

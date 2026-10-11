@@ -256,6 +256,7 @@ function buildSitemap() {
   entries.push({ loc: '/apparel.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
   entries.push({ loc: '/gear.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
   entries.push({ loc: '/articles.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
+  entries.push({ loc: '/shop.html', lastmod: getLastCommitDate('shop.html'), changefreq: 'weekly', priority: '0.9' });
 
   // 静态政策/信息页（用文件在 Git 里真实的最后修改日期）
   const staticPages = [
@@ -301,6 +302,7 @@ ${body}
 
 // ---------- 主流程 ----------
 console.log('[build] 复制静态文件到 dist/ ...');
+require('./picks')(ROOT);
 copyDir(ROOT, DIST);
 
 console.log(`[build] 加载到 ${products.length} 个商品, ${allArticles.length} 篇文章`);
