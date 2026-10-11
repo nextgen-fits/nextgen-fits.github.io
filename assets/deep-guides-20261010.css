@@ -68,6 +68,12 @@
 @media print{nav,.site-footer,.pg .pg-aside,.pg .pg-actions,.pg .pg-button{display:none!important}.pg{max-width:none;padding:0}.pg .pg-heading,.pg .pg-layout{display:block}.pg .pg-content p,.pg .pg-content li{font-size:11pt}.pg .pg-photo{max-width:420px}.pg .pg-diagram img{min-width:0}.pg .pg-faq details{break-inside:avoid}.pg .pg-tool{break-inside:avoid}.pg .pg-tool input{color:#20231f!important}.pg-preview{margin:0}a{color:#20231f!important}}
 
 /* Added after a private copy of the practical-guide styles. No shared assets change. */
+/* The photographed watch remains a separate, unredrawn product image. */
+.dg .dg-hero .pg-photo a.dg-composite{height:480px;position:relative;overflow:hidden;background-size:cover;background-position:center;isolation:isolate}
+.dg .dg-hero .pg-photo .dg-composite img,.dg-card-scene img,.dg-preview-scene img{position:absolute!important;left:50%!important;top:50%!important;height:77%!important;width:68%!important;max-width:none!important;max-height:none!important;padding:14px!important;object-fit:contain!important;background:#fff!important;mix-blend-mode:normal;box-shadow:0 14px 40px rgba(0,0,0,.2);transform:translate(-50%,-50%) rotate(5deg)}
+.dg-composite-kamasu img{transform:translate(-50%,-50%) rotate(-5deg)!important;height:77%!important}
+.dg-card-scene,.dg-preview-scene{display:block;position:relative;overflow:hidden;isolation:isolate;background-size:cover;background-position:center;aspect-ratio:3/2}
+@media(max-width:700px){.dg .dg-hero .pg-photo a.dg-composite{height:auto;aspect-ratio:3/2}.dg .dg-hero .pg-photo .dg-composite img{height:76%!important}}
 .pg.dg{max-width:1280px;padding-top:34px}
 .dg .dg-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:56px;align-items:center;margin:0 0 48px}
 .dg .dg-hero .pg-title{font-size:clamp(38px,4vw,59px);margin:0 0 24px}
