@@ -2,11 +2,11 @@
 // Article text, URLs, metadata, forms and affiliate destinations remain intact.
 const fs = require('fs');
 const path = require('path');
-const links = [['/', 'Home'], ['/watches.html', 'Watches'], ['/apparel.html', 'Apparel'], ['/gear.html', 'Gear'], ['/about.html', 'About'], ['/subscribe.html', 'The newsletter ↗']];
+const links = [['/picks.html', 'Shop'], ['/watches.html', 'Watches'], ['/apparel.html', 'Apparel'], ['/gear.html', 'Gear'], ['/about.html', 'About'], ['/subscribe.html', 'The newsletter ↗']];
 function nav(url) {
   return `<nav aria-label="Primary navigation"><div class="nav-container"><a href="/" class="nav-logo" aria-label="NextGen Essentials home"><span class="brand-word">NextGen<span class="brand-dot">.</span></span><span class="brand-sub">Everyday<br>Essentials</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">Menu +</button><div class="nav-links" id="primary-links">${links.map(([href, text]) => `<a href="${href}"${href === '/subscribe.html' ? ' class="nav-subscribe"' : ''}${url === href || (href !== '/' && url.startsWith(href.replace('.html', '/'))) ? ' aria-current="page"' : ''}>${text}</a>`).join('')}</div></div></nav>`;
 }
-const footer = `<footer class="site-footer"><div class="footer-top"><div><a href="/" class="footer-brand">NextGen Essentials.</a><p class="footer-tagline">Watches. Wardrobe. Workspace. Well considered.</p></div><div class="footer-links"><a href="/articles.html">The journal ↗</a><a href="/about.html">About us ↗</a><a href="/subscribe.html">Stay in the loop ↗</a></div></div><div class="footer-bottom"><p>© 2026 NextGen Essentials. All rights reserved.</p><p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p></div></footer>`;
+const footer = `<footer class="site-footer"><div class="footer-top"><div><a href="/" class="footer-brand">NextGen Essentials.</a><p class="footer-tagline">Watches. Wardrobe. Workspace. Well considered.</p></div><div class="footer-links"><a href="/picks.html">Shop our picks ↗</a><a href="/articles.html">The journal ↗</a><a href="/about.html">About us ↗</a><a href="/subscribe.html">Stay in the loop ↗</a></div></div><div class="footer-bottom"><p>© 2026 NextGen Essentials. All rights reserved.</p><p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p></div></footer>`;
 function palette(css) {
   css = css.replace(/rgba?\(\s*201\s*,\s*169\s*,\s*97/gi, 'rgba(168,62,40');
   return css.replace(/#([\da-f]{6}|[\da-f]{3})(?![\da-f])/gi, (all, hex) => {
