@@ -1,5 +1,32 @@
 [
   {
+    "id": "research-20261015-dell",
+    "date": "OCTOBER 15, 2026",
+    "category": "DISPLAY STUDY 01 · DELL U2725QE",
+    "title": "Dell U2725QE Review: A Cleaner Desk, If You Can Use the Hub",
+    "summary": "A researched Dell U2725QE review covering 4K text, 120Hz, 140W EPR charging, KVM and desk fit. Check your laptop before buying a one-cable setup.",
+    "cover_img": "/images/research-20261015/dell-hero-900.webp",
+    "page_url": "/gear/dell-u2725qe-review.html"
+  },
+  {
+    "id": "research-20261015-asus",
+    "date": "OCTOBER 15, 2026",
+    "category": "DISPLAY STUDY 02 · ASUS PROART",
+    "title": "ASUS ProArt PA279CRV Review: Color Work Without a Crowded Desk",
+    "summary": "ASUS PA279CRV researched review: wide-gamut color, 4K scaling, 96W USB-C, 60Hz compromises and practical checks for a minimalist creative desk.",
+    "cover_img": "/images/research-20261015/asus-hero-900.webp",
+    "page_url": "/gear/asus-proart-pa279crv-review.html"
+  },
+  {
+    "id": "research-20261015-benq",
+    "date": "OCTOBER 15, 2026",
+    "category": "DISPLAY STUDY 03 · BENQ MA270U",
+    "title": "BenQ MA270U Review: A Simpler MacBook Desk, With a Few Checks",
+    "summary": "BenQ MA270U researched review for MacBook users: 4K scaling, matte finish, Display Pilot 2, 90W charging and the limits of a one-cable desk.",
+    "cover_img": "/images/research-20261015/benq-hero-900.webp",
+    "page_url": "/gear/benq-ma270u-review-macbook.html"
+  },
+  {
     "id": "deep-20261010-monitor",
     "date": "OCTOBER 10, 2026",
     "category": "SMALL WORKSPACE · DISPLAY GUIDE",
