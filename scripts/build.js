@@ -56,9 +56,11 @@ const PLACEHOLDER =
   "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E";
 
 function renderProductCard(item) {
-  const full = item.img.replace(/-(?:small|768)\.webp$/, '-full.webp');
-  const imageLink = fs.existsSync(path.join(ROOT,full)) ? full : item.img;
-  return `<article class="product-card product-card-official"><a class="product-img" href="${esc(imageLink)}" target="_blank" rel="noopener" aria-label="View the larger product image"><img src="${esc(item.img)}" alt="${esc(item.img_alt || item.title)}" loading="lazy" width="500" height="625" onerror="this.onerror=null;this.src='${PLACEHOLDER}';"></a><div class="product-body"><span class="product-type">${esc(item.type)}</span><h4>${esc(item.title)}</h4><p>${esc(item.desc)}</p><div class="product-price-row"><span class="product-reference">${esc(item.reference || '')}</span></div><a href="${esc(item.url)}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">Find on Amazon ↗</a><a class="product-photo-source" href="${esc(item.source_url)}" target="_blank" rel="noopener">Product photo · ${esc(item.image_credit)}</a></div></article>`;
+  const candidate = item.img.replace(/-(?:small|768)\.webp$/, '-full.webp');
+  const official = fs.existsSync(path.join(ROOT,candidate)) ? candidate : item.img;
+  const scene = item.scene || item.img;
+  const imageLink = item.scene_full || official;
+  return `<article class="product-card ${item.scene ? 'product-card-scene' : 'product-card-official'}"><a class="product-img" href="${esc(imageLink)}" target="_blank" rel="noopener" aria-label="View the larger ${item.scene ? 'scene' : 'product photo'}"><img src="${esc(scene)}" alt="${esc(item.scene_alt || item.img_alt || item.title)}" loading="lazy" width="${item.scene_width || 500}" height="${item.scene_height || 625}" onerror="this.onerror=null;this.src='${PLACEHOLDER}';"></a><div class="product-body"><span class="product-type">${esc(item.type)}</span><h4>${esc(item.title)}</h4><p>${esc(item.desc)}</p><div class="product-price-row"><span class="product-reference">${esc(item.reference || '')}</span></div><a href="${esc(item.url)}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">Find on Amazon ↗</a><div class="product-image-links"><a class="product-photo-source" href="${esc(official)}" target="_blank" rel="noopener">Original product photo ↗</a><a class="product-brand-source" href="${esc(item.source_url)}" target="_blank" rel="noopener">Model details · ${esc(item.image_credit)}</a></div></div></article>`;
 }
 
 function renderArticleItem(post) {
