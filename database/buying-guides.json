@@ -1,0 +1,79 @@
+[
+  {
+    "id": "everyday-watch",
+    "category": "watches",
+    "title": "How to Choose an Everyday Watch You’ll Actually Wear",
+    "summary": "Start with your Tuesday, not somebody else’s collection. A practical route from daily routine to a watch that earns its place.",
+    "url": "/watches/how-to-choose-an-everyday-watch.html",
+    "image": "/images/buying-guides-20261018/everyday-watch-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/everyday-watch-720.webp",
+    "wordCount": 2412,
+    "minutes": 11
+  },
+  {
+    "id": "work-weekend-watch",
+    "category": "watches",
+    "title": "One Watch for Work and Weekends: A Practical Buying Guide",
+    "summary": "A watch should work with the week you have. Here is how to balance office clothes, relaxed weekends and the details that affect everyday comfort.",
+    "url": "/watches/watch-for-work-and-weekends.html",
+    "image": "/images/buying-guides-20261018/work-weekend-watch-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/work-weekend-watch-720.webp",
+    "wordCount": 2502,
+    "minutes": 12
+  },
+  {
+    "id": "work-monitor",
+    "category": "gear",
+    "title": "How to Choose a Monitor for Work: Size, Text and Laptop Connections",
+    "summary": "The best work screen is the one that fits your desk, your eyes and your computer. Start with those three checks before paying for a longer feature list.",
+    "url": "/gear/how-to-choose-a-monitor-for-work.html",
+    "image": "/images/buying-guides-20261018/work-monitor-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/work-monitor-720.webp",
+    "wordCount": 2435,
+    "minutes": 12
+  },
+  {
+    "id": "desk-buying-order",
+    "category": "gear",
+    "title": "Which Desk Upgrade Should You Buy First? A Home Office Buying Order",
+    "summary": "A better desk starts with the thing that interrupts your day. Fix that first, then stop buying when the problem is solved.",
+    "url": "/gear/home-office-desk-upgrades-buying-order.html",
+    "image": "/images/buying-guides-20261018/desk-buying-order-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/desk-buying-order-720.webp",
+    "wordCount": 2363,
+    "minutes": 11
+  },
+  {
+    "id": "fall-winter-capsule",
+    "category": "apparel",
+    "title": "A Men’s Fall and Winter Capsule Wardrobe That Fits Your Actual Week",
+    "summary": "Warm enough outside, comfortable inside, and easy to put together on a normal morning. Build the wardrobe around those jobs.",
+    "url": "/apparel/fall-winter-capsule-wardrobe-men.html",
+    "image": "/images/buying-guides-20261018/fall-winter-capsule-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/fall-winter-capsule-720.webp",
+    "wordCount": 2369,
+    "minutes": 11
+  },
+  {
+    "id": "casual-office-capsule",
+    "category": "apparel",
+    "title": "A Casual Office Capsule Wardrobe: Five Outfits Without Overbuying",
+    "summary": "Five workdays do not need five separate wardrobes. Build a few compatible combinations that fit the job, the commute and your body.",
+    "url": "/apparel/casual-office-capsule-wardrobe-men.html",
+    "image": "/images/buying-guides-20261018/casual-office-capsule-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/casual-office-capsule-720.webp",
+    "wordCount": 2386,
+    "minutes": 11
+  },
+  {
+    "id": "office-pants",
+    "category": "apparel",
+    "title": "Jeans or Work Pants for the Office? A Fit-First Buying Guide",
+    "summary": "A neat trouser that feels wrong after ten minutes is not a good office buy. Start with how you sit, move and dress, then choose the fabric.",
+    "url": "/apparel/jeans-vs-work-pants-for-office.html",
+    "image": "/images/buying-guides-20261018/office-pants-full.webp",
+    "thumbnail": "/images/buying-guides-20261018/office-pants-720.webp",
+    "wordCount": 2394,
+    "minutes": 11
+  }
+]
