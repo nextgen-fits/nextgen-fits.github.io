@@ -1,0 +1,15 @@
+/* Homepage scenes use exact brand references; original photographs stay available. */
+.page-home .hero-scene{position:relative;background:#d9d1c2;overflow:hidden}
+.page-home .hero-scene img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;padding:0}
+.page-home .hero-scene .hero-image-credit{position:absolute;z-index:2;left:16px;bottom:16px;background:rgba(244,242,235,.96);color:#20231f;padding:8px 10px;font-size:9px;line-height:1.4;letter-spacing:.06em}
+.page-home .hero-scene .hero-reference{position:absolute;z-index:2;right:16px;bottom:16px;background:rgba(244,242,235,.96);color:#20231f;padding:8px 10px;font-size:10px;line-height:1.4;text-decoration:none}
+.page-home .hero-scene .hero-reference:hover{background:#20231f;color:#f4f2eb}
+.page-home .product-card-scene .product-img{display:block;aspect-ratio:4/5;background:#d9d1c2;overflow:hidden}
+.page-home .product-card-scene .product-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;padding:0}
+.page-home .product-card-scene .product-body>p{font-size:12px;line-height:1.85}
+.page-home .product-card-scene .product-reference{font-size:10px;line-height:1.6;color:#66685f}
+.page-home .product-card-scene .buy-btn{min-height:44px;align-items:center;font-size:12px}
+.page-home .product-image-links{display:flex;gap:5px 14px;flex-wrap:wrap;margin-top:5px;align-items:baseline}
+.page-home .product-image-links .product-photo-source,.page-home .product-image-links .product-brand-source{font-size:10px;line-height:1.65;color:#66685f;text-decoration:none;margin:0}
+.page-home .product-image-links a:hover{color:#a83e28;text-decoration:underline}
+@media(max-width:700px){.page-home .hero-scene{aspect-ratio:5/4;min-height:0}.page-home .hero-scene img{position:absolute;inset:0;object-fit:cover;object-position:center}.page-home .hero-scene .hero-image-credit{left:12px;bottom:12px;font-size:8px;padding:7px 8px}.page-home .hero-scene .hero-reference{right:12px;bottom:12px;font-size:9px;padding:7px 8px}}
