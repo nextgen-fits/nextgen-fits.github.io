@@ -376,7 +376,7 @@
     "date": "OCTOBER 2, 2026",
     "category": "BUYING GUIDE",
     "title": "7 Minimalist Desk Setup Essentials for 2026: Practical Gear & Buying Checks",
-    "summary": "Compare seven desk accessories by the problem they solve, fit and compatibility checks, dated Amazon rating snapshots and real trade-offs. No hands-on testing claims.",
+    "summary": "Compare seven desk accessories by the problem they solve, fit and compatibility checks, exact-model listings and practical tradeoffs.",
     "cover_img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/minimalist-desk-hero.jpg",
     "page_url": "/gear/minimalist-desk-setup-essentials-2026.html",
     "gear_list": [
@@ -441,9 +441,9 @@
     "id": "gear-001",
     "date": "JUNE 15, 2026",
     "category": "WORKSPACE",
-    "title": "Building a Minimalist Triple-Monitor Desk Setup Without the Cable Mess",
-    "summary": "How to configure a dual-laptop multi-monitor workstation without visual noise. We review why true Thunderbolt 4 bandwidth is required for dual 4K displays and detail an efficient cable management plan.",
-    "cover_img": "/images/blog/triple-monitor-setup.jpg",
+    "title": "Minimalist Triple-Monitor Setup: Compatibility Before Cable Management",
+    "summary": "Plan three independent displays around your exact computer, dock and desk. Check Mac display limits, supported modes, mounting and cable clearance.",
+    "cover_img": "/images/verified-20261018/triple-monitor-scene.webp",
     "page_url": "/gear/minimalist-triple-monitor-setup.html",
     "gear_list": [
       {
@@ -456,15 +456,16 @@
         "url": "https://amzn.to/4vnJegL",
         "img": "/images/blog/logitech-lift-thumb.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-18"
   },
   {
     "id": "gear-002",
     "date": "MAY 28, 2026",
     "category": "WORKSPACE",
-    "title": "The Everyday Carry Tech Setup for Remote Work and Travel",
-    "summary": "From active noise canceling headphones for noisy coffee shops to rugged tech — the minimalist remote work checklist that actually survives daily transitions between locations.",
-    "cover_img": "/images/blog/sony-headphones-thumb.jpg",
+    "title": "Sony WH-CH720N for Remote Work: Battery, Calls and Travel Buying Checks",
+    "summary": "Compare Sony WH-CH720N battery scenarios, multipoint connections, call requirements and travel compromises. A researched guide with practical buying checks.",
+    "cover_img": "/images/sony-headphones.jpg",
     "page_url": "/gear/edc-tech-setup-remote-work.html",
     "gear_list": [
       {
@@ -472,15 +473,16 @@
         "url": "https://amzn.to/4gt20yu",
         "img": "/images/blog/sony-headphones-thumb.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-18"
   },
   {
     "id": "gear-003",
     "date": "MAY 09, 2026",
     "category": "WORKSPACE",
-    "title": "The Single-Monitor Ergonomic Setup That Outperforms Multi-Screen Clutter",
-    "summary": "Why a one-screen setup often outperforms heavy multi-display configurations for focus-heavy work — and how to make it feel deliberate rather than minimal by necessity.",
-    "cover_img": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+    "title": "Single-Monitor Desk Setup: Screen Placement, Space and Mouse Fit",
+    "summary": "Plan a comfortable single-monitor desk around text size, reach and adjustable placement. Compare Logitech Lift by hand fit and controls without pain-relief promises.",
+    "cover_img": "/images/picks-20261011/lift-scene-full.webp",
     "page_url": "/gear/single-monitor-ergonomic-setup.html",
     "gear_list": [
       {
@@ -488,6 +490,7 @@
         "url": "https://amzn.to/4vnJegL",
         "img": "/images/blog/logitech-lift-thumb.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-18"
   }
 ]

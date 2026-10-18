@@ -144,9 +144,9 @@
     "id": "apparel-002",
     "date": "JULY 20, 2026",
     "category": "WARDROBE",
-    "title": "Minimalist Outfit Under $150: 4 Amazon Essentials for Men (2026)",
-    "summary": "Build a minimalist capsule wardrobe for under $150. We picked 4 Amazon bestsellers — hoodie, pants, shoes, and a cap. Simple, affordable, and looks great.",
-    "cover_img": "/apparel/images/blog/minimalist-outfit-hero.jpg",
+    "title": "A Minimalist Outfit Under $150: A Practical Budget and Fit Plan",
+    "summary": "Plan a simple outfit around a $150 delivered budget. Start with clothing you own, allocate the remaining cost and check exact sizes, fabric and seller terms.",
+    "cover_img": "/assets/editorial-2026/category-apparel-editorial.png",
     "page_url": "/apparel/minimalist-outfit-under-150.html",
     "breakdown": [
       {
@@ -169,15 +169,16 @@
         "url": "https://www.amazon.com/New-Balance-Casual-Comfort-Trainer/dp/B07B41R492?crid=1FA1UFMC07QAE&dib=eyJ2IjoiMSJ9.5SdnlcnbYJxkkJTmyQBKWThbTLR9STgn7VOM6uMUOT_ozytz3G7VCUiMYiEGgDPFYX8sOL_ztwMOKj17Lg6V_SmXdWoI2yHVC6nUUlV8xkVZQZhaO5RnInW1DYJ25GWHtviCL8EyBwdmhJZpeb2JDPCt0aad33aGRPVW8Y7W9l7MI9XursGBo7-jhl4ulf5zmp4DQe8XTkSHlM7ViJvApwztSFt2LQbKZ2sO3h7ZQ8inBt-R7BrAEDP7FVAibodhJObUeWL7hhX4Iotrovmui_MGD3eRsy_X7FIXcdW8mR0.Bws1G7l1xLnVv5XILbYY63epp_F7mddIy7u9T-MvwGw&dib_tag=se&keywords=New+Balance+608+V5&qid=1784731107&sprefix=new+balance+608+v5,aps,991&sr=8-1&linkCode=sl2&tag=nextgenlabs04-20&linkId=ade817bf6c13fec798d847440e1225a1&language=en_US&ref_=as_li_ss_tl",
         "img": "/apparel/images/blog/new-balance-608-v5.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-18"
   },
   {
     "id": "apparel-001",
     "date": "JUNE 20, 2026",
     "category": "WARDROBE",
-    "title": "The 14oz Heavyweight Boxy Hoodie & Salomon Speedcross 6: Ultimate Minimalist Wardrobe",
-    "summary": "An honest look at building a structured capsule wardrobe. We evaluate the durability of a 14oz heavyweight cotton knit and test how aggressive trail shoes perform in urban daily rotation.",
-    "cover_img": "/images/boxy-hoodie.jpg",
+    "title": "Hoodie and Salomon Speedcross 6: Fit, Fabric and Everyday Tradeoffs",
+    "summary": "Build a practical hoodie-and-trail-shoe outfit. Check fabric weight, garment measurements and Speedcross 6 use cases without invented wash or grip tests.",
+    "cover_img": "/assets/editorial-2026/category-apparel-editorial.png",
     "page_url": "/apparel/heavyweight-hoodie-salomon-speedcross-capsule.html",
     "breakdown": [
       {
@@ -190,6 +191,7 @@
         "url": "https://amzn.to/4f3lfO5",
         "img": "/images/speedcross6.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-18"
   }
 ]
