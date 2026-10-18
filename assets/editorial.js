@@ -14,3 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { close(); toggle.focus(); } });
   document.addEventListener('click', e => { if (!e.target.closest('nav')) close(); });
 });
+
+// Long article contents remain available; collapse the new sidebar on small screens.
+document.addEventListener('DOMContentLoaded',()=>{if(window.matchMedia('(max-width:900px)').matches){document.querySelectorAll('.qg-toc details').forEach(d=>{d.open=false;});}});
