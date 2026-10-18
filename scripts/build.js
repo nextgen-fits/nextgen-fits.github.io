@@ -1,7 +1,7 @@
 // scripts/build.js
 // 在 GitHub Actions 里跑：
 // 1. 把 JSON 数据预渲染进静态 HTML（首页商品/文章、articles.html 全量列表）
-// 2. 为商品自动注入符合 Google 规范的 JSON-LD 结构化数据（解决 GSC hasMerchantReturnPolicy 警告）
+// 2. Render descriptive collection markup without unverified offers, ratings or retailer policies.
 // 3. 自动扫描 watches/apparel/gear 文件夹，生成 sitemap.xml，
 //    lastmod 直接取每个文件在 Git 里真实的最后提交日期
 // 不需要任何 npm 依赖，纯 Node 内置模块。
@@ -49,24 +49,16 @@ const allArticles = [...gearPosts, ...watchPosts, ...apparelPosts]
   .sort((a, b) => new Date(b.date) - new Date(a.date));
 
 function esc(s) {
-  return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
 const PLACEHOLDER =
   "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%23111113%22 width=%22300%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236B6D70%22 font-family=%22sans-serif%22 font-size=%2214%22%3ENo Image%3C/text%3E%3C/svg%3E";
 
 function renderProductCard(item) {
-  return `
-    <div class="product-card">
-        <div class="product-img"><img src="${esc(item.img)}" alt="${esc(item.img_alt || item.title)}" loading="lazy" width="300" height="300" onerror="this.src='${PLACEHOLDER}';"></div>
-        <div class="product-body">
-            <span class="product-type">${esc(item.type)}</span>
-            <h4>${esc(item.title)}</h4>
-            <p>${esc(item.desc)}</p>
-            <div class="product-price-row"><span class="product-price">${esc(item.price || '')}</span></div>
-            <a href="${esc(item.url)}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
-        </div>
-    </div>`;
+  const full = item.img.replace(/-(?:small|768)\.webp$/, '-full.webp');
+  const imageLink = fs.existsSync(path.join(ROOT,full)) ? full : item.img;
+  return `<article class="product-card product-card-official"><a class="product-img" href="${esc(imageLink)}" target="_blank" rel="noopener" aria-label="View the larger product image"><img src="${esc(item.img)}" alt="${esc(item.img_alt || item.title)}" loading="lazy" width="500" height="625" onerror="this.onerror=null;this.src='${PLACEHOLDER}';"></a><div class="product-body"><span class="product-type">${esc(item.type)}</span><h4>${esc(item.title)}</h4><p>${esc(item.desc)}</p><div class="product-price-row"><span class="product-reference">${esc(item.reference || '')}</span></div><a href="${esc(item.url)}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">Find on Amazon ↗</a><a class="product-photo-source" href="${esc(item.source_url)}" target="_blank" rel="noopener">Product photo · ${esc(item.image_credit)}</a></div></article>`;
 }
 
 function renderArticleItem(post) {
@@ -84,7 +76,7 @@ function renderArticleItem(post) {
       const itemImg = item.img || '/images/fallback.jpg';
       miniBuyHTML += `
             <div class="article-buy-mini">
-                <img src="${esc(itemImg)}" alt="${esc(itemName)}" width="44" height="44" onerror="this.src='${PLACEHOLDER}';">
+                <img src="${esc(itemImg)}" alt="${esc(itemName)}" width="44" height="44" onerror="this.onerror=null;this.src='${PLACEHOLDER}';">
                 <div class="mini-info">
                     <span class="mini-label">Featured in this post</span>
                     <span class="mini-name">${esc(itemName)}</span>
@@ -105,7 +97,7 @@ function renderArticleItem(post) {
   return `
         <li class="article-item">
             <div class="article-thumb-wrapper">
-                <img src="${esc(cleanImg)}" alt="${esc(title)}" loading="lazy" width="300" height="200" onerror="this.src='${PLACEHOLDER}';">
+                <img src="${esc(cleanImg)}" alt="${esc(title)}" loading="lazy" width="300" height="200" onerror="this.onerror=null;this.src='${PLACEHOLDER}';">
             </div>
             <div>
                 <span class="article-meta">${esc(displayDate)} — ${esc(metaTag)}</span>
@@ -116,41 +108,11 @@ function renderArticleItem(post) {
         </li>`;
 }
 
-// ---------- 生成合规的 Product Schema JSON-LD (解决 GSC 警告) ----------
+// ---------- Descriptive collection; retailer prices and policies are not inferred ----------
 function generateProductsSchema(productList) {
   if (!productList || !productList.length) return '';
-
-  const schemaItems = productList.map(item => {
-    // 提取数字价格，去掉 $ 符号
-    const rawPrice = item.price ? String(item.price).replace(/[^0-9.]/g, '') : '0.00';
-    const imageUrl = item.img && item.img.startsWith('http') ? item.img : `${SITE_URL}${item.img || ''}`;
-
-    return {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": item.title,
-      "image": imageUrl,
-      "description": item.desc,
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "USD",
-        "price": rawPrice || "0.00",
-        "availability": "https://schema.org/InStock",
-        "url": item.url,
-        // 👇 彻底消除 GSC 未填写 hasMerchantReturnPolicy 警告的必备结构
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-          "merchantReturnDays": 30,
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "returnFees": "https://schema.org/FreeReturn"
-        }
-      }
-    };
-  });
-
-  return `<script type="application/ld+json">\n${JSON.stringify(schemaItems, null, 2)}\n</script>`;
+  const collection = {"@context":"https://schema.org","@type":"ItemList","name":"NextGen everyday product shortlist","itemListElement":productList.map((item,index)=>({"@type":"ListItem","position":index+1,"name":item.title,"url":item.url}))};
+  return '<script type="application/ld+json">'+JSON.stringify(collection).replace(/</g,'\\u003c')+'</script>';
 }
 
 function injectHomepage(html) {
@@ -176,7 +138,7 @@ function injectHomepage(html) {
     `<ul class="article-list" id="auto-news-feed" style="list-style:none;">${homepageArticles.map(renderArticleItem).join('')}</ul>`
   );
 
-  // 在 </body> 标签前自动注入补全退换货政策的 Schema 结构化数据
+  // Add a descriptive collection of the products actually shown on the homepage.
   const schemaScript = generateProductsSchema(products);
   if (schemaScript) {
     html = html.replace('</body>', `${schemaScript}\n</body>`);
@@ -311,7 +273,7 @@ const indexPath = path.join(DIST, 'index.html');
 const indexRaw = fs.readFileSync(indexPath, 'utf8');
 
 fs.writeFileSync(indexPath, injectHomepage(indexRaw), 'utf8');
-console.log('[build] 已写入预渲染后的 index.html (已自动插入 Product Schema)');
+console.log('[build] 已写入预渲染后的 index.html (已写入描述性商品列表)');
 
 fs.writeFileSync(path.join(DIST, 'articles.html'), buildArticlesPage(indexRaw), 'utf8');
 console.log('[build] 已生成 articles.html');

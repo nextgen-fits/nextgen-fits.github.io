@@ -43,7 +43,7 @@ module.exports = function applyEditorial(dist) {
         .replace(/style="([^"]*)"/gi, (_,css)=>`style="${palette(css)}"`);
       // System fonts make typography immediate and avoid a blocking remote dependency.
       html = html.replace(/<link[^>]*href="https:\/\/fonts\.(?:googleapis|gstatic)\.com[^>]*>/g,'');
-      html = html.replace('</head>', '<link rel="stylesheet" href="/assets/editorial.css">\n<script defer src="/assets/editorial.js"></script>\n</head>');
+      html = html.replace('</head>', '<link rel="stylesheet" href="/assets/editorial.css?v=20261018">\n' + (html.includes('/assets/quality-20261018.css') ? '' : '<link rel="stylesheet" href="/assets/quality-20261018.css">\n') + '<script defer src="/assets/editorial.js?v=20261018"></script>\n</head>');
       html = html.replace(/<body[^>]*>/i,`<body class="page-${type}"><a href="#main-content" class="skip-link">Skip to content</a>`);
       if (/<nav[\s>]/.test(html)) html = html.replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/, nav(url));
       else html = html.replace(/(<body[^>]*>[\s\S]*?<\/a>)/,`$1${nav(url)}`);
@@ -52,6 +52,7 @@ module.exports = function applyEditorial(dist) {
       html = html.replace('</nav>', '</nav><main id="main-content">').replace('<footer class="site-footer">','</main><footer class="site-footer">');
       // Keep comparison tables readable without forcing the whole mobile page wider.
       html = html.replace(/<table\b[\s\S]*?<\/table>/gi, table => `<div class="editorial-table-scroll" tabindex="0" role="region" aria-label="Comparison table; scroll horizontally to see all columns">${table}</div>`);
+      html = html.replace(/<span>010<\/span>/g, '<span>10</span>');
       html = html.replace(/(<img\b[^>]*\bsrc=")([^"]+)(")/gi, (_,before,src,after) => before + (imageMap[src] || src) + after);
       if (rel === 'articles.html') html = html.replace('<h2>All Reviews &amp; Guides</h2>','<h1>All Reviews &amp; Guides</h1>');
       fs.writeFileSync(file,html,'utf8');
