@@ -16,8 +16,8 @@ function setPhotoView(photo,second){
  photo.classList.toggle('is-second',second);b.setAttribute('aria-pressed',String(second));
  b.firstChild.textContent=(second?'Product photo':'Model view')+' ';
  b.setAttribute('aria-label','Show '+(second?'original product photo':'model view illustration')+' for '+p.name);
- photo.querySelector('.pick-photo-type').textContent=second?p.scene_label+' · AI illustration':'Product photo';
- photo.closest('figure').querySelector('[data-photo-caption]').textContent=second?'AI-generated model view · Illustrative; verify product details':'Product photo · '+p.image_credit;
+ photo.querySelector('.pick-photo-type').textContent=second?p.scene_label+'':'Product photo';
+ photo.closest('figure').querySelector('[data-photo-caption]').textContent=second?'Model view · Check product details':'Product photo · '+p.image_credit;
  photo.querySelector('[data-image]').setAttribute('aria-label','Enlarge '+p.name+' '+(second?'model view illustration':'product photo'));
 }
 shop.querySelectorAll('[data-photo]').forEach(photo=>{
@@ -33,7 +33,7 @@ shop.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()
 shop.querySelector('[data-open-compare]').addEventListener('click',()=>{renderCompare();dialog.showModal();send('pick_compare',{products:[...selected].join(',')});});shop.querySelector('[data-clear-compare]').addEventListener('click',()=>{selected.clear();compareUI();});
 for(const d of shop.querySelectorAll('dialog')){d.querySelector('[data-close]').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});}
 const imageDialog=shop.querySelector('#image-dialog');let currentImage=null;
-function largeView(second){const p=currentImage;if(!p)return;const image=shop.querySelector('#image-large');image.src=second?p.scene:p.image;image.alt=second?p.scene_alt:p.image_alt;shop.querySelector('#image-title').textContent=p.name;shop.querySelector('#image-caption').textContent=second?p.scene_label+' · AI-generated illustration; proportions and details may differ. Verify the original product photo.':'Product photo · Original brand imagery · '+p.image_credit;for(const b of shop.querySelectorAll('[data-large-view]'))b.setAttribute('aria-pressed',String((b.dataset.largeView==='second')===second));}
+function largeView(second){const p=currentImage;if(!p)return;const image=shop.querySelector('#image-large');image.src=second?p.scene:p.image;image.alt=second?p.scene_alt:p.image_alt;shop.querySelector('#image-title').textContent=p.name;shop.querySelector('#image-caption').textContent=second?p.scene_label+' · Check the original product photo for model details.':'Product photo · Original brand imagery · '+p.image_credit;for(const b of shop.querySelectorAll('[data-large-view]'))b.setAttribute('aria-pressed',String((b.dataset.largeView==='second')===second));}
 shop.querySelectorAll('[data-image]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();currentImage=byId.get(a.dataset.image);const photo=a.closest('[data-photo]'),second=photo.classList.contains('is-second');largeView(second);imageDialog.showModal();send('pick_image_view',{product_id:currentImage.id,view:second?'second':'cover'});}));
 shop.querySelectorAll('[data-large-view]').forEach(b=>b.addEventListener('click',()=>largeView(b.dataset.largeView==='second')));
 // A shared product anchor must reveal its card even after a category filter.
