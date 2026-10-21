@@ -1,0 +1,112 @@
+[
+  {
+    "id": "journal-20261021-rze-upgrade",
+    "category": "watches",
+    "title": "RZE UTD-8080: A Small Digital Watch Story With a Big Question",
+    "summary": "The interesting part is not another countdown timer. It is the idea that a newer watch need not make your older one obsolete.",
+    "url": "/watches/rze-utd-8080-upgradeable-digital-watch.html",
+    "image": "/images/journal-20261021/rze-full.webp",
+    "thumbnail": "/images/journal-20261021/rze-720.webp",
+    "wordCount": 2055,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-seiko-invicta",
+    "category": "watches",
+    "title": "Seiko 5 Sports vs Invicta Pro Diver: What Are You Really Paying For?",
+    "summary": "Two familiar affordable automatics, two different personalities. The useful comparison starts after you stop counting specification wins.",
+    "url": "/watches/seiko-5-sports-vs-invicta-pro-diver.html",
+    "image": "/images/picks-model-views-20261011/seiko-srpd55-full.webp",
+    "thumbnail": "/images/picks-model-views-20261011/seiko-srpd55-650.webp",
+    "wordCount": 2122,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-omega-oris",
+    "category": "watches",
+    "title": "Omega Seamaster vs Oris Aquis: What Does the Extra Money Buy?",
+    "summary": "Both can tell a compelling ocean story. The harder question is which parts of that story you want to pay for.",
+    "url": "/watches/omega-seamaster-vs-oris-aquis-buying-guide.html",
+    "image": "/images/journal-20261021/oris-full.webp",
+    "thumbnail": "/images/journal-20261021/oris-720.webp",
+    "wordCount": 2101,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-gshock-square",
+    "category": "watches",
+    "title": "Best G-SHOCK Square for Everyday Wear: DW-5600BB or GW-M5610U?",
+    "summary": "The square has lasted because it knows its job. Choosing your version is less about collecting features and more about reading the time.",
+    "url": "/watches/best-g-shock-square-dw5600bb-vs-gwm5610u.html",
+    "image": "/images/shop-expansion-20261021/cover/w03-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/w03-650.webp",
+    "wordCount": 2085,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-field-watch",
+    "category": "watches",
+    "title": "Best Field Watch for Everyday Wear: Why Simple Still Works",
+    "summary": "A field watch does not need a fictional expedition to earn its place. A busy ordinary day is a demanding enough brief.",
+    "url": "/watches/best-field-watch-everyday-quartz-vs-automatic.html",
+    "image": "/images/shop-expansion-20261021/cover/w05-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/w05-650.webp",
+    "wordCount": 2023,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-office-144hz",
+    "category": "gear",
+    "title": "144Hz Monitor for Office Work: A Useful Upgrade or a Gaming Distraction?",
+    "summary": "The refresh-rate number has escaped the gaming aisle. That does not mean it should be the first thing you buy for a desk.",
+    "url": "/gear/144hz-monitor-for-office-work.html",
+    "image": "/images/shop-expansion-20261021/cover/m02-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/m02-650.webp",
+    "wordCount": 2059,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-factory-calibration",
+    "category": "gear",
+    "title": "Factory-Calibrated Monitors: What Color Accuracy Actually Means",
+    "summary": "A calibration report can be useful evidence. It is not a magic certificate that makes every photograph look right in every application.",
+    "url": "/gear/factory-calibrated-monitor-color-accuracy-guide.html",
+    "image": "/images/shop-expansion-20261021/cover/m04-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/m04-650.webp",
+    "wordCount": 2122,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-dead-pixels",
+    "category": "gear",
+    "title": "Monitor Dead Pixels and Warranty: What to Check Before You Buy",
+    "summary": "The least glamorous line in a monitor purchase can become the most important one after the box is open.",
+    "url": "/gear/monitor-dead-pixel-warranty-buying-guide.html",
+    "image": "/images/shop-expansion-20261021/cover/m03-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/m03-650.webp",
+    "wordCount": 2122,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-trackball",
+    "category": "gear",
+    "title": "Trackball vs Mouse: Does the Logitech MX Ergo S Make Sense for Work?",
+    "summary": "A mouse that barely moves sounds like a contradiction. On the right desk, that is exactly the point.",
+    "url": "/gear/trackball-vs-mouse-logitech-mx-ergo-s.html",
+    "image": "/images/shop-expansion-20261021/cover/d02-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/d02-650.webp",
+    "wordCount": 2040,
+    "minutes": 10
+  },
+  {
+    "id": "journal-20261021-stream-deck-work",
+    "category": "gear",
+    "title": "Stream Deck Neo for Work: Eight Buttons That Need a Real Job",
+    "summary": "A shortcut pad can be useful outside streaming. First give each button a job you already do, rather than inventing eight reasons to own the gadget.",
+    "url": "/gear/stream-deck-neo-for-work-productivity.html",
+    "image": "/images/shop-expansion-20261021/cover/d10-full.webp",
+    "thumbnail": "/images/shop-expansion-20261021/cover/d10-650.webp",
+    "wordCount": 2013,
+    "minutes": 10
+  }
+]
