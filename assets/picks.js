@@ -1,7 +1,7 @@
 (()=>{
 'use strict';
 const send=(name,data)=>{if(typeof window.gtag==='function')window.gtag('event',name,{...data,transport_type:'beacon'});};
-document.addEventListener('click',e=>{const a=e.target.closest('a[data-affiliate]');if(a)send('affiliate_click',{product_id:a.dataset.affiliate,category:a.dataset.category,location:location.pathname.includes('picks.html')?'collection':'guide',link_type:a.href.includes('/s?')?'search':'product'});const g=e.target.closest('a[data-guide]');if(g)send('pick_guide_click',{product_id:g.dataset.guide});});
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-affiliate]');if(a)send('affiliate_click',{product_id:a.dataset.affiliate,category:a.dataset.category,location:/\/(?:shop|picks)\.html$/.test(location.pathname)?'collection':'guide',link_type:a.href.includes('/s?')?'search':'product'});const g=e.target.closest('a[data-guide]');if(g)send('pick_guide_click',{product_id:g.dataset.guide});});
 const data=document.getElementById('picks-data');if(!data)return;
 const items=JSON.parse(data.textContent),byId=new Map(items.map(p=>[p.id,p])),shop=document.querySelector('.shop'),cards=[...shop.querySelectorAll('.pick-card')];
 const tools=shop.querySelector('[data-tools]');tools.hidden=false;
@@ -14,11 +14,11 @@ const initial=new URLSearchParams(location.search).get('category');if(['watches'
 function setPhotoView(photo,second){
  const b=photo.querySelector('[data-swap]'),p=byId.get(b.dataset.swap);
  photo.classList.toggle('is-second',second);b.setAttribute('aria-pressed',String(second));
- b.firstChild.textContent=(second?'Product photo':'Model view')+' ';
- b.setAttribute('aria-label','Show '+(second?'original product photo':'model view illustration')+' for '+p.name);
- photo.querySelector('.pick-photo-type').textContent=second?p.scene_label+'':'Product photo';
- photo.closest('figure').querySelector('[data-photo-caption]').textContent=second?'Model view · Check product details':'Product photo · '+p.image_credit;
- photo.querySelector('[data-image]').setAttribute('aria-label','Enlarge '+p.name+' '+(second?'model view illustration':'product photo'));
+ b.firstChild.textContent=(second?(p.cover_label||'Product photo'):'Model view')+' ';
+ b.setAttribute('aria-label','Show '+(second?'product view':'model view')+' for '+p.name);
+ photo.querySelector('.pick-photo-type').textContent=second?p.scene_label:(p.cover_label||'Product photo');
+ photo.closest('figure').querySelector('[data-photo-caption]').textContent=second?p.scene_label+' · Check product details':(p.cover_caption||'Product photo · '+p.image_credit);
+ photo.querySelector('[data-image]').setAttribute('aria-label','Enlarge '+p.name+' '+(second?'model view':'product view'));
 }
 shop.querySelectorAll('[data-photo]').forEach(photo=>{
  photo.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&matchMedia('(hover:hover)').matches)setPhotoView(photo,true);});
@@ -33,7 +33,7 @@ shop.querySelectorAll('[data-compare]').forEach(b=>b.addEventListener('click',()
 shop.querySelector('[data-open-compare]').addEventListener('click',()=>{renderCompare();dialog.showModal();send('pick_compare',{products:[...selected].join(',')});});shop.querySelector('[data-clear-compare]').addEventListener('click',()=>{selected.clear();compareUI();});
 for(const d of shop.querySelectorAll('dialog')){d.querySelector('[data-close]').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});}
 const imageDialog=shop.querySelector('#image-dialog');let currentImage=null;
-function largeView(second){const p=currentImage;if(!p)return;const image=shop.querySelector('#image-large');image.src=second?p.scene:p.image;image.alt=second?p.scene_alt:p.image_alt;shop.querySelector('#image-title').textContent=p.name;shop.querySelector('#image-caption').textContent=second?p.scene_label+' · Check the original product photo for model details.':'Product photo · Original brand imagery · '+p.image_credit;for(const b of shop.querySelectorAll('[data-large-view]'))b.setAttribute('aria-pressed',String((b.dataset.largeView==='second')===second));}
+function largeView(second){const p=currentImage;if(!p)return;const image=shop.querySelector('#image-large');image.src=second?p.scene:p.image;image.alt=second?p.scene_alt:p.image_alt;shop.querySelector('#image-title').textContent=p.name;shop.querySelector('#image-caption').textContent=second?p.scene_label+' · Check the exact model in the linked product information.':(p.cover_caption||'Product photo · '+p.image_credit);for(const b of shop.querySelectorAll('[data-large-view]'))b.setAttribute('aria-pressed',String((b.dataset.largeView==='second')===second));}
 shop.querySelectorAll('[data-image]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();currentImage=byId.get(a.dataset.image);const photo=a.closest('[data-photo]'),second=photo.classList.contains('is-second');largeView(second);imageDialog.showModal();send('pick_image_view',{product_id:currentImage.id,view:second?'second':'cover'});}));
 shop.querySelectorAll('[data-large-view]').forEach(b=>b.addEventListener('click',()=>largeView(b.dataset.largeView==='second')));
 // A shared product anchor must reveal its card even after a category filter.
