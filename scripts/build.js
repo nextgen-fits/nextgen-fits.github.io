@@ -14,7 +14,7 @@ const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://nxgenpicks.com';
 
-const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore']);
+const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md']);
 
 // ---------- 复制仓库到 dist ----------
 function copyDir(src, dest) {
@@ -287,4 +287,5 @@ console.log('[build] 已自动生成 sitemap.xml');
 console.log('[build] 完成。');
 
 require('./editorial')(DIST);
+require('./public-copy-policy')(DIST);
 
