@@ -1,5 +1,50 @@
 [
   {
+    "id": "journal-20261021-rze-upgrade",
+    "date": "OCTOBER 21, 2026",
+    "category": "WATCHES · STORIES & GUIDES",
+    "title": "RZE UTD-8080: A Small Digital Watch Story With a Big Question",
+    "summary": "The interesting part is not another countdown timer. It is the idea that a newer watch need not make your older one obsolete.",
+    "cover_img": "/images/journal-20261021/rze-720.webp",
+    "page_url": "/watches/rze-utd-8080-upgradeable-digital-watch.html"
+  },
+  {
+    "id": "journal-20261021-seiko-invicta",
+    "date": "OCTOBER 21, 2026",
+    "category": "WATCHES · STORIES & GUIDES",
+    "title": "Seiko 5 Sports vs Invicta Pro Diver: What Are You Really Paying For?",
+    "summary": "Two familiar affordable automatics, two different personalities. The useful comparison starts after you stop counting specification wins.",
+    "cover_img": "/images/picks-model-views-20261011/seiko-srpd55-650.webp",
+    "page_url": "/watches/seiko-5-sports-vs-invicta-pro-diver.html"
+  },
+  {
+    "id": "journal-20261021-omega-oris",
+    "date": "OCTOBER 21, 2026",
+    "category": "WATCHES · STORIES & GUIDES",
+    "title": "Omega Seamaster vs Oris Aquis: What Does the Extra Money Buy?",
+    "summary": "Both can tell a compelling ocean story. The harder question is which parts of that story you want to pay for.",
+    "cover_img": "/images/journal-20261021/oris-720.webp",
+    "page_url": "/watches/omega-seamaster-vs-oris-aquis-buying-guide.html"
+  },
+  {
+    "id": "journal-20261021-gshock-square",
+    "date": "OCTOBER 21, 2026",
+    "category": "WATCHES · STORIES & GUIDES",
+    "title": "Best G-SHOCK Square for Everyday Wear: DW-5600BB or GW-M5610U?",
+    "summary": "The square has lasted because it knows its job. Choosing your version is less about collecting features and more about reading the time.",
+    "cover_img": "/images/shop-expansion-20261021/cover/w03-650.webp",
+    "page_url": "/watches/best-g-shock-square-dw5600bb-vs-gwm5610u.html"
+  },
+  {
+    "id": "journal-20261021-field-watch",
+    "date": "OCTOBER 21, 2026",
+    "category": "WATCHES · STORIES & GUIDES",
+    "title": "Best Field Watch for Everyday Wear: Why Simple Still Works",
+    "summary": "A field watch does not need a fictional expedition to earn its place. A busy ordinary day is a demanding enough brief.",
+    "cover_img": "/images/shop-expansion-20261021/cover/w05-650.webp",
+    "page_url": "/watches/best-field-watch-everyday-quartz-vs-automatic.html"
+  },
+  {
     "id": "buying-20261018-everyday-watch",
     "date": "OCTOBER 18, 2026",
     "category": "WATCHES · BUYING GUIDE",

@@ -1,5 +1,50 @@
 [
   {
+    "id": "journal-20261021-office-144hz",
+    "date": "OCTOBER 21, 2026",
+    "category": "DESK & TECH · STORIES & GUIDES",
+    "title": "144Hz Monitor for Office Work: A Useful Upgrade or a Gaming Distraction?",
+    "summary": "The refresh-rate number has escaped the gaming aisle. That does not mean it should be the first thing you buy for a desk.",
+    "cover_img": "/images/shop-expansion-20261021/cover/m02-650.webp",
+    "page_url": "/gear/144hz-monitor-for-office-work.html"
+  },
+  {
+    "id": "journal-20261021-factory-calibration",
+    "date": "OCTOBER 21, 2026",
+    "category": "DESK & TECH · STORIES & GUIDES",
+    "title": "Factory-Calibrated Monitors: What Color Accuracy Actually Means",
+    "summary": "A calibration report can be useful evidence. It is not a magic certificate that makes every photograph look right in every application.",
+    "cover_img": "/images/shop-expansion-20261021/cover/m04-650.webp",
+    "page_url": "/gear/factory-calibrated-monitor-color-accuracy-guide.html"
+  },
+  {
+    "id": "journal-20261021-dead-pixels",
+    "date": "OCTOBER 21, 2026",
+    "category": "DESK & TECH · STORIES & GUIDES",
+    "title": "Monitor Dead Pixels and Warranty: What to Check Before You Buy",
+    "summary": "The least glamorous line in a monitor purchase can become the most important one after the box is open.",
+    "cover_img": "/images/shop-expansion-20261021/cover/m03-650.webp",
+    "page_url": "/gear/monitor-dead-pixel-warranty-buying-guide.html"
+  },
+  {
+    "id": "journal-20261021-trackball",
+    "date": "OCTOBER 21, 2026",
+    "category": "DESK & TECH · STORIES & GUIDES",
+    "title": "Trackball vs Mouse: Does the Logitech MX Ergo S Make Sense for Work?",
+    "summary": "A mouse that barely moves sounds like a contradiction. On the right desk, that is exactly the point.",
+    "cover_img": "/images/shop-expansion-20261021/cover/d02-650.webp",
+    "page_url": "/gear/trackball-vs-mouse-logitech-mx-ergo-s.html"
+  },
+  {
+    "id": "journal-20261021-stream-deck-work",
+    "date": "OCTOBER 21, 2026",
+    "category": "DESK & TECH · STORIES & GUIDES",
+    "title": "Stream Deck Neo for Work: Eight Buttons That Need a Real Job",
+    "summary": "A shortcut pad can be useful outside streaming. First give each button a job you already do, rather than inventing eight reasons to own the gadget.",
+    "cover_img": "/images/shop-expansion-20261021/cover/d10-650.webp",
+    "page_url": "/gear/stream-deck-neo-for-work-productivity.html"
+  },
+  {
     "id": "buying-20261018-work-monitor",
     "date": "OCTOBER 18, 2026",
     "category": "DESK & TECH · BUYING GUIDE",
