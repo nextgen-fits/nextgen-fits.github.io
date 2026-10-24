@@ -51,3 +51,7 @@ body>nav{position:sticky;top:0;z-index:1000;background:rgba(244,242,235,.97);bac
   .site-navigation .nav-links a[aria-current=page]:after{left:18%;right:18%;bottom:0}
 }
 @media(max-width:360px){.site-navigation .brand-sub{display:none}}
+
+/* Documentary attribution is readable text; retailer buttons remain distinct. */
+.source-reference{cursor:text;text-decoration:none;overflow-wrap:anywhere}
+.pick-detail .source-reference{display:block;font-size:11px;line-height:1.7;margin-top:14px;color:var(--steel)}

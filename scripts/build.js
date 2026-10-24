@@ -288,5 +288,6 @@ console.log('[build] 已自动生成 sitemap.xml');
 console.log('[build] 完成。');
 
 require('./editorial')(DIST);
+require('./affiliate-routing')(DIST, ROOT);
 require('./public-copy-policy')(DIST);
 
