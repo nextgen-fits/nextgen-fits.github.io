@@ -20,9 +20,34 @@ body>nav{position:sticky;top:0;z-index:1000;background:rgba(244,242,235,.97);bac
 .nav-logo .brand-word,.nav-logo .brand-sub{color:var(--ink)}.nav-logo .brand-dot{color:var(--accent)}.page-category main>.container{max-width:var(--width);padding:65px 32px 85px}.social-share-bar{border-left:0;border-right:0}
 .editorial-table-scroll{max-width:100%;overflow-x:auto;margin:24px 0;overscroll-behavior-x:contain}.editorial-table-scroll table{margin:0;min-width:550px}.section-head h1{font-size:clamp(35px,4vw,60px);line-height:1.05;margin:0}.page-article .author-box{display:flex;align-items:center;gap:15px}.page-article .author-box>img{flex-shrink:0}
 @media(max-width:480px){.intro-layout h1{font-size:clamp(60px,20.7vw,81px)}}
-@media(max-width:760px){html:not(.has-js) .nav-container{height:auto;flex-wrap:wrap;padding-top:15px}html:not(.has-js) .menu-toggle{display:none}html:not(.has-js) .nav-links{position:static;width:100%;padding:10px 0;border:0}}
 @media(max-width:760px){.page-category main>.container{padding:40px 20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .image-context-note{margin:16px 0 0;text-align:right;font-size:10px;line-height:1.6;color:var(--steel);letter-spacing:.01em}@media(max-width:760px){.image-context-note{text-align:left;font-size:9px}}
 @media(min-width:761px) and (max-width:1150px){.nav-container{padding:0 22px!important;gap:20px}.nav-links{gap:16px!important}.brand-sub{display:none!important}.brand-word{font-size:26px}.nav-links a{font-size:11px}.nav-links a.nav-subscribe{margin-left:2px;padding:10px 12px}.footer-links{gap:16px;flex-wrap:wrap}.footer-brand{font-size:45px}}
+
+/* Phone navigation: visible category links, plus a script-independent menu. */
+.site-navigation .mobile-menu{display:none}
+.site-navigation .nav-logo{min-height:44px}
+@media(max-width:760px){
+  html{scroll-padding-top:130px}
+  .site-navigation .nav-container{display:grid;grid-template-columns:minmax(0,1fr) auto;height:auto;padding:0 20px;gap:0;position:static}
+  .site-navigation .nav-logo{min-width:0;height:64px;gap:10px;justify-self:start}
+  .site-navigation .brand-sub{font-size:8px;letter-spacing:1.2px}
+  .site-navigation .mobile-menu{display:block;position:static;margin:0;align-self:center;padding:0;border:0}
+  .site-navigation .mobile-menu>summary{display:flex;align-items:center;justify-content:center;gap:8px;min-width:80px;min-height:44px;padding:8px 11px;border:1px solid var(--line);background:var(--paper);font:500 12px/1.4 var(--sans);color:var(--ink);list-style:none;cursor:pointer}
+  .site-navigation .mobile-menu>summary::-webkit-details-marker{display:none}
+  .site-navigation .mobile-menu-icon{width:14px;height:10px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;position:relative}
+  .site-navigation .mobile-menu-icon:after{content:'';position:absolute;left:0;right:0;top:3px;border-top:1px solid currentColor}
+  .site-navigation .mobile-menu[open]>summary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .site-navigation .mobile-menu-panel{position:absolute;top:100%;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 14px 20px rgba(32,35,31,.09);padding:10px 20px 18px;max-height:calc(100dvh - 115px);overflow-y:auto}
+  .site-navigation .mobile-menu:not([open]) .mobile-menu-panel{display:none}
+  .site-navigation .mobile-menu-panel a{display:flex;align-items:center;min-height:48px;padding:10px 4px;border-bottom:1px solid var(--line);color:var(--ink);font:500 14px/1.5 var(--sans);text-decoration:none}
+  .site-navigation .mobile-menu-panel a:last-child{border-bottom:0}
+  .site-navigation .mobile-menu-panel a[aria-current=page]{color:var(--accent)}
+  .site-navigation .nav-links{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));position:static;width:100%;gap:0;padding:0;background:transparent;border:0;border-top:1px solid var(--line)}
+  .site-navigation .nav-links>a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:46px;padding:10px 3px;font-size:13px;line-height:1.4}
+  .site-navigation .nav-links>a:nth-child(n+5){display:none}
+  .site-navigation .nav-links a[aria-current=page]:after{left:18%;right:18%;bottom:0}
+}
+@media(max-width:360px){.site-navigation .brand-sub{display:none}}
