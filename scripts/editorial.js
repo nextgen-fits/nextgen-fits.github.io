@@ -4,7 +4,12 @@ const fs = require('fs');
 const path = require('path');
 const links = [['/shop.html', 'Shop'], ['/watches.html', 'Watches'], ['/apparel.html', 'Apparel'], ['/gear.html', 'Gear'], ['/about.html', 'About'], ['/subscribe.html', 'The newsletter ↗']];
 function nav(url) {
-  return `<nav aria-label="Primary navigation"><div class="nav-container"><a href="/" class="nav-logo" aria-label="NextGen Essentials home"><span class="brand-word">NextGen<span class="brand-dot">.</span></span><span class="brand-sub">Everyday<br>Essentials</span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links">Menu +</button><div class="nav-links" id="primary-links">${links.map(([href, text]) => `<a href="${href}"${href === '/subscribe.html' ? ' class="nav-subscribe"' : ''}${url === href || (href !== '/' && url.startsWith(href.replace('.html', '/'))) ? ' aria-current="page"' : ''}>${text}</a>`).join('')}</div></div></nav>`;
+  const current = href => url === href || url.startsWith(href.replace('.html', '/'));
+  const link = ([href, text]) => `<a href="${href}"${href === '/subscribe.html' ? ' class="nav-subscribe"' : ''}${current(href) ? ' aria-current="page"' : ''}>${text}</a>`;
+  // Primary destinations remain visible on phones; the native extra menu also
+  // works when scripts are delayed or blocked.
+  const more = [['/articles.html', 'The journal'], ...links.slice(4)];
+  return `<nav class="site-navigation" aria-label="Primary navigation"><div class="nav-container"><a href="/" class="nav-logo" aria-label="NextGen Essentials home"><span class="brand-word">NextGen<span class="brand-dot">.</span></span><span class="brand-sub">Everyday<br>Essentials</span></a><details class="mobile-menu"><summary><span class="mobile-menu-icon" aria-hidden="true"></span>Menu</summary><div class="mobile-menu-panel">${more.map(link).join('')}</div></details><div class="nav-links" id="primary-links">${links.map(link).join('')}</div></div></nav>`;
 }
 const footer = `<footer class="site-footer"><div class="footer-top"><div><a href="/" class="footer-brand">NextGen Essentials.</a><p class="footer-tagline">Watches. Wardrobe. Workspace. Well considered.</p></div><div class="footer-links"><a href="/shop.html">Shop our picks ↗</a><a href="/articles.html">The journal ↗</a><a href="/about.html">About us ↗</a><a href="/subscribe.html">Stay in the loop ↗</a></div></div><div class="footer-bottom"><p>© 2026 NextGen Essentials. All rights reserved.</p><p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p></div></footer>`;
 function palette(css) {
@@ -43,7 +48,7 @@ module.exports = function applyEditorial(dist) {
         .replace(/style="([^"]*)"/gi, (_,css)=>`style="${palette(css)}"`);
       // System fonts make typography immediate and avoid a blocking remote dependency.
       html = html.replace(/<link[^>]*href="https:\/\/fonts\.(?:googleapis|gstatic)\.com[^>]*>/g,'');
-      html = html.replace('</head>', '<link rel="stylesheet" href="/assets/editorial.css?v=20261018">\n' + (html.includes('/assets/quality-20261018.css') ? '' : '<link rel="stylesheet" href="/assets/quality-20261018.css">\n') + '<script defer src="/assets/editorial.js?v=20261018"></script>\n</head>');
+      html = html.replace('</head>', '<link rel="stylesheet" href="/assets/editorial.css?v=20261024">\n' + (html.includes('/assets/quality-20261018.css') ? '' : '<link rel="stylesheet" href="/assets/quality-20261018.css">\n') + '<script defer src="/assets/editorial.js?v=20261024"></script>\n</head>');
       html = html.replace(/<body[^>]*>/i,`<body class="page-${type}"><a href="#main-content" class="skip-link">Skip to content</a>`);
       if (/<nav[\s>]/.test(html)) html = html.replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/, nav(url));
       else html = html.replace(/(<body[^>]*>[\s\S]*?<\/a>)/,`$1${nav(url)}`);
