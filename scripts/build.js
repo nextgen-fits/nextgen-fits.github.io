@@ -13,6 +13,7 @@ const { execSync } = require('child_process');
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://nxgenpicks.com';
+require('./refine-articles')(ROOT);
 
 const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md']);
 

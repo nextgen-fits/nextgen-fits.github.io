@@ -102,10 +102,11 @@
     "id": "deep-20261010-movement",
     "date": "OCTOBER 10, 2026",
     "category": "MOVEMENT KNOWLEDGE · NH36 / 4R36",
-    "title": "NH36 vs 4R36: Specifications, Accuracy and Modding Checks",
-    "summary": "Compare NH36 and 4R36 functions and accuracy conditions. Learn how to read timing evidence, check mod compatibility and evaluate the complete watch.",
-    "cover_img": "/images/deep-guides-20261010/seiko-scene-user-20261011-768.webp",
-    "page_url": "/watches/nh36-vs-4r36-difference.html"
+    "title": "NH36 vs 4R36: Accuracy, Specifications and Buying Checks",
+    "summary": "The numbers only help when you keep their conditions attached. Understand the movement names, read accuracy claims, and choose between a finished watch and a project.",
+    "cover_img": "/images/deep-guides-20261010/seiko-scene-user-20261011-full.webp",
+    "page_url": "/watches/nh36-vs-4r36-difference.html",
+    "updated": "2026-10-23"
   },
   {
     "id": "practical-20261005-accuracy",
@@ -362,9 +363,9 @@
     "id": "watch-010",
     "date": "AUGUST 15, 2026",
     "category": "BUYERS GUIDE",
-    "title": "Best Watches Under $100 (2026): 6 Tested Picks — Real Pros & Cons",
-    "summary": "Compare specific affordable watches using published model information, practical fit checks and the current exact seller offer.",
-    "cover_img": "/watches/images/blog/ScreenShot_2026-08-15_141251_523.png",
+    "title": "Best Watches Under $100: 6 Practical Everyday Choices",
+    "summary": "Small digitals, a bracelet classic, an analog sports watch and a field-style option. Choose the job first, then keep the complete purchase inside your budget.",
+    "cover_img": "/images/shop-expansion-20261021/cover/w01-full.webp",
     "page_url": "/watches/best-watches-under-100-2026.html",
     "gear_list": [
       {
@@ -397,7 +398,8 @@
         "url": "https://amzn.to/3RVdGk1",
         "img": "/watches/images/blog/ScreenShot_2026-08-15_141503_626.png"
       }
-    ]
+    ],
+    "updated": "2026-10-23"
   },
   {
     "id": "watch-009",
@@ -434,9 +436,9 @@
     "id": "watch-008",
     "date": "JULY 25, 2026",
     "category": "REVIEW",
-    "title": "Tissot PRX Powermatic 80 Review: Fit, Ownership and a Quartz Alternative",
-    "summary": "A researched PRX 40mm buying guide for T137.407.11.041.00. Compare the published features, bracelet fit and ownership with Casio EFV-160D-1AV.",
-    "cover_img": "/images/verified-20261018/tissot-prx-official.webp",
+    "title": "Tissot PRX Powermatic 80 Review: Fit, Bracelet and Value",
+    "summary": "The blue 40mm PRX is a design choice as much as a movement choice. Check the fit, ownership routine and seller offer before deciding it is your everyday watch.",
+    "cover_img": "/images/refined-guides-20261023/tissot-1536.webp",
     "page_url": "/watches/tissot-prx-powermatic-80-review.html",
     "gear_list": [
       {
@@ -445,7 +447,7 @@
         "img": "/watches/images/blog/tissot-prx-hero.jpg"
       }
     ],
-    "updated": "2026-10-18"
+    "updated": "2026-10-23"
   },
   {
     "id": "watch-006",

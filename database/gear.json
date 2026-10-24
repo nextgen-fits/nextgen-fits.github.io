@@ -129,10 +129,11 @@
     "id": "practical-20261005-blurry",
     "date": "OCTOBER 5, 2026",
     "category": "DESK TROUBLESHOOTING · READABILITY",
-    "title": "Blurry Text on an External Monitor: Windows and Mac Checks",
-    "summary": "Check blurry external-monitor text in Windows and macOS. Separate resolution, scaling, one-app issues and pixel density before deciding you need a new monitor.",
-    "cover_img": "/images/practical-guides-2026-10/blurry-768.webp",
-    "page_url": "/gear/external-monitor-blurry-text.html"
+    "title": "Blurry Text on an External Monitor: Windows and Mac Fixes",
+    "summary": "Find out whether the problem is the signal, scaling, one application or pixel density. Work through the checks before paying for a new screen.",
+    "cover_img": "/images/practical-guides-2026-10/blurry-1536.webp",
+    "page_url": "/gear/external-monitor-blurry-text.html",
+    "updated": "2026-10-23"
   },
   {
     "id": "practical-20261005-dual-mac",
@@ -357,11 +358,12 @@
     "id": "gear-013",
     "date": "SEPTEMBER 11, 2026",
     "category": "BUYING GUIDE",
-    "title": "Best Monitors for Work and Gaming: 5 Picks by Use (2026)",
-    "summary": "Compare five monitors for basic office work, small desks, 4K productivity, USB-C laptops and 1440p gaming. Clear compromises, connections and buying checks.",
-    "cover_img": "/assets/media/208b2cdc2622.webp",
+    "title": "Best Monitors for Work and Gaming: 5 Picks by Use",
+    "summary": "An office screen, a USB-C creative-work option, a gaming-focused choice and compact alternatives. Start with the task that matters most.",
+    "cover_img": "/images/buying-guides-20261018/work-monitor-full.webp",
     "page_url": "/gear/best-monitors-2026.html",
-    "gear_list": []
+    "gear_list": [],
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-012",
@@ -428,11 +430,12 @@
     "id": "gear-011",
     "date": "AUGUST 7, 2026",
     "category": "BUYING GUIDE",
-    "title": "Minimalist Desk Setup: 3 Practical Plans & 5 Useful Picks",
-    "summary": "Build a minimalist desk around what you own. Compare three setup plans, five useful product candidates, cable needs and compatibility checks before buying.",
+    "title": "Minimalist Desk Setup: Buy the Essentials, Skip the Clutter",
+    "summary": "Build a desk around the problems you actually have. Start with a staged plan, then compare the monitor, mouse or hub that earns its place.",
     "cover_img": "/assets/media/86362ff546bf.webp",
     "page_url": "/gear/minimalist-desk-setup-10-picks-2026.html",
-    "gear_list": []
+    "gear_list": [],
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-010",
@@ -484,29 +487,31 @@
     "id": "gear-005",
     "date": "JULY 18, 2026",
     "category": "MONITOR REVIEW",
-    "title": "Amazon Basics 24-Inch 100Hz Monitor: Is It Right for You?",
-    "summary": "An honest Amazon Basics 24-inch 100Hz monitor buying guide: model checks, office-work trade-offs, two alternatives and what to verify before ordering.",
+    "title": "Amazon Basics 24-Inch 100Hz Monitor Review: Who Should Buy?",
+    "summary": "A compact screen can be the right purchase. Work out what the exact 23.8-inch model offers, what the complete setup costs, and when it is worth spending more.",
     "cover_img": "/assets/media/5e475d36e6b4.webp",
     "page_url": "/gear/amazon-basics-24-inch-monitor-review.html",
-    "gear_list": []
+    "gear_list": [],
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-004",
     "date": "JULY 12, 2026",
     "category": "MINIMALIST",
-    "title": "Best Minimalist Monitors for a Clean Desk (2026 Guide)",
-    "summary": "Five focused picks for everyday 4K, a small desk, a USB-C laptop, a white setup or basic office work. Compare real connection limits and the extras you may need.",
+    "title": "Best Minimalist Monitors: 5 Picks for a Clean Desk",
+    "summary": "Choose a clean-looking screen that also fits your work. Five monitors, the connections that matter, and the tradeoffs worth knowing before you buy.",
     "cover_img": "/assets/media/208b2cdc2622.webp",
     "page_url": "/gear/minimalist-monitor-setup.html",
-    "gear_list": []
+    "gear_list": [],
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-001",
     "date": "JUNE 15, 2026",
     "category": "WORKSPACE",
-    "title": "Minimalist Triple-Monitor Setup: Compatibility Before Cable Management",
-    "summary": "Plan three independent displays around your exact computer, dock and desk. Check Mac display limits, supported modes, mounting and cable clearance.",
-    "cover_img": "/images/verified-20261018/triple-monitor-scene.webp",
+    "title": "Triple-Monitor Setup: Compatibility, Desk Fit and Buying Guide",
+    "summary": "Three screens only help when the entire system supports them. Map the host, connection path and desktop before choosing a dock or a mount.",
+    "cover_img": "/images/refined-guides-20261023/triple-1536.webp",
     "page_url": "/gear/minimalist-triple-monitor-setup.html",
     "gear_list": [
       {
@@ -520,15 +525,15 @@
         "img": "/images/blog/logitech-lift-thumb.jpg"
       }
     ],
-    "updated": "2026-10-18"
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-002",
     "date": "MAY 28, 2026",
     "category": "WORKSPACE",
-    "title": "Sony WH-CH720N for Remote Work: Battery, Calls and Travel Buying Checks",
-    "summary": "Compare Sony WH-CH720N battery scenarios, multipoint connections, call requirements and travel compromises. A researched guide with practical buying checks.",
-    "cover_img": "/images/sony-headphones.jpg",
+    "title": "Sony WH-CH720N Review for Work: Calls, Comfort and Tradeoffs",
+    "summary": "A practical look at Sony’s lightweight wireless headphones: where they fit a working day, what independent testing adds, and which call checks matter.",
+    "cover_img": "/images/shop-expansion-20261021/model/d04-full.webp",
     "page_url": "/gear/edc-tech-setup-remote-work.html",
     "gear_list": [
       {
@@ -537,7 +542,7 @@
         "img": "/images/blog/sony-headphones-thumb.jpg"
       }
     ],
-    "updated": "2026-10-18"
+    "updated": "2026-10-23"
   },
   {
     "id": "gear-003",
