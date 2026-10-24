@@ -44,6 +44,7 @@ const mapping={
 };
 for(const [rel,ids]of Object.entries(mapping)){
 const f=path.join(root,rel);if(!fs.existsSync(f))continue;let a=fs.readFileSync(f,'utf8').replace(/<!-- PICKS MODULE START -->[\s\S]*?<!-- PICKS MODULE END -->/g,'');
+if(a.includes('class="rf"'))continue; // Refined guides already render their own exact-model shortlist.
 const isIndirect=/monitor-(?:small|arm)|best-24/.test(rel);
 const module=`<!-- PICKS MODULE START --><section class="pick-guide-module" id="related-picks"><span class="pick-eyebrow">${isIndirect?'Complementary desk options':'From the guide to your shortlist'}</span><h2>${isIndirect?'Other upgrades for a small desk':'Look closer at the exact model'}</h2><p>${isIndirect?'These are desk accessories, not substitutes for measuring your monitor, stand or mounting hardware.':'Explore original brand images, suitability and tradeoffs before opening an offer.'} As an Amazon Associate, we earn from qualifying purchases.</p><div class="pick-mini-grid">${ids.map(id=>mini(items.find(p=>p.id===id))).join('')}</div><a href="/shop.html">Browse all ${items.length} everyday picks →</a></section><!-- PICKS MODULE END -->`;
 a=a.replace('<section class="pg-method" id="sources">',module+'<section class="pg-method" id="sources">');
