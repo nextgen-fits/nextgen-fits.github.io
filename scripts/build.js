@@ -156,11 +156,19 @@ function buildArticlesPage(indexHtmlRaw) {
   const footerMatch = indexHtmlRaw.match(/<footer>[\s\S]*?<\/footer>/);
   const disclosureMatch = indexHtmlRaw.match(/<div class="disclosure-bar">[\s\S]*?<\/div>/);
 
-  const head = headMatch ? headMatch[0]
-    .replace(/<title>[\s\S]*?<\/title>/, '<title>All Reviews & Guides — NextGen Essentials</title>')
-    .replace(/<meta name="description"[^>]*>/, '<meta name="description" content="Every watch, apparel, and gear review from NextGen Essentials, sorted by newest first.">')
-    .replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${SITE_URL}/articles.html" />`)
-    : '';
+  // The journal is its own collection. Never inherit homepage canonical or ownership tags.
+  const journalUrl = SITE_URL + '/articles.html';
+  const journalTitle = 'All Reviews & Guides — NextGen Essentials';
+  const journalDescription = 'Practical watch guides, monitor comparisons, desk troubleshooting and everyday clothing advice. Find the answer by topic.';
+  let head = headMatch ? headMatch[0] : '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>';
+  head = head.replace(/<title>[\s\S]*?<\/title>/i, '<title>' + esc(journalTitle) + '</title>')
+    .replace(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>/gi, '')
+    .replace(/<meta\b(?=[^>]*(?:name|property)=["'](?:description|og:[^"']+|twitter:[^"']+|article:[^"']+)["'])[^>]*>/gi, '')
+    .replace(/<script\b(?=[^>]*type=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<!--[\s\S]*?Temporary AvantLink[\s\S]*?-->/gi, '')
+    .replace(/<script\b(?=[^>]*src=["'][^"']*avantlink\.com\/affiliate_app_confirm\.php)[^>]*>[\s\S]*?<\/script>/gi, '');
+  const journalSchema = {'@context':'https://schema.org','@type':'CollectionPage','@id':journalUrl+'#webpage',url:journalUrl,name:journalTitle,description:journalDescription,inLanguage:'en-US',publisher:{'@type':'Organization',name:'NextGen Essentials',url:SITE_URL+'/'},mainEntity:{'@type':'ItemList',numberOfItems:allArticles.length,itemListElement:allArticles.map((post,index)=>({'@type':'ListItem',position:index+1,name:post.title,url:SITE_URL+post.page_url}))}};
+  head = head.replace('</head>', '<link rel="canonical" href="'+journalUrl+'"><meta name="description" content="'+esc(journalDescription)+'"><meta property="og:type" content="website"><meta property="og:title" content="'+esc(journalTitle)+'"><meta property="og:description" content="'+esc(journalDescription)+'"><meta property="og:url" content="'+journalUrl+'"><meta property="og:site_name" content="NextGen Essentials"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="'+esc(journalTitle)+'"><meta name="twitter:description" content="'+esc(journalDescription)+'"><script type="application/ld+json">'+JSON.stringify(journalSchema).replace(/</g,'\\u003c')+'</script></head>');
   const nav = navMatch ? navMatch[0] : '';
   const footer = footerMatch ? footerMatch[0] : '';
   const disclosure = disclosureMatch ? disclosureMatch[0] : '';
