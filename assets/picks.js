@@ -12,7 +12,9 @@ shop.addEventListener('click',e=>{const f=e.target.closest('[data-filter]');if(f
 search.addEventListener('input',()=>{query=search.value.trim().toLowerCase();filter();});needSelect.addEventListener('change',()=>{need=needSelect.value;filter();send('pick_filter',{category,need});});
 const initial=new URLSearchParams(location.search).get('category');if(['new','watches','gear','apparel'].includes(initial)){category=initial;filter();}
 function setPhotoView(photo,second){
- const b=photo.querySelector('[data-swap]'),p=byId.get(b.dataset.swap);
+ const b=photo.querySelector('[data-swap]'),p=byId.get(b.dataset.swap),image=photo.querySelector('.pick-second');
+ photo.dataset.wantedView=String(second);
+ if(second&&(!image.complete||!image.naturalWidth)){image.loading='eager';return;}
  photo.classList.toggle('is-second',second);b.setAttribute('aria-pressed',String(second));
  b.firstChild.textContent=(second?(p.cover_label||'Product photo'):(p.scene_label||'Another view'))+' ';
  b.setAttribute('aria-label','Show '+(second?'product view':(p.scene_label||'another view').toLowerCase())+' for '+p.name);
@@ -21,9 +23,13 @@ function setPhotoView(photo,second){
  photo.querySelector('[data-image]').setAttribute('aria-label','Enlarge '+p.name+' '+(second?(p.scene_label||'another view').toLowerCase():'product view'));
 }
 shop.querySelectorAll('[data-photo]').forEach(photo=>{
- photo.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&matchMedia('(hover:hover)').matches)setPhotoView(photo,true);});
- photo.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')setPhotoView(photo,false);});
- photo.querySelector('[data-swap]').addEventListener('click',()=>setPhotoView(photo,!photo.classList.contains('is-second')));
+ let selectedSecond=false;
+ const image=photo.querySelector('.pick-second'),button=photo.querySelector('[data-swap]');
+ image.addEventListener('load',()=>{if(photo.dataset.wantedView==='true')setPhotoView(photo,true);});
+ image.addEventListener('error',()=>{setPhotoView(photo,false);button.hidden=true;});
+ photo.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'&&matchMedia('(min-width:601px) and (hover:hover) and (pointer:fine)').matches)setPhotoView(photo,true);});
+ photo.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')setPhotoView(photo,selectedSecond);});
+ button.addEventListener('click',()=>{selectedSecond=!photo.classList.contains('is-second');setPhotoView(photo,selectedSecond);});
 });
 const selected=new Set(),bar=shop.querySelector('.shop-compare-bar'),dialog=shop.querySelector('#compare-dialog');
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
