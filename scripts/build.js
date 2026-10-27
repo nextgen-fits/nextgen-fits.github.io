@@ -229,7 +229,7 @@ function buildSitemap() {
   entries.push({ loc: '/apparel.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
   entries.push({ loc: '/gear.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
   entries.push({ loc: '/articles.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
-  entries.push({ loc: '/shop.html', lastmod: getLastCommitDate('shop.html'), changefreq: 'weekly', priority: '0.9' });
+  entries.push({ loc: '/shop.html', lastmod: ['shop.html','database/picks.json','scripts/picks.js'].map(getLastCommitDate).sort().at(-1), changefreq: 'weekly', priority: '0.9' });
 
   // 静态政策/信息页（用文件在 Git 里真实的最后修改日期）
   const staticPages = [
