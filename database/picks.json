@@ -31,19 +31,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Casio W-217H-1AVCF Black Blue digital watch",
-    "scene": "/images/shop-20261027-casio-w217h-full.webp",
-    "scene_small": "/images/shop-20261027-casio-w217h-650.webp",
-    "scene_width": 915,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-casio-w217h-full.webp",
+    "scene_small": "/images/shop-scene-20261027-casio-w217h-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 1066,
-    "scene_label": "Detail view",
-    "scene_alt": "Casio W-217H-1AVCF black resin digital watch with blue face accents and a positive LCD",
+    "scene_small_height": 812,
+    "scene_label": "On wrist",
+    "scene_alt": "Casio W-217H-1AVCF worn on a wrist beside a notebook and coffee on a wooden table",
     "scene_source_url": "https://www.amazon.com/dp/B0721BB2ZX?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Casio · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8434,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "casio-dw9052",
@@ -77,19 +80,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Casio G-SHOCK DW-9052-1V DW-9052-1VDR",
-    "scene": "/images/shop-20261027-casio-dw9052-full.webp",
-    "scene_small": "/images/shop-20261027-casio-dw9052-650.webp",
-    "scene_width": 646,
-    "scene_height": 953,
-    "scene_small_width": 646,
-    "scene_small_height": 953,
-    "scene_label": "Detail view",
-    "scene_alt": "Black Casio G-SHOCK DW-9052-1V with a positive digital display, red G button and resin strap",
+    "scene": "/images/shop-scene-20261027-casio-dw9052-full.webp",
+    "scene_small": "/images/shop-scene-20261027-casio-dw9052-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
+    "scene_small_width": 650,
+    "scene_small_height": 812,
+    "scene_label": "On wrist",
+    "scene_alt": "Black Casio G-SHOCK DW-9052-1V worn on a wrist beside a sunlit wooden bench",
     "scene_source_url": "https://www.amazon.com/dp/B000GAYQLI?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Casio · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8444,
+    "cover_tx": 0,
+    "cover_ty": -0.044
   },
   {
     "id": "fossil-neutra-fs5380",
@@ -123,19 +129,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Fossil Neutra FS5380 44mm cream dial brown leather",
-    "scene": "/images/shop-20261027-fossil-neutra-fs5380-full.webp",
-    "scene_small": "/images/shop-20261027-fossil-neutra-fs5380-650.webp",
-    "scene_width": 853,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-fossil-neutra-fs5380-full.webp",
+    "scene_small": "/images/shop-scene-20261027-fossil-neutra-fs5380-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 1143,
-    "scene_label": "Detail view",
-    "scene_alt": "Fossil Neutra FS5380 chronograph with cream dial, silver-tone case and brown leather strap",
+    "scene_small_height": 812,
+    "scene_label": "On wrist",
+    "scene_alt": "Fossil Neutra FS5380 cream-dial chronograph with brown leather strap in a wrist-wearing scene",
     "scene_source_url": "https://www.amazon.com/dp/B074ZHN54C?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Fossil · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8422,
+    "cover_tx": 0.035,
+    "cover_ty": 0.056
   },
   {
     "id": "benq-gw2490",
@@ -169,19 +178,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "BenQ GW2490 24 inch 100Hz FHD IPS monitor",
-    "scene": "/images/shop-20261027-benq-gw2490-full.webp",
-    "scene_small": "/images/shop-20261027-benq-gw2490-650.webp",
-    "scene_width": 1500,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-benq-gw2490-full.webp",
+    "scene_small": "/images/shop-scene-20261027-benq-gw2490-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 650,
-    "scene_label": "Detail view",
-    "scene_alt": "BenQ GW2490 black Full HD monitor on its original stand, front product view",
+    "scene_small_height": 812,
+    "scene_label": "Desk view",
+    "scene_alt": "BenQ GW2490 on its original stand in a compact oak-desk workspace",
     "scene_source_url": "https://www.amazon.com/dp/B0CP9THGP2?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "BenQ · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.943,
+    "cover_tx": 0,
+    "cover_ty": 0.654
   },
   {
     "id": "dell-se2426h",
@@ -215,19 +227,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Dell SE2426H 23.8 inch FHD 144Hz monitor",
-    "scene": "/images/shop-20261027-dell-se2426h-detail-full.webp",
-    "scene_small": "/images/shop-20261027-dell-se2426h-detail-650.webp",
-    "scene_width": 1500,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-dell-se2426h-full.webp",
+    "scene_small": "/images/shop-scene-20261027-dell-se2426h-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 650,
-    "scene_label": "Refresh-rate guide",
-    "scene_alt": "Dell SE2426H listing graphic explaining up to 144Hz refresh rate",
+    "scene_small_height": 812,
+    "scene_label": "Desk view",
+    "scene_alt": "Dell SE2426H on its original stand with a keyboard and mouse on a wooden desk",
     "scene_source_url": "https://www.amazon.com/dp/B0GLQXKKVY?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Dell · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8617,
+    "cover_tx": 0.029,
+    "cover_ty": 0.414
   },
   {
     "id": "logitech-pebble-m350s",
@@ -261,19 +276,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Logitech Pebble Mouse 2 M350s Black",
-    "scene": "/images/shop-20261027-logitech-pebble-m350s-detail-full.webp",
-    "scene_small": "/images/shop-20261027-logitech-pebble-m350s-detail-650.webp",
-    "scene_width": 1500,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-logitech-pebble-m350s-full.webp",
+    "scene_small": "/images/shop-scene-20261027-logitech-pebble-m350s-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 650,
+    "scene_small_height": 812,
     "scene_label": "Desk view",
-    "scene_alt": "Logitech Pebble Mouse 2 M350s in the listing’s desk scene beside a keyboard",
+    "scene_alt": "Black Logitech Pebble Mouse 2 M350s under a relaxed hand on an oak desk",
     "scene_source_url": "https://www.amazon.com/dp/B0BT4GFFGR?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Logitech · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8016,
+    "cover_tx": 0.033,
+    "cover_ty": 0.027
   },
   {
     "id": "fifine-am8",
@@ -307,19 +325,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "FIFINE AM8 black USB XLR dynamic microphone desktop stand",
-    "scene": "/images/shop-20261027-fifine-am8-full.webp",
-    "scene_small": "/images/shop-20261027-fifine-am8-650.webp",
-    "scene_width": 714,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-fifine-am8-full.webp",
+    "scene_small": "/images/shop-scene-20261027-fifine-am8-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 1366,
-    "scene_label": "Detail view",
-    "scene_alt": "Black FIFINE AmpliGame AM8 dynamic microphone on its supplied desktop stand",
+    "scene_small_height": 812,
+    "scene_label": "Desk view",
+    "scene_alt": "Black FIFINE AM8 on its desktop stand beside a laptop in a naturally lit workspace",
     "scene_source_url": "https://www.amazon.com/dp/B0BMFQP2ZZ?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "FIFINE · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.8021,
+    "cover_tx": 0.033,
+    "cover_ty": 0
   },
   {
     "id": "anker-prime-200w",
@@ -353,19 +374,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Anker Prime 200W 6 Port GaN Desktop Charger",
-    "scene": "/images/shop-20261027-anker-prime-200w-full.webp",
-    "scene_small": "/images/shop-20261027-anker-prime-200w-650.webp",
-    "scene_width": 1500,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-anker-prime-200w-full.webp",
+    "scene_small": "/images/shop-scene-20261027-anker-prime-200w-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 650,
-    "scene_label": "Detail view",
-    "scene_alt": "Silver Anker Prime 200W six-port desktop USB charger with its front charging ports visible",
+    "scene_small_height": 812,
+    "scene_label": "Desk view",
+    "scene_alt": "Anker Prime six-port 200W desktop charger beside a laptop and phone on a wooden desk",
     "scene_source_url": "https://www.amazon.com/dp/B0CT2NQ7WG?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Anker · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "champion-powerblend-fullzip",
@@ -399,19 +423,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Champion Powerblend Full zip hoodie black CPM253FH17",
-    "scene": "/images/shop-20261027-champion-powerblend-fullzip-full.webp",
-    "scene_small": "/images/shop-20261027-champion-powerblend-fullzip-650.webp",
-    "scene_width": 1041,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-champion-powerblend-fullzip-full.webp",
+    "scene_small": "/images/shop-scene-20261027-champion-powerblend-fullzip-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 937,
-    "scene_label": "Detail view",
-    "scene_alt": "Black Champion Powerblend full-zip hoodie CPM253FH17, showing the hood, zip and ribbed cuffs",
+    "scene_small_height": 812,
+    "scene_label": "Styled view",
+    "scene_alt": "Black Champion Powerblend full-zip hoodie worn over an ivory tee beside an oak doorway",
     "scene_source_url": "https://www.amazon.com/dp/B0G126T32B?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Champion · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.9,
+    "cover_tx": 0.037,
+    "cover_ty": 0
   },
   {
     "id": "wrangler-comfort-flex-jean",
@@ -445,19 +472,22 @@
     "link_kind": "product",
     "reviewed": "2026-10-27",
     "query": "Wrangler Authentics Regular Fit Comfort Flex Waist Jean Dark Stonewash",
-    "scene": "/images/shop-20261027-wrangler-comfort-flex-jean-full.webp",
-    "scene_small": "/images/shop-20261027-wrangler-comfort-flex-jean-650.webp",
-    "scene_width": 950,
-    "scene_height": 1500,
+    "scene": "/images/shop-scene-20261027-wrangler-comfort-flex-jean-full.webp",
+    "scene_small": "/images/shop-scene-20261027-wrangler-comfort-flex-jean-650.webp",
+    "scene_width": 1122,
+    "scene_height": 1402,
     "scene_small_width": 650,
-    "scene_small_height": 1026,
-    "scene_label": "Detail view",
-    "scene_alt": "Wrangler Authentics Regular Fit Comfort Flex Waist jeans in Dark Stonewash",
+    "scene_small_height": 812,
+    "scene_label": "Styled view",
+    "scene_alt": "Wrangler Comfort Flex Waist Dark Stonewash jeans in a relaxed everyday outfit",
     "scene_source_url": "https://www.amazon.com/dp/B074KL8RVS?tag=nextgenlabs04-20",
-    "scene_kind": "product",
-    "scene_credit": "Wrangler · Amazon listing",
-    "scene_note": "Check the exact model, configuration and included accessories in the retailer listing.",
-    "new_arrival": true
+    "scene_kind": "context",
+    "scene_credit": "NextGen",
+    "scene_note": "Check the exact model, fit and included accessories in the product view and linked retailer listing.",
+    "new_arrival": true,
+    "cover_scale": 0.9066,
+    "cover_tx": -6.724,
+    "cover_ty": 0.332
   },
   {
     "id": "orient-kamasu",
@@ -499,7 +529,12 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.5789,
+    "cover_tx": 0,
+    "cover_ty": 0.118,
+    "scene_scale": 1.16,
+    "scene_position": "50% 48%"
   },
   {
     "id": "invicta-8926ob",
@@ -541,7 +576,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.123,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "f91w",
@@ -581,7 +619,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.0615,
+    "cover_tx": -0.133,
+    "cover_ty": -0.389
   },
   {
     "id": "seiko-srpd55",
@@ -625,7 +666,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1267,
+    "cover_tx": -0.153,
+    "cover_ty": -0.123
   },
   {
     "id": "ga2100",
@@ -665,7 +709,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1033,
+    "cover_tx": 0.046,
+    "cover_ty": 0
   },
   {
     "id": "a158",
@@ -705,7 +752,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1667,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "ae1200",
@@ -745,7 +795,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.0606,
+    "cover_tx": 0.044,
+    "cover_ty": 0.141
   },
   {
     "id": "citizen",
@@ -785,7 +838,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 0.868,
+    "cover_tx": -0.053,
+    "cover_ty": 0
   },
   {
     "id": "lift",
@@ -825,7 +881,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.5702,
+    "cover_tx": 0.098,
+    "cover_ty": 0.039
   },
   {
     "id": "mx3s",
@@ -865,7 +924,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.4453,
+    "cover_tx": -0.271,
+    "cover_ty": 0.253
   },
   {
     "id": "anker332",
@@ -905,7 +967,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 0.9316,
+    "cover_tx": -0.437,
+    "cover_ty": -0.769
   },
   {
     "id": "k380s",
@@ -945,7 +1010,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.4318,
+    "cover_tx": 0.045,
+    "cover_ty": 0.072
   },
   {
     "id": "ankercharger",
@@ -985,7 +1053,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.4484,
+    "cover_tx": 0,
+    "cover_ty": 0.072
   },
   {
     "id": "screenbar",
@@ -1025,7 +1096,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.486,
+    "cover_tx": 1.022,
+    "cover_ty": 6.538
   },
   {
     "id": "m720",
@@ -1065,7 +1139,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.4159,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "brio100",
@@ -1105,7 +1182,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.0456,
+    "cover_tx": 0.719,
+    "cover_ty": 0.105
   },
   {
     "id": "ugreen",
@@ -1145,7 +1225,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 0.9496,
+    "cover_tx": -1.751,
+    "cover_ty": -0.855
   },
   {
     "id": "caldigit-ts4",
@@ -1187,7 +1270,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1458,
+    "cover_tx": 0,
+    "cover_ty": -2.5
   },
   {
     "id": "k87",
@@ -1227,7 +1313,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1443,
+    "cover_tx": 0.179,
+    "cover_ty": -0.772
   },
   {
     "id": "k121",
@@ -1267,7 +1356,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1257,
+    "cover_tx": -1.231,
+    "cover_ty": 0
   },
   {
     "id": "dickies",
@@ -1307,7 +1399,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1502,
+    "cover_tx": -0.899,
+    "cover_ty": 1.006
   },
   {
     "id": "shirt",
@@ -1347,7 +1442,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1.1576,
+    "cover_tx": 0.326,
+    "cover_ty": -1.302
   },
   {
     "id": "levis",
@@ -1387,7 +1485,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "levis511",
@@ -1427,7 +1528,10 @@
     "scene_small_height": 813,
     "scene_kind": "generated",
     "scene_credit": "NextGen · illustration",
-    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing."
+    "scene_note": "Not an actual product photograph or evidence of fit, dimensions, features or hands-on testing.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "dell-s2425hsm",
@@ -1474,7 +1578,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "dell-s2725dsm",
@@ -1521,7 +1628,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "philips-241v8lb",
@@ -1568,7 +1678,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "asus-pa279crv",
@@ -1615,7 +1728,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "logitech-mx-keys-s",
@@ -1662,7 +1778,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "logitech-mx-ergo-s",
@@ -1709,7 +1828,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "anker-powerconf-c200",
@@ -1756,7 +1878,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "sony-wh-ch720n-black",
@@ -1803,7 +1928,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "creative-pebble-v3",
@@ -1850,7 +1978,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "huanuo-flowlift-single",
@@ -1897,7 +2028,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "anker-maggo-a2557",
@@ -1944,7 +2078,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "anker-powerconf-s3",
@@ -1991,7 +2128,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "keychron-c3-pro",
@@ -2038,7 +2178,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "elgato-stream-deck-neo",
@@ -2085,7 +2228,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "casio-mdv106-duro",
@@ -2132,7 +2278,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "casio-dw5600bb",
@@ -2179,7 +2328,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "casio-gwm5610u",
@@ -2226,7 +2378,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "casio-w800h",
@@ -2273,7 +2428,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "timex-scout-tw4b04700",
@@ -2320,7 +2478,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "timex-acadia-tw4b08100",
@@ -2367,7 +2528,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "orient-bambino-v2-red",
@@ -2414,7 +2578,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "orient-ray-ii-black",
@@ -2461,7 +2628,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "citizen-bn0151-blue",
@@ -2508,7 +2678,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "seiko-sur311",
@@ -2555,7 +2728,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "hanes-beefy-t-black",
@@ -2602,7 +2778,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "comfort-colors-1717-pepper",
@@ -2649,7 +2828,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "gildan-g18000-dark-heather",
@@ -2696,7 +2878,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "hanes-ultimate-black-hoodie",
@@ -2743,7 +2928,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "dickies-tj15-black",
@@ -2790,7 +2978,10 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   },
   {
     "id": "levis-505-medium-stonewash",
@@ -2837,6 +3028,9 @@
     "scene_kind": "context",
     "scene_credit": "NextGen",
     "scene_note": "Check the exact selected model, configuration and dimensions in the linked product information.",
-    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026."
+    "research_status": "Returned product screenshot and selected affiliate destination checked October 21, 2026.",
+    "cover_scale": 1,
+    "cover_tx": 0,
+    "cover_ty": 0
   }
 ]
