@@ -13,7 +13,17 @@ const { execSync } = require('child_process');
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://nxgenpicks.com';
-require('./refine-articles')(ROOT);
+// Articles are maintained in database/magazine-articles-20261028.json.
+const magazineArticles = JSON.parse(fs.readFileSync(path.join(ROOT,'database/magazine-articles-20261028.json'),'utf8'));
+for (const category of ['watches','gear','apparel']) {
+  const source = path.join(ROOT,'database',category+'.json');
+  const entries = JSON.parse(fs.readFileSync(source,'utf8'));
+  for (const entry of entries) {
+    const article = magazineArticles.find(a=>a.url===entry.page_url);
+    if (article) { entry.title=article.title; entry.summary=article.deck; entry.cover_img=article.hero; entry.updated=article.modified; }
+  }
+  fs.writeFileSync(source,JSON.stringify(entries,null,2)+'\n');
+}
 
 const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md']);
 
@@ -252,7 +262,7 @@ function buildSitemap() {
     for (const relPath of listHtmlFiles(dir)) {
       entries.push({
         loc: `/${relPath}`,
-        lastmod: getLastCommitDate(relPath),
+        lastmod: magazineArticles.find(a=>a.url==='/'+relPath)?.modified || getLastCommitDate(relPath),
         changefreq: 'weekly',
         priority: '0.8',
       });
@@ -296,6 +306,7 @@ console.log('[build] 已自动生成 sitemap.xml');
 console.log('[build] 完成。');
 
 require('./editorial')(DIST);
+require('./magazine')(DIST, ROOT);
 require('./affiliate-routing')(DIST, ROOT);
 require('./public-copy-policy')(DIST);
 
