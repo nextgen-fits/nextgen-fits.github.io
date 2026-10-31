@@ -307,6 +307,7 @@ console.log('[build] 完成。');
 
 require('./editorial')(DIST);
 require('./magazine')(DIST, ROOT);
+require('./modern')(DIST, ROOT);
 require('./affiliate-routing')(DIST, ROOT);
 require('./public-copy-policy')(DIST);
 
