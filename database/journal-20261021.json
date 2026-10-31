@@ -1,5 +1,49 @@
 [
   {
+    "id": "office-kit-usb-c-laptop-kit",
+    "category": "gear",
+    "title": "USB-C Laptop Desk Setup: A Practical Six-Piece Kit",
+    "summary": "One screen, fewer loose connections and six clearly defined jobs. Start with the laptop's limits, then buy only the pieces your desk is missing.",
+    "url": "/gear/usb-c-laptop-desk-setup-kit.html",
+    "image": "/images/office-kit-20261031-usb-c-laptop-kit-full.webp",
+    "thumbnail": "/images/office-kit-20261031-usb-c-laptop-kit-720.webp",
+    "wordCount": 2424,
+    "minutes": 11
+  },
+  {
+    "id": "office-kit-dual-monitor-kit",
+    "category": "gear",
+    "title": "Dual Monitor Office Setup: A DisplayLink Desk Kit Explained",
+    "summary": "Two work screens need a compatible connection plan. Here is where the UD-3900Z fits, where it does not, and how five supporting accessories earn their place.",
+    "url": "/gear/dual-monitor-office-desk-setup-kit.html",
+    "image": "/images/office-kit-20261031-dual-monitor-kit-full.webp",
+    "thumbnail": "/images/office-kit-20261031-dual-monitor-kit-720.webp",
+    "wordCount": 2360,
+    "minutes": 11
+  },
+  {
+    "id": "office-kit-video-call-kit",
+    "category": "gear",
+    "title": "Work from Home Video Call Setup: Six Useful Pieces",
+    "summary": "Clearer conversations start with the microphone, camera position and room. Build the desk around those jobs before paying for a longer feature list.",
+    "url": "/gear/video-call-home-office-setup-kit.html",
+    "image": "/images/office-kit-20261031-video-call-kit-full.webp",
+    "thumbnail": "/images/office-kit-20261031-video-call-kit-720.webp",
+    "wordCount": 2342,
+    "minutes": 11
+  },
+  {
+    "id": "office-kit-focus-audio-kit",
+    "category": "gear",
+    "title": "Home Office Desk Accessories for Focus: Six Picks Explained",
+    "summary": "Choose one audio format, give charging a routine and keep room for the mouse. A quiet-looking desk is useful when the arrangement also fits the way you work.",
+    "url": "/gear/quiet-home-office-desk-accessories.html",
+    "image": "/images/office-kit-20261031-focus-audio-kit-full.webp",
+    "thumbnail": "/images/office-kit-20261031-focus-audio-kit-720.webp",
+    "wordCount": 2420,
+    "minutes": 11
+  },
+  {
     "id": "journal-20261021-rze-upgrade",
     "category": "watches",
     "title": "RZE UTD-8080: A Small Digital Watch Story With a Big Question",

@@ -1,12 +1,53 @@
 [
   {
+    "id": "office-kit-usb-c-laptop-kit",
+    "date": "OCTOBER 31, 2026",
+    "category": "DESK & TECH · WORKSPACE KITS",
+    "title": "USB-C Laptop Desk Setup: A Practical Six-Piece Kit",
+    "summary": "One screen, fewer loose connections and six clearly defined jobs. Start with the laptop's limits, then buy only the pieces your desk is missing.",
+    "cover_img": "/images/office-kit-20261031-usb-c-laptop-kit-full.webp",
+    "page_url": "/gear/usb-c-laptop-desk-setup-kit.html",
+    "updated": "2026-10-31"
+  },
+  {
+    "id": "office-kit-dual-monitor-kit",
+    "date": "OCTOBER 31, 2026",
+    "category": "DESK & TECH · WORKSPACE KITS",
+    "title": "Dual Monitor Office Setup: A DisplayLink Desk Kit Explained",
+    "summary": "Two work screens need a compatible connection plan. Here is where the UD-3900Z fits, where it does not, and how five supporting accessories earn their place.",
+    "cover_img": "/images/office-kit-20261031-dual-monitor-kit-full.webp",
+    "page_url": "/gear/dual-monitor-office-desk-setup-kit.html",
+    "updated": "2026-10-31"
+  },
+  {
+    "id": "office-kit-video-call-kit",
+    "date": "OCTOBER 31, 2026",
+    "category": "DESK & TECH · WORKSPACE KITS",
+    "title": "Work from Home Video Call Setup: Six Useful Pieces",
+    "summary": "Clearer conversations start with the microphone, camera position and room. Build the desk around those jobs before paying for a longer feature list.",
+    "cover_img": "/images/office-kit-20261031-video-call-kit-full.webp",
+    "page_url": "/gear/video-call-home-office-setup-kit.html",
+    "updated": "2026-10-31"
+  },
+  {
+    "id": "office-kit-focus-audio-kit",
+    "date": "OCTOBER 31, 2026",
+    "category": "DESK & TECH · WORKSPACE KITS",
+    "title": "Home Office Desk Accessories for Focus: Six Picks Explained",
+    "summary": "Choose one audio format, give charging a routine and keep room for the mouse. A quiet-looking desk is useful when the arrangement also fits the way you work.",
+    "cover_img": "/images/office-kit-20261031-focus-audio-kit-full.webp",
+    "page_url": "/gear/quiet-home-office-desk-accessories.html",
+    "updated": "2026-10-31"
+  },
+  {
     "id": "journal-20261021-office-144hz",
     "date": "OCTOBER 21, 2026",
     "category": "DESK & TECH · STORIES & GUIDES",
     "title": "144Hz Monitor for Office Work: A Useful Upgrade or a Gaming Distraction?",
     "summary": "The refresh-rate number has escaped the gaming aisle. That does not mean it should be the first thing you buy for a desk.",
-    "cover_img": "/images/shop-expansion-20261021/cover/m02-650.webp",
-    "page_url": "/gear/144hz-monitor-for-office-work.html"
+    "cover_img": "/images/shop-expansion-20261021/cover/m02-full.webp",
+    "page_url": "/gear/144hz-monitor-for-office-work.html",
+    "updated": "2026-10-21"
   },
   {
     "id": "journal-20261021-factory-calibration",
@@ -14,8 +55,9 @@
     "category": "DESK & TECH · STORIES & GUIDES",
     "title": "Factory-Calibrated Monitors: What Color Accuracy Actually Means",
     "summary": "A calibration report can be useful evidence. It is not a magic certificate that makes every photograph look right in every application.",
-    "cover_img": "/images/shop-expansion-20261021/cover/m04-650.webp",
-    "page_url": "/gear/factory-calibrated-monitor-color-accuracy-guide.html"
+    "cover_img": "/images/shop-expansion-20261021/cover/m04-full.webp",
+    "page_url": "/gear/factory-calibrated-monitor-color-accuracy-guide.html",
+    "updated": "2026-10-21"
   },
   {
     "id": "journal-20261021-dead-pixels",
@@ -23,8 +65,9 @@
     "category": "DESK & TECH · STORIES & GUIDES",
     "title": "Monitor Dead Pixels and Warranty: What to Check Before You Buy",
     "summary": "The least glamorous line in a monitor purchase can become the most important one after the box is open.",
-    "cover_img": "/images/shop-expansion-20261021/cover/m03-650.webp",
-    "page_url": "/gear/monitor-dead-pixel-warranty-buying-guide.html"
+    "cover_img": "/images/shop-expansion-20261021/cover/m03-full.webp",
+    "page_url": "/gear/monitor-dead-pixel-warranty-buying-guide.html",
+    "updated": "2026-10-21"
   },
   {
     "id": "journal-20261021-trackball",
@@ -32,8 +75,9 @@
     "category": "DESK & TECH · STORIES & GUIDES",
     "title": "Trackball vs Mouse: Does the Logitech MX Ergo S Make Sense for Work?",
     "summary": "A mouse that barely moves sounds like a contradiction. On the right desk, that is exactly the point.",
-    "cover_img": "/images/shop-expansion-20261021/cover/d02-650.webp",
-    "page_url": "/gear/trackball-vs-mouse-logitech-mx-ergo-s.html"
+    "cover_img": "/images/shop-expansion-20261021/cover/d02-full.webp",
+    "page_url": "/gear/trackball-vs-mouse-logitech-mx-ergo-s.html",
+    "updated": "2026-10-21"
   },
   {
     "id": "journal-20261021-stream-deck-work",
@@ -41,8 +85,9 @@
     "category": "DESK & TECH · STORIES & GUIDES",
     "title": "Stream Deck Neo for Work: Eight Buttons That Need a Real Job",
     "summary": "A shortcut pad can be useful outside streaming. First give each button a job you already do, rather than inventing eight reasons to own the gadget.",
-    "cover_img": "/images/shop-expansion-20261021/cover/d10-650.webp",
-    "page_url": "/gear/stream-deck-neo-for-work-productivity.html"
+    "cover_img": "/images/shop-expansion-20261021/cover/d10-full.webp",
+    "page_url": "/gear/stream-deck-neo-for-work-productivity.html",
+    "updated": "2026-10-21"
   },
   {
     "id": "buying-20261018-work-monitor",
@@ -50,8 +95,9 @@
     "category": "DESK & TECH · BUYING GUIDE",
     "title": "How to Choose a Monitor for Work: Size, Text and Laptop Connections",
     "summary": "The best work screen is the one that fits your desk, your eyes and your computer. Start with those three checks before paying for a longer feature list.",
-    "cover_img": "/images/buying-guides-20261018/work-monitor-720.webp",
-    "page_url": "/gear/how-to-choose-a-monitor-for-work.html"
+    "cover_img": "/images/buying-guides-20261018/work-monitor-full.webp",
+    "page_url": "/gear/how-to-choose-a-monitor-for-work.html",
+    "updated": "2026-10-18"
   },
   {
     "id": "buying-20261018-desk-buying-order",
@@ -59,71 +105,79 @@
     "category": "DESK & TECH · BUYING GUIDE",
     "title": "Which Desk Upgrade Should You Buy First? A Home Office Buying Order",
     "summary": "A better desk starts with the thing that interrupts your day. Fix that first, then stop buying when the problem is solved.",
-    "cover_img": "/images/buying-guides-20261018/desk-buying-order-720.webp",
-    "page_url": "/gear/home-office-desk-upgrades-buying-order.html"
+    "cover_img": "/images/buying-guides-20261018/desk-buying-order-full.webp",
+    "page_url": "/gear/home-office-desk-upgrades-buying-order.html",
+    "updated": "2026-10-18"
   },
   {
     "id": "research-20261015-dell",
     "date": "OCTOBER 15, 2026",
     "category": "DISPLAY STUDY 01 · DELL U2725QE",
     "title": "Dell U2725QE Review: A Cleaner Desk, If You Can Use the Hub",
-    "summary": "A researched Dell U2725QE review covering 4K text, 120Hz, 140W EPR charging, KVM and desk fit. Check your laptop before buying a one-cable setup.",
+    "summary": "A sharper screen is useful. A simpler working day is the real point.",
     "cover_img": "/images/research-20261015/dell-hero-900.webp",
-    "page_url": "/gear/dell-u2725qe-review.html"
+    "page_url": "/gear/dell-u2725qe-review.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "research-20261015-asus",
     "date": "OCTOBER 15, 2026",
     "category": "DISPLAY STUDY 02 · ASUS PROART",
     "title": "ASUS ProArt PA279CRV Review: Color Work Without a Crowded Desk",
-    "summary": "ASUS PA279CRV researched review: wide-gamut color, 4K scaling, 96W USB-C, 60Hz compromises and practical checks for a minimalist creative desk.",
+    "summary": "A calm workspace for image-making, with the color workflow left in.",
     "cover_img": "/images/research-20261015/asus-hero-900.webp",
-    "page_url": "/gear/asus-proart-pa279crv-review.html"
+    "page_url": "/gear/asus-proart-pa279crv-review.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "research-20261015-benq",
     "date": "OCTOBER 15, 2026",
     "category": "DISPLAY STUDY 03 · BENQ MA270U",
     "title": "BenQ MA270U Review: A Simpler MacBook Desk, With a Few Checks",
-    "summary": "BenQ MA270U researched review for MacBook users: 4K scaling, matte finish, Display Pilot 2, 90W charging and the limits of a one-cable desk.",
+    "summary": "The right cable helps. Comfortable text and a routine that works matter more.",
     "cover_img": "/images/research-20261015/benq-hero-900.webp",
-    "page_url": "/gear/benq-ma270u-review-macbook.html"
+    "page_url": "/gear/benq-ma270u-review-macbook.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "deep-20261010-monitor",
     "date": "OCTOBER 10, 2026",
     "category": "SMALL WORKSPACE · DISPLAY GUIDE",
     "title": "Best 24-Inch Monitor for a Small Workspace: Three Practical Routes",
-    "summary": "Compare Dell P2425H, P2425HE and ASUS PA248QV for a small desk. Check stand depth, 16:10 workspace, USB-C video and charging before you buy.",
-    "cover_img": "/images/deep-guides-20261010/monitor-hero-768.webp",
-    "page_url": "/gear/best-24-inch-monitor-small-workspace.html"
+    "summary": "Choose the footprint and connection path before the bezel.",
+    "cover_img": "/images/deep-guides-20261010/monitor-hero-full.webp",
+    "page_url": "/gear/best-24-inch-monitor-small-workspace.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "deep-20261010-dock",
     "date": "OCTOBER 10, 2026",
     "category": "CONNECTION KNOWLEDGE · DOCK OR HUB",
     "title": "USB-C Hub vs Thunderbolt 4 Dock: Buy for Your Actual Setup",
-    "summary": "Choose a USB-C hub or Thunderbolt 4 dock using host limits, display modes, laptop power and cable checks. Includes a practical route selector and TS4 example.",
-    "cover_img": "/images/deep-guides-20261010/dock-hero-768.webp",
-    "page_url": "/gear/usb-c-hub-vs-thunderbolt-4-dock.html"
+    "summary": "One cable is convenient only when every required function works.",
+    "cover_img": "/images/deep-guides-20261010/dock-hero-full.webp",
+    "page_url": "/gear/usb-c-hub-vs-thunderbolt-4-dock.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "deep-20261010-arm",
     "date": "OCTOBER 10, 2026",
     "category": "DESK PLANNING · MONITOR MOUNTING",
     "title": "Monitor Arm vs Stand for a Shallow Desk: Measure Before Buying",
-    "summary": "Choose a monitor arm or stand for a shallow desk. Check screen-plane position, minimum payload, VESA access, desktop construction and clamp clearance.",
-    "cover_img": "/images/deep-guides-20261010/arm-hero-768.webp",
-    "page_url": "/gear/monitor-arm-vs-stand-shallow-desk.html"
+    "summary": "The folded arm, the panel and the desk all have to fit.",
+    "cover_img": "/images/deep-guides-20261010/arm-hero-full.webp",
+    "page_url": "/gear/monitor-arm-vs-stand-shallow-desk.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "practical-20261005-usb-c",
     "date": "OCTOBER 5, 2026",
     "category": "DESK TROUBLESHOOTING · CONNECTIONS",
     "title": "USB-C Monitor Not Detected? Check the Port, Cable and Input",
-    "summary": "Troubleshoot a USB-C monitor with no signal. Check video support, cable capability, monitor input and direct connection before replacing a cable or dock.",
-    "cover_img": "/images/practical-guides-2026-10/usb-c-768.webp",
-    "page_url": "/gear/usb-c-monitor-no-signal.html"
+    "summary": "Charging proves that power is passing. It does not prove that video can pass.",
+    "cover_img": "/images/practical-guides-2026-10/usb-c-1536.webp",
+    "page_url": "/gear/usb-c-monitor-no-signal.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "practical-20261005-blurry",
@@ -140,27 +194,30 @@
     "date": "OCTOBER 5, 2026",
     "category": "DESK TROUBLESHOOTING · MAC DISPLAYS",
     "title": "Two Monitors Show the Same Image on a MacBook: What to Check",
-    "summary": "Separate mirror settings, MacBook native display limits, MST hubs and DisplayLink. Diagnose two monitors showing the same image before buying another dock.",
-    "cover_img": "/images/practical-guides-2026-10/dual-mac-768.webp",
-    "page_url": "/gear/macbook-dual-monitors-mirrored.html"
+    "summary": "Two physical screens do not always mean two independently addressable displays.",
+    "cover_img": "/images/practical-guides-2026-10/dual-mac-1536.webp",
+    "page_url": "/gear/macbook-dual-monitors-mirrored.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "practical-20261005-disconnect",
     "date": "OCTOBER 5, 2026",
     "category": "USB-C · TROUBLESHOOTING",
     "title": "USB-C Hub Keeps Disconnecting: Isolate the Cause Before Replacing It",
-    "summary": "Find whether a disconnect affects one device, the whole hub, video or charging. Build a direct baseline, add one device at a time and document the result.",
-    "cover_img": "/images/practical-guides-2026-10/disconnect-768.webp",
-    "page_url": "/gear/usb-c-hub-keeps-disconnecting.html"
+    "summary": "A disappearing drive and a blank monitor do not necessarily have the same cause. Describe the failure first, then change one part of the setup.",
+    "cover_img": "/images/practical-guides-2026-10/disconnect-1536.webp",
+    "page_url": "/gear/usb-c-hub-keeps-disconnecting.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "practical-20261005-charging",
     "date": "OCTOBER 5, 2026",
     "category": "USB-C · POWER EXPLAINED",
     "title": "Laptop Charging Slowly Through a USB-C Monitor or Dock? Check the Power Path",
-    "summary": "Understand charger input, dock output, cable capability and laptop requirements. Compare a direct charger before replacing a slow-charging monitor or dock.",
-    "cover_img": "/images/practical-guides-2026-10/charging-768.webp",
-    "page_url": "/gear/usb-c-monitor-dock-slow-charging.html"
+    "summary": "The wattage on the power brick is only one part of the connection. Find the number that actually applies to the laptop-facing output.",
+    "cover_img": "/images/practical-guides-2026-10/charging-1536.webp",
+    "page_url": "/gear/usb-c-monitor-dock-slow-charging.html",
+    "updated": "2026-09-25"
   },
   {
     "id": "gear-20260927-01",
@@ -176,7 +233,8 @@
         "url": "https://www.amazon.com/s?k=24-inch%20monitor%20for%20a%20small%20desk&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-small-space-monitor.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-03",
@@ -192,7 +250,8 @@
         "url": "https://www.amazon.com/s?k=27-inch%20QHD%20and%204K%20monitor%20comparison&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-4k-qhd-pixel.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-05",
@@ -208,7 +267,8 @@
         "url": "https://www.amazon.com/s?k=monitor%20riser%20for%20desk%20setup&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-monitor-distance.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-06",
@@ -224,7 +284,8 @@
         "url": "https://www.amazon.com/s?k=USB-C%20dock%20for%20laptop%20monitor&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-usbc-dock.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-07",
@@ -240,7 +301,8 @@
         "url": "https://www.amazon.com/s?k=KVM%20switch%20for%20two%20computers%20and%20one%20monitor&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-kvm.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-08",
@@ -256,7 +318,8 @@
         "url": "https://www.amazon.com/s?k=office%20monitor%20panel%20technology%20comparison&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-display-tech.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-09",
@@ -272,7 +335,8 @@
         "url": "https://www.amazon.com/s?k=monitor%20light%20bar%20and%20adjustable%20desk%20lamp&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-lighting.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260927-10",
@@ -288,7 +352,8 @@
         "url": "https://www.amazon.com/s?k=matte%20monitor%20for%20bright%20office&tag=nextgenlabs04-20",
         "img": "/images/editorial-guides-2026/gear-matte-gloss.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260925-01",
@@ -304,7 +369,8 @@
         "url": "https://amzn.to/4yiKm74",
         "img": "/gear/images/blog/monitor-amazon-basics3-24.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260925-02",
@@ -320,7 +386,8 @@
         "url": "https://amzn.to/4yiKm74",
         "img": "/gear/images/blog/monitor-amazon-basics3-24.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260925-04",
@@ -336,7 +403,8 @@
         "url": "https://amzn.to/4vnJegL",
         "img": "/images/logitech-mouse.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-20260925-05",
@@ -352,7 +420,8 @@
         "url": "https://amzn.to/4gt20yu",
         "img": "/images/sony-headphones.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-013",
@@ -369,9 +438,9 @@
     "id": "gear-012",
     "date": "AUGUST 22, 2026",
     "category": "BUYING GUIDE",
-    "title": "10 PC Accessories That Actually Fix Desk Problems (2026 Guide)",
-    "summary": "Not another generic gear list — 10 PC and desk accessories, each mapped to a specific problem it solves: eye strain, cable chaos, dead phone batteries, and video call lighting. Real owner reviews, verified prices, and Amazon direct links.",
-    "cover_img": "/gear/images/blog/BenQ.jpg",
+    "title": "10 Functional PC Accessories That Actually Fix Desk Problems",
+    "summary": "Not another generic \"gear list.\" Every product here is mapped directly to one specific, everyday friction point — \n\n            afternoon eye fatigue, dead phone batteries, tangled standing desk cables, or poor video call lighting. Tested for genuine transactional value.",
+    "cover_img": "/assets/media/38256c5b3bc2.webp",
     "page_url": "/gear/pc-accessories-that-solve-desk-problems-2026.html",
     "gear_list": [
       {
@@ -424,7 +493,8 @@
         "url": "https://amzn.to/45JrLUV",
         "img": "/gear/images/blog/Yecaye-No-Drill.jpg"
       }
-    ]
+    ],
+    "updated": "2026-08-22"
   },
   {
     "id": "gear-011",
@@ -432,7 +502,7 @@
     "category": "BUYING GUIDE",
     "title": "Minimalist Desk Setup: Buy the Essentials, Skip the Clutter",
     "summary": "Build a desk around the problems you actually have. Start with a staged plan, then compare the monitor, mouse or hub that earns its place.",
-    "cover_img": "/assets/media/86362ff546bf.webp",
+    "cover_img": "/assets/magazine-cover-09ddf72559-1440.webp",
     "page_url": "/gear/minimalist-desk-setup-10-picks-2026.html",
     "gear_list": [],
     "updated": "2026-10-23"
@@ -441,9 +511,9 @@
     "id": "gear-010",
     "date": "OCTOBER 2, 2026",
     "category": "BUYING GUIDE",
-    "title": "7 Minimalist Desk Setup Essentials for 2026: Practical Gear & Buying Checks",
-    "summary": "Compare seven desk accessories by the problem they solve, fit and compatibility checks, exact-model listings and practical tradeoffs.",
-    "cover_img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/minimalist-desk-hero.jpg",
+    "title": "Minimalist Desk Setup Essentials: 7 Useful Upgrades",
+    "summary": "Seven practical upgrades, matched to a real desk problem—with the compromises left in.",
+    "cover_img": "/assets/magazine-cover-1bf6f9a105-1440.webp",
     "page_url": "/gear/minimalist-desk-setup-essentials-2026.html",
     "gear_list": [
       {
@@ -481,7 +551,8 @@
         "url": "https://amzn.to/4cSk3Mf",
         "img": "/gear/images/editorial-guides-2026/minimalist-desk-setup/wireless-charging-station.jpg"
       }
-    ]
+    ],
+    "updated": "2026-10-02"
   },
   {
     "id": "gear-005",
@@ -492,7 +563,7 @@
     "cover_img": "/assets/media/5e475d36e6b4.webp",
     "page_url": "/gear/amazon-basics-24-inch-monitor-review.html",
     "gear_list": [],
-    "updated": "2026-10-23"
+    "updated": "2026-10-26"
   },
   {
     "id": "gear-004",
@@ -503,7 +574,7 @@
     "cover_img": "/assets/media/208b2cdc2622.webp",
     "page_url": "/gear/minimalist-monitor-setup.html",
     "gear_list": [],
-    "updated": "2026-10-23"
+    "updated": "2026-10-26"
   },
   {
     "id": "gear-001",
@@ -531,8 +602,8 @@
     "id": "gear-002",
     "date": "MAY 28, 2026",
     "category": "WORKSPACE",
-    "title": "Sony WH-CH720N Review for Work: Calls, Comfort and Tradeoffs",
-    "summary": "A practical look at Sony’s lightweight wireless headphones: where they fit a working day, what independent testing adds, and which call checks matter.",
+    "title": "Remote Work Tech Setup: Headphones, Mouse, Hub and Clearer Calls",
+    "summary": "A working kit needs more than headphones. Start with clearer calls, reliable connections and the few pieces you will actually carry.",
     "cover_img": "/images/shop-expansion-20261021/model/d04-full.webp",
     "page_url": "/gear/edc-tech-setup-remote-work.html",
     "gear_list": [
@@ -542,7 +613,7 @@
         "img": "/images/blog/sony-headphones-thumb.jpg"
       }
     ],
-    "updated": "2026-10-23"
+    "updated": "2026-10-28"
   },
   {
     "id": "gear-003",
@@ -559,6 +630,6 @@
         "img": "/images/blog/logitech-lift-thumb.jpg"
       }
     ],
-    "updated": "2026-10-18"
+    "updated": "2026-09-25"
   }
 ]
