@@ -1,0 +1,21 @@
+.nx-site .shop .shop-revisit{margin:0 0 30px;padding:28px;background:#f5f5f7;border:1px solid #e6e6eb;border-radius:20px;overflow:hidden}
+.nx-site .shop .shop-revisit-heading{display:grid;grid-template-columns:1fr auto;gap:6px 22px;align-items:end;margin-bottom:24px}
+.nx-site .shop .shop-revisit-heading>.shop-kicker{grid-column:1/-1;margin:0;font-size:10px;letter-spacing:.08em}
+.nx-site .shop .shop-revisit h2{margin:0;font-size:29px;font-weight:650;line-height:1.18;letter-spacing:-.035em;color:#1d1d1f}
+.nx-site .shop .shop-revisit-heading>p:last-child{margin:0;max-width:230px;font-size:11px;line-height:1.55;color:#616166}
+.nx-site .shop .shop-revisit-shelf+.shop-revisit-shelf{margin-top:22px;padding-top:20px;border-top:1px solid #dedee3}
+.nx-site .shop .shop-revisit h3{margin:0 0 12px;font-size:14px;font-weight:600;line-height:1.3;color:#1d1d1f;letter-spacing:0}
+.nx-site .shop .shop-revisit-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.nx-site .shop .shop-revisit-pick{display:grid;grid-template-columns:68px minmax(0,1fr);gap:12px;align-items:center;min-width:0;padding:10px;background:white;border:1px solid #e8e8ed;border-radius:13px;text-decoration:none;color:#1d1d1f;transition:border-color .15s,box-shadow .15s}
+.nx-site .shop .shop-revisit-pick:hover{border-color:#89b9ec;box-shadow:0 3px 15px #005fc510}
+.nx-site .shop .shop-revisit-pick:focus-visible{outline:3px solid #005fc5;outline-offset:3px}
+.nx-site .shop .shop-revisit-photo{display:flex;align-items:center;justify-content:center;width:68px;height:96px;background:#fff;border-radius:8px;overflow:hidden}
+.nx-site .shop .shop-revisit-photo img{width:100%;height:100%;object-fit:contain;display:block}
+.nx-site .shop .shop-revisit-copy{display:flex;flex-direction:column;gap:7px;min-width:0}
+.nx-site .shop .shop-revisit-copy small{font-size:9px;color:#616166;line-height:1.2}
+.nx-site .shop .shop-revisit-copy strong{font-size:12px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
+.nx-site .shop .shop-revisit-copy>span{font-size:10px;color:#005fc5;line-height:1.3}
+.nx-site .shop .shop-revisit-copy b{font-weight:400}
+@media(max-width:1100px){.nx-site .shop .shop-revisit-row{grid-template-columns:repeat(2,minmax(0,1fr))}.nx-site .shop .shop-revisit-copy strong{font-size:14px}.nx-site .shop .shop-revisit-copy>span{font-size:11px}}
+@media(max-width:700px){.nx-site .shop .shop-revisit{padding:22px 18px;border-radius:16px}.nx-site .shop .shop-revisit-heading{grid-template-columns:1fr;gap:9px;margin-bottom:20px}.nx-site .shop .shop-revisit h2{font-size:25px}.nx-site .shop .shop-revisit-heading>p:last-child{max-width:none}.nx-site .shop .shop-revisit-row{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(220px,75%);overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding:3px 3px 12px;margin:-3px;scrollbar-width:thin}.nx-site .shop .shop-revisit-pick{scroll-snap-align:start;min-height:116px}.nx-site .shop .shop-revisit-copy strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.nx-site .shop .shop-revisit-pick{transition:none}}
