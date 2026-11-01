@@ -1,248 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Favicons & Google Search SERP Icons -->
-    <link rel="icon" href="/favicon.ico" sizes="48x48">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/web-app-manifest-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/images/web-app-manifest-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow,max-image-preview:large"><title>Newsletter &amp; Free Product Advice | NextGen Essentials</title><meta name="description" content="Get practical watch, desk gear and style guides. Tell NextGen your budget and needs for a free, tailored product plan, with no obligation to buy."><link rel="canonical" href="https://nxgenpicks.com/subscribe.html"><meta property="og:type" content="website"><meta property="og:site_name" content="NextGen Essentials"><meta property="og:title" content="Newsletter &amp; Free Product Advice | NextGen Essentials"><meta property="og:description" content="Get practical watch, desk gear and style guides. Tell NextGen your budget and needs for a free, tailored product plan, with no obligation to buy."><meta property="og:url" content="https://nxgenpicks.com/subscribe.html"><meta name="twitter:card" content="summary"><link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png"><link rel="stylesheet" href="/assets/subscribe-20261031.css"><script defer src="/assets/subscribe-20261031.js"></script><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://nxgenpicks.com/subscribe.html#webpage", "url": "https://nxgenpicks.com/subscribe.html", "name": "Newsletter & Free Product Advice | NextGen Essentials", "description": "Get practical watch, desk gear and style guides. Tell NextGen your budget and needs for a free, tailored product plan, with no obligation to buy.", "inLanguage": "en", "isPartOf": {"@id": "https://nxgenpicks.com/#website"}, "publisher": {"@id": "https://nxgenpicks.com/#organization"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is the product plan really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. There is no planning fee and no obligation to buy. Tell us your budget and needs, and we can help put together a practical product shortlist."}}, {"@type": "Question", "name": "What details make a recommendation more useful?", "acceptedAnswer": {"@type": "Answer", "text": "Your budget, country or region, intended use and anything you already own. For a watch, wrist size helps. For a desk setup, your laptop model, monitor needs and available space are useful."}}, {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. An email address is enough to request the newsletter. Choose the free product plan option to add the details that will help us recommend suitable products."}}, {"@type": "Question", "name": "How do affiliate links work?", "acceptedAnswer": {"@type": "Answer", "text": "Some shopping links are affiliate links. If you buy through them, NextGen may earn a commission at no extra cost to you. We explain model fit, limitations and alternatives so you can make the decision."}}]}]}</script></head><body>
 
-    <title>Subscribe — NextGen Essentials</title>
-    <meta name="description" content="Subscribe to the NextGen Essentials newsletter — occasional practical guides and buying notes, with no fixed mailing schedule." />
-    <link rel="canonical" href="https://nxgenpicks.com/subscribe.html" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
-
-    <!-- 页面样式 -->
-    <style>
-        /* ── 全局变量 ── */
-        :root {
-            --ink: #0A0A0B;
-            --gold: #C9A961;
-            --steel: #6B6D70;
-            --line: #232325;
-            --card: #111113;
-        }
-
-        /* ── 重置 & 基础 ── */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--ink);
-            color: #fff;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 24px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* ── 订阅卡片 ── */
-        .subscribe-card {
-            max-width: 480px;
-            width: 100%;
-            background: var(--card);
-            border: 1px solid var(--line);
-            padding: 48px 40px;
-            border-radius: 4px;
-            text-align: center;
-            transition: border-color 0.3s ease;
-        }
-
-        .subscribe-card:hover {
-            border-color: rgba(201, 169, 97, 0.3);
-        }
-
-        /* ── Logo 样式升级：图文结合 ── */
-        .logo-wrapper {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            margin-bottom: 16px;
-        }
-
-        .logo-wrapper img {
-            width: 32px;
-            height: 32px;
-            border-radius: 4px;
-            border: 1px solid var(--line);
-        }
-
-        .logo {
-            font-family: "Fraunces", Georgia, serif;
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #fff;
-            letter-spacing: -0.01em;
-        }
-
-        .logo span {
-            color: var(--gold);
-        }
-
-        /* ── 标题 & 描述 ── */
-        .sub-title {
-            font-family: "Fraunces", Georgia, serif;
-            font-size: 1.6rem;
-            font-weight: 500;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-
-        .sub-desc {
-            color: var(--steel);
-            font-size: 0.92rem;
-            margin-bottom: 32px;
-        }
-
-        /* ── 表单 ── */
-        .form-group {
-            margin-bottom: 18px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.72rem;
-            font-weight: 600;
-            color: var(--steel);
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            margin-bottom: 6px;
-        }
-
-        .form-group input {
-            width: 100%;
-            background: var(--ink);
-            border: 1px solid var(--line);
-            padding: 12px 16px;
-            color: #fff;
-            font-size: 0.92rem;
-            font-family: inherit;
-            border-radius: 2px;
-            transition: border-color 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        .form-group input:focus {
-            outline: none;
-            border-color: var(--gold);
-            box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.12);
-        }
-
-        .form-group input::placeholder {
-            color: #3D3D40;
-        }
-
-        /* ── 提交按钮 ── */
-        .submit-btn {
-            width: 100%;
-            background: var(--gold);
-            border: none;
-            color: #000;
-            padding: 14px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            cursor: pointer;
-            border-radius: 2px;
-            transition: background 0.2s ease, transform 0.15s ease;
-            margin-top: 4px;
-        }
-
-        .submit-btn:hover {
-            background: #D9B971;
-            transform: translateY(-1px);
-        }
-
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-
-        /* ── 底部链接 ── */
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: var(--steel);
-            font-size: 0.78rem;
-            text-decoration: none;
-            transition: color 0.2s ease;
-            border-bottom: 1px solid transparent;
-        }
-
-        .back-link:hover {
-            color: #fff;
-            border-bottom-color: var(--gold);
-        }
-
-        .disclosure-mini {
-            font-size: 0.65rem;
-            color: var(--steel);
-            margin-top: 16px;
-        }
-
-        /* ── 响应式 ── */
-        @media (max-width: 500px) {
-            .subscribe-card {
-                padding: 32px 20px;
-            }
-
-            .sub-title {
-                font-size: 1.3rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="subscribe-card">
-        <!-- Logo -->
-        <a href="/" class="logo-wrapper">
-            <img src="/images/favicon-96x96.png" alt="NextGen Essentials Gold NP Monogram" width="32" height="32">
-            <div class="logo">NextGen <span>Essentials</span></div>
-        </a>
-
-        <!-- 标题 -->
-        <h1 class="sub-title">📬 Get the Newsletter</h1>
-        <p class="sub-desc">Occasional practical guides and buying notes. No fixed mailing schedule; unsubscribe whenever you want.</p>
-
-        <!-- ★ 表单：用 FormSubmit 免费版 ★ -->
-        <form action="https://formsubmit.co/nextgenlabs.us@gmail.com" method="POST">
-            <!-- 提交后跳转到感谢页 -->
-            <input type="hidden" name="_next" value="https://nxgenpicks.com/subscribe-success.html">
-            <!-- 自定义邮件主题 -->
-            <input type="hidden" name="_subject" value="New Newsletter Subscription">
-
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="you@email.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="name">First Name <span style="color:var(--steel);font-weight:400;">(optional)</span></label>
-                <input type="text" id="name" name="name" placeholder="Your name">
-            </div>
-
-            <button type="submit" class="submit-btn">Subscribe →</button>
-        </form>
-
-        <a href="/" class="back-link">← Back to Home</a>
-        <div class="disclosure-mini">As an Amazon Associate, we earn from qualifying purchases.</div>
+<div class="su-page" data-subscribe-page>
+ <section class="su-hero" aria-labelledby="signup-title">
+  <div class="su-intro">
+   <p class="su-kicker">The NextGen newsletter &amp; product advice</p>
+   <h1 id="signup-title">Good choices.<br><span>A little easier.</span></h1>
+   <p class="su-deck">Practical guides in your inbox. A free product plan when you need a hand.</p>
+   <ul class="su-benefits">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><circle cx="12" cy="12" r="10"/></svg><span>Watches, desk setups and everyday style, explained clearly.</span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><circle cx="12" cy="12" r="10"/></svg><span>Useful comparisons, exact models and the trade-offs that matter.</span></li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/><circle cx="12" cy="12" r="10"/></svg><span>Occasional emails. You can ask to leave at any time.</span></li>
+   </ul>
+   <div class="su-offer" id="free-product-advice">
+    <p>A little help, on us</p>
+    <h2>Choosing something? Let us help.</h2>
+    <p>Tell us your budget, how you will use it and what you like. We can put together a suitable product plan for free, whether you are choosing one watch or making your desk work better.</p>
+    <a class="su-text-link" href="/subscribe.html?request=plan#signup-form" data-open-plan>Get a free product plan <span aria-hidden="true">↗</span></a>
+   </div>
+  </div>
+  <div class="su-panel" id="signup-form">
+   <form action="https://formsubmit.co/nextgenlabs.us@gmail.com" method="POST" data-subscribe-form aria-labelledby="form-title">
+    <input type="hidden" name="_next" value="https://nxgenpicks.com/subscribe-success.html">
+    <input type="hidden" name="_subject" value="NextGen | Newsletter or product plan request">
+    <input type="hidden" name="_template" value="table">
+    <div class="su-honey" aria-hidden="true"><label for="su-website">Leave this field empty</label><input id="su-website" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+    <fieldset class="su-mode"><legend>How can NextGen help?</legend>
+     <label><input type="radio" name="Request type" value="Newsletter" checked><span>Newsletter</span></label>
+     <label><input type="radio" name="Request type" value="Free product plan"><span>Free product plan</span></label>
+    </fieldset>
+    <div class="su-form-heading"><p data-form-kicker>The occasional good email</p><h2 id="form-title" data-form-title>Stay in the know.</h2><p data-form-deck>Practical guides, useful comparisons and buying notes for everyday choices.</p></div>
+    <noscript><p class="su-no-js">For the newsletter, enter your email and choose Newsletter above. For a free product plan, select that option and add your category, budget and needs below.</p></noscript>
+    <div class="su-fields">
+     <div class="su-field"><label for="su-email">Email address</label><input id="su-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required maxlength="254"></div>
+     <div class="su-field"><label for="su-name">First name <span>(optional)</span></label><input id="su-name" type="text" name="name" autocomplete="given-name" placeholder="What should we call you?" maxlength="80"></div>
     </div>
-</body>
-</html>
+    <fieldset class="su-plan-fields" data-plan-fields><legend>Your product brief</legend><div class="su-fields">
+     <div class="su-two-fields">
+      <div class="su-field"><label for="su-category">What are you choosing?</label><select id="su-category" name="Product category"><option value="">Choose a category</option><option>Watches</option><option>Desk &amp; tech</option><option>Clothing &amp; everyday style</option><option>A whole setup</option><option>Not sure yet</option></select></div>
+      <div class="su-field"><label for="su-budget">Budget <span>(USD)</span></label><select id="su-budget" name="Budget"><option value="">Select your range</option><option>Under $50</option><option>$50–$100</option><option>$100–$200</option><option>$200–$500</option><option>Not decided yet</option></select></div>
+     </div>
+     <div class="su-field"><label for="su-region">Country or region <span>(optional)</span></label><input id="su-region" type="text" name="Shopping region" autocomplete="country-name" placeholder="For example, United States" maxlength="100"><span class="su-help">This helps us consider local availability and suitable product versions.</span></div>
+     <div class="su-field"><label for="su-brief">How will you use it?</label><textarea id="su-brief" name="Product brief" rows="4" minlength="10" maxlength="2500" placeholder="Tell us about your routine, preferences and the problem you want to solve." aria-describedby="su-brief-hint"></textarea><span class="su-help" id="su-brief-hint" data-brief-hint>Include what you already own, what matters most and anything that has not worked for you.</span></div>
+    </div></fieldset>
+    <label class="su-checkbox" data-plan-opt-in><input type="checkbox" name="Newsletter opt-in" value="Yes, also send me occasional NextGen guides"><span>Also send me occasional NextGen guides and buying notes. <span>(Optional)</span></span></label>
+    <button class="su-submit" type="submit"><span data-submit-text>Join the newsletter</span><span aria-hidden="true">↗</span></button>
+    <p class="su-form-status" role="status" aria-live="polite"></p>
+    <p class="su-fine-print">By sending, you ask NextGen to email you about the option selected. Product advice is free, with no obligation to buy. Newsletter updates are optional with a product request.</p>
+   </form>
+  </div>
+ </section>
+ <div class="su-value-strip" aria-label="What we can help with">
+  <div class="su-value"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="6"/><path d="M9 6V2h6v4M9 18v4h6v-4M12 9v3l2 1"/></svg><div><h2>A watch for your day.</h2><p>Fit, movements, durability and everyday ownership.</p></div></div>
+  <div class="su-value"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 22h8M12 17v5"/></svg><div><h2>A desk that works.</h2><p>Monitors, connections and useful accessories that fit together.</p></div></div>
+  <div class="su-value"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 3-6 4 3 5 3-2v11h8V10l3 2 3-5-6-4c0 4-8 4-8 0Z"/></svg><div><h2>Style you can live in.</h2><p>Fit, fabrics and versatile pieces for an ordinary week.</p></div></div>
+ </div>
+ <section class="su-process" aria-labelledby="plan-process"><div class="su-section-heading"><div><h2 id="plan-process">Your needs. A clearer shortlist.</h2><p>A useful recommendation starts with the way you live, work and spend.</p></div><a class="su-text-link" href="/subscribe.html?request=plan#signup-form" data-open-plan>Ask for a free plan <span aria-hidden="true">↗</span></a></div>
+  <div class="su-steps"><article class="su-step"><span aria-hidden="true">01</span><h3>Tell us what matters.</h3><p>Share your budget, intended use and preferences. Mention the things you already own so the plan can build on them.</p></article><article class="su-step"><span aria-hidden="true">02</span><h3>We help narrow it down.</h3><p>We can compare suitable options, explain the limits and suggest a practical combination or a small product shortlist.</p></article><article class="su-step"><span aria-hidden="true">03</span><h3>You make the call.</h3><p>Read through the reasons, ask a follow-up question and decide in your own time. There is no fee or requirement to buy.</p></article></div>
+ </section>
+ <section class="su-faq" aria-labelledby="signup-questions"><div class="su-faq-heading"><h2 id="signup-questions">A few good questions.</h2><p>Clear expectations before you share your details.</p><a class="su-text-link" href="/affiliate-disclosure.html">How our links work <span aria-hidden="true">↗</span></a></div><div class="su-faq-list"><details><summary>Is the product plan really free?</summary><p>Yes. There is no planning fee and no obligation to buy. Tell us your budget and needs, and we can help put together a practical product shortlist.</p></details><details><summary>What details make a recommendation more useful?</summary><p>Your budget, country or region, intended use and anything you already own. For a watch, wrist size helps. For a desk setup, your laptop model, monitor needs and available space are useful.</p></details><details><summary>Do I need an account?</summary><p>No. An email address is enough to request the newsletter. Choose the free product plan option to add the details that will help us recommend suitable products.</p></details><details><summary>How do affiliate links work?</summary><p>Some shopping links are affiliate links. If you buy through them, NextGen may earn a commission at no extra cost to you. We explain model fit, limitations and alternatives so you can make the decision.</p></details></div></section>
+</div>
+</body></html>
