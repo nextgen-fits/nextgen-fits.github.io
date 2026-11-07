@@ -1,10 +1,10 @@
 // scripts/build.js
 // 在 GitHub Actions 里跑：
-// 1. 把 JSON 数据预渲染进静态 HTML（首页商品/文章、articles.html 全量列表）
-// 2. Render descriptive collection markup without unverified offers, ratings or retailer policies.
-// 3. 自动扫描 watches/apparel/gear 文件夹，生成 sitemap.xml，
-//    lastmod 直接取每个文件在 Git 里真实的最后提交日期
-// 不需要任何 npm 依赖，纯 Node 内置模块。
+// 1. 把 JSON 数据预渲染进静态 HTML（首页商品/文章、articles.html 全量现代杂志风列表）
+// 2. 注入符合 Google 与 GEO 规范的结构化数据（JSON-LD）
+// 3. 自动扫描 watches/apparel/gear 文件夹生成标准 sitemap.xml
+//    lastmod 取 Git 真实最后提交日期或文章元数据中的 modified 日期
+// 纯 Node.js 内置模块，零外部依赖
 
 const fs = require('fs');
 const path = require('path');
@@ -13,16 +13,26 @@ const { execSync } = require('child_process');
 const ROOT = process.cwd();
 const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://nxgenpicks.com';
-// Articles are maintained in database/magazine-articles-20261028.json.
-const magazineArticles = JSON.parse(fs.readFileSync(path.join(ROOT,'database/magazine-articles-20261028.json'),'utf8'));
-for (const category of ['watches','gear','apparel']) {
-  const source = path.join(ROOT,'database',category+'.json');
-  const entries = JSON.parse(fs.readFileSync(source,'utf8'));
+
+// ---------- 同步文章元数据到各分类 JSON ----------
+const magazineArticles = JSON.parse(
+  fs.readFileSync(path.join(ROOT, 'database/magazine-articles-20261028.json'), 'utf8')
+);
+
+for (const category of ['watches', 'gear', 'apparel']) {
+  const source = path.join(ROOT, 'database', `${category}.json`);
+  if (!fs.existsSync(source)) continue;
+  const entries = JSON.parse(fs.readFileSync(source, 'utf8'));
   for (const entry of entries) {
-    const article = magazineArticles.find(a=>a.url===entry.page_url);
-    if (article) { entry.title=article.title; entry.summary=article.deck; entry.cover_img=article.hero; entry.updated=article.modified; }
+    const article = magazineArticles.find(a => a.url === entry.page_url);
+    if (article) {
+      entry.title = article.title;
+      entry.summary = article.deck;
+      entry.cover_img = article.hero;
+      entry.updated = article.modified;
+    }
   }
-  fs.writeFileSync(source,JSON.stringify(entries,null,2)+'\n');
+  fs.writeFileSync(source, JSON.stringify(entries, null, 2) + '\n');
 }
 
 const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md']);
@@ -50,17 +60,22 @@ function readJsonSafe(p) {
 
 const products = readJsonSafe(path.join(ROOT, 'products.json'));
 const gearPosts = readJsonSafe(path.join(ROOT, 'database', 'gear.json'))
-  .map(p => ({ ...p, metaTag: 'WORKSPACE', clean_img: p.cover_img || '/images/gear-deal.jpg' }));
+  .map(p => ({ ...p, metaTag: 'Desk & tech', clean_img: p.cover_img || '/images/gear-deal.jpg' }));
 const watchPosts = readJsonSafe(path.join(ROOT, 'database', 'watches.json'))
-  .map(p => ({ ...p, metaTag: 'HOROLOGY', clean_img: p.cover_img || '/images/watch-deal.jpg' }));
+  .map(p => ({ ...p, metaTag: 'Watches', clean_img: p.cover_img || '/images/watch-deal.jpg' }));
 const apparelPosts = readJsonSafe(path.join(ROOT, 'database', 'apparel.json'))
-  .map(p => ({ ...p, metaTag: 'WARDROBE', clean_img: p.cover_img || '/images/apparel-deal.jpg' }));
+  .map(p => ({ ...p, metaTag: 'Style', clean_img: p.cover_img || '/images/apparel-deal.jpg' }));
 
 const allArticles = [...gearPosts, ...watchPosts, ...apparelPosts]
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+  .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
 
 function esc(s) {
-  return String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 const PLACEHOLDER =
@@ -68,64 +83,39 @@ const PLACEHOLDER =
 
 function renderProductCard(item) {
   const candidate = item.img.replace(/-(?:small|768)\.webp$/, '-full.webp');
-  const official = fs.existsSync(path.join(ROOT,candidate)) ? candidate : item.img;
+  const official = fs.existsSync(path.join(ROOT, candidate)) ? candidate : item.img;
   const scene = item.scene || item.img;
   const imageLink = item.scene_full || official;
   return `<article class="product-card ${item.scene ? 'product-card-scene' : 'product-card-official'}"><a class="product-img" href="${esc(imageLink)}" target="_blank" rel="noopener" aria-label="View the larger ${item.scene ? 'scene' : 'product photo'}"><img src="${esc(scene)}" alt="${esc(item.scene_alt || item.img_alt || item.title)}" loading="lazy" width="${item.scene_width || 500}" height="${item.scene_height || 625}" onerror="this.onerror=null;this.src='${PLACEHOLDER}';"></a><div class="product-body"><span class="product-type">${esc(item.type)}</span><h4>${esc(item.title)}</h4><p>${esc(item.desc)}</p><div class="product-price-row"><span class="product-reference">${esc(item.reference || '')}</span></div><a href="${esc(item.url)}" class="buy-btn" target="_blank" rel="nofollow sponsored noopener">Find on Amazon ↗</a><div class="product-image-links"><a class="product-photo-source" href="${esc(official)}" target="_blank" rel="noopener">Original product photo ↗</a><a class="product-brand-source" href="${esc(item.source_url)}" target="_blank" rel="noopener">Model details · ${esc(item.image_credit)}</a></div></div></article>`;
 }
 
-function renderArticleItem(post) {
-  let linkedItems = [];
-  if (post.gear_list && post.gear_list.length) linkedItems = post.gear_list;
-  else if (post.breakdown && post.breakdown.length) linkedItems = post.breakdown;
-  else if (post.url) linkedItems = [{ name: post.title, url: post.url, img: post.clean_img }];
-
-  let miniBuyHTML = '';
-  if (linkedItems.length > 0) {
-    miniBuyHTML = '<details class="article-products"><summary>Explore the featured products</summary><div class="article-buy-stack">';
-    for (const item of linkedItems) {
-      const itemName = item.name || item.piece || '';
-      const itemUrl = item.url || '#';
-      const itemImg = item.img || '/images/fallback.jpg';
-      miniBuyHTML += `
-            <div class="article-buy-mini">
-                <img src="${esc(itemImg)}" alt="${esc(itemName)}" width="44" height="44" onerror="this.onerror=null;this.src='${PLACEHOLDER}';">
-                <div class="mini-info">
-                    <span class="mini-label">Featured in this post</span>
-                    <span class="mini-name">${esc(itemName)}</span>
-                </div>
-                <a href="${esc(itemUrl)}" class="mini-btn" target="_blank" rel="nofollow sponsored noopener">Buy →</a>
-            </div>`;
-    }
-    miniBuyHTML += '</div></details>';
-  }
-
-  const displayDate = post.date || '';
-  const metaTag = post.metaTag || post.category || 'FEATURED';
+// 统一渲染符合现代杂志风（mag-card-grid）的文章卡片
+function renderModernArticleCard(post) {
   const pageUrl = post.page_url || '#';
   const title = post.title || '';
   const summary = post.summary || post.desc || '';
   const cleanImg = post.clean_img || post.cover_img || '/images/fallback.jpg';
+  const metaTag = post.metaTag || 'Desk & tech';
+  const readTime = post.read_time || '10 min read';
+  const searchKeywords = `${title} ${summary}`.toLowerCase();
 
-  return `
-        <li class="article-item">
-            <div class="article-thumb-wrapper">
-                <img src="${esc(cleanImg)}" alt="${esc(title)}" loading="lazy" width="300" height="200" onerror="this.onerror=null;this.src='${PLACEHOLDER}';">
-            </div>
-            <div>
-                <span class="article-meta">${esc(displayDate)} — ${esc(metaTag)}</span>
-                <h3><a href="${esc(pageUrl)}">${esc(title)}</a></h3>
-                <p class="article-excerpt">${esc(summary)}</p>
-                ${miniBuyHTML}
-            </div>
-        </li>`;
+  return `<a class="mag-story-card" href="${esc(pageUrl)}" data-topic="${esc(metaTag.toLowerCase())}" data-search="${esc(searchKeywords)}"><div class="mag-card-photo"><img src="${esc(cleanImg)}" alt="${esc(title)}" loading="lazy" decoding="async" width="720" height="900" onerror="this.onerror=null;this.src='${PLACEHOLDER}';"><span>Read the story ↗</span></div><div class="mag-card-meta">${esc(metaTag)} <span>${esc(readTime)}</span></div><h3>${esc(title)}</h3><p>${esc(summary)}</p></a>`;
 }
 
-// ---------- Descriptive collection; retailer prices and policies are not inferred ----------
 function generateProductsSchema(productList) {
   if (!productList || !productList.length) return '';
-  const collection = {"@context":"https://schema.org","@type":"ItemList","name":"NextGen everyday product shortlist","itemListElement":productList.map((item,index)=>({"@type":"ListItem","position":index+1,"name":item.title,"url":item.url}))};
-  return '<script type="application/ld+json">'+JSON.stringify(collection).replace(/</g,'\\u003c')+'</script>';
+  const collection = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "NextGen everyday product shortlist",
+    "itemListElement": productList.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.title,
+      "url": item.url
+    }))
+  };
+  return '<script type="application/ld+json">' + JSON.stringify(collection).replace(/</g, '\\u003c') + '</script>';
 }
 
 function injectHomepage(html) {
@@ -148,10 +138,9 @@ function injectHomepage(html) {
   const homepageArticles = allArticles.slice(0, 6);
   html = html.replace(
     '<ul class="article-list" id="auto-news-feed" style="list-style:none;"></ul>',
-    `<ul class="article-list" id="auto-news-feed" style="list-style:none;">${homepageArticles.map(renderArticleItem).join('')}</ul>`
+    `<div class="mag-card-grid">${homepageArticles.map(renderModernArticleCard).join('')}</div>`
   );
 
-  // Add a descriptive collection of the products actually shown on the homepage.
   const schemaScript = generateProductsSchema(products);
   if (schemaScript) {
     html = html.replace('</body>', `${schemaScript}\n</body>`);
@@ -160,45 +149,137 @@ function injectHomepage(html) {
   return html;
 }
 
-function buildArticlesPage(indexHtmlRaw) {
-  const headMatch = indexHtmlRaw.match(/<head>[\s\S]*?<\/head>/);
-  const navMatch = indexHtmlRaw.match(/<nav>[\s\S]*?<\/nav>/);
-  const footerMatch = indexHtmlRaw.match(/<footer>[\s\S]*?<\/footer>/);
-  const disclosureMatch = indexHtmlRaw.match(/<div class="disclosure-bar">[\s\S]*?<\/div>/);
-
-  // The journal is its own collection. Never inherit homepage canonical or ownership tags.
+// 统一生成现代杂志风格的 articles.html
+function buildArticlesPage(baseHtml) {
   const journalUrl = SITE_URL + '/articles.html';
-  const journalTitle = 'All Reviews & Guides — NextGen Essentials';
-  const journalDescription = 'Practical watch guides, monitor comparisons, desk troubleshooting and everyday clothing advice. Find the answer by topic.';
-  let head = headMatch ? headMatch[0] : '<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>';
-  head = head.replace(/<title>[\s\S]*?<\/title>/i, '<title>' + esc(journalTitle) + '</title>')
-    .replace(/<link\b(?=[^>]*\brel=["']canonical["'])[^>]*>/gi, '')
-    .replace(/<meta\b(?=[^>]*(?:name|property)=["'](?:description|og:[^"']+|twitter:[^"']+|article:[^"']+)["'])[^>]*>/gi, '')
-    .replace(/<script\b(?=[^>]*type=["']application\/ld\+json["'])[^>]*>[\s\S]*?<\/script>/gi, '')
-    .replace(/<!--[\s\S]*?Temporary AvantLink[\s\S]*?-->/gi, '')
-    .replace(/<script\b(?=[^>]*src=["'][^"']*avantlink\.com\/affiliate_app_confirm\.php)[^>]*>[\s\S]*?<\/script>/gi, '');
-  const journalSchema = {'@context':'https://schema.org','@type':'CollectionPage','@id':journalUrl+'#webpage',url:journalUrl,name:journalTitle,description:journalDescription,inLanguage:'en-US',publisher:{'@type':'Organization',name:'NextGen Essentials',url:SITE_URL+'/'},mainEntity:{'@type':'ItemList',numberOfItems:allArticles.length,itemListElement:allArticles.map((post,index)=>({'@type':'ListItem',position:index+1,name:post.title,url:SITE_URL+post.page_url}))}};
-  head = head.replace('</head>', '<link rel="canonical" href="'+journalUrl+'"><meta name="description" content="'+esc(journalDescription)+'"><meta property="og:type" content="website"><meta property="og:title" content="'+esc(journalTitle)+'"><meta property="og:description" content="'+esc(journalDescription)+'"><meta property="og:url" content="'+journalUrl+'"><meta property="og:site_name" content="NextGen Essentials"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="'+esc(journalTitle)+'"><meta name="twitter:description" content="'+esc(journalDescription)+'"><script type="application/ld+json">'+JSON.stringify(journalSchema).replace(/</g,'\\u003c')+'</script></head>');
-  const nav = navMatch ? navMatch[0] : '';
-  const footer = footerMatch ? footerMatch[0] : '';
-  const disclosure = disclosureMatch ? disclosureMatch[0] : '';
+  const journalTitle = 'All Reviews & Guides: Watches, Desk Gear & Style | NextGen Journal';
+  const journalDescription = 'Browse all practical guides, timepiece reviews, minimalist workspace setups, and capsule wardrobe articles by NextGen Essentials.';
 
-  const articlesHtml = allArticles.map(renderArticleItem).join('');
+  const journalSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': journalUrl + '#webpage',
+    'url': journalUrl,
+    'name': journalTitle,
+    'description': journalDescription,
+    'inLanguage': 'en-US',
+    'publisher': {
+      '@type': 'Organization',
+      'name': 'NextGen Essentials',
+      'url': SITE_URL + '/'
+    },
+    'mainEntity': {
+      '@type': 'ItemList',
+      'numberOfItems': allArticles.length,
+      'itemListElement': allArticles.map((post, index) => ({
+        '@type': 'ListItem',
+        'position': index + 1,
+        'name': post.title,
+        'url': SITE_URL + post.page_url
+      }))
+    }
+  };
 
-  return `<!DOCTYPE html>
+  const cardsHtml = allArticles.map(renderModernArticleCard).join('\n        ');
+
+  return `<!doctype html>
 <html lang="en">
-${head}
-<body>
-${disclosure}
-${nav}
-<div class="section">
-    <div class="section-head">
-        <h2>All Reviews &amp; Guides</h2>
-        <span class="index-label">${allArticles.length} articles</span>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>${esc(journalTitle)}</title>
+  <meta name="description" content="${esc(journalDescription)}">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="${journalUrl}">
+  <link rel="icon" href="/favicon.ico">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${esc(journalTitle)}">
+  <meta property="og:description" content="${esc(journalDescription)}">
+  <meta property="og:url" content="${journalUrl}">
+  <meta property="og:site_name" content="NextGen Essentials">
+  <meta property="og:image" content="https://nxgenpicks.com/assets/media/208b2cdc2622.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">${JSON.stringify(journalSchema).replace(/</g, '\\u003c')}</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-13W21TZ6CL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-13W21TZ6CL');
+  </script>
+
+  <link rel="stylesheet" href="/assets/editorial.css?v=20261028">
+  <script defer src="/assets/editorial.js?v=20261028"></script>
+  <script defer src="/assets/magazine-20261028.js"></script>
+  <link rel="stylesheet" href="/assets/modern-20261030.css">
+  <script defer src="/assets/modern-search-20261030.js"></script>
+  <script defer src="/assets/modern-ui-20261030.js"></script>
+</head>
+<body class="page-category magazine-site nx-site" data-nx-release="20261030">
+  <a class="nx-skip" href="#main-content">Skip to content</a>
+
+  <header class="nx-header">
+    <div class="nx-nav-shell">
+      <a class="nx-brand" href="/" aria-label="NextGen Essentials home">NextGen<span>.</span></a>
+      <nav class="nx-desktop-nav" aria-label="Primary navigation">
+        <a href="/shop.html">Shop</a>
+        <a href="/watches.html">Watches</a>
+        <a href="/gear.html">Desk & tech</a>
+        <a href="/apparel.html">Style</a>
+        <a href="/articles.html" aria-current="page">Journal</a>
+      </nav>
+      <div class="nx-nav-actions">
+        <button type="button" class="nx-search-open" aria-label="Search guides">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+        </button>
+        <a class="nx-nav-newsletter" href="/subscribe.html">Stay in the know <span aria-hidden="true">↗</span></a>
+      </div>
     </div>
-    <ul class="article-list" id="all-articles-feed" style="list-style:none;">${articlesHtml}</ul>
-</div>
-${footer}
+  </header>
+
+  <main id="main-content" class="nx-main">
+    <div class="mag-index">
+      <header class="mag-index-header">
+        <p class="mag-kicker">NextGen Essentials / The Complete Archive</p>
+        <h1>All Stories &amp; Guides</h1>
+        <p>A comprehensive collection of research, hands-on tests, and considered buying frameworks covering mechanical watches, functional desk setups, and everyday wardrobe essentials.</p>
+      </header>
+
+      <div class="mag-index-controls">
+        <p class="mag-kicker">The complete library <span data-story-count>${allArticles.length} stories</span></p>
+        <label class="mag-search">
+          <span>Find a story</span>
+          <input type="search" placeholder="Search a topic or model…" data-story-search>
+        </label>
+      </div>
+
+      <div class="mag-card-grid" data-story-grid>
+        ${cardsHtml}
+      </div>
+
+      <p class="mag-empty" hidden>No matching stories found. Try a different search term.</p>
+    </div>
+  </main>
+
+  <footer class="nx-footer">
+    <div class="nx-footer-inner">
+      <div class="nx-footer-top">
+        <a class="nx-brand" href="/">NextGen<span>.</span></a>
+        <p>Watches. Workspace. Everyday essentials.</p>
+        <a href="/about.html">About</a>
+        <a href="/articles.html">Journal</a>
+        <a href="/subscribe.html">Newsletter</a>
+        <a href="/affiliate-disclosure.html">Affiliate disclosure</a>
+      </div>
+      <div class="nx-footer-bottom">
+        <span>© 2026 NextGen Essentials.</span>
+        <span>As an Amazon Associate, we earn from qualifying purchases.</span>
+        <a href="#main-content">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>`;
 }
@@ -214,7 +295,7 @@ function getLastCommitDate(relPath) {
     }).toString().trim();
     if (out) return out;
   } catch (e) {
-    // git 不可用，或该文件还没被提交过
+    // git 不可用或新文件未提交
   }
   return TODAY;
 }
@@ -225,55 +306,46 @@ function listHtmlFiles(dir) {
   return fs.readdirSync(full)
     .filter(f => f.endsWith('.html')
       && !(dir === 'watches' && f === 'mens-workwear-capsule-wardrobe-2026.html')
-      // These legacy desk-guide URLs are noindex redirect shims; only their canonical replacement belongs in the sitemap.
-      && !(dir === 'gear' && ['best-minimalist-monitors-2026.html', 'best-minimalist-desk-accessories-2026.html'].includes(f)))
+      // 仅排除真正不需要收录的废弃文件
+      // 注意：已解除对 best-minimalist-monitors-2026.html 的排除，该页面已重构为深度原创长文！
+      && !(dir === 'gear' && f === 'best-minimalist-desk-accessories-2026.html'))
     .map(f => `${dir}/${f}`);
 }
 
 function buildSitemap() {
   const entries = [];
 
-  // 首页 + 汇总/分类页（内容每次构建都可能更新，lastmod 用构建当天）
-  entries.push({ loc: '/', lastmod: TODAY, changefreq: 'daily', priority: '1.0' });
-  entries.push({ loc: '/watches.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
-  entries.push({ loc: '/apparel.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
-  entries.push({ loc: '/gear.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
-  entries.push({ loc: '/articles.html', lastmod: TODAY, changefreq: 'daily', priority: '0.9' });
-  entries.push({ loc: '/shop.html', lastmod: ['shop.html','database/picks.json','scripts/picks.js'].map(getLastCommitDate).sort().at(-1), changefreq: 'weekly', priority: '0.9' });
+  // 1. 核心栏目与枢纽页
+  const hubs = ['/', '/watches.html', '/apparel.html', '/gear.html', '/articles.html', '/shop.html'];
+  for (const loc of hubs) {
+    entries.push({ loc, lastmod: TODAY });
+  }
 
-  // 静态政策/信息页（用文件在 Git 里真实的最后修改日期）
-  const staticPages = [
-    { file: 'about.html', priority: '0.4', changefreq: 'monthly' },
-    { file: 'subscribe.html', priority: '0.4', changefreq: 'monthly' },
-    { file: 'affiliate-disclosure.html', priority: '0.2', changefreq: 'yearly' },
-  ];
+  // 2. 静态政策/关于页
+  const staticPages = ['about.html', 'subscribe.html', 'affiliate-disclosure.html'];
   for (const p of staticPages) {
-    if (!fs.existsSync(path.join(ROOT, p.file))) continue;
+    if (!fs.existsSync(path.join(ROOT, p))) continue;
     entries.push({
-      loc: `/${p.file}`,
-      lastmod: getLastCommitDate(p.file),
-      changefreq: p.changefreq,
-      priority: p.priority,
+      loc: `/${p}`,
+      lastmod: getLastCommitDate(p)
     });
   }
 
-  // 扫描 watches/ apparel/ gear/ 文件夹，自动收录所有文章页
+  // 3. 扫描文章子目录 (watches, apparel, gear)
   for (const dir of ['watches', 'apparel', 'gear']) {
     for (const relPath of listHtmlFiles(dir)) {
+      const match = magazineArticles.find(a => a.url === `/${relPath}`);
       entries.push({
         loc: `/${relPath}`,
-        lastmod: magazineArticles.find(a=>a.url==='/'+relPath)?.modified || getLastCommitDate(relPath),
-        changefreq: 'weekly',
-        priority: '0.8',
+        lastmod: match?.modified || getLastCommitDate(relPath)
       });
     }
   }
 
+  // 按照 Google 最佳实践，只输出标准的 loc 与 lastmod
   const body = entries.map(e => `  <url>
     <loc>${SITE_URL}${e.loc}</loc>
     <lastmod>${e.lastmod}</lastmod>
-    <changefreq>${e.changefreq}</changefreq>
-    <priority>${e.priority}</priority>
   </url>`).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
@@ -284,30 +356,43 @@ ${body}
 }
 
 // ---------- 主流程 ----------
+console.log('[build] 预处理选品数据...');
+if (fs.existsSync(path.join(ROOT, 'scripts', 'picks.js'))) {
+  require('./picks')(ROOT);
+}
+
 console.log('[build] 复制静态文件到 dist/ ...');
-require('./picks')(ROOT);
 copyDir(ROOT, DIST);
 
 console.log(`[build] 加载到 ${products.length} 个商品, ${allArticles.length} 篇文章`);
 
 const indexPath = path.join(DIST, 'index.html');
-const indexRaw = fs.readFileSync(indexPath, 'utf8');
+if (fs.existsSync(indexPath)) {
+  const indexRaw = fs.readFileSync(indexPath, 'utf8');
+  fs.writeFileSync(indexPath, injectHomepage(indexRaw), 'utf8');
+  console.log('[build] 已写入预渲染后的 index.html');
+}
 
-fs.writeFileSync(indexPath, injectHomepage(indexRaw), 'utf8');
-console.log('[build] 已写入预渲染后的 index.html (已写入描述性商品列表)');
+// 生成符合现代排版的 articles.html
+fs.writeFileSync(path.join(DIST, 'articles.html'), buildArticlesPage(), 'utf8');
+console.log('[build] 已生成现代杂志风 articles.html');
 
-fs.writeFileSync(path.join(DIST, 'articles.html'), buildArticlesPage(indexRaw), 'utf8');
-console.log('[build] 已生成 articles.html');
-
+// 生成优化版 sitemap.xml
 const sitemapXml = buildSitemap();
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemapXml, 'utf8');
-console.log('[build] 已自动生成 sitemap.xml');
+console.log('[build] 已生成精简优化的 sitemap.xml');
 
-console.log('[build] 完成。');
+// 执行后续后处理脚本（如果存在）
+for (const sub of ['editorial', 'magazine', 'modern', 'affiliate-routing', 'public-copy-policy']) {
+  const subPath = path.join(ROOT, 'scripts', `${sub}.js`);
+  if (fs.existsSync(subPath)) {
+    try {
+      require(`./${sub}`)(DIST, ROOT);
+      console.log(`[build] 已运行子脚本: ${sub}.js`);
+    } catch (e) {
+      console.warn(`[build] 子脚本 ${sub}.js 执行提示: ${e.message}`);
+    }
+  }
+}
 
-require('./editorial')(DIST);
-require('./magazine')(DIST, ROOT);
-require('./modern')(DIST, ROOT);
-require('./affiliate-routing')(DIST, ROOT);
-require('./public-copy-policy')(DIST);
-
+console.log('[build] 全部流程顺利完成！');
