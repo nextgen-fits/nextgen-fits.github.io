@@ -1,4 +1,5 @@
 const fs=require('fs'),path=require('path');
+const htmlContent=require('./html-content');
 const esc=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const destinations=[['/shop.html','Shop'],['/watches.html','Watches'],['/gear.html','Desk & tech'],['/apparel.html','Style'],['/articles.html','Journal']];
 function header(url){
@@ -9,9 +10,9 @@ function header(url){
 const footer=`<footer class="nx-footer"><div class="nx-footer-inner"><div class="nx-footer-top"><a class="nx-brand" href="/">NextGen<span>.</span></a><p>Watches. Workspace. Everyday essentials.</p><a href="/about.html">About</a><a href="/articles.html">Journal</a><a href="/subscribe.html">Newsletter</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></div><div class="nx-footer-bottom"><span>© 2026 NextGen Essentials.</span><span>As an Amazon Associate, we earn from qualifying purchases.</span><a href="#main-content">Back to top ↑</a></div></div></footer>`;
 const search=`<dialog class="nx-search-dialog" aria-labelledby="nx-search-title"><div class="nx-search-heading"><h2 id="nx-search-title">Find a useful guide.</h2><button type="button" class="nx-search-close" aria-label="Close search">✕</button></div><label for="nx-guide-search">Search watches, monitors, desk gear and style</label><input id="nx-guide-search" type="search" placeholder="Try monitor or NH36" autocomplete="off"><p id="nx-search-count" role="status">Search our practical guides.</p><ul id="nx-search-results"></ul><a class="nx-search-all" href="/articles.html">Browse the complete journal →</a></dialog><noscript><style>.nx-search-open{display:none!important}</style></noscript>`;
 module.exports=function modern(dist,root){
- const records=JSON.parse(fs.readFileSync(path.join(root,'database/magazine-articles-20261028.json'),'utf8'));
+ const records=htmlContent.loadRecords(root);
  const sizes=JSON.parse(fs.readFileSync(path.join(root,'database/modern-images-20261030.json'),'utf8'));
- const template=fs.readFileSync(path.join(root,'scripts/modern-home.html'),'utf8');
+ const template=htmlContent.applyHomeCopy(fs.readFileSync(path.join(root,'scripts/modern-home.html'),'utf8'),root);
  const searchData=records.map(r=>({title:r.title,description:r.description,category:r.category,url:r.url}));
  fs.writeFileSync(path.join(dist,'assets/modern-search-20261030.js'),'window.NX_GUIDES='+JSON.stringify(searchData).replace(/</g,'\\u003c')+';');
  const report=[];

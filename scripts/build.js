@@ -15,10 +15,10 @@ const DIST = path.join(ROOT, 'dist');
 const SITE_URL = 'https://nxgenpicks.com';
 
 // ---------- 同步文章元数据到各分类 JSON ----------
-const magazineArticles = JSON.parse(
-  fs.readFileSync(path.join(ROOT, 'database/magazine-articles-20261028.json'), 'utf8')
-);
+// HTML edits supply content; the magazine/modern generators retain the design.
+const magazineArticles = require('./html-content').loadRecords(ROOT);
 
+const categoryEntries = {};
 for (const category of ['watches', 'gear', 'apparel']) {
   const source = path.join(ROOT, 'database', `${category}.json`);
   if (!fs.existsSync(source)) continue;
@@ -32,10 +32,10 @@ for (const category of ['watches', 'gear', 'apparel']) {
       entry.updated = article.modified;
     }
   }
-  fs.writeFileSync(source, JSON.stringify(entries, null, 2) + '\n');
+  categoryEntries[category] = entries;
 }
 
-const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md']);
+const EXCLUDE = new Set(['.git', '.github', 'dist', 'scripts', 'node_modules', '.gitignore', 'AGENTS.md', 'HTML-EDITING.md', 'html-content-baseline.json']);
 
 // ---------- 复制仓库到 dist ----------
 function copyDir(src, dest) {
@@ -59,11 +59,11 @@ function readJsonSafe(p) {
 }
 
 const products = readJsonSafe(path.join(ROOT, 'products.json'));
-const gearPosts = readJsonSafe(path.join(ROOT, 'database', 'gear.json'))
+const gearPosts = (categoryEntries.gear || [])
   .map(p => ({ ...p, metaTag: 'Desk & tech', clean_img: p.cover_img || '/images/gear-deal.jpg' }));
-const watchPosts = readJsonSafe(path.join(ROOT, 'database', 'watches.json'))
+const watchPosts = (categoryEntries.watches || [])
   .map(p => ({ ...p, metaTag: 'Watches', clean_img: p.cover_img || '/images/watch-deal.jpg' }));
-const apparelPosts = readJsonSafe(path.join(ROOT, 'database', 'apparel.json'))
+const apparelPosts = (categoryEntries.apparel || [])
   .map(p => ({ ...p, metaTag: 'Style', clean_img: p.cover_img || '/images/apparel-deal.jpg' }));
 
 const allArticles = [...gearPosts, ...watchPosts, ...apparelPosts]
@@ -306,8 +306,7 @@ function listHtmlFiles(dir) {
   return fs.readdirSync(full)
     .filter(f => f.endsWith('.html')
       && !(dir === 'watches' && f === 'mens-workwear-capsule-wardrobe-2026.html')
-      // 仅排除真正不需要收录的废弃文件
-      // 注意：已解除对 best-minimalist-monitors-2026.html 的排除，该页面已重构为深度原创长文！
+      // Only exclude deprecated redirect pages, not self-canonical HTML articles.
       && !(dir === 'gear' && f === 'best-minimalist-desk-accessories-2026.html'))
     .map(f => `${dir}/${f}`);
 }
@@ -356,13 +355,15 @@ ${body}
 }
 
 // ---------- 主流程 ----------
-console.log('[build] 预处理选品数据...');
-if (fs.existsSync(path.join(ROOT, 'scripts', 'picks.js'))) {
-  require('./picks')(ROOT);
-}
-
 console.log('[build] 复制静态文件到 dist/ ...');
 copyDir(ROOT, DIST);
+for (const [category, entries] of Object.entries(categoryEntries)) {
+  fs.writeFileSync(path.join(DIST, 'database', category + '.json'), JSON.stringify(entries, null, 2) + '\n');
+}
+// Product modules may update generated files, never the owner's source HTML.
+if (fs.existsSync(path.join(ROOT, 'scripts', 'picks.js'))) require('./picks')(DIST);
+// Keep public catalogue data aligned with the actual HTML being published.
+fs.writeFileSync(path.join(DIST, 'database/magazine-articles-20261028.json'), JSON.stringify(magazineArticles, null, 2) + '\n');
 
 console.log(`[build] 加载到 ${products.length} 个商品, ${allArticles.length} 篇文章`);
 
@@ -386,12 +387,8 @@ console.log('[build] 已生成精简优化的 sitemap.xml');
 for (const sub of ['editorial', 'magazine', 'modern', 'affiliate-routing', 'public-copy-policy']) {
   const subPath = path.join(ROOT, 'scripts', `${sub}.js`);
   if (fs.existsSync(subPath)) {
-    try {
-      require(`./${sub}`)(DIST, ROOT);
-      console.log(`[build] 已运行子脚本: ${sub}.js`);
-    } catch (e) {
-      console.warn(`[build] 子脚本 ${sub}.js 执行提示: ${e.message}`);
-    }
+    require(`./${sub}`)(DIST, ROOT);
+    console.log(`[build] 已运行子脚本: ${sub}.js`);
   }
 }
 
