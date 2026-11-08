@@ -1,0 +1,1452 @@
+{
+  "version": 1,
+  "cutoverDate": "2026-11-07",
+  "baselineCommit": "8ad692a054f1e209ea0e969a5efa396ae979e351",
+  "description": "Changed HTML content fields override article data; shared templates continue to own layout. Never refresh these fingerprints to hide editorial changes.",
+  "pages": {
+    "/gear/usb-c-laptop-desk-setup-kit.html": {
+      "fields": {
+        "seoTitle": "1b8da2f30120e34377294b5b59e9f7756ee7c2eb3c44facd6835d27dd37361e4",
+        "title": "1b8da2f30120e34377294b5b59e9f7756ee7c2eb3c44facd6835d27dd37361e4",
+        "description": "1de5907ed0d613215e6718528dfcab8ba0fdff5c4d68e7f498e3fb09f751c0e1",
+        "deck": "f2914987c956f06e68d95f7e0b5ba23bb3a62888b2bee6608e75dffe6fd9af29",
+        "hero": "dc39c54cf49868752981aeb28939207319923219931032ebe47f74c7ceb091ed",
+        "alt": "c0675573ae4726741e2456645bb9ca6763bf6e3350fbba59f7fb1a0d1132b991",
+        "quick": "5acc2567a37adfa3733b418543b1347ef7809617ac7b2658f244b4255305a7ff",
+        "body": "11012d63b44d78c2841ab68968b1ca4ceaf9042ab2f8eda71495fc72a74bce22",
+        "faqs": "520cb2eaed29970940d90e35be3a8ed0f89eb711ad3c95985fa4a056287903b8",
+        "published": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "modified": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "citations": "3b19a91475bcfb5a1e759ea72b0df0a910c604c1123ef862114c52c454aec7b5"
+      }
+    },
+    "/gear/dual-monitor-office-desk-setup-kit.html": {
+      "fields": {
+        "seoTitle": "019a74931c16eb1848b829d5b25b83b5c9ef893139308c16e99fb383418140bb",
+        "title": "019a74931c16eb1848b829d5b25b83b5c9ef893139308c16e99fb383418140bb",
+        "description": "0cb16efe305dde1d8195c5d0c36c59feec6bb5296d7fbcf63e2a230f3a3e90c9",
+        "deck": "8cc6b111a4e48acf327e71739976787af6cdf517a50825b1322036d6c19d8d3f",
+        "hero": "f2788b61f2b0f62acb2fb6eeee5b6c0438ae9cf7d1cabea0c09a4e3e947e55a1",
+        "alt": "43561d7a6716bef8876c8f8737ed8edacbdfab8ff02b738554a9f44b5eab4be5",
+        "quick": "3b083941cb14b279866756f2a560ba81827b9741a526bedcaf702dfebb84fc11",
+        "body": "5268b6640a2af5d1b21ff5184b2156357ff197cdad2687b2e52d08657ebef0c0",
+        "faqs": "c88b11167345a9721cedbf9bad7e97a80b863c0b58e40613981c3beb2804f7f1",
+        "published": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "modified": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "citations": "caf748407d1130bc73bba83d27e22915bf746793faf87d3c97bd86df7d214740"
+      }
+    },
+    "/gear/video-call-home-office-setup-kit.html": {
+      "fields": {
+        "seoTitle": "383390a4137d35c16ba3bc37d319a22112320fd877d578feca97c2fd3f9343a5",
+        "title": "383390a4137d35c16ba3bc37d319a22112320fd877d578feca97c2fd3f9343a5",
+        "description": "1d705b76708c23d5ad71117ab30abc70f1886de5c88dee3053278848f64f9e83",
+        "deck": "f5b18d9a36d06e813ddf84d5940ab3f34720883f511839e32f058cf3989edddc",
+        "hero": "51b4073af56dffba120e505052df213ca19b23f8f00503055c1b08a5dc9af626",
+        "alt": "de235fa578534c1e88567548c8b3b01311c3dc7aecb2727c65c3dd3273201628",
+        "quick": "b423d686d1886946aeb4039d0879df0b77384eabf1176c1a010ce3b967488948",
+        "body": "a95d0b41a09528154ac2ad9c04a63dbd9066f01f3ec26ca11c3fe6eeafe5467c",
+        "faqs": "c5e7c4e27f95cd921b7bd39740dcff58a32f7edb4ce5e5d7c31f44ece06a1b93",
+        "published": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "modified": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "citations": "a47ae69e3d7df222a0333d736f947bbda139c9a3e69c30756040572339bc1f5b"
+      }
+    },
+    "/gear/quiet-home-office-desk-accessories.html": {
+      "fields": {
+        "seoTitle": "bf69ad4377154c696ed6e6b54a9e5b179c61b2acfa527d9ab661e03e1856c875",
+        "title": "bf69ad4377154c696ed6e6b54a9e5b179c61b2acfa527d9ab661e03e1856c875",
+        "description": "ad3a7619bbd44e3e855937e4d28a182f0d19802ba05a41c07337fab4ca978817",
+        "deck": "b7333c675763c92a47abddf503fa009be01f696ec12a71498d4f07f3c32f518d",
+        "hero": "b9eca09c27cf3fe11d5b61a66890278477f57c0014f67e3287b2f63c6a81dfac",
+        "alt": "612fadb52d8ff0565fb93e6e7b43ee1e8e148f4a698925120483a3af7f408e0a",
+        "quick": "c9d984e3fa514d4f400621c9eeb7d7c8ee1b408d188951d51aeca529415f62e9",
+        "body": "c69c5e2f7c89f662516e6d07b93d7dea24fc1c0649a1167d77ef53a9a9edc14d",
+        "faqs": "e6e130be1d01c2d66f3a6050ab149eab595f131b0aae4c0dec78e7fdb6ae15f0",
+        "published": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "modified": "95d17cab42b9c0ff1c9a10c44cef534e01e57635ffe1d795124538a8ba8575d5",
+        "citations": "07a43c5ecafc8988c025fd68c4b40c55c1b94956bf59c1a56591ed793f7c3b68"
+      }
+    },
+    "/watches/100m-vs-200m-water-resistance-watch.html": {
+      "fields": {
+        "seoTitle": "1ec11fb92d8d0c4658f23484ecbe97bfc13b4af30377d49978ef9a9344fce6a0",
+        "title": "1ec11fb92d8d0c4658f23484ecbe97bfc13b4af30377d49978ef9a9344fce6a0",
+        "description": "bcabbfc1a6f206b0c0710d47806757bce7f17db7db25db30722c2cf5ca49b1f0",
+        "hero": "baba213eaa9933afcf9799af5b7e449d724a08c5d63222412b1fcadbbc1670dd",
+        "alt": "ce353da33026b67d26b3e00b3163f9c036fa1a317d6948f70d002b2c8903dd4a",
+        "quick": "e47acfb4429c8321997c5aade4b423260ecdc9faf792a1a0e9946d0f79968d81",
+        "body": "5ce0e8c1b689d327e68cff0e24b5b2e2c410b1c5b15eb70d8f5337e078c8e487",
+        "faqs": "8ae599af9fcb1aefdf4f81f9a20e4efc82232d194385b16dbf4101044cc51e75",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/amazfit-bip-5-review.html": {
+      "fields": {
+        "seoTitle": "b755095ba6efe66c14f5222e843c3468f731ec24f4b72f2952b999ffaa9c7992",
+        "title": "2e2c914f83a1240c4da0d7a8fb41d9f2901987eb14df7c7c2d92c9c6ad384c14",
+        "description": "bcfe441f81a280d049d3e5fe1af06df4a25e5548ef7eb8fcddd2fd2a142bbd6e",
+        "hero": "4f8aed17d70213ff10b07c1f8a460a2e16e5486570ad0479c368c218cd0e5ebc",
+        "alt": "30c2c85a52a9c0da0ac5eb97b23c5d2d4089e9f4e0615d3631798a79bb2b84e6",
+        "body": "9c649c7af43e84955bf6ffab9d91c6b103b5608fad582f89022f02e1f3dd4a03",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "modified": "65f33aca91bd21769b7b44c895f4e1496ec2445b69e2009b376fa48f7a66a190"
+      }
+    },
+    "/watches/amazfit-bip-6-review.html": {
+      "fields": {
+        "seoTitle": "8b05a392d50f918cbf8b041d43d394160d9a78bcd10f7651836f5ae031951b5e",
+        "title": "9dd9ef4cb3e8d162de86dab7be6ade56338f5b5894bec9bc6d38be25c2cb764c",
+        "description": "8c035fa1dea5160b247c3484c8f4ef5e082a61a0e8f0c0e94e3414deea5bdb01",
+        "hero": "d8efa2b7890891500336c917d5554e77c8a610a0d1d9c8e30cf5bff404f5ff61",
+        "alt": "f6dc77419f0d9b11b736af9cc035741c33ec59e0fc98cd661c851135ad436aea",
+        "body": "ce093b38c8126abc1da1d6f14af368d8ca9f25a9c8d3d2a3f404296262dedaa0",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "modified": "65f33aca91bd21769b7b44c895f4e1496ec2445b69e2009b376fa48f7a66a190"
+      }
+    },
+    "/watches/automatic-vs-solar-watch-everyday-wear.html": {
+      "fields": {
+        "seoTitle": "8c0083d526f514149b39c48995250c2e551ebfb5cd1f2665b3949c9d469cceb2",
+        "title": "cb8db27cc5f1e482c9a754b39af4de37fe9fede5ecb30120f0b83991787b520d",
+        "description": "6b765c0215227ff01e3edc574fe6ff8886c2cfc48c4c9ab7a88967999c00a159",
+        "deck": "4ccebbe3dbecbe52aec1930e972f85831fe04a75bcbb11892144a21866f0c2c4",
+        "hero": "41ac907ffbf238343c26c96f60aa9fe16ec77b3e0c14773b879752d2763fcadd",
+        "alt": "dc6f84bfe81f28c70f0e0d41f721e8924d6b4d871d5101687e1f1b4f3dc8ab0e",
+        "quick": "ef9e354e3a65b11baad3584e49870cabfc4b8f78afa7dc6db6c60594e966d2a2",
+        "body": "6894f08e5f4660c843b1f8f831666b039c306df7b52e162f2df5a1e20d8b2902",
+        "faqs": "95ea18583f32c7447353dee9102f70b43df473f05cbf4d6fc844ef95cd394a1e",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/watches/automatic-watch-stops-overnight.html": {
+      "fields": {
+        "seoTitle": "03996f0fb4a6e44153afc719857091564b8f5abf8c0734bf99fbb39d96ade7ec",
+        "title": "acd8dc59034f9d8ff0a4a32b40bc867c3c6ef9c17abeb05dc0f41a9d7ddb8e90",
+        "description": "20b2b9dc0322f80dbfdcbc6d6b026e2b6b898e03699c191c80839eef2a58d214",
+        "hero": "0a04718f9406a8f082612ef93014df13513f6a8da1a24a917f9b8fcdb3cc4a82",
+        "alt": "5cd6d5daf20b88b22df5672eb17175e11ff6b23e3f2b853618a34aa84b68431b",
+        "quick": "5b57a0061cc75640340421ca82808af031c8dcfe8ba9860a62aa826e43beb264",
+        "body": "54424fbf624c35e6a09061b59874e333d8e0c96ca51cd921ff2943a40448c844",
+        "faqs": "943f845ae3ac4716817aa199cc62fc7965c35fde1f22a11dbbbc1ddd47299cdf",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "259ae6e526a25810b1ac608d24ca7c4d1ab22eb94ebec9d5d05637a7a107bccf"
+      }
+    },
+    "/watches/best-everyday-tool-field-watches-2026.html": {
+      "fields": {
+        "seoTitle": "47292cf5f54bd1bfe202af3eefeacdc9d85a91b783fd00ba278ef06aedd1bcfc",
+        "title": "47292cf5f54bd1bfe202af3eefeacdc9d85a91b783fd00ba278ef06aedd1bcfc",
+        "description": "22f67c571788af4b9e5822d94de909e57b5aa9dd8e154e51ccdafa7250e6ebc5",
+        "deck": "43dcdff4687490c2c72a4732f83098f4134cc9b3dcfbb7a37bac2052a95792b5",
+        "hero": "26afa8d78dd78cdcda72290120ced3fda7811a84c704faeca9658dd7ff81a005",
+        "alt": "250845b28d912f17a4c9747dacf20e705eb8c37288c15fa575c14cc4816c8601",
+        "quick": "bb2e9940e25ee1e36997ddeadc9d2acec408f5065549bbddb10b41420cc04d5e",
+        "body": "949c0707675dfba9ac4a4ba842367abf8f58d295a6e6e8cce8640204bd945589",
+        "faqs": "b024a4ad3b050bd41da5014e86938ceee0e529413acd892c7ba094215e38637f",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "aaf9134e098e2ad7a3ffa4abd3114df42d71712e34545868f597c542fe002f5d",
+        "citations": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/watches/best-field-watch-everyday-quartz-vs-automatic.html": {
+      "fields": {
+        "seoTitle": "0c92e04b7bc9c7ae336489bbe92df5af199a2dd3f75f50e2cb9b3d21b6c4ba69",
+        "title": "0c92e04b7bc9c7ae336489bbe92df5af199a2dd3f75f50e2cb9b3d21b6c4ba69",
+        "description": "18442cc9d6256d9b446544bf89194f453396c1e833cd0bf71dc84aa432f847e2",
+        "deck": "5f732b8941ceecceb14b26978c163a87982dde974d10b2113fb221de4bba393c",
+        "hero": "991f8653ffa314dd8172e717dca6e6ec9d3a4ebf4739b802b481aca1f4e817c9",
+        "quick": "3e374b531c02cd9e08f047dfeebcd2bed37bff30f771531e3cef192ffa8c0655",
+        "body": "68af6bddb08af4651307189d6a08ab214af6f7ae9fc736a5a39823cb50542f7d",
+        "faqs": "87535f920b2c6abfcb40f0301ce51a7f41cbd7341dcb6cb876e3a447636aad39",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "df29734b948cd9fff041fa70532e8f5e49098e15c3d1d44a88a87374801ad3c9"
+      }
+    },
+    "/watches/best-first-automatic-watch-under-200.html": {
+      "fields": {
+        "seoTitle": "3a3a7a1a498277293ba932ed57edd9bc434e9faa8a7061673901bce0b4e04ccf",
+        "title": "eae8df27bdbec54d6e42a6ea63c1ec67864619333dc60b8170b8c0857c36c5a5",
+        "description": "28390a42f7531428467e6155ff482a625bf40de9cb3e1c8912e29efded3b1da6",
+        "hero": "f6c41d84c9102f4d1ee7dce82b602b15aa4b11394b57c3940bbafcdccdf52ece",
+        "alt": "71552aa1177b8bf037eb83e356be69ba68b792b5c81c9144cf18d00df9b90659",
+        "quick": "a0898992c13e323f4a11386dcd2bbfe6b6c0878d49da93856c33e3512df1d4a8",
+        "body": "f781fadbcbf62fd6c39fbbcfc117aa456ce059d7151115da3dd9af7a851e7845",
+        "faqs": "cd23ceda5bac8a57624eb7b9771dd9681be01f376e467d63f4bf6dfef9ef5d3f",
+        "modified": "462d5a35048be9052843a1f7aea6829ca21d1b78bd275de9b91d0cdb7fd98dec"
+      }
+    },
+    "/watches/best-g-shock-square-dw5600bb-vs-gwm5610u.html": {
+      "fields": {
+        "seoTitle": "de8a7e238554bd3b570ea76fc1b453a01c6c823b69fd4216f14ed8e39861db0e",
+        "title": "de8a7e238554bd3b570ea76fc1b453a01c6c823b69fd4216f14ed8e39861db0e",
+        "description": "e8fe4090e2be564c8d2122d745d19fdc6bbec841c1288408e36ec823c2147328",
+        "deck": "39ca55c72ff7b9451a42df29dd033e9b592d8eb12b578a35f4f84ea863cf6b85",
+        "hero": "3583b7db31c3b443bae2ffb059e86a5687f2bd7b0e8c012a3b7d48b225edb160",
+        "quick": "79bc79525a4e002a514a5957674e15aa59038ee05ceb09cea517bb0e3ead0546",
+        "body": "116d6cc6c4fe8a1c902e0622b9d265b6ab3c249dfc6a222b0fe2a79faa72b73f",
+        "faqs": "978ae91edfb24c168ca7ea8074689d9e00b603736d91a81a63ca2f9e873a8264",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "0e4fad7231c95fe220866da85b1e7767b36082a43c7c534e25a7ffb8b7601bde"
+      }
+    },
+    "/watches/best-small-automatic-watches-under-300.html": {
+      "fields": {
+        "seoTitle": "a92fcfb73cf7f0e3cb28b5cf9f05d356ac7abe5aebbf39467819ba50898bff8e",
+        "title": "a92fcfb73cf7f0e3cb28b5cf9f05d356ac7abe5aebbf39467819ba50898bff8e",
+        "description": "c52acca515dcd8d3320afbfb0bc9425fd25042331372eefeb98256c5fc2b8c24",
+        "hero": "82d948c6c7d6493a6dd93f47249630008deda32e3b205ce023588a2ae6afb9f0",
+        "alt": "c0516104e42627f92fd32ed889f716d6e1ad8486aa4dd9e34594ce5ac01bbfe3",
+        "quick": "907c38966a7a61dd0f5f8febeb47989cdc6e662238982d474e5d557dda9ceeac",
+        "body": "fc8240a06d9cef82b522da49706c58ed754770bf8803ae4453336188a05023e6",
+        "faqs": "406f62dd892cf0c290680b5f816aed1834c3127b28d5ba0b3a5c72c96dd092e7",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/best-travel-watches-world-time-gmt.html": {
+      "fields": {
+        "seoTitle": "ac57dddc5f8b76d8f7ffa1e45992c9dfbbd2f3df321fe8e2d81b663699c6f129",
+        "title": "ac57dddc5f8b76d8f7ffa1e45992c9dfbbd2f3df321fe8e2d81b663699c6f129",
+        "description": "cee1ba2358996efb14e278e20513b0fb978f9b91bfe34cd7168c46b7fb20a4e2",
+        "hero": "7d58b630f819a562281845a460f3f7e3f311a62dd26a02007db04dad60b67de7",
+        "alt": "31a0adc38dc27b774e20700513143ce2d611104c08efb512b2df3650f19c7455",
+        "quick": "5232f1db6400b68ca5e16f9e29509030f199571d8311e2592c54c9823791c757",
+        "body": "12481c4fed08f1a9ccc313037762d9dccd421daeabeeda1fd11b0095d6cf0f9a",
+        "faqs": "76fb2afb512417f50683dd424e0d6a03787f9b3119ab9e8e6fbd03c475ec8cd3",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/best-watches-under-100-2026.html": {
+      "fields": {
+        "seoTitle": "c63983bef83099636fe48e818f5ae17782913100a882fdd3a8ec3265b1bb6acc",
+        "title": "c63983bef83099636fe48e818f5ae17782913100a882fdd3a8ec3265b1bb6acc",
+        "description": "305db042f261f4170260274600f9f5354abdfb18556545eee5efbbe20b581f16",
+        "deck": "305db042f261f4170260274600f9f5354abdfb18556545eee5efbbe20b581f16",
+        "hero": "0ab78a26ef22f362a7217c4efad37cdc481ca26c036c38c73a56b157a1e06963",
+        "alt": "e7c36044f8c8b5eeb4b0274285bec18258c96d882fce242c01e821ec0908075e",
+        "quick": "5c228be248051e9c4a8fc2c71b03571b5c0b772c06041657f5960f698d280cf3",
+        "body": "84b6e5f847a19c968126c5387ffe92a5ae306274b028a7e49fcfe13817ad84cd",
+        "faqs": "a68dad23f4ecf7a2dd04992eb951ef923a26ea21ecd78ae64e14d8dd3e77f7ad",
+        "published": "62790305f81db1b570f91a7b16267db799c54191accf20447f020e67c54d6973",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "bf00a9fc597908277265f8f5ead3cda5c712deda81f706113f4848c5aa278bc2"
+      }
+    },
+    "/watches/casio-classic-digital-watch-review.html": {
+      "fields": {
+        "seoTitle": "5ee3b12e325a4bdb4559c6caf0955fbfe0e5313f6d8f5d80b9e100e84e2825d0",
+        "title": "06a8dec2c8745e89e0210da8722d05a40aeee76bd76750cddf9620a5a898ef75",
+        "description": "56c2501e35f9ee654021577c908e90bb335bf39fa0f1a1cfead60d816146cfb5",
+        "hero": "63fe7d521f745a26d2540c9fb6a8f05177168a2eb8059abab996b8c1c1a4f790",
+        "body": "38e4e8df9927ee38310d95cc0e0d171faeee1a918bac24b8b7f3cc0c4c767a89",
+        "faqs": "18000009f27f77fd38371cefa92215f837a0ef6b6a11299eb5f9c6a467230d2a",
+        "modified": "65f33aca91bd21769b7b44c895f4e1496ec2445b69e2009b376fa48f7a66a190"
+      }
+    },
+    "/watches/citizen-eco-drive-vs-casio-tough-solar.html": {
+      "fields": {
+        "seoTitle": "04b174d97a373f0515df5ee805868cbbe276bb388d4b498ca4fc3dd255f159bd",
+        "title": "04b174d97a373f0515df5ee805868cbbe276bb388d4b498ca4fc3dd255f159bd",
+        "description": "71ddc46be92439123aa2bc37072552158d3e78d7a8b1160726a0c7bdd33ea2a0",
+        "hero": "89b96956d7a2de5ae77e35e7636d304e9a1bc1ac8a01e836bd2f0047fa71d672",
+        "alt": "b464c2292c5caf92bd4f0aa261c67d38261dcbf26f2c430b3d5cd0059ff0502c",
+        "quick": "71e3739d104e6890970f545bb0d67d020576700670e648b68a7f681628fa95c3",
+        "body": "3e0c04aef1552d18b7ee934d5b8f0ada4d1270a39cda8b2e2d3e7f8552e754f7",
+        "faqs": "b9d3c920ce02b9389404328e4e9e1425182a2b91d381855cc0c2ffa4ad31e182",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/how-to-choose-an-everyday-watch.html": {
+      "fields": {
+        "seoTitle": "a26dd8e8a127bac3ab27a0e6024d0d148de40db32bae41e5839a25e2001bca84",
+        "title": "a26dd8e8a127bac3ab27a0e6024d0d148de40db32bae41e5839a25e2001bca84",
+        "description": "5ce2b807c31535227305ba9d8214fe92b0a3b9d36d30549ec75a8a85534e9e5b",
+        "deck": "5c8c900dbd075490cf993875da1766fb96417a34f1a5885f364a0b9c9e8bcc8a",
+        "hero": "96758dc6c123569ea7ca98157a2317acab97f6160e4579a533c5a601f7e36b64",
+        "quick": "6bb82954984054c9ebf7f99395b7a7435080f9f3e8f0c613515a37ebd4997990",
+        "body": "db31d5239add8e1af5a2bb253cf6555b114571274ca87adb4407370333a80642",
+        "faqs": "e80e0df4e50b09451998552498d2fe776f2b2725fb80e4339876145a449f21de",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "b500f853d256703068f02b9ef09b0c2b9fe98bbdbc7ab0635c9f100d37014a8d"
+      }
+    },
+    "/watches/nh35-vs-miyota-8215.html": {
+      "fields": {
+        "seoTitle": "04e69757e512e5ef17e381b472a7f45667e897260551caa32bc2098552e30901",
+        "title": "40fa1027ebb9779aad4980b3c0f452e977216a6608ba1d3bd30e654e41cfef96",
+        "description": "8ac04b84b46ac6e0e5f4aafb2b2d7249d19a2dae6c8879a2ead382896fce22bc",
+        "hero": "bedcfa55f4c2aa96f6eb37f0ad7b0f51b50c021bf9afb60e6a5b6c98135b61dd",
+        "quick": "441a23732d0e4404ee6c6fab306df6599e46995782343b0cee54f478557af915",
+        "body": "2ea4f38995c11d690fcb62a88378711e728a44acd0e5cc1128ea48535b53d77a",
+        "faqs": "d78a40fd0c9a4b7155f00a469d257f0aa0955807ff5537676d44207328d121ed",
+        "published": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "modified": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "citations": "efa101b5b170d95c0050be273934a1ed6869b49bdbe53c00b81d6c8d97d5a97b"
+      }
+    },
+    "/watches/nh35-vs-miyota-9015.html": {
+      "fields": {
+        "seoTitle": "23f940a01c5e5714b3bcdea2d1c947ca6cb2bad1db33136373f64ba6c9b81803",
+        "title": "381add45caab8189fc9626c097436a560fca99165c6e30fb270f02f2fc989bd2",
+        "description": "e0ed015dff9e3f7af3e9f610bd4f2dcaac0813bbdb410d9e3c1a4f8545b84077",
+        "hero": "579b63be5c1b250d8ce1cd26d76b778d839e086fd2dd0630e42e5022217db239",
+        "alt": "21268d00bd89a4f493d7a7bd76d980971d702c3eb5c025afa9410b9ce531f1d0",
+        "quick": "51bf9225342daa6cf92d28c2dd7a86a5c941a62247d215e1bcde15749a5c2964",
+        "body": "a69db2256e4dc49091d6c121eb03845f4e7cffc32ec1e97a0c9c437c28d02565",
+        "faqs": "bff87978c37578b31e27b03a925c796a6590af5286c6c54ec986f47d487ec1c5",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "2840ae5c8a1c06f4fe7897d6090ec883ca96d379fc47ecb0c593cb3d2673a055"
+      }
+    },
+    "/watches/nh36-vs-4r36-difference.html": {
+      "fields": {
+        "seoTitle": "600f5c8f2e1014390e20815e751a23cc2914caf6c9a96b9dd40f7a38300ec839",
+        "title": "600f5c8f2e1014390e20815e751a23cc2914caf6c9a96b9dd40f7a38300ec839",
+        "description": "8b2adec933ad7a9b66e1ae3ada9aff872ebe2c84cbee9ad08eabccd73a79f955",
+        "deck": "8b2adec933ad7a9b66e1ae3ada9aff872ebe2c84cbee9ad08eabccd73a79f955",
+        "hero": "109a7fb89c1ecdca32c682ea87b0a44139af548a59ce7c0b20fe2d444f58c938",
+        "alt": "be891ad9e849b4374c8d628482e4eee71fa470a6d9353907759df1c3151e3214",
+        "quick": "9d4634c172dbe467c8894ef29c4c633c071459cab266ffa184ad817a2d7b2da1",
+        "body": "b04524bd6df9c01f57390445a02c952293be07dbb7c16b11171130d834aa9612",
+        "faqs": "649baeae8193c03fffc3b042c9c93b5f838da278548ebfff56b68b9306fc981f",
+        "published": "2bacd6e5d1a9f06888a64da1dc19148c701bb544583f0355944c861b86e9e2f2",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "f5ec412cf6d3de2a12f2d17df31266949087848e4d0a910ede4e656abfb14bfc"
+      }
+    },
+    "/watches/omega-seamaster-vs-oris-aquis-buying-guide.html": {
+      "fields": {
+        "seoTitle": "129db966cdd3c83a5ef821b02c5a9f35e9a80220928c057c22359c3b6675d054",
+        "title": "129db966cdd3c83a5ef821b02c5a9f35e9a80220928c057c22359c3b6675d054",
+        "description": "8ea74159317d029339a3da7828eea9c3e82dd5ee6545e0c88e65dc5bd912cf93",
+        "deck": "e528924aafb23b44d2e43b748da7afa80ec0ee027e30a3734a31040f2168bcbe",
+        "hero": "a5298f64600e24fd15acecab4af33d0fa75db3a23841329f697bf277c757bfc2",
+        "quick": "77fdc252fcfa0e8ddc9722149063470362b2371f2fbd463ab8b752c292e13518",
+        "body": "2a2584fb1b40a2ddc688591ef4933c4b606f1e5411d7a6c1a6c00dbcda5b7934",
+        "faqs": "99b23cd40d97c53ce51ea3716ae7b428f2c435bfb55bfb943e354fdff7b39a78",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "94a3d0a707dce6310d52d743de4068bab78eab6837f72d86bddb2b7c57f7d0d2"
+      }
+    },
+    "/watches/orient-kamasu-automatic-diver-review.html": {
+      "fields": {
+        "seoTitle": "9053d4b7a345c9a80e5364dfbf5de4b12bd7eefb164e5dfa33d4dfdb0ed2b96a",
+        "title": "b09e3b629d5dba3404fa48eab8d3092625fda0a9e214b8e8a45687f79f787dce",
+        "description": "3bf5cc4dbc208b78cb12db2e17f3306ae6362ed2218bde39fcbebc68e6426f39",
+        "hero": "1e23769ff3755d91715be9242ed8e759d2119a1665a4565b8fd377037e61e3bf",
+        "alt": "5b9a2def4cdf591899bc1e1d61e9c588f2500f4733c0372e984efe2e96d0647a",
+        "quick": "9c413de216f876e19e0d698c46bbd1cca9ee3ababce9209ed2c070496ca9e8ea",
+        "body": "7f9f913ffa6048f1905ef2a82cf8ad8f5ddfec1f97b558c7479b9b5518fa2892",
+        "faqs": "a6b5fef04b8b2bd1af6e61b50b92096da6d02d0ff188e22111d16fb59f779387",
+        "modified": "462d5a35048be9052843a1f7aea6829ca21d1b78bd275de9b91d0cdb7fd98dec"
+      }
+    },
+    "/watches/orient-kamasu-vs-citizen-promaster.html": {
+      "fields": {
+        "seoTitle": "1a8db8a10328a0300114b20adc621e250ecd8cd0e8093275ef614cebea435a01",
+        "title": "5e83c6646ad7d05c9be9ca1303773794fddaf910022eef437da287eebbfdbdbb",
+        "description": "d7f2accf7285a4e26d932969d9b7c78a1e3e6fb309a6d0268e6e1125885aae3f",
+        "hero": "7f36275a39631e03795a28ddc14930fe01b1b57e270762dd9f53dfa62f6658d8",
+        "quick": "29994019ac3d5cbab6279793f96fac0fa23b2fc39d1e77bfc65e5fdc94b04d5f",
+        "body": "3e484c17a99fc027e762de974f6b2e39641cbde6c52e55b4bfbd609a5d0469cb",
+        "faqs": "526c3d5a239812fa909cd44e8cb8abe45c3cef02c517be3594e190f9173c87fe",
+        "published": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "modified": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "citations": "5176d026760d1e4e6617fdd7e9636ed47eb447a9363390c1c06a9ddc3b345563"
+      }
+    },
+    "/watches/rze-utd-8080-upgradeable-digital-watch.html": {
+      "fields": {
+        "seoTitle": "c6ccc012a541e45e2ae68f58bd8bbed86122753e272b093ba69f6aaf772e6120",
+        "title": "c6ccc012a541e45e2ae68f58bd8bbed86122753e272b093ba69f6aaf772e6120",
+        "description": "2f50c5bd66168f068f6c79c474c5dd67fef066d2eba5a420fc352dfcfe57a666",
+        "deck": "bee0d8de920526ccfc0ef4b20de30c75cfe611c247b74a4a2c437e067e7da8bf",
+        "hero": "b5b297f65f85bb6ff7d0b051ee8ee61bd5a93b7e6dc26a416f00c1cdba9bc835",
+        "quick": "c6d5a90d3141f7b30d571b257bcc188c9b7cde2fb946e1d57a82a44e51d3dbbe",
+        "body": "5fa763bdfeddf00407b487263772fd0fe1cff4c30f213d87792fb2b309f71df2",
+        "faqs": "f7d6da09c78f8926739a183f2c30c04c86453502e6397f3ef8b81d9e5ecd66f9",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "211765e6f9b5ddc252b351322eee2f3255c142607630de88876ce5e0bf474c8d"
+      }
+    },
+    "/watches/sapphire-vs-mineral-vs-acrylic-watch-crystal.html": {
+      "fields": {
+        "seoTitle": "1069eabb51bf960ed1bcc7a96493fa9138a03dd070aa87622260ddfab13dbb9b",
+        "title": "0e1cb35aa255ce5f430cd12ec1ef1e56227d900ff36a6245ab1c84b0f7fe8484",
+        "description": "8dc002e7f10876b2f8a7f483d2960c4ec407e689115c05b4b61835753572bcc3",
+        "deck": "82bc460b93e30bcffeb88a64992ce47452185709d349461469f5e8f4aae8412f",
+        "hero": "d16450089cb2ceb71ca78825b6d687f1a6adb5fb729ff25b930c8cbbae11fee7",
+        "alt": "ccb83ade6f990b4130b4913c72aa83088e36e6c194746665701481458528c3c1",
+        "quick": "3ae20f084f250d5a6056d343b04ca132df1bca0c521fcd4edf20b932343cfede",
+        "body": "8c2f9fe8cf4e543a646c892048de7ad48d54fc05755f5e4cfac6dd2f2876af1c",
+        "faqs": "d3e34a4654b9a9bf65e2195e4726644d19b36528a313b5e326511367df692984",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/watches/seiko-4r36-accuracy-running-fast-slow.html": {
+      "fields": {
+        "seoTitle": "6a9b55801e807b128021d418edf4debddb36e22a52cdfb865b5463fff2005f01",
+        "title": "e8432c96c7ca8e4e44fa30fdf2758ca31ac5de895b8f8abdd0b61edcbc2ddc6b",
+        "description": "8f5518c78b7cb513135a6371d1fa56feffabeadac09817fae4f7ec14cc05f561",
+        "hero": "27d60b0904081086796f1b27472a0ae90732dc05dcb77be58f70aab68c937def",
+        "alt": "1f91e02f2fbe66369fd700fd3e77875c49891b1fde100c977d3c536efc10df48",
+        "quick": "8f34255947959cdae5f50ed8beae13aaae596227da3a12a33bd3581ea3c92d31",
+        "body": "ba29c0e97e0a82371bf93d30207f480dab4328078db4403c42adde3a8162fbc2",
+        "faqs": "7fd1d07cb84dadc72b722b71c85aa20cc177692afe0ca96c098cd1db6f76d821",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "19741b305224bf64b8948ef12cf21e39235e439a58e0a8435a81882d4a0f153e"
+      }
+    },
+    "/watches/seiko-4r36-nh36-day-date-setting.html": {
+      "fields": {
+        "seoTitle": "58e4fcde0e7ddc33f401992853d616b7356267f3f80ee7b6ee787509fb868873",
+        "title": "bed8ff65070afa83386983938ad17b078c2ea1b0e0049bcbaf25692605e5d385",
+        "description": "ee3763880196fc727e2e0d0f023437043f108a69e8c2da3c23cfa0f1778d5e0a",
+        "hero": "ccea7e70fd9891ffc168f38db3ad61bbe0abc08b3db0167b281bccfa951dc0cb",
+        "alt": "db03f0cb5be57d117e0730b01928816f24709b8f6914b538c6174ffd09fbdb75",
+        "quick": "1a947ebd776fb1d9d2eecadb347d48c7dc1ad4257109ca97a7c365a1d2f67ba1",
+        "body": "490969d3cdd000af28d1f23e735297b65011b9a536b2b4062ae4376311bb2baa",
+        "faqs": "e73642a3d60041ce26f19b1998cfe290d34a140681cd6394b7a1058197e0b5d3",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "d70265d6638ff34319f51c7b3a567c556028116302029f24aa59d3ef06a0d122"
+      }
+    },
+    "/watches/seiko-5-blackout-mod-nh36-review.html": {
+      "fields": {
+        "seoTitle": "714d82339901b46fc689a7976eacb61640aa6792d298a19ca65b059aba95d0cb",
+        "title": "9157eedefa3df98b5ea5e0c8a17d6086a82307a4558630fe9e6c8f47d8e2ae4c",
+        "description": "5cd659c1c8fd2ca114c4d59226f38bc6b63631663ffcd208c9aa7a4bbc3487fc",
+        "hero": "16d57d7e721e83818bdaf95898dadfeebdc6866339a324369d2676e1d4abbedb",
+        "alt": "a99fe491f221c201b8579994c73c5937bf26754d0efff095b7f0f033b6325a6a",
+        "body": "b9ffe0623c2139f4fd7cc15c0ee4bfb89fffd5c9171d60eff415488eaa8122a2",
+        "faqs": "56607a22660b0c522fd8ebdcc2d02dc299ef0eece6037ba4e95a79b552d40257",
+        "modified": "65f33aca91bd21769b7b44c895f4e1496ec2445b69e2009b376fa48f7a66a190"
+      }
+    },
+    "/watches/seiko-5-sports-vs-invicta-pro-diver.html": {
+      "fields": {
+        "seoTitle": "b660c280c5f0ef3e6f721097a120877a5cafb97b123e9ea4f978a06fc5c8dff5",
+        "title": "b660c280c5f0ef3e6f721097a120877a5cafb97b123e9ea4f978a06fc5c8dff5",
+        "description": "06b673a594b163a1cabc3866d5cc6728f429ca481c8da454a220bbf0011d2ea7",
+        "deck": "3136d2ab8762e5dd51aa89bfe48eb386f4ea47dd1539888a5320dc8a530cf3c8",
+        "hero": "08c6372d78ca99852c48aacceac7eb34116cc1625e29902a3682837d5358f09b",
+        "quick": "371886b66392308807b36f9e79083156207c7a8dea4629187297a4a9afe9593b",
+        "body": "6e077755aedf1023d0a4c4eb1e2337ceaed989105ff4baebdd63dec9c37ab9a4",
+        "faqs": "6ffefd6842acb354cc37560204ca5ef4e34e95e7a48e97dd1e2d2256a2641b71",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "d46cd50c0beb9e86706230cc6dbc232c1a1183976e72c2dc05735007f6b17884"
+      }
+    },
+    "/watches/seiko-5-vs-orient-kamasu.html": {
+      "fields": {
+        "seoTitle": "ff83820889cb85f0ae4df316ec4b1adacb08f6a828cb78ae661c17d6fdaa8c39",
+        "title": "ff83820889cb85f0ae4df316ec4b1adacb08f6a828cb78ae661c17d6fdaa8c39",
+        "description": "bd5bad3c45f7378ddec366046713fcc26d4643cb487a2f2eb2159ed354e68439",
+        "hero": "53126d7194afb0a43847738b018cbc2f922f5e7fe2f4b6f2a0085f265b6d9030",
+        "alt": "561f61443f463029d71e8a03abd776237bab5a8a82b5d619e4070dee449fe3a2",
+        "quick": "d6a8bbee873980bec97d4323a3e42774426e91b81a2d002975db99cfa737697d",
+        "body": "ceda071e4b113fa6a81fd9c7f1c5c587a2336eb35abc4856fc8e2157aa06f212",
+        "faqs": "839a1227eab31d56dac7ac89d44d980d3987fd5802604f2e5a20e095fa3f35eb",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/tissot-prx-powermatic-80-review.html": {
+      "fields": {
+        "seoTitle": "105e22d7d92cc706fd450241636c761bd96e395be4735f5af6b47949514d0dfc",
+        "title": "105e22d7d92cc706fd450241636c761bd96e395be4735f5af6b47949514d0dfc",
+        "description": "4e663c2a14d083fe1a07893a30796e1e6569d1504e947ee4268834c16aaf2f57",
+        "deck": "4e663c2a14d083fe1a07893a30796e1e6569d1504e947ee4268834c16aaf2f57",
+        "hero": "301f542fc3539a8971fffadbc1a0b314b5a5ae84b2963fc3d1b67dfd353ba5be",
+        "alt": "b7333eb9eeea2dd4bd33e1ed46d8e571e1047c80424c5937db6226c1992a4e46",
+        "quick": "5a746877751ada5cd51b522423ff5da5141c7b294528b1583d3296443325f820",
+        "body": "e7e701eac0f91f5340441896277f2d5f88412661a6c6ed58c27273073b4a3107",
+        "faqs": "793e56051f5f5994cdf956f93ccd659c0fdc9ba8bf8bfab96e6cb27cb7321f9a",
+        "published": "d1de3812328698d3cdb128f879778779dde418f7273f84b7bbdd2e365aa03831",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "07cdac169c230370036b35af6c0d8c8fae6e305f6bae538827336f8963851fe9"
+      }
+    },
+    "/watches/top-10-beginner-mechanical-watches-2026.html": {
+      "fields": {
+        "seoTitle": "37e4a7db37650ed6927105909a817980b083cfc24f47380841d98e796c16c44f",
+        "title": "5db5838ff84c0ece1cb486d33c3f9921d662c7d5e97ef44ea1e33fa709f12610",
+        "description": "1d93af86f8fe367a968baa143ca4cf9bfbeca067faf2fd9109fd63f4adfdf30c",
+        "hero": "30f299f89a8d3db734137df48aff1f73dfa72c641a65aa7bea59ccd0e8952cef",
+        "alt": "7a87810d6bbfab61de29b0ab72f8ee96dae429ab89521f4dd94bebec2721e2da",
+        "body": "2518591b2df426aff1a80d705100b02813c285890921116a1ac998d891496234",
+        "faqs": "e82da698b316f34ad434646de209b4b849d1e18a36a401f3630de1bf5c3cc2ba",
+        "modified": "65f33aca91bd21769b7b44c895f4e1496ec2445b69e2009b376fa48f7a66a190"
+      }
+    },
+    "/watches/watch-bracelet-vs-leather-vs-nylon.html": {
+      "fields": {
+        "seoTitle": "a3eef9c3aa39fa54793948a319a45a4cde5f465bc92023451860c41e62310f6a",
+        "title": "a3eef9c3aa39fa54793948a319a45a4cde5f465bc92023451860c41e62310f6a",
+        "description": "e18d19d58f2c769c464caf5c4491f7c9d69bf40e872ff906b22e4432d07f78e7",
+        "hero": "decf559424f46efcb123cc8a237a237539074095141e509306cfd7b962031dfd",
+        "alt": "8f86c6a81c19a68cf757cc47fbe66cc6aa75cdbb816b2b93dde0fbd57d138905",
+        "quick": "0e6b52577da1eb96103041565cd91f6bb016b673e61f2248a618cb28e6cdd0d9",
+        "body": "a4e657b904dc062df9f9f2e3c01369a27a1d4aae57915b6980ee81bafbb0aa35",
+        "faqs": "bbc90c468f060b735dae729e3a2781bb8b91baf86f5f9b06e891664daf9a1ece",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/watches/watch-for-work-and-weekends.html": {
+      "fields": {
+        "seoTitle": "4d8ea02718f20ee8a77a121621d8ab97f5b7801c5fefa6418807dc22bc156161",
+        "title": "4d8ea02718f20ee8a77a121621d8ab97f5b7801c5fefa6418807dc22bc156161",
+        "description": "e299978842680c445df82aa625fcd6ced094aaf2d9bcbb74bb8589ce10298155",
+        "deck": "7d2d8055227ca518e545631fe1407f20ab03e498899b9c801e8b3b35b033f02f",
+        "hero": "b48d029184e2f43fb21b769f09d296079b4883e00e69a39bf5ce02e3433e85fd",
+        "quick": "a7b02a04255a8d65f9146224bb4dc4adbeb4b472d02e8b291c76a8c93e8232f7",
+        "body": "9077f467c1a7387f4643f89b99b9d17c6c0b0b85a863ee9537bc37386697e267",
+        "faqs": "176db87a7cf5bba0c05b957e22a7c712f82d6c5de4f165ff83d11b05f94c1f83",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "408c7ba3859d19b023c2c8b2ea5d8311f49aef853e2898c2d5c4d6a8434c35c7"
+      }
+    },
+    "/watches/watch-microbrand-buying-checklist.html": {
+      "fields": {
+        "seoTitle": "ec902f248dd78bcc5260c36406d5ec86eceb8b032a880a2eee8f2b90bb1ffb46",
+        "title": "73b3b84e27e939f2b1692cca0fd702759b2c5789c5461dc7bb9bbf64d998b47f",
+        "description": "062181da2a9053b69fab2125b2a030debc1d9b9d63d7088dccbb9bfa9f540aae",
+        "hero": "a9c87802b35a4231798015f4d364ab6019977145953d4c95ac370c4292d5646c",
+        "alt": "a733622ceab8337a3b3409479c36832f2cb56835c9ca77dd77a25365a0b64891",
+        "quick": "ab94dedb044e7cfc35cde68265c41d7292aeae5e4f1b11c15ea2d555ee87c19a",
+        "body": "962d6e3a76932b6f91682948167fd4a9d9e202f5483f99f9992d3688007d2aca",
+        "faqs": "54d41dd23a28d5a5ea06f983429f58f9025c87923b4dd2041425773c4bef6710",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "d848789767ff513e3d6ded14681667a16ee9c368d1871d7e4ae377a93b0f4497"
+      }
+    },
+    "/watches/watch-size-guide-38mm-vs-40mm-vs-42mm.html": {
+      "fields": {
+        "seoTitle": "6f33bf69bd961b4e2d36b17fe8847a4161c83a956faa5b059d69e237746b3a2f",
+        "title": "b1a26097d25502a1764aff5b7e89e270155629cd4b0d94c1a19dfa46e9c43d70",
+        "description": "cf580d1299990e75e41c3fd9f53deaee5b3f3d6549e80c2e2f4c7dcd788113e7",
+        "deck": "f4cbda2d3008172067655f7c7c0f38aaa46678551ff9c230a697b53198c59038",
+        "hero": "ee0b3f49af3e5fa36358866790bf99286198c49c6202cbec978a3af019f6b270",
+        "alt": "fd43ff51dd4df0d7a8f222d8532e399453ff01787c587acaa09634e822080120",
+        "quick": "2db708707b52458afc2c316a9d848d91b8b5c7352d3be0c5c55aed33344dbc33",
+        "body": "8eab0f879a1be0666cde943e6a6d5894546150e0b74507ca8ffcd9b2a7f8ca3f",
+        "faqs": "5c8faeda156c2f7e734c443c1713200e9e79ae60185bd8c80e4b2f3ce139dfde",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/apparel/best-heavyweight-tshirts-under-40.html": {
+      "fields": {
+        "seoTitle": "539ac4928fd774bb6ae8440942ecc0cd0d253f8eb6ccdbc04d16bffd04d04568",
+        "title": "539ac4928fd774bb6ae8440942ecc0cd0d253f8eb6ccdbc04d16bffd04d04568",
+        "description": "f6cdfb2fd35ccab6dd8201d64b65ae62bf7906258fe2daad8c3063f5b1b06c2e",
+        "hero": "522b23e44e9e5c7273f020888191856607066d275cfc711eca64d1987844a8ce",
+        "alt": "6a2bac3188cc9112fe9d69360cc29e0112e3ac0f263d01b411b5f4d6c168f193",
+        "quick": "4c7cc420230240d2ad004b250152f85ea933f7958100ed0db28872e7fb89cc0e",
+        "body": "6c5cdd7904a6c1e3fab4adfe5585aeeeac2fac5388ee93898e605484cfa03d35",
+        "faqs": "4fba4433d1d20c6a9bd2c5344157a54325340e0e8df256d34247e8c155b64f67",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/apparel/casual-office-capsule-wardrobe-men.html": {
+      "fields": {
+        "seoTitle": "487001b23f07496f8ddb519072930a87efe209125ecbad037e972b4cdd61fbc9",
+        "title": "487001b23f07496f8ddb519072930a87efe209125ecbad037e972b4cdd61fbc9",
+        "description": "47b4348caaf6f68b281784d9e226458b982048bfa35ff4bfdb02564d6092e711",
+        "deck": "2fc2fd347ef8fc36baeb4ce553137a085866082edc7ba63d62aa75c4bed4f9d3",
+        "hero": "4334220aa031d0d4ba4f91028a168a6d422381258f84a1bfd1b5c1f134bc5d3c",
+        "quick": "88d8705253663ce84f66d40cb18dd72069dda3fa1bf46c10dcac30e00f3362e5",
+        "body": "e45818422197aaa64a8fdc6a46cb612d7a359544198e721ca367a70c4f568439",
+        "faqs": "b41c7c1996c907e4db82d2a7ca61869af1a71a7341317474f41e264a15f70455",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "efb5ea0fb722d15968f980d7aa8199291d0ccab832706dcb6e5eda62451f8e6b"
+      }
+    },
+    "/apparel/cotton-vs-cotton-polyester-hoodie.html": {
+      "fields": {
+        "seoTitle": "210e5a86e398164382c82369ab6a3abe48dcafa6933ab84bb8755e64d04e3539",
+        "title": "e651817e38cd29902e360f874e923a331c43145e7843b6c889c28d1238392a71",
+        "description": "7213387063ddf8c701c994f0a10081ccba0ca4d634b356ea4fb668ac9f567b4a",
+        "hero": "62108113713402e8d2e3ec55a02695205a83b4721c44f1954720b264958b2404",
+        "alt": "57bed23aea09710f783ce06b5d86dd9362b036c98863296b4fdea00f14ecefcc",
+        "quick": "53f03a60b768a24e0bb52ad6f70c8b55fd0753419b3093f1bc28c65cfafc293c",
+        "body": "09519c96aba640c454012dc1266cecb9f001bd0bc59b1b1a63e5cacfd424290a",
+        "faqs": "9e2d153a05d704116e3fd9048d91bbe30359abaf334972163d2d4e59f7e2ca9b",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "5f989b54fc980513a827b0940ea5f35035110c7145b0153ce57a001cc5162c60"
+      }
+    },
+    "/apparel/do-cotton-hoodies-shrink.html": {
+      "fields": {
+        "seoTitle": "04452a6eb2522469dfa507b743c950ef17feb42b80c882b440fdc62cb6dd8d83",
+        "title": "9c7252c588d07b5c5978f9e923099952213d0e038d80c6d3ad1e026e90c6a0fa",
+        "description": "4c6aa8bc26bad9fdaff860208790a644a36c7efafaec9da379e17baba3548ad1",
+        "hero": "f72c624e6386fbd8038e1cfb5aa84221d16bfd1e6037fff73b9c769ea080317a",
+        "alt": "db4102c96dc2e1d1f38aed90e0dbfcd4975d41448c7d0a879d809e0106e83bc8",
+        "quick": "d7e2f5181309a62f34c14d0517860e368b8240ed876b68fe4515d1148a219466",
+        "body": "e7a751958244842e7c155e01043a75ad1fe4ea698e84aad1e438f0c2f263673b",
+        "faqs": "cda1dc2743c58266ce88a30a5306743d075b63ad75973f0a64e92be4b8e3d3e8",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "47eac7ba422b0b270688c3c6e5bc08b6eb53b3fb6dafea4d0f0b84385d328983"
+      }
+    },
+    "/apparel/fall-winter-capsule-wardrobe-men.html": {
+      "fields": {
+        "seoTitle": "655d1b73631a51a64ae9de5bb090bfdc3677a30b8e2e1c4292806eb50df45e2b",
+        "title": "655d1b73631a51a64ae9de5bb090bfdc3677a30b8e2e1c4292806eb50df45e2b",
+        "description": "dede77afff43a5e97ac0cfadb69a59f3e97fcbc0ca6c3d1918b43a81b675af3e",
+        "deck": "37b2ee93b6bb02663eb44a3744b458f9cc95bf79679445575bf33c598627b71e",
+        "hero": "32b0806a2063d511729360245c1a06607a25213f5e27fb0b4c85c3b0caba0b7c",
+        "quick": "b50157a7b4b642c0c31e2d6df8e713e3fa76a64ab81ed0c9250edff47b2c2a8a",
+        "body": "9bca2033cdbf0cef2d99ff05a9b09a8565580d292865f1b47c32fe0ba13393a0",
+        "faqs": "be12f07b1bab677a56da6e65455841d14c507fd7cfce0d652838f79aaa3426d1",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "cffde0e18100c223dbdfcbfd45b2fe5bb8e5cfb4c9ae9bcb77f0c1b41068a631"
+      }
+    },
+    "/apparel/heavyweight-hoodie-salomon-speedcross-capsule.html": {
+      "fields": {
+        "seoTitle": "fce30ea159a436aa29c3747995521712771710887d158ac48e5f6ee61a887322",
+        "title": "f07e15f5a6bfd94268952dcf6e2173953b5689d960786f9bbd2ab90c6c1eaa01",
+        "description": "8ca1a2ba8129df6e3df3be6d7c9d79e2fa6201e9144b9ed0d4578efca32dcc5f",
+        "hero": "a612f30f335e4ade2de056828c210797795f89ff22cfa985661145ccbf9e16a5",
+        "alt": "21530e45670d9c9a7f842a0efa909255f97f495d3e53bd0972ee8d13ee9a8a54",
+        "quick": "3c7137859ab194d66e77ae4b5d6d6381fb3960da2567434e1e2c6da471ea5c6e",
+        "body": "9f3f63837e807f057166c91e82eb2c66d5a88b01bb50783bc032829b8248d744",
+        "faqs": "a29d1273b0a8e22a1a7586e9964c5a52284618d61ca7cf6c866ab28f833c20c4",
+        "published": "7d732347662e5420dd0a5cb498fa32f7d67ae7707f12f57922eb30c417e22fd6",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c"
+      }
+    },
+    "/apparel/heavyweight-tshirt-gsm-guide.html": {
+      "fields": {
+        "seoTitle": "c604915fd7f812fd313f8e043cd4f7c349701331e06e43df4b19a2edcc782264",
+        "title": "bdb0bf3661d469270769d132d28b27bd85e9324bcb34a1e37a2118f4f801f8c8",
+        "description": "246ee95c909f76228f0b06fc3ca72a9d39edbd1611244b6bb0e95fc5f6c748cd",
+        "deck": "d8fa38d00935a9099bbe1bfd47bd3df8fd058580bd5189a06770511aa1480d3d",
+        "hero": "373c0b26f61ba9d50ebb55b56bce8d635cf880b55f1066832e29b32cbc4fda86",
+        "alt": "7340c693c452eaac9990daac5d5889c078d1000f775a06ec8e1c7fdd3f0bbfbe",
+        "quick": "c1f30886aa3cbad60b94d10a82d35a5955c31bd22fe57738a2503a15ec60ce42",
+        "body": "3fa054756cd1d251c8631cc24f2a71b8c30014d8a6f63badc6d4326a239a04c3",
+        "faqs": "ab67ef41e8e8ec842f9b2e5029c4cc747b8df3a48cdae4386dff1863917687a9",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/apparel/how-to-measure-t-shirt-size.html": {
+      "fields": {
+        "seoTitle": "1a2d824dc14ad80f755e3fbcb09b72608a362f72d29bfeb2fae159d63f597e8d",
+        "title": "a7483ce7221998b35356da9d9d71485d3de274808e6f55c7b97a8381b4031a5c",
+        "description": "207012cd15850e2a9e462d819de247ef8d4d4d4c13d5bcd16d4347e534ba97aa",
+        "hero": "0d4d9c4bca8570690e8f8ca0d6824da8decaddc291173051cec5723abd83671e",
+        "alt": "a0f3e1878f45a2094ebc1720718e17ed65d241e7980cba60a55f4ac08bacaf1c",
+        "quick": "d151046bdc891b4060dced67faafcd2c4f0871bc293e089eec3ee1db8cf53707",
+        "body": "a99c3e4d760ade02ca2a66e4b8bfe6533852550a2f660df95ac788cc7ac08a38",
+        "faqs": "c2bb5e75cd54792bda5ca21fb48d72d4e02c8522a912a1415979c4c74a3a6826",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "882d823323815916640661f0ba8ae2b2fd8f9e74a350dcb696fe253a3cea7ef1"
+      }
+    },
+    "/apparel/jeans-vs-work-pants-for-office.html": {
+      "fields": {
+        "seoTitle": "7439a6defc32d46102eee81d8f8db3954572189ad45bb9093861bacafc6c2e03",
+        "title": "7439a6defc32d46102eee81d8f8db3954572189ad45bb9093861bacafc6c2e03",
+        "description": "399e335d0e0b05e8de52cb0eaee024d28d2950712e3ec0e68f871359da3004a9",
+        "deck": "68b515447a23266aada19c9014a68aac3ee09db8fe3173fbb92ca4b975163197",
+        "hero": "0c47a60b4721b494477cd46e04fd38bd0d6ea547782e27afd3ac2ddfc7f66d2a",
+        "quick": "4d975ee83e300541dba69a3bd37d87afc61f850eb0107570882db4bfad0f7ae9",
+        "body": "39a1d622b458c8061ccba3b8251b56a1259cf6598302036e619c11c909161d3a",
+        "faqs": "c3068534a01a1df1b4420da30f98c2fba3c5a8d94ca5dc927baea2c9f515ccf4",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "6d68325f40409357c0954afe70bf87782fe9df3a46b3dc31793f1dfa87263eb5"
+      }
+    },
+    "/apparel/keep-black-clothes-from-fading.html": {
+      "fields": {
+        "seoTitle": "2c3a271f30f2aba767b82c6d4ff2e0d66cdf20a1d7d02633c157949b20b25623",
+        "title": "68f356ab89e28f197a1baf255c5b20ed528618fe47fa3107d0bbef75e5b9bd5d",
+        "description": "208a4c843910861fc9b13733d182f5ca75629e8741a129144cab44a332dd30d2",
+        "hero": "c8f0dda94e76383dddc4d8c9e8257218b0453915ab3f80d184f2d5aec09de614",
+        "alt": "87c260ef8ac7e0ccdf58218380bd12698f00e1fcd9bba29a188dfd43107909eb",
+        "quick": "6d23a884f8388e8f85ad974cbbd9a1d3719743b32d4ae12f7003aefcaa0725bc",
+        "body": "74919b8d66f5003ec53cefeea3194e028640346bc84aa2edacfff55ef8a2a223",
+        "faqs": "22007123d55eb946c1e5fbc9308386b7688329b3c215fb2e84c34232a83cdeba",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "e961a73363085c63eb5de0e68a0bdc24096698f7a979c314a648ddd6e495ca85"
+      }
+    },
+    "/apparel/mens-travel-capsule-wardrobe.html": {
+      "fields": {
+        "seoTitle": "0f59138819885bce8e3db85d912a12bb60980c0e05795f796e7ebe1b4d905624",
+        "title": "0f59138819885bce8e3db85d912a12bb60980c0e05795f796e7ebe1b4d905624",
+        "description": "77af7e9dcac06028d87890740d2daaf2e691091f4c6843db5085697b05a150a0",
+        "hero": "d41f9bfa4fbc98aefcfce3fa5bae63eb4c708fe4f97931a125852b4e74caccee",
+        "alt": "39c8e30405934a2e8a90559b8e49747bb65b2a0ee146f4f3928a42f3cefbbb70",
+        "quick": "eae0cf40b06e0616338f7a0a9bc246ef6a7c49af5b7099aecae0845f12e5355b",
+        "body": "1a05fb1147fc8868271452706cacaa3de5cf626d8a197a0ce545bc190f91cf87",
+        "faqs": "f0c911d312bf74f46d730cd4ef8d3fbc75143d270e3207d4a7f85ab34104e81c",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/apparel/mens-workwear-capsule-wardrobe-2026.html": {
+      "fields": {
+        "seoTitle": "f79c0d2dae148fb48d37f0194f0f43ae8133f1f85a6ec2ec91d45fc39af38da7",
+        "title": "a4b5c03aef829494060898aa30808934865936387eca456f1c52ed3144af601b",
+        "description": "48996409f77033522bd390ba59148d8571a9c274a525a8825f598b16b057fb9b",
+        "keywords": "e17b2039f34f23a954ba2ce6f280e3938df88c297061739f5fc24c25d019985f",
+        "hero": "b7c1607d36d8ccd607b1eb9636d5de6c45e847c73b588e8357d05a2c04e71eb9",
+        "published": "43833086dcbaea83555db36f0a179ee36ad72c81385927c91342d25b73e76b13",
+        "modified": "43833086dcbaea83555db36f0a179ee36ad72c81385927c91342d25b73e76b13"
+      }
+    },
+    "/apparel/minimalist-outfit-under-150.html": {
+      "fields": {
+        "seoTitle": "b4b2c4a8bd1630194411220a9d89d929a2c7d01d43502644ef1594d0322e0ba3",
+        "title": "56cb4f2f7392ed77760df56a64460ac70ac299360229c68a51c3117c5d179576",
+        "description": "9f8f87f9cf53240c386cddfafaed5c90fe505f2f9b8e10dc166b47eb0ec4d5c8",
+        "hero": "a612f30f335e4ade2de056828c210797795f89ff22cfa985661145ccbf9e16a5",
+        "alt": "fec8d3af23a17fcfa9705b4c660630380b901a2f07cd50306b53d92331472ebb",
+        "quick": "7367862a4a9b174f78045479adf52b1a28a9ea95e561fbb123ee0292d8ef4007",
+        "body": "75dbf9b01bdb3bf45e6373f9309ac57659001db5427db044d07bcd57244160fb",
+        "faqs": "b7d12e5da2a83cc2f0a4e016eb2333a8a68502a0446e4d17f9ca68895262e41c",
+        "published": "771eace85b7d642b92aa43e8015aa80fbdbf61d80633288c759bc5775de450d8",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c"
+      }
+    },
+    "/apparel/overshirt-fit-layering-capsule-wardrobe.html": {
+      "fields": {
+        "seoTitle": "917132762d4eae86e276a633b19852240628c8e8e8abc9b1405d7d44dc3c00f8",
+        "title": "c33deed5b48826e05218a7d3c4b598a1e4a0d4853646b32e075a7e035bf9194c",
+        "description": "900961bffdb46fb24fb99576c78262abb704a452fa24bf5da75b8319d942f1c1",
+        "deck": "b9649f47e13f2d99aa05fdee71dc98c5185dbff6baf41215f76084ea19e6af4a",
+        "hero": "d0b87845ff5d7a82947a3bfd8328086c0c5cb003ec1808a53207098036d3d5c4",
+        "alt": "368e4f43ae918a661fa60968587d5da2f40aa1d32343542ee11f88bcf84a7b63",
+        "quick": "0f9cf15178926a7291a46b7cab70770a8e95b0cd7fd353b95a31955b6f734204",
+        "body": "0b1066c9b6475d2e15b6bd4f58c307ea20ac0e1226d3d87dbfc7db57e299bfb5",
+        "faqs": "2c571e6f3a6795f1b4dccd4277cb75a5ab0fb354cdfd015d90133c6b1326bef3",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/apparel/overshirt-vs-chore-jacket.html": {
+      "fields": {
+        "seoTitle": "abb8b8492a15902f056055e2ff12facf0b5643c946b3e3c611362d2d6c88b640",
+        "title": "abb8b8492a15902f056055e2ff12facf0b5643c946b3e3c611362d2d6c88b640",
+        "description": "ac35b792bbd42bacb837b02f3903a592c03099443cf2d0f6e2f57e3a148178bb",
+        "hero": "c825422f758e465c86b9491ebf9d3c2a3f9bd9a6ced7f1d2831f27e1bb41bbb2",
+        "alt": "a1499597a4375c301b93b03673be712bcee0b48b4deb68ae7c27504c825333cb",
+        "quick": "335164c61cb5bef71fa15e0a81d241716dba77cd20a25861874332af9016d4e3",
+        "body": "973568b193f115b76f53e60481cedfc33529d89696e1cdc0cd322770d6343e1c",
+        "faqs": "0b2b1e43bc253e2c03414aa4f70722155a330284deba9e55261b8d6c9f673a7a",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/apparel/remove-pilling-hoodies-sweaters.html": {
+      "fields": {
+        "seoTitle": "4240786a3df72eaef641f39600fa6a34cbcf45335a0e8c1279922329079d9038",
+        "title": "6fefafe8aa36f8d1ff3acf5eff619739eba90658f84e284a01d5be2d877ca9dd",
+        "description": "e8bff2758fc82364051cf35dd60675fc8a40fc8d57de6970e94302bc155fd349",
+        "hero": "f640536d912e65937bf33291b3a06e923af9ebe75e278385ac6e728c4c65d060",
+        "alt": "892431cc55895bb1463c3764600487507869d2291b424d9e8b8752576e6e8bc5",
+        "quick": "2771db853a3800fcc954ddc08cac06ada0b5b071d4dcda7fb06695088c01b1ec",
+        "body": "485163ba800f781a094d4bf3241c9b8fbeb5e72a30eabd31a12660719ea4754d",
+        "faqs": "5601353d38df8c68a86fd04609435739f10b01f2638fd8b530c5511b150de00a",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "495f7d8765f43fe7305f5ed10fbdf0bb59f368223c425fda0eb0e5af61d4f936"
+      }
+    },
+    "/apparel/selvedge-vs-stretch-denim.html": {
+      "fields": {
+        "seoTitle": "c4414f2d17309c23f8bcc771bdecf2b8ca584c96c97db007189d7bbd60ba6928",
+        "title": "c4414f2d17309c23f8bcc771bdecf2b8ca584c96c97db007189d7bbd60ba6928",
+        "description": "4d86c23f2502b8590789e31d1f894193b572ae227febeb1165e43765a31c3de3",
+        "hero": "a4461754114697c3a3bc96fefc0ea0f0f46094177931130d3c7e29d0ed761361",
+        "alt": "f5ea0d389f8a9fcdc88af67840b42828a37e4dc89a0fd1b9e0b2809cb8083f2d",
+        "quick": "7e06cb2b4fb5eb93db9c6077fcdb1c80ff5637124f7325e87f716566c3f154e3",
+        "body": "9e5ff2569663586aa1f69f2c5149a408a59fc00f2f5505e33188f1474d6c47ad",
+        "faqs": "7f136f63f0f5a292e4e196a69a87603d064db64b863916f616810c3d8d762c2c",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/144hz-monitor-for-office-work.html": {
+      "fields": {
+        "seoTitle": "facce5cc33bdb6079754027cfc9354173ae39b96330e3f8537c3a231d8ad2b3b",
+        "title": "facce5cc33bdb6079754027cfc9354173ae39b96330e3f8537c3a231d8ad2b3b",
+        "description": "ba5ea6da7447183602799a3a5aa326f37f22a404e8bf15a5ba6277191e872e76",
+        "deck": "3a4f5903f401b0e4011ca4a6a7d5cc8a48c19c6c121d2fb4f0f6e3b4639a00d3",
+        "hero": "5156744e3148722b061d0d7f9a32cfde1f7179dd49823623bc2d0defe3b99ecc",
+        "quick": "ca9a23a89168c2c619ebeb1b0b2f13e0a83ca465a7d07f0d55cff191a4c962b8",
+        "body": "3deba7b0ee1c20247d95e128ae9b697151e16afe40cb00193e34592decf12f96",
+        "faqs": "3559c35db7884da7ef3f4f6bdefbc5841f5740a83f16c417973c2c4f54aabdf8",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "ceb3f37f9deb2a800df5600facda3bcefa806ee686590ada675eb6040ce600c4"
+      }
+    },
+    "/gear/24-inch-vs-27-inch-monitor-productivity.html": {
+      "fields": {
+        "seoTitle": "9602f82319e5634c4082528eb52500c4d14896ee9913f6161184287bd05e4ff1",
+        "title": "350ae464fc4651efd785bb3a0bcfa1d877d99070079a3dbe3975d2338336318c",
+        "description": "abc76f6865e401d12633588acafb0ae4de7dd0090df3623795ec7b506343401f",
+        "deck": "f168340f28780de1dcd99cfbea93a94901acdd282b30e533d53164c3f9cf4682",
+        "hero": "cbda843521343e2ed125093e020e015afc055da4d9f9c78285cb8d66da892204",
+        "alt": "44697a68222b8655aed136e9e76c35e2d189976a625609a4d94566eb8a7454c7",
+        "quick": "0aba5577e64b49f78df21ecaf7815339eef539ce93eda40023049ab3df23194e",
+        "body": "e5ac531021bb9cd6275f767ccaafef588043ee0e4d24a6fbfb069df62bcf3505",
+        "faqs": "8281670d27d0ba71e8fe46632c2ba15dd504910b9ecff0ba44df90eff5ee404d",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/gear/27-inch-4k-vs-qhd-monitor-productivity.html": {
+      "fields": {
+        "seoTitle": "b7e27f65bf05dc2bcad77df5bbef6d736e1c81e1aca5accd8d9f6499ebf46516",
+        "title": "b7e27f65bf05dc2bcad77df5bbef6d736e1c81e1aca5accd8d9f6499ebf46516",
+        "description": "67c746995fb83a410e5bb2d0cba950528dbaed51278681c0d98ae051f9685ff4",
+        "hero": "03847b75cbc3debb85ee4baf6b2d5f06216040b04b923dfb7ca884c1fd4c8ea8",
+        "alt": "78853ec153be6a93271f0abf0fbd2951043e914d0c6ca44ec07cd75cec6dc8d2",
+        "quick": "0077f5dac00a8803a01599723dbeb68f259ae8551f951d9d5ff2a80e51ff0d45",
+        "body": "582484b1b5c5ace6af4797761dba271a21ba212dd27605d28736443c049ae763",
+        "faqs": "d8b96717c1b9fd2f58fc3964e07154623a606ab960f9d92ddb32a4a767e9833d",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/60hz-vs-100hz-monitor-office-work.html": {
+      "fields": {
+        "seoTitle": "6f91bd5f6a38ebc032bc17bf96847bf78fa98bbaa324a26fda6512f11a3c0947",
+        "title": "83db56261ad6965f6334c89c8e2a2597039c975dfbf8ef792f91e77f1616692c",
+        "description": "78c6ecbdd592baedc8821eff52d22295d726a99998bf24afea56863089bd36e4",
+        "deck": "4b6ca2a2ae1dec4fda24018540474e2466a8881bd95d10f116c0b7cee51e3fda",
+        "hero": "b2b821253016d5ea2822a5009848bffa0ec0eaba98408ae5fe9685d759174305",
+        "alt": "2042d86f3658260e2be063f0f28121ad494b867325f34e103b240bf2b453e294",
+        "quick": "dd534f250f9618d6723dc557896673f7145d9780316aed1d4de1977f0cf05f63",
+        "body": "a3e132eb45e88ae03a440802094f0b31348f1a501828fe606d019bd1798e9841",
+        "faqs": "be2f22bad5e253425f26426cc5af6c4f43b31e93cedf0304880a4eaba6649527",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/gear/amazon-basics-24-inch-monitor-review.html": {
+      "fields": {
+        "seoTitle": "646d404b6b81d0be532f7d4baf5a68b6844715c2d9b0802e42f2eb68ece426fb",
+        "title": "646d404b6b81d0be532f7d4baf5a68b6844715c2d9b0802e42f2eb68ece426fb",
+        "description": "ff4d12a52c3974b020b4b89c89cf8908fed76a4af46500afdbc1f116b8e2d6da",
+        "deck": "ff4d12a52c3974b020b4b89c89cf8908fed76a4af46500afdbc1f116b8e2d6da",
+        "hero": "ea58a0159e51ddc40a023fba6d065f2f70d25dd6714435e37bc0bb96f11577a9",
+        "alt": "dba4e8f99cf5b8eee7d00fb3991b26a3a1e499fd153b5a26f9c4900708ad99b6",
+        "quick": "28683ec2f3c20baa01efb8ebd0dda824b23a0a1f2f55beba28666d5a63074efa",
+        "body": "f49665826f7aab56a76c46e57a0a368a84a4ef675051ec26e837ca7d8c9b20f0",
+        "faqs": "f9bdda46e45418a8bc04a97ec2ecd74bd4f8c7269c5a86dbd885f2055015d56e",
+        "published": "84c891e73298e979d9d12a975e60ec9505a4c67c50b5d3c50e69d29d8cfb5b71",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "a747689121013729684ee957feb6e7638f0bf6af6674264f12e3e02a36a99727"
+      }
+    },
+    "/gear/asus-proart-pa279crv-review.html": {
+      "fields": {
+        "seoTitle": "31591e91c2205ac625942c73efa06b0e34a2c7de87fb6f40f332cfbc3d1ad378",
+        "title": "6afb8f632763d82b5e9e1efd0f5cd5880f7b5944786e127a197c19ca317434d8",
+        "description": "2262d40cadb67c88a4a8254770c7bd873cb5c31fcc201e5f03d9a1ad86ccb9ec",
+        "hero": "75879bb7514d813cc2d3b760a2c205cf86192c681234b4782fb6cdc48fb5497c",
+        "quick": "170bfc8bc494db28ecf7df14b07e0fbb543dc72f93d9293c386cb226c7d5f7a3",
+        "body": "a2a29af36f21ac0e99ad22b25de2e11a0427f4a9ece89d21ca5f181ea2a15e0e",
+        "faqs": "9c8ea4b7deb64c513886b8ff65cb3b41a1f0a8fd814e68c43bf8df67c3e85f2c",
+        "published": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "modified": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "citations": "6293c60320049bc539b435d22e8169093ad01cb9a16e3b1485984e9e0c9b9cf3"
+      }
+    },
+    "/gear/benq-ma270u-review-macbook.html": {
+      "fields": {
+        "seoTitle": "cdc4fbdede967e1db632f4eefff715ea6d24976e6e2239a5f01515c8901ac466",
+        "title": "5fcbd2a8015ebc03b2866e7becf52c25497093cd69f5ab6b93fba8e58df33169",
+        "description": "01c34be19ff861275af59c2157a5f08a1f6d0f08d002f0a4e0128f4b09076bd8",
+        "hero": "cb13756f42d35de7e396d753bb411fbbc8044775ebe313bd370d1ed18b1358ea",
+        "quick": "38a09f512d8808859f5beb1ba7602dfff8dc49ca978101242b60793ababd5b2a",
+        "body": "74f21d0c49c85f8642207363bdb8f28f70cfc53466473b0ab9b20c80b983398e",
+        "faqs": "7328ee81080b338ab25af322e04611c1241e8bad968dbee5cefe7089fb077fdf",
+        "published": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "modified": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "citations": "9c06784ad6ab5682d19702d0f0f0069a7f5186ca24376439d9f62d62880276e4"
+      }
+    },
+    "/gear/best-24-inch-monitor-small-workspace.html": {
+      "fields": {
+        "seoTitle": "552c91e2fde717efbce7ee862cf7c2c66fea3703c5bf89aca6e3ae7eafe8bfb4",
+        "title": "96cbc209e98756d5bb966e16c246bb254f4a994a5ea728dfe95519e508301c4c",
+        "description": "d676a3c7124c7afea26958308cf8a6d5a89b35f4fb43b4ecb42c205208ecd966",
+        "hero": "5bad5f6cc92fee4c45c267296d902016580af6b8567832613ccdf61736bfac00",
+        "alt": "26dde0123fa80e087f53baf671a18a2f140e3abec603a5830b124d10034d71b9",
+        "quick": "c74db95fbb81a40acfd9948ca67f4356570d9aec2c0f9b71241ae365e6f5d6af",
+        "body": "638099d39bc11dfb10dfec2a1df9315710c0dabe61e24d1af79768e0518c1de1",
+        "faqs": "945686c278bb4185446bafa73b9fc920ea6ba8f0bb2b867fe29aba172fca16bc",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "462d5a35048be9052843a1f7aea6829ca21d1b78bd275de9b91d0cdb7fd98dec"
+      }
+    },
+    "/gear/best-monitors-2026.html": {
+      "fields": {
+        "seoTitle": "2734543e6db251d92c4c7e2fb664db4cc79f94b5cff444dc2a7fab1407e7ef41",
+        "title": "2734543e6db251d92c4c7e2fb664db4cc79f94b5cff444dc2a7fab1407e7ef41",
+        "description": "f7aa366a6cfb7af48b28ec9b76e33e1a0240344d0481ac837d4a104644ef5d8e",
+        "deck": "f7aa366a6cfb7af48b28ec9b76e33e1a0240344d0481ac837d4a104644ef5d8e",
+        "hero": "462be3db9558d3602ef1dcf368bf9d89d28907ab87a119a449e540e703771cd9",
+        "alt": "b0b82f6d7c158deead2a488af9592739cd66a615b169f934ec6f5020197d40dd",
+        "quick": "752b78a9a2582883a57dd55c5571343a31af5710a02b15c19f49f8284264893e",
+        "body": "dae174447ea06bc0cf553f18ab8b42ac915094a18af67cac8776b4e3a1dca6ec",
+        "faqs": "f478c177877cba5fb2593bde6f4f0c066895df126168985f6c15a124d207774a",
+        "published": "d31fac478f875d3f8fa95a8a9a30f31d7f5d90946da706c50a45be42524934ba",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "7677a2c0457995cbe8de0e73039a7f63757094909c84cf39603b8f611d65df20"
+      }
+    },
+    "/gear/best-monitors-for-small-desks-2026.html": {
+      "fields": {
+        "seoTitle": "864a92477fa5afdab64ed92695616b7b35b5c847b80e3c87ec2e128079a25691",
+        "title": "864a92477fa5afdab64ed92695616b7b35b5c847b80e3c87ec2e128079a25691",
+        "description": "0273eecfeecda740e22308c66290ad64f1258506f6d2b1f768c606406798d9fe",
+        "hero": "d9c8a4b8088c8a65418fa35d1fc5628ab72b2a9905c705937ec3b8a4957c0682",
+        "alt": "c64d020ed902c6ce6120b544dc3a0ce2cc5ed6e0e1ebc18a8364d0c1ccdffff2",
+        "quick": "da8d6c6ad0dde81892446038b444b8764acbb35536fd56498de8d7098d87c244",
+        "body": "c2783043e87dbc62526168eab8c4d244bf617a02267e03590208ffcd00a36b74",
+        "faqs": "c2fcc81d2b7fd16973c51a53c9e03da418315c1e46cf0109646231eb91f4190b",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/built-in-kvm-monitor-vs-kvm-switch.html": {
+      "fields": {
+        "seoTitle": "15e70a343d1f6e0dbe93e6da4aefa8a3514fe5245d8c26f143ffe24002696151",
+        "title": "15e70a343d1f6e0dbe93e6da4aefa8a3514fe5245d8c26f143ffe24002696151",
+        "description": "cb0ff1d829a7ec591bd167fdf89a1f7b97ebc7b3d2319da47ac079376f928f2f",
+        "hero": "987f00c3c45c91c2d10ccb46e3bd1004a09a0eb21cdfaa36387db087df9ab008",
+        "alt": "03922e87dbe9372807f73e21ca59fa4649569a7ac1d5ae6d73d6454e7f2aaef1",
+        "quick": "5aeb2772a5e00ea7e569132dc42442343dcdf308bcdb6dc7d109be7dfb1a9a97",
+        "body": "2ff0c135072d95b63cb17fc7edd7d127df3ff43d9a5fd41ace9841813045c4bf",
+        "faqs": "32a7e83316806cb56aacae05a94825a6bceb18cac8ae079271a4432d6275d742",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/dell-u2725qe-review.html": {
+      "fields": {
+        "seoTitle": "727ae3abc4cb1a204b4e8603bd1846c646c26f137efedde5ea54129c8d731562",
+        "title": "0b5e59716f9f8bf1e4402a8d32e216651388f03b76dc37f2a05428403727b46a",
+        "description": "af7fd85d092ba8cb82b5a2a42db9f5fd8135fa4e618e2fb781257cd1cc7f9936",
+        "hero": "926c4e0f6e654bf447d6ec14037707f7964acde7e83d2a547c3393290f1fd708",
+        "quick": "aad3ce4ad674885a37fc0d522ca18965224f8b6229c6a150be7c5e6ceeddc6ac",
+        "body": "c70172464837b3b23794fb031515f9c3e7af37c3e2e4aaf428217c3a1fc43503",
+        "faqs": "74200d30a0f51a27c2dcc4fd27ea04707fa0661605e586451f304f0f73180504",
+        "published": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "modified": "e85c5195b5dcc29e439fdf1a5d3f53644ef01abbdb95edc20ddbf20d215c9711",
+        "citations": "bfc0c5f458a63d81d75d47e146dc3fa0a1888f5463baf78b903d06556aa4d577"
+      }
+    },
+    "/gear/edc-tech-setup-remote-work.html": {
+      "fields": {
+        "seoTitle": "cf30974f55b51877eba22c30a837fe7f72cc03cea3dfc3d2c1b38eb96d5343d9",
+        "title": "cf30974f55b51877eba22c30a837fe7f72cc03cea3dfc3d2c1b38eb96d5343d9",
+        "description": "f549f077de7c2a818f43c5a93f0d4ab70abea8a5aaa25cb8a2c2100fe90dee55",
+        "deck": "f549f077de7c2a818f43c5a93f0d4ab70abea8a5aaa25cb8a2c2100fe90dee55",
+        "hero": "bfbd0c16149c87221dc8a79ccb4c72b17a0dbf54364fd83bf1ea3a807359bd94",
+        "alt": "eeff576a5638e2a46a6c44125be31b398dae957afbe8717f710e832a86711b88",
+        "quick": "480d79724b58cfc520b6bba0b01d2ca091e1516693db92a484429fbffa005c59",
+        "body": "dc5d73eefcc46d6349e89d2c61020ce067a592655865a0d5956394f5a990623e",
+        "faqs": "8cc7d25db22a59f3a93a122a5ca4b1d2f965ff0d035a08abd2f0119fe30331de",
+        "published": "03427e3d55387c4b4b6e210c9db212260d1280f8ff2305ad8bf95e4c0d54e43e",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "3c13726aa1af94fe45c89b0465549571cd89f7c07efdadb948f5d76d5e387ac4"
+      }
+    },
+    "/gear/external-monitor-blurry-text.html": {
+      "fields": {
+        "seoTitle": "270acc68e4771ab8c13317ef249be1cceac09fe29eec0d313998db2e47d8c4e2",
+        "title": "270acc68e4771ab8c13317ef249be1cceac09fe29eec0d313998db2e47d8c4e2",
+        "description": "92987544d3a3c1487b042b7a797819f0e29c6d1b7bdee6ce9557c6e03c780e25",
+        "deck": "92987544d3a3c1487b042b7a797819f0e29c6d1b7bdee6ce9557c6e03c780e25",
+        "hero": "5e0617f1f0535a9dcbe8af7b50310f60e80ef1a4d2a8ef4879c8db70efc3b5bd",
+        "alt": "b67a2129540d5073ef5d5e06a3a1564c4db312031cb3c07cff949bb8b23e814a",
+        "quick": "eadf2c3825a5a87ae566281070479c0edbd15fad3613c33408f7e7b6991ab863",
+        "body": "1c76bf8982cb6c8942c91caca7b9ede258b88e9c9c0886cc357e0c7a126157e6",
+        "faqs": "db3a0f1638e909cac0288e021c145dacadff912743ffb6864d261fce3918444b",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "657e53733e96fa85f9922a900496f2ffaf5839e6585f7d28ac4ecf4e26d68bb1"
+      }
+    },
+    "/gear/factory-calibrated-monitor-color-accuracy-guide.html": {
+      "fields": {
+        "seoTitle": "5aba1981dbe2fea3e624a2a2912fa046383843614345aee7d9138d05bc68be74",
+        "title": "5aba1981dbe2fea3e624a2a2912fa046383843614345aee7d9138d05bc68be74",
+        "description": "3928c62fea4c3a78e6fbe938bf14bd9cafaa71e1c561e0e55be888c409fb5045",
+        "deck": "1783439db43865a6231f504c4310da3f66cf67e652fc29a46bd954b50ebad049",
+        "hero": "21fab09df62373b59c5448d6f629af80857fc5d10941681c02eaf965ed99830e",
+        "quick": "828d9498fa317644696a4a72b168e2f74361499f4b3214fa728fd319110a2d20",
+        "body": "dc83d7609f8942bece5b895aacf54ef6b93f398ac805fc56d5243f7b6c5d540b",
+        "faqs": "880ffabe55dd0792edd027e4702f137a9c5bcc8f9d08aeef0952aa02e554a1bf",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "e2df2ffe5e8b9a28a4607805cb0e78fa7caad16f9007b172b5f55134738ce9b0"
+      }
+    },
+    "/gear/home-office-desk-upgrades-buying-order.html": {
+      "fields": {
+        "seoTitle": "7f3eabca09fed80916a105be7bc2f181e243b3f52b94c1f622333b5718255700",
+        "title": "7f3eabca09fed80916a105be7bc2f181e243b3f52b94c1f622333b5718255700",
+        "description": "a722c6fbdf328b69ef291981698ff94176c6ef0acc1bca1c756c21e721426d68",
+        "deck": "128e1ae83ce299c4e039442e805031f8940a34166e60534b37fbc3474ac0e662",
+        "hero": "437f96193e03dc132bc846253027518e9aec09dabd7285bfe459176393ec0652",
+        "quick": "de4f5c9db4fb282b40dd0ab18d91b9f197ff65e35dac625dc52c34207e0f9638",
+        "body": "1f29a05a815d3dff085ebfedb86a01cf5574a3c15c1c9d13ee2b11202fafacb4",
+        "faqs": "cf9d22c6240565b6e4a9d348d74b3ce6c9e2c7029ab06f2a482d7a9389806e00",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "f67a7f43e792afffac1ee3f1335fd6f41ec4f0d37ee2cec06ae3c2bb055e40b5"
+      }
+    },
+    "/gear/how-to-choose-a-monitor-for-work.html": {
+      "fields": {
+        "seoTitle": "91839a71299df579a4c5586da8f3725ff30d05f196328bf17e24df1f290791fb",
+        "title": "91839a71299df579a4c5586da8f3725ff30d05f196328bf17e24df1f290791fb",
+        "description": "139e5a9118b4cf03ba5fa1d74953d098ac295d319e8b565319d7e8cce5475b7e",
+        "deck": "d9d589fead75202d37c0ecf7d4e5ba1e30feefc34652d3e1c26e343335e6ff1f",
+        "hero": "462be3db9558d3602ef1dcf368bf9d89d28907ab87a119a449e540e703771cd9",
+        "quick": "8ea671edcff42a0779760be75f90a33422237a3936621f23fdfd86bd2ca99409",
+        "body": "48cd1166aa874d9c5f92ab7792f2d5246908cb385f0d6c0106b29b7a5d698d55",
+        "faqs": "cf748c19460abefe0d851b239af37d676a0b7019aafd2ce487c2b25840ec8317",
+        "published": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c",
+        "citations": "2dd188ef84118931e892b178a3868788c45cc904bab61015fea391ba234b6a4d"
+      }
+    },
+    "/gear/ips-vs-va-vs-oled-monitor-office.html": {
+      "fields": {
+        "seoTitle": "ac347b343479e55b8895cd9e7198f0d3b2c3a61830157bc22516ba775b5aac9a",
+        "title": "ac347b343479e55b8895cd9e7198f0d3b2c3a61830157bc22516ba775b5aac9a",
+        "description": "1406eaa077c47a543edce1cd2bd2cd6f9ed452d09366d568e233bbd1a37d0bd3",
+        "hero": "9b2f1ab768beeb05494ab6f685480a6ecd8f92c3292d4cfe0b83c325f2717c00",
+        "alt": "847c3965b50ae47931c9528e4f854dbfab4e2d296a78cb2a1856de69821f8eba",
+        "quick": "d82181b311d0f509951e940286e52e51798e3303ac718be89470c1a01609e7d0",
+        "body": "2115cbc84d129d1e6a7c5f274f499afdb1962fbe22e8e3a8e08f97050dec902a",
+        "faqs": "ec9f0e23ce78949dc6bc2eb122dbfa0be25e9effb051881f374affd1a44578d1",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/macbook-dual-monitors-mirrored.html": {
+      "fields": {
+        "seoTitle": "c7c1a5c3c10bf278e89184fd5d0056c94ee9de0f7caba41fc408a5dfd1d06d1e",
+        "title": "1c81c8ea05a63c052191605fa2e971ca6299e3a70113e2cb41e9d62076c7e464",
+        "description": "dbfdf599f1d65e6acffa9e7aca277fc72809b08706003427745cc92c58dd7ff3",
+        "hero": "b95a665d86ead1077f1f6f0c00c697186a10f11593f99f6b907a01749b29c212",
+        "alt": "69dc5556eb1de089cd1bde885e53bda79160193f7a5f406d65071ff24ff1707e",
+        "quick": "a2ef4e0835413f0aaeed8f608bf772d46d411c1f470488b3bf27cbc52bf773c5",
+        "body": "9eda24f1af1323246717f3f1b7fbb428e5d29b90d54c607eed0d76ad3f0e986b",
+        "faqs": "6a30c4a3e9b071892bd7f0c4096f294280d10840088a652b966128ee18ab39f0",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "92ac5c3e88c92ce223a2ab6e9f7cee6a9db482e70cacc1da45d92a0f6623cb05"
+      }
+    },
+    "/gear/matte-vs-glossy-monitor-bright-room.html": {
+      "fields": {
+        "seoTitle": "81abaef7a71fa5bbb10d11bc902f9ec1e9a5c08f5cf2bcfe65b5ffdc11c7a6c0",
+        "title": "81abaef7a71fa5bbb10d11bc902f9ec1e9a5c08f5cf2bcfe65b5ffdc11c7a6c0",
+        "description": "196e5fb1453ddc65886a65675a6c913d6c8189e61dda29f891c0a547454d5eb4",
+        "hero": "063c95c479ca1dd9c306cb35bc5fb9a6f11801d7b6fa0673f6fd2480ee0f53fc",
+        "alt": "8c6f1f1f361e77e9bc62b99f5b9a14403069249b36874a298031cea640b73006",
+        "quick": "0a05b2a1dd47a5cd2b25ef72066f5ea50394949fa8ddea83df8de34e29eed15f",
+        "body": "74451ac7eafc4077a12a1f6ec87ecf24e24dd768e7939f33419fc92ed4c24fa4",
+        "faqs": "2a4105dd79bf8edcfe1bb64b6bb0bc1b7dd04d2aa024191253df7f5daa8616e5",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/minimalist-desk-setup-10-picks-2026.html": {
+      "fields": {
+        "seoTitle": "4fc450d01278a4793a9a5583d78e8f9b805f68a12145e7c6f22311908c343daf",
+        "title": "4fc450d01278a4793a9a5583d78e8f9b805f68a12145e7c6f22311908c343daf",
+        "description": "150949b957d20c00c3937cdb15973f3b827ca08622aebf7328c68c38165ac8ec",
+        "deck": "150949b957d20c00c3937cdb15973f3b827ca08622aebf7328c68c38165ac8ec",
+        "hero": "09ddf725592ca0d72de125aa0ad53871715127e4bc47775116fbb1221822128d",
+        "alt": "eb8212de62af97f505fc8bbe2a79006eb34407b450575f07fd8b00e9c23e80e5",
+        "quick": "12c32eca886f75be68290e62fa5c0104a90e4228447e29ad015a0c48c1ac77bb",
+        "body": "4200f17189054e198a724f7374e22abe12ce401d46e5f5e6b86fe6f0c415c028",
+        "faqs": "8ca8b45d9cc88a63b101767dd1347a39b3512c4612e7c8c3b0c23278594926ac",
+        "published": "66ee466d12f6f42f840e3ebd93312a9bfa9dc776d8d5cf2c03e772dcea31953b",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "ffcc14766335ab0139ebe03b0a14007d965a47bad8e9ee93cdabe26e5407605e"
+      }
+    },
+    "/gear/minimalist-desk-setup-essentials-2026.html": {
+      "fields": {
+        "seoTitle": "dd558c3ded9ca954cf6f7cfe250205446c8903917603caa0a3f5452a51ebb4c2",
+        "title": "740b312b892f3671e376be7c79976429ecabc5f3f513e04211e2fd16177d26a1",
+        "description": "7dfd56a44f3391d7db53b4dca4df6adb26565cf3502eacf2845dc39bebfcdd7c",
+        "deck": "1ca651c1ca6b5df4d5ba4d5a5e78234e06f20b428d66bc531d615dbeef2a16db",
+        "hero": "1bf6f9a105408ede59a665b0b9a9f2eaad245d53a4cb2f8402271c952c758cd0",
+        "alt": "e80f298eee7e7c18d92def92e19ba731c26a3827504be421a8c1009fe35b3e29",
+        "body": "f3e15934bfc4dcb66be845a418244d1ffd8421c6220151fccbf0801883684878",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "published": "29a5102cbb3f93bd68adca6fde6ebf310c8cac6c96dcf112f90208ca7b4b1360",
+        "modified": "29a5102cbb3f93bd68adca6fde6ebf310c8cac6c96dcf112f90208ca7b4b1360"
+      }
+    },
+    "/gear/minimalist-monitor-setup.html": {
+      "fields": {
+        "seoTitle": "71f655fae1f30d456a95b228232f8efd309dff9a8566531910c95d37060336b7",
+        "title": "71f655fae1f30d456a95b228232f8efd309dff9a8566531910c95d37060336b7",
+        "description": "04ab7f53c4779b05957cc55b941fdd7eccc603c9c69b4739870e0d85a92a7f7d",
+        "deck": "3d46f8b118b61304187c2e07950bc3210220c24ad0f781ca167fbcab9a6073e5",
+        "hero": "e3f268b6d89da7f8087a4302839f0cb57454beaa47116017a230e82b136188f5",
+        "alt": "e628879a438ac39672c87adeca20a34efa8024c75817045d1e56c46a6fa70862",
+        "quick": "adaed0b5a277f91f18f1bb278e39b1d5959b0250b6b803ff5cd06e7bcbce7bdc",
+        "body": "8268dafbebd32d6852aaa5fc4799bb6f74a325cf62b3e04fdd1e41548695e548",
+        "faqs": "615d0bdafd9d2a1f1227272f7e36a68ca977307af986b0642c3550fff3020ebd",
+        "published": "14158d45727526145ef514139eeb669eb54d613dbcffe524f099dbb71c9d8b08",
+        "modified": "aaf9134e098e2ad7a3ffa4abd3114df42d71712e34545868f597c542fe002f5d",
+        "citations": "9ac8167838d0ba99ae3a8bae863b9a59fc5e61c8c7480cb9aa2d3a6f0b71c275"
+      }
+    },
+    "/gear/minimalist-triple-monitor-setup.html": {
+      "fields": {
+        "seoTitle": "4282a897f484b3f7734d14151aec6bc3ed4a08c1c50b794648e7e9b1176908f8",
+        "title": "4282a897f484b3f7734d14151aec6bc3ed4a08c1c50b794648e7e9b1176908f8",
+        "description": "95913e037c032ab3b7e293d37776310104ba0ccffc1b70adcd4f151f4a537038",
+        "deck": "95913e037c032ab3b7e293d37776310104ba0ccffc1b70adcd4f151f4a537038",
+        "hero": "409b387e86f027c05285c1b1d0eac547b74c81500bc76c34dbf7e7804aa867e8",
+        "alt": "803a1ad3073d64dd98b88a6bc384c49421146764fe8cb4d191a6d8ec52b67050",
+        "quick": "c4823c3635d148811462c6f0c7a731c5f6af600f9a7a9a0d74ca3119eeba5ed7",
+        "body": "3cc6537c071e49e49aff9fa5ae050826bca89f43a737ebcfba4c43e140a3be22",
+        "faqs": "c7ad82573b715c9a4188c13590321493ffd9cac15924cfbd83d5aaf402083e43",
+        "published": "32dfbd0b53b1f229f7b357dea1a49d3d62fe6812761107dc196d4ee30dc53171",
+        "modified": "9a5028763b8b5525e18ac9a5a598a4d9994aa77acdcb1e81aac966d11bfa5a5c",
+        "citations": "103c771ea57bb150f2827a55d336369ce1d8195246ccb014cc40c0294e4e4c51"
+      }
+    },
+    "/gear/monitor-arm-vs-stand-shallow-desk.html": {
+      "fields": {
+        "seoTitle": "dd28e7fdbded65656130bedae1aa000d8acf809df837b6b697ccff2b5608f954",
+        "title": "791e82c8ab153a86017b316f6089d96f07246718aa45ecef3fe4b68c8796166c",
+        "description": "8d4c8085b8a404b7a1db309be87d578816738e844428409f20ee4ab72d844acd",
+        "hero": "007b1cfbfa1177ba2aa8f3bef97eb7d6b972c8600633d905c44235456a3117d5",
+        "alt": "2bc1f834926e06521d599d939eb15ae65bf4a5e9bc1f2b6ed7ba9169ab192976",
+        "quick": "15a9d9c6842698db1ee28ed98d2f8efd554c200694bf11d03801bdf8157640c4",
+        "body": "7d73541aecd6db2896859209880367c1e578ae5db491891470c306302d80f698",
+        "faqs": "6ffe2903873be4586b4f2aa92c79bbd524cc05eb075a76c7a2f5e4286830b516",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "462d5a35048be9052843a1f7aea6829ca21d1b78bd275de9b91d0cdb7fd98dec"
+      }
+    },
+    "/gear/monitor-dead-pixel-warranty-buying-guide.html": {
+      "fields": {
+        "seoTitle": "bb7310a6fdb29d13a0c4b4d60d1c13786cdec1455151941711470115fb11fc9f",
+        "title": "bb7310a6fdb29d13a0c4b4d60d1c13786cdec1455151941711470115fb11fc9f",
+        "description": "ad599698cb1fbcaf79b6943855ca560a877a73735316d0518980ad6ca18cc3ca",
+        "deck": "2b556ea9425d15545e4061b1d1f99ac245d55a94f1de75cb12e835969b82c855",
+        "hero": "d05414494ddc01362d7d1701aac14c041235c09f42ede8042ae70f3f6396c1e0",
+        "quick": "d8b3dfa5a06220fb4c284962357ace45af6dc6f5bcf1a99f58e035ec9eaae576",
+        "body": "08ac1ff2e3dd99232909866d0183c0b80949dac0eef3321cb5ff93cbcf9544b0",
+        "faqs": "d803d0f1472aa5f0d3def6bbde9a0df602f626757ef37ea83cc7e49f7e04f10d",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "e5c012e9a24273c61be67799628c08e09eadf6800e138366e1f2ce1d1c19ee03"
+      }
+    },
+    "/gear/monitor-distance-and-desk-depth-guide.html": {
+      "fields": {
+        "seoTitle": "68f8bc194cf7b7c8763676673bcef2742cdd24e1bd97caf893bbb59a0ced9dc8",
+        "title": "68f8bc194cf7b7c8763676673bcef2742cdd24e1bd97caf893bbb59a0ced9dc8",
+        "description": "9ea47632cf335430f67fb51e150b16fee9d518712191a080518b4b4237d76b2b",
+        "hero": "34873a9b2a9a05d7f2d75f825661e8b317eff9d439570f147570b3eed2e279b1",
+        "alt": "e8bbf41c45ed3f02bf3826308093f80245fde6f64755b4c7c9bfe8d7b8a25b76",
+        "quick": "4f03a69720f28eccd88a392aa36b58505057035d67848fe57ac329e73c63d199",
+        "body": "30837a1ea7e74915e7fd774bc9be13069e92cd1f90eb07fa42e5eb7081311ad4",
+        "faqs": "9d2b9ba976b73f7abc54568644f9060b5c78f085e0a3a2c4e9910b99672afa13",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/monitor-light-bar-vs-desk-lamp.html": {
+      "fields": {
+        "seoTitle": "fbff884082d0b24bbccdbc4f53c88065311463fa49578a77153859fa1c1e16ae",
+        "title": "fbff884082d0b24bbccdbc4f53c88065311463fa49578a77153859fa1c1e16ae",
+        "description": "3ddff2378f97df8ae93c39f5193eb1d903dddf6d42d1898a9febecc828a96b11",
+        "hero": "675a2df0bbe2349bac2faff8fc0b5ac8123d090f3272ebcdea42d3f43916c835",
+        "alt": "2fb068bd544f7d816d2815d18324990ec392bad4547d1b49eed4d8259495ffc8",
+        "quick": "5ec09501baee91aace30e38d7b13213e1c96fe016fc927b24708cbc95d2ea29c",
+        "body": "03ea93433ca6561984d4229b30ba57d697d0a55bc56d868ec1363235b58300c9",
+        "faqs": "e6334fd6be92e8e0bd90c9ed3513b9a571b9c144e0f4219ed86d8cf9f36ee106",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/over-ear-headphones-vs-earbuds-remote-work.html": {
+      "fields": {
+        "seoTitle": "6b3192bee839d306e50a06e77882240de4c2c88a8f21e0daa09c1654b13fc892",
+        "title": "c02b12e1b2441e270d03597e9644eb8372f53ce8d942fe2aec2d3c02556bc1f7",
+        "description": "3e77d565946fa033b229179fbc1cb24dd37af3660ba2bebbcdd632b16d5fe7c4",
+        "deck": "87690b68893a42200a484525d918c6c7cd55d364efeac24e71fc147360312aab",
+        "hero": "519f1c3c7de9a53c69b9a1b47be6e51119425f711b3e17073115374f9b8b67ed",
+        "alt": "fa1a00a8c9ad5f8cc20c1c62de2829287248351cd6bd4f2b0a626a580e335b93",
+        "quick": "91224cd1904f3e5ff1d824f2a1cd4010e0331985892e2d6e341430224ee7eda4",
+        "body": "31a88358e412ece708d120f73c6c02b0dd5f5fb98584a58740d7b7de284a838f",
+        "faqs": "361c6a9402d9d1334a4d10a09aae3c90d63a0fa7d327627abe67eb59187b346f",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/gear/pc-accessories-that-solve-desk-problems-2026.html": {
+      "fields": {
+        "seoTitle": "d5aab0614d8f2045fa5847e4460003c638ebae53c09de75b5a3e79ce8dd6485a",
+        "title": "a3b7e964cfaa8beb0c475d74a419c9e50494e3565e988cd82c585071ef32f96b",
+        "description": "f68a74de2845f57fffd4b8421bc7ec13ec1bd9c39b912265c87a744aa6dde357",
+        "keywords": "ab3a324e3e5c62a4b586f2b94032fe2872e61c6620e811f56895f5faf3f6e606",
+        "hero": "01dafe1866800682c76bdcee959d616732433dc50cbc0d16602e8392940edd73",
+        "published": "f7f6076e9bcd47f5545e670534cca8cb1eae755aa17dbb64c7dd7021d518027f",
+        "modified": "035e2bef524a7c7630f37f331d8e4ca513d3666e2605983304419fa5389000b2"
+      }
+    },
+    "/gear/single-monitor-ergonomic-setup.html": {
+      "fields": {
+        "seoTitle": "5e7cf1bcd04d219c08bcfa1a743e60fb5f34e90d2ba9a98859a0172a2ea440ef",
+        "title": "011e41728252c75e4411ee1f332e56c47f7f7031f6d03b8da61d530b1c67c3fe",
+        "description": "6b2455af2f990d72ec696eb726dee11f2d404bc1ddef7ffd69441e64580beca8",
+        "hero": "f5aaa5be1a1fb5d01d4e3c8253ff7df611a1f73559af6e9dd7b1fab5ed24b17b",
+        "alt": "f677d000f9bd38d8e432e2519429e4175500ad600844bd8ccbbd4a76e75e9dfc",
+        "quick": "41d839fdc76c07e352c4dd89503c45c710ad83f52e6c07f566ba3a3c27a570eb",
+        "body": "cda2a79e230b80b82c561c2083fcbb2e66be1e450d68ddaff4249b97f09893d6",
+        "faqs": "0ba6edeae7979af108405702131f73f669be93824324d71641f47d74494177bf",
+        "published": "f111472708409b2ae9d74ab9d6c63a1750a20777d215face10c86ec5188046ad",
+        "modified": "aa66931ec9add42a8a1f22a3da752a7586494bf03e0d36cbee19495aa93ed54c"
+      }
+    },
+    "/gear/stream-deck-neo-for-work-productivity.html": {
+      "fields": {
+        "seoTitle": "d813af9a1b14317f26609c4194234d36e724a3e7056db1c978b8aaffd8054073",
+        "title": "d813af9a1b14317f26609c4194234d36e724a3e7056db1c978b8aaffd8054073",
+        "description": "1b3b32c64292dee3d31b9a930e28b5a847b790c4b1f577c5b4fc4e8a039de8ad",
+        "deck": "1af5d017998974878505fa73c889294bacc0a46ad35c85cce6e9c3f982788c40",
+        "hero": "ea8508466d0a6c71efc364e6f7b6ba725fc87eb373d4b41b7e3f1bd9fed7b7f5",
+        "quick": "d9adefa4032d0e839b20d84cf032f0959eeabb88f1e1b688a29cf4bf48d5ee23",
+        "body": "485a3aa21ce7ac86633ce23fa2f4046c151582c54482da8c664190e132579b8f",
+        "faqs": "0c4e14e9834b3339a8f96e64a42209744ab91011f775ac5268631dacb67e80ba",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "babfbcea302c34b08bbe87abb985e9d5021425c6429cd0931110421fbbd82b36"
+      }
+    },
+    "/gear/trackball-vs-mouse-logitech-mx-ergo-s.html": {
+      "fields": {
+        "seoTitle": "5e67f74a0f0649f1464c49b47a568e2964931ce69124a7594e3154c09f8620fb",
+        "title": "5e67f74a0f0649f1464c49b47a568e2964931ce69124a7594e3154c09f8620fb",
+        "description": "f5fa497c7d370b1220231d7abe7defcb3d52ab143cd5c02bbfb05b9ec0cf133a",
+        "deck": "be0638c15f56321ce554dd58bd0cd91a1e13b639d7d2c0cc91a2759e2315f703",
+        "hero": "f7ed2263448f339ced29b440802c38e801a9016d05c286e44dca02838b50c0c8",
+        "quick": "1401ab182c28c9b1e05cfc0d697623629f032d8152fcc3388053017fa8bc3703",
+        "body": "eda48c2235bcaa9387e2564413823e9f7a003110544eb520f700013ab8ddec81",
+        "faqs": "9c18f89355e1a6867a275b338b334a9a6bbe92dd69eccf0b95156e8d69113f2e",
+        "published": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "modified": "cb377837061e51a8a2c5bbf5a4df59256f6901ca120dad7e718c0d23ea5f70cc",
+        "citations": "7b9734b0a44c60861e7d62216386493c552a0237d5c962d5fdb65330689d42b9"
+      }
+    },
+    "/gear/usb-c-hub-keeps-disconnecting.html": {
+      "fields": {
+        "seoTitle": "3fa7cc319cd9ae6275fd5a66febc4ca8a68b4646b932fe7c03fe30b2e038212f",
+        "title": "3580468937c99bb49c56e3943d09f732126fb047b87b27e4d7109d5bc0b98653",
+        "description": "4ddc95b0957dac512917abefa36a62b85e6fed85be51f58e2c492c09355e06c0",
+        "hero": "5acffbeb0be0652126dd3e4d706277f30cadf88c2516b3d17bbdd53219ae147d",
+        "alt": "ac07bc8ca382a463a56e518ee79ab8d54955f576c3f3af98d4e4e2f333829851",
+        "quick": "6c5f9e842da65752847671c1e58de37708077fc98a59fcabc0fcaea1c1f1cc5e",
+        "body": "ed311525db23529fefd70e8340b730892b54ef62d329f9dd48ba9e94864360d8",
+        "faqs": "626aaf8ea7c218b6f15b6db4e3e58a995e52b15e4ca0f66aa523c1a1d3c0a435",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "6581a22c49de4e41a3eb18f698177684182ec733622f222b5ec7ae07eb6dc472"
+      }
+    },
+    "/gear/usb-c-hub-vs-thunderbolt-4-dock.html": {
+      "fields": {
+        "seoTitle": "33a1c4d3490cb4155bf5ed3828239409ddab5b21ff262e9de929d3ffdfb9ba74",
+        "title": "e419c40b8998a11f32234b992bf7fc09f9a2aed9a197c6ca54dbc67f08b17fbf",
+        "description": "944e524917743b59c1636002e2a4b4b9e3ea508ea5c6f6a087d986322dff2182",
+        "hero": "fbd4734922ba3456e9fa67d80e37e4a2242e5f4e20aed7f526b618fd700a89a3",
+        "alt": "994244f8d52872b36ac86fdedd4020b102f9f0ce7dc107604fd62532d27a8682",
+        "quick": "fa280dfef3220c39118bbe7dc98e8feb1efe59fe1a148b37c7ce4ccd6613a82c",
+        "body": "d1712265d5b25322bafc57ce09aae4bb525a8621d126441290dca3e2601cb14d",
+        "faqs": "6a3bfc9fff0f80e8acc0373d31d77214707560a28f108bb51f6a87f7c5e69e98",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "462d5a35048be9052843a1f7aea6829ca21d1b78bd275de9b91d0cdb7fd98dec"
+      }
+    },
+    "/gear/usb-c-monitor-dock-slow-charging.html": {
+      "fields": {
+        "seoTitle": "d91a401bc7313f88ca5ffd9d056aa912ed8a6ec605a803c149692d0e9358df8b",
+        "title": "351205465ed13bbe8e6b7cd50124a6efbf354b87dd7a6f04e045ab48fbc4bebe",
+        "description": "0434c94c324945065633dbed647e399e2f70e6b9479790fcef9016f08b4c600a",
+        "hero": "8ed967f3cdd76a726153c1a8c09bd32160869a2cf244bbac12d00af7b57ae5da",
+        "alt": "f5419041c098c50c24722ecf90ee6106ab628f9c43bd3784eea18e0b4adfe139",
+        "quick": "74d9147e3e7bcc1b029811f48731b1b34d5322862e80d7b7683736737c589ca1",
+        "body": "e34d0b1e01cff132f6e9da7524b9ec751b55a78f69781a57e2e2170c07a6062d",
+        "faqs": "f7b06478e89f97af02399a3223bf7246f94231a25f4d322cd5b50a60ed589a01",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "d3783efb076feeb981fb4561170ac3857e7ad17cf3fa90ec7565262ca6f37f67"
+      }
+    },
+    "/gear/usb-c-monitor-no-signal.html": {
+      "fields": {
+        "seoTitle": "b99ade2fbf3ebf94118453f589a6b62ed8215b600744f935a424e7e93ed6040c",
+        "title": "20f34ebf5def337800f9a39c11749bf4c7846b68839517e7d2ed494230bbfa1a",
+        "description": "d4923b9328b1a13d203a79e0c2870d74e261eeec4ff3792e36f3d13bc75eb6db",
+        "hero": "bd0f28c17178f74cb2261cfdb6782fc54a88fed56a5fb941b4f6d6051e9a3a9c",
+        "alt": "c5026a4284114407eee6692de82146c66836b983b0ba9a9a766342aba9ed6d94",
+        "quick": "3ff5c6fd478bc93c958a47082350a264460c3947ee8af3f0d670b63f624a7829",
+        "body": "9540a77d3ff1fb4cfe7421372e8cd999ea0948df3721b51c8abf6fe4d0061f05",
+        "faqs": "2cca33379fe587cd3e8c490c8fe0a4031ad574a352e600c3d1153ae408c14bdd",
+        "published": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "modified": "d4a556f7dbf159f188099ef40f99e1d5e30251d293acdcece479a68d0e8179ce",
+        "citations": "5a930101355103596e5a5200e378d2a5815c7d04420228f9c9238a8d6935f462"
+      }
+    },
+    "/gear/usb-c-monitor-vs-dock-one-cable-setup.html": {
+      "fields": {
+        "seoTitle": "72f78ce3a8f368e9f7c6549417347a9d7dcd17088c1682352956ce2d5f4da864",
+        "title": "72f78ce3a8f368e9f7c6549417347a9d7dcd17088c1682352956ce2d5f4da864",
+        "description": "2d886ea5824bff710bd3ce4f85559b178b08b2336e2dd7a524c1db559d092ecf",
+        "hero": "5559dd7190f0314bca20c90f608baaf8e96d561d363929463a526bb582d23579",
+        "alt": "8b99369825df6b580ee32c4fdf1314d927de8bcfdc60ac6d4d21ba58685060c0",
+        "quick": "81c694c2eaabd05ab6040e666611aa3d543306666307a3822154dc36a3bc3c2d",
+        "body": "b3cfc22394fe73410eaf4fc44d52764cbe6070cf9605a3e1d8d804dfcee693da",
+        "faqs": "3a20fdace5249fbd190201a1d6eb9a187200678a9e82315ea30ef7a5c33c8670",
+        "published": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d",
+        "modified": "298842c5b8729d443df7c5162f0380c990c57593c0ac3216584595d4631f636d"
+      }
+    },
+    "/gear/vertical-mouse-vs-traditional-mouse.html": {
+      "fields": {
+        "seoTitle": "eae1c8546a2f7527b73e7a9449e237f415f0a021d5654d942f8ca7531767fad7",
+        "title": "745bb6e7926d2c51b62acefd6e29d6777dde49d9caf856f9a5a83460b8ba5d30",
+        "description": "28141b89714fe7de8af5bc5c44fa6d7ff38f71a1c6bef45b20f1a65151470cac",
+        "deck": "76af9838eb5528e3bd673ecb4df8ad435fb1ff50b1f8c657d7f95e01024cc434",
+        "hero": "798ecf1e32a0804f84ffc2a0445633a1b7a50c8223585063bece093f6e6dc991",
+        "alt": "4eb367f79bb8c286fa015902193b8b5637b040160ca473c347d7f458ef0b7d90",
+        "quick": "87c96d4ba2dfb58491ed445a90fda7b0c265714bf8916711dddfd7e4bc2044a2",
+        "body": "0ac29b96e6aeb79d609334c8a2b54003e0ee98c03d63c4cfb2213922e6770c26",
+        "faqs": "a87b767cd0c544578467ec430834c8e90832135881c5671af3d524a274e79939",
+        "published": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc",
+        "modified": "e4bc2ddfd7fb7c8f9b1d17e4273031e2c91939b36926b8afe47e795d160e75dc"
+      }
+    },
+    "/": {
+      "fields": {
+        "seoTitle": "b9d869ada10d3f851f043878f14e39c60b499d0b36a09acd27d8395973f0c7d8",
+        "title": "c7606fdab33ab7c7fd247ab17485609a026af45fc2dff57a11a6e0a15ce532cf",
+        "description": "74777a03746584c07c154fab72027fc9b2faf61657d7239bc71edea705c1e96a",
+        "hero": "f81f769038badc745bd290f4c47c0c6d2f195e40f7591b059255af979db68b1d",
+        "alt": "fd58c72ec0f88e93fdd2d5f7fb7b0b45db5527c4b93326089c571a987b97b370"
+      },
+      "homeIntro": "07ab8f35ef2bd636868dca7b1c49b293e31ec729b2385ff979d6df3ced9e7f1d"
+    },
+    "/watches.html": {
+      "fields": {
+        "seoTitle": "6c3ec4f0ff4c10f4cc2225fafb7e6e7be4f2c6818c575784f382ac0e6f6a2fe8",
+        "title": "0913a11d582a5fed399c94561bbb729a64679acc8180c8e71e9ae13e6acbcfe8",
+        "description": "45a9aa630642d2e32850da0fa43cc0348f70632c323ac7defbc9c13b0ca665c6",
+        "hero": "58d4f1ee834e6e9123b8cf42dee716f6a42c704aa1daace07631e254f632eaed",
+        "body": "064212dd92fd1ab9f5bd0b14178a05315aca1e2d0df884683903cb1a4c16dee7",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/gear.html": {
+      "fields": {
+        "seoTitle": "11ec0a1308146d75c5cddfe696b6bb2383267fbc675d37a82cc43c59ba29371c",
+        "title": "e55628f799561d423c46878b32f0e9d1806dbd4995f12c353c8cc39733e25a6f",
+        "description": "6b8fc88072682eab79107baf3d98eea9144081a4f2396db7f7d223d2160dfc3e",
+        "hero": "35e7ba72d29e96e642f0257cdd4704cb5b97c47f57f2f0d4ab6ac81eb8918600",
+        "body": "15690c44731a94b11783131809a35d65267604393eae9e37a83092b34d9f0df9",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/apparel.html": {
+      "fields": {
+        "seoTitle": "80ddc291105fcc8f1e0dcf7dccf2f4825ff30b1ea760de633743a32ba4a70fa9",
+        "title": "22a47576f1128156fe21d540e53700cdaa327028f262bc476cefa77d57317838",
+        "description": "9ffceefa72fe006d737bf8d3ebc0f707dda0c35349c109c27d32167294dafaca",
+        "hero": "b8899e0b3b9024f9efb4ff617177d87e0835910d747734da2b1a72e14308949a",
+        "body": "a8ef96fac5fd90d7e7e439cf59e51245e8e0bede52f555815ba0f592c667f414",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/about.html": {
+      "fields": {
+        "seoTitle": "7f826b5121bde1375373b5973a3266019cd618715fd94608948dfd6b01aa6d3a",
+        "title": "a98d5a433d5ce7a74830b3990f6f6fc047c4ad2d01e9fa9744df453982181c48",
+        "description": "815cd274d0b0d4979451bca5e7459731f8162a650293be17f8c4c0248d1fad8a",
+        "body": "da497b0a83bf104e9976edfa99478d8c6bad746c74b52e7ccff6ffa7d3dcdbd7",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/subscribe.html": {
+      "fields": {
+        "seoTitle": "7652bba83cf354f9d9cdcea69142ce8c95f4213c809496a2a77d0fce0a4bd889",
+        "title": "4f5bd10a77c394089b5d4aac97770f79d9a1bbaab8110edf1a825df0e1a25341",
+        "description": "db89bb03b4ec8eb319924a17fb74e66913245a2279c2471c1ed9a2e780dbc980",
+        "body": "729be9d75872a7522d66f7cbae4e47a4afe8204a0f5ec87298dff15004d46eeb",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/affiliate-disclosure.html": {
+      "fields": {
+        "seoTitle": "c87ade9428c523ec24acc466aa12f9e34a091b889a9fc7e7118a552a9ee07052",
+        "title": "e5980afbbd3445dc5bde53f3dc15300f2784eb2fdac4c059943fd808ac0b49d0",
+        "description": "08d75fd5b6d88e3546485cff1b48b4926cee15f8d1d0da9bd195bd25139a40fd",
+        "body": "c4049b92888829ac5c505a2ff248083c87fe213c4a29494f3040280516ea397d",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "/shop.html": {
+      "fields": {
+        "seoTitle": "28ab5dc3d37449ef40052f79dc509fe409ed9577bfeb84383795f3e464246a86",
+        "title": "38402c4b1ade259a7414a395eb9c049727da7dccf1dafa3b97ef12d88ffe8bf6",
+        "description": "8ddea91d6b0de49c562ab0ade566f0c422a2071006b67b0db9f9b8976be7d751",
+        "hero": "232ae772cccabcf7607f568aab31718faac173e3a9548a104f944ac3746be851",
+        "body": "31a8768b9fa86d7c7b8762b2885e62fffa9513c9d3379b65c927c28089e56713",
+        "faqs": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  }
+}
