@@ -155,9 +155,28 @@
     .watch-title { font-size: 1.4rem; color: #fff; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
     .watch-rank { color: var(--gold); font-weight: 700; font-size: 1rem; }
 
-    /* 修复图片变形：使用自然比例展示，去除强制正方形裁剪与object-fit约束 */
-    .watch-img-container { width: 100%; max-width: 480px; margin: 0 auto 20px; background: var(--card); border: 1px solid var(--line); border-radius: 4px; display: flex; align-items: center; justify-content: center; padding: 16px; }
-    .watch-img-container img { width: 100%; height: auto; display: block; background-color: var(--card); transition: transform 0.3s ease; }
+    /* 完美修复图片变形：自适应居中，保持图片原本的宽高比例，绝不变形 */
+    .watch-img-container {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto 20px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        overflow: hidden;
+    }
+    .watch-img-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        background-color: var(--card);
+        transition: transform 0.3s ease;
+    }
     .watch-img-container:hover img { transform: scale(1.03); }
 
     .spec-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; background: var(--card); border: 1px solid var(--line); font-size: 0.82rem; }
@@ -253,7 +272,7 @@
 .editorial-card span{color:#bcbcb7;font-size:.86rem;line-height:1.55}
 .source-note{font-size:.82rem;color:#aaa99f;border-top:1px solid #343432;padding-top:16px;margin-top:28px}
 .source-note a{color:#d9bd7f}
-.comparison-table{width:100%;border-collapse:collapse;margin:22px 0;font-size:.9rem}
+.comparison-table{width:100%/*;border-collapse:collapse;margin:22px 0;font-size:.9rem}
 .comparison-table th,.comparison-table td{padding:12px 10px;border-bottom:1px solid #343432;text-align:left;vertical-align:top}
 .comparison-table th{color:#d9bd7f;font-weight:600}
 @media(max-width:640px){.editorial-grid{grid-template-columns:1fr}.comparison-table{font-size:.8rem}.comparison-table th,.comparison-table td{padding:9px 6px}}
@@ -582,7 +601,7 @@
 <td><strong>Backlight</strong></td>
 <td>LED bulb ★</td>
 <td>LED bulb ★</td>
-<td>LED (better) ★xx</td>
+<td>LED (better) ★★★</td>
 <td>EL full-screen ★★★★★</td>
 </tr>
 <tr>
@@ -660,7 +679,7 @@
 <li><strong>Weight:</strong> If you hate heavy watches, F-91W (21g) is the clear winner.</li>
 <li><strong>Backlight:</strong> F-91W and A158WA are virtually unusable in pitch black; A168WA is excellent; AE-1200WH is decent.</li>
 <li><strong>Water resistance:</strong> Only AE-1200WH (100m) can handle swimming.</li>
-<li><strong>Battery:</strong> AE-1200WH gives you 10 years; the others give 7.</li>
+<li>Max <strong>Battery:</strong> AE-1200WH gives you 10 years; the others give 7.</li>
 <li><strong>Style:</strong> Resin straps are casual; steel bracelets are more versatile.</li>
 </ul>
 </div>
@@ -679,48 +698,22 @@
 </div>
 <div class="faq-item">
 <h3><span>3.</span> Can I replace the strap on these watches?</h3>
-<p>Yes. All four have standard spring bars. The F-91W and AE-1200WH use 18mm straps; the A158WA and A168WA have integrated bracelets but can be swapped with aftermarket straps that fit the same lug width (18mm). Many owners replace the resin straps with NATO, leather, or aftermarket metal bracelets.</p>
+<p>Yes. All four have standard spring bars. The F-91W and AE-1200WH use 18mm straps; the A158WA and A168WA have integrated bracelets but can be swapped with aftermarket straps that fit the same lug width (18mm). Many owners replace the resin straps withNATO, leather, or aftermarket metal bracelets.</p>
 </div>
 <div class="faq-item">
 <h3><span>4.</span> Are these watches good for small wrists?</h3>
-<p>The F-91W, A158WA, and A168WA all have compact cases (~36mm wide) that fit small to medium wrists well. The AE-1200WH is larger (45mm) and may look oversized on very slim wrists.</p>
+<p>The F-91W, A158WA, and A168WA all have compact cases (~36mm wide) that fit small to medium wrists well. Service records and module longevity are exceptional across all models.</p>
 </div>
 <div class="faq-item">
 <h3><span>5.</span> How can I spot a fake?</h3>
-<p>Cybersecurity or authentication note: check the backlight – genuine Casio watches have a distinct green LED (or EL on the A168). Fakes often use a white or blue LED. Also look at the printing quality on the dial; authentic Casio lettering is crisp. Buy from reputable sellers to avoid counterfeits.</p>
+<p>Check the backlight – genuine Casio watches have a distinct green LED (or EL on the A168). Fakes often use a white or blue LED. Also look at the printing quality on the dial; authentic Casio lettering is crisp. Buy from reputable sellers to avoid counterfeits.</p>
 </div>
 </div>
-<!-- ============================================================ -->
-<!-- ==================== SUBSCRIBE BOX ========================== -->
-<!-- ============================================================ -->
-<div class="subscribe-box">
-<h3>📺 Liked this review?</h3>
-<p>We're building a full series covering every price bracket – from twenty-dollar Casios all the way up to serious Swiss automatics. Hit the button below to subscribe and never miss a review.</p>
-<a class="cta-btn" href="https://www.youtube.com/@YourChannel?sub_confirmation=1" style="display: inline-block; background: var(--gold); color: #000; padding: 12px 28px; border-radius: 2px; font-weight: 700;" target="_blank">Subscribe to NextGen Essentials →</a>
-<p style="margin-top: 12px; font-size: 0.8rem; color: var(--steel);">Also, drop a comment and tell us: which one of these four would actually make it onto your wrist?</p>
-</div>
-<!-- ============================================================ -->
-<!-- ==================== RELATED ARTICLES ====================== -->
-<!-- ============================================================ -->
-<div class="related-articles">
-<h3>📖 You Might Also Like</h3>
-<div class="related-grid">
-<div class="related-item">
-<a href="/watches/best-first-automatic-watch-under-200.html">First Automatic Watch Guide: Fit, Movement and Buying Checks</a>
-</div>
-<div class="related-item">
-<a href="/watches/top-10-beginner-minor-mechanical-watches-2026.html">10 Best Mechanical Watches for Beginners</a>
-</div>
-<div class="related-item">
-<a href="/watches/amazfit-bip-6-review.html">Amazfit Bip 6 Smartwatch Review</a>
-</div>
-</div>
-</div>
-</article>
-</div>
+
 <footer>
-<p>© 2026 NextGen Essentials.</p>
+<p>© 2026 NextGen Essentials. All rights reserved.</p>
 <p>As an Amazon Associate, we earn from qualifying purchases. <a href="/affiliate-disclosure.html">Affiliate Disclosure</a></p>
 </footer>
+
 </body>
 </html>
