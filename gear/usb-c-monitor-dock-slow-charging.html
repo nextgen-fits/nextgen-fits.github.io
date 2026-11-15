@@ -120,10 +120,101 @@
 
 <link rel="stylesheet" href="/assets/practical-guides.css">
 <script defer src="/assets/practical-guides.js"></script>
+<link rel="stylesheet" href="/assets/modern-20261030.css">
+<script defer src="/assets/modern-search-20261030.js"></script>
+<script defer src="/assets/modern-ui-20261030.js"></script>
+
+<style id="page-visual-style">
+body{margin:0;background:#f4f6f9;color:#17212e;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+/* Page appearance: edit the colours and spacing here. */
+:root{color-scheme:light;--nx-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Microsoft YaHei",sans-serif;--paper:#f4f6f9;--bg:#f4f6f9;--card:#ffffff;--surface:#ffffff;--surface-2:#edf2f7;--ink:#17212e;--muted:#5e6978;--steel:#5e6978;--line:#dce3eb;--accent:#0066cc;--mag-paper:#f4f6f9;--mag-ink:#17212e;--mag-muted:#5e6978;--mag-line:#dce3eb;--mag-soft:#edf2f7;--mag-green:#0066cc;--mag-accent:#0066cc}
+html{background:#f4f6f9;scroll-padding-top:100px}
+body.nx-site{margin:0;background:#f4f6f9!important;color:#17212e!important;font-family:var(--nx-font)!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.nx-site *,body.nx-site *:before,body.nx-site *:after{box-sizing:border-box}
+body.nx-site :is(.rg,.pg,.qg,.rf,.bg-page,.guide-shell){--ink:#17212e;--muted:#5e6978;--line:#dce3eb;--accent:#0066cc;--rg-ink:#17212e;--rg-muted:#5e6978;--rg-line:#dce3eb;--rg-paper:#fff;--rg-soft:#edf2f7;--rg-rust:#0066cc;font-family:var(--nx-font)!important;color:#17212e}
+body.nx-site :is(h1,h2,h3,h4,h5,h6,button,input,select,textarea){font-family:var(--nx-font)!important}
+body.nx-site h1,body.nx-site.magazine-site .mag-feature h1{font-family:var(--nx-font)!important;font-weight:650!important;font-size:clamp(35px,4.3vw,65px)!important;line-height:1.09!important;letter-spacing:-.047em!important;color:#17212e!important;text-wrap:balance}
+body.nx-site :is(.mag-deck,.guide-dek,.rg-dek,.pg-dek,.qg-deck,.bg-deck,.rf-deck){font-family:var(--nx-font)!important;font-size:clamp(16px,1.5vw,20px)!important;line-height:1.7!important;color:#5e6978!important;font-weight:400!important}
+body.nx-site :is(.guide-content,.rf-reading,.rf-body.nx-site,.bg-reading,.bg-body.nx-site,.rg-content,.rg-body.nx-site,.pg-content,.qg-content){font-family:var(--nx-font)!important}
+body.nx-site :is(.mag-kicker,.guide-kicker,.rg-kicker,.pg-kicker,.qg-kicker,.bg-eyebrow,.rf-label,.eyebrow,.su-kicker){color:#0066cc!important;font-family:var(--nx-font)!important;font-weight:650!important;letter-spacing:.12em!important}
+body.nx-site :is(.guide-byline,.rg-meta,.pg-meta,.bg-byline,.qg-meta,.rf-byline,.mag-byline div>span){color:#697586!important;font-family:var(--nx-font)!important;letter-spacing:.02em!important}
+body.nx-site :is(.nx-header,.site-navigation){background:rgba(255,255,255,.96)!important;border-bottom:1px solid #dce3eb!important;box-shadow:0 2px 15px rgba(24,43,67,.025);backdrop-filter:blur(16px)}
+.nx-header .nx-brand{color:#17212e!important;font-family:var(--nx-font)!important;font-weight:750!important;letter-spacing:-1.3px}
+.nx-header .nx-brand span{color:#0066cc!important}
+.nx-header :is(.nx-desktop-nav a,.nx-nav-newsletter){font-family:var(--nx-font)!important}
+.nx-header .nx-desktop-nav a{color:#465363}
+.nx-header a[aria-current=page]{color:#0066cc!important}
+.nx-header .nx-mobile-menu>nav{background:#fff!important;border:1px solid #dce3eb!important;border-radius:16px;box-shadow:0 18px 45px rgba(24,43,67,.12)}
+body.nx-site .disclosure-bar{background:#edf2f7!important;color:#5e6978!important;border-color:#dce3eb!important;font-size:11px}
+body.nx-site :is(.mag-story,.mag-index){padding-top:4px}
+body.nx-site .mag-feature{padding-top:8px;padding-bottom:24px;gap:6%}
+body.nx-site .mag-feature-photo{background:#fff!important;border:1px solid #e2e8ef;border-radius:24px!important;overflow:hidden;box-shadow:0 12px 40px rgba(24,43,67,.045)}
+body.nx-site .mag-feature-photo>a{border-radius:23px 23px 0 0}
+body.nx-site .mag-feature-photo figcaption{padding:12px 16px!important;background:#fff;color:#697586!important;font-size:10px;letter-spacing:.04em}
+body.nx-site :is(.guide-shell,.rg,.pg,.qg,.rf,.bg-page):not(.qg-info){background:#fff;border:1px solid #e2e8ef;border-radius:24px;margin-top:28px;margin-bottom:54px;box-shadow:0 12px 40px rgba(24,43,67,.035)}
+body.nx-site :is(.guide-hero,.rg-hero,.pg-photo,.qg-hero,.rf-hero,.bg-main-image){overflow:hidden;border-radius:18px;background:#edf2f7}
+body.nx-site :is(.guide-hero,.rg-hero,.pg-photo,.qg-hero,.rf-hero,.bg-main-image) figcaption{padding:12px 16px;background:#f7f9fc;color:#697586!important;font-family:var(--nx-font)!important;margin:0}
+body.nx-site :is(.mag-summary,.answer-box,.rg-answer,.pg-answer,.qg-answer,.bg-answer,.rf-answer){background:#eaf2fc!important;border:1px solid #d7e7f8!important;border-left:3px solid #0066cc!important;border-radius:0 16px 16px 0!important;color:#263e58!important;box-shadow:none!important;padding:24px 28px!important}
+body.nx-site :is(.mag-summary,.answer-box,.rg-answer,.pg-answer,.qg-answer,.bg-answer,.rf-answer)>:is(strong,h2){color:#0066cc!important}
+body.nx-site .mag-prose{background:#fff;border:1px solid #e2e8ef;border-radius:20px;padding:32px;box-shadow:0 8px 30px rgba(24,43,67,.025);min-width:0}
+body.nx-site .mag-prose>:first-child{margin-top:0}
+body.nx-site .mag-prose>:last-child{margin-bottom:0}
+body.nx-site :is(.mag-prose,.guide-content,.rg-body.nx-site,.pg-content,.qg-content,.rf-reading,.bg-reading) :is(h2,h3){color:#17212e;line-height:1.25;letter-spacing:-.026em}
+body.nx-site :is(.mag-contents details,.rg-toc,.pg-aside,.qg-toc,.rf-toc,.bg-toc,.aside-card){background:#fff!important;border:1px solid #dce3eb!important;border-radius:16px!important;padding:20px!important;box-shadow:0 6px 24px rgba(24,43,67,.025)}
+body.nx-site :is(.mag-contents a,.rg-toc a,.pg-aside a,.qg-toc a,.rf-toc a,.bg-toc a){color:#526173;text-decoration:none}
+body.nx-site :is(.mag-contents a,.rg-toc a,.pg-aside a,.qg-toc a,.rf-toc a,.bg-toc a):hover{color:#0066cc}
+body.nx-site :is(.mag-affiliate,.bg-disclosure,.rf-disclosure){color:#697586!important;border-color:#dce3eb!important}
+body.nx-site table{border-color:#dce3eb!important;background:#fff;color:#263445}
+body.nx-site table th{background:#edf2f7!important;color:#33455a!important;border-color:#dce3eb!important;font-family:var(--nx-font)!important;font-weight:650!important}
+body.nx-site table td{border-color:#e5eaf0!important}
+body.nx-site table tbody tr:nth-child(even){background:#f8fafc}
+body.nx-site :is(.table-wrap,.table-wrapper,.rg-table-wrap,.bg-table-wrap,.pg-table-scroll,.dg-table){border-color:#dce3eb!important;border-radius:14px;max-width:100%;overflow-x:auto}
+body.nx-site :is(.mag-button,.rg-button,.pg-button,.qg-button,.bg-button,.rf-button,.guide-button,.buy-btn-cart,.wk-buy,.su-submit,.hero-cta-primary,.btn-primary){background:#0066cc!important;color:#fff!important;border:1px solid #0066cc!important;border-radius:999px!important;box-shadow:0 4px 10px rgba(0,102,204,.09);font:600 13px/1.4 var(--nx-font)!important;min-height:46px;transition:background .2s,box-shadow .2s}
+body.nx-site :is(.mag-button,.rg-button,.pg-button,.qg-button,.bg-button,.rf-button,.guide-button,.buy-btn-cart,.wk-buy,.su-submit,.hero-cta-primary,.btn-primary):hover{background:#0054ac!important;border-color:#0054ac!important;box-shadow:0 6px 18px rgba(0,102,204,.16)}
+body.nx-site :is(.rf-product,.rg-product,.qg-product,.bg-product,.pick-mini,.wk-product,.home-topic-card,.su-form,.su-step){background:#fff!important;color:#17212e!important;border:1px solid #e0e7ef!important;border-radius:18px!important;box-shadow:0 6px 24px rgba(24,43,67,.03)}
+body.nx-site :is(.mag-story-card,.story-card){background:#fff;border:1px solid #e0e7ef;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(24,43,67,.035);transition:box-shadow .2s,transform .2s}
+body.nx-site .mag-story-card :is(h3,p,.mag-card-meta){margin-left:20px;margin-right:20px}
+body.nx-site .mag-story-card>p{padding-bottom:20px}
+body.nx-site :is(.mag-card-photo,.story-card .story-image){border-radius:18px 18px 0 0}
+body.nx-site :is(.mag-story-card,.story-card):hover{box-shadow:0 14px 35px rgba(24,43,67,.075);transform:translateY(-2px)}
+body.nx-site :is(.shop-hero,.modern-home .hero){background:transparent!important}
+body.nx-site .shop-hero-copy{background:#fff!important;border:1px solid #e0e7ef;border-radius:24px 0 0 24px}
+body.nx-site .shop-hero-image{border-radius:0 24px 24px 0;overflow:hidden}
+body.nx-site .shop-category{padding-top:24px}
+body.nx-site .pick-media{background:#fff!important;border:1px solid #e0e7ef!important;border-radius:18px!important;overflow:hidden;box-shadow:0 8px 24px rgba(24,43,67,.035)}
+body.nx-site :is(.shop-toolbar,.shop-filter-bar,.shop-filters){border-color:#dce3eb!important}
+body.nx-site :is(.shop-filters,.product-filter,.finder-options) button[aria-pressed=true]{background:#0066cc!important;color:#fff!important;border-color:#0066cc!important}
+body.nx-site :is(.shop-filters,.product-filter,.finder-options) button[aria-pressed=false]{background:#fff;color:#526173;border-color:#dce3eb}
+body.nx-site .modern-home .comparison-band,body.nx-site.modern-home .comparison-band{background:#eaf2fc!important;border-color:#d7e7f8!important}
+body.nx-site.modern-home :is(.knowledge-section,.newsletter,.nx-inquiry){background:#fff!important;border:1px solid #e0e7ef!important;border-radius:22px}
+body.nx-site.modern-home .hero-media{border:1px solid #e0e7ef;border-radius:24px;overflow:hidden;box-shadow:0 12px 40px rgba(24,43,67,.045)}
+body.nx-site .nx-footer{background:#e9eef4!important;border-top:1px solid #d6dfe9!important;color:#526173!important}
+body.nx-site .nx-footer :is(a,p,span){color:#526173}
+body.nx-site .nx-footer .nx-brand{color:#17212e!important}
+body.nx-site .nx-footer a:hover{color:#0066cc}
+body.nx-site .nx-footer-bottom{border-color:#d0dae5!important}
+body.nx-site :is(.su-faq details,.mag-prose details,.rf-questions details,.pg-faq details,.qg-faq details,.rg-faq details,.bg-questions details){border-color:#dce3eb!important;background:#f8fafc;border-radius:12px;padding:16px 18px;margin-bottom:10px}
+body.nx-site :is(input:not([type=checkbox]):not([type=radio]),textarea,select){background:#fff;border-color:#ccd6e2!important;color:#17212e;border-radius:10px}
+body.nx-site :focus-visible{outline:2px solid #0066cc!important;outline-offset:4px}
+body.nx-site ::selection{background:#cfe4ff;color:#17212e}
+@media(max-width:800px){body.nx-site h1,body.nx-site.magazine-site .mag-feature h1{font-size:clamp(33px,7.4vw,46px)!important;letter-spacing:-.04em!important}body.nx-site .mag-feature{padding-bottom:0;gap:24px}body.nx-site .mag-prose{padding:24px 20px;border-radius:16px}body.nx-site :is(.guide-shell,.rg,.pg,.qg,.rf,.bg-page):not(.qg-info){border-radius:18px;margin-top:18px;margin-bottom:34px}body.nx-site :is(.mag-summary,.answer-box,.rg-answer,.pg-answer,.qg-answer,.bg-answer,.rf-answer){padding:20px!important}body.nx-site .shop-hero-copy{border-radius:20px 20px 0 0}body.nx-site .shop-hero-image{border-radius:0 0 20px 20px}}
+@media(max-width:480px){body.nx-site .mag-prose{padding:22px 17px}body.nx-site :is(.guide-shell,.rg,.pg,.qg,.rf,.bg-page):not(.qg-info){border-left:0;border-right:0;border-radius:0}body.nx-site .mag-feature-photo{border-radius:18px!important}body.nx-site .nx-header .nx-mobile-menu>nav a{min-height:44px}body.nx-site .mag-story-card :is(h3,p,.mag-card-meta){margin-left:16px;margin-right:16px}}
+@media(prefers-reduced-motion:reduce){body.nx-site *,body.nx-site *:before,body.nx-site *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.page-table-scroll{max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;margin:26px 0;border:1px solid #dce3eb;border-radius:14px;background:#fff}
+.page-table-scroll>table{margin:0!important;min-width:560px;width:100%;border:0!important}
+body.nx-site .watch-img-container{display:flex;align-items:center;justify-content:center;height:clamp(280px,46vw,520px)!important;max-width:100%;padding:20px;background:#fff;overflow:hidden;border:1px solid #e0e7ef;border-radius:16px}
+body.nx-site .watch-img-container>img{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;margin:auto}
+body.nx-site .gear-item-card>img{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:520px!important;object-fit:contain!important;margin:0 auto 20px}
+body.nx-site :is(video,iframe,carousel){max-width:100%!important;min-width:0!important}
+body.nx-site video{display:block;width:100%;height:auto}
+body.nx-site carousel{display:block;width:100%;overflow:hidden}
+body.nx-site :is(p,li,figcaption){overflow-wrap:anywhere}
+
+</style>
 </head>
-<body class="page-article">
-<nav><a href="/">NextGen Essentials</a></nav>
-<article class="pg">
+<body class="page-article nx-site magazine-site">
+<header class="nx-header"><div class="nx-nav-shell"><a class="nx-brand" href="/" aria-label="NextGen Essentials home">NextGen<span>.</span></a><nav class="nx-desktop-nav" aria-label="Primary navigation"><a href="/shop.html">Shop</a><a href="/watches.html">Watches</a><a href="/gear.html" aria-current="page">Desk & tech</a><a href="/apparel.html">Style</a><a href="/articles.html">Journal</a></nav><div class="nx-nav-actions"><button type="button" class="nx-search-open" aria-label="Search guides"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><a class="nx-nav-newsletter" href="/subscribe.html">Stay in the know <span aria-hidden="true">↗</span></a><details class="nx-mobile-menu"><summary aria-label="Navigation menu"><span></span><span></span></summary><nav aria-label="Mobile navigation"><a href="/shop.html">Shop</a><a href="/watches.html">Watches</a><a href="/gear.html" aria-current="page">Desk & tech</a><a href="/apparel.html">Style</a><a href="/articles.html">Journal</a><a href="/subscribe.html">Newsletter</a><a href="/about.html">About NextGen</a></nav></details></div></div></header>
+<article class="pg" id="main-content">
   <div class="pg-breadcrumb" aria-label="Breadcrumb">
     <a href="/">Home</a><span aria-hidden="true">/</span><a href="/gear.html">Gear</a><span aria-hidden="true">/</span><span>Practical knowledge</span>
   </div>
@@ -321,6 +412,6 @@
   <Elicitation label="Check USB-C cable wattage and data ratings" query="How do I check if a USB-C cable supports 100W Power Delivery and high-speed data transfer?"/>
 </ElicitationsGroup>
 
-<footer><p>NextGen Essentials</p></footer>
-</body>
+<footer class="nx-footer"><div class="nx-footer-inner"><div class="nx-footer-top"><a class="nx-brand" href="/">NextGen<span>.</span></a><p>Watches. Workspace. Everyday essentials.</p><a href="/about.html">About</a><a href="/articles.html">Journal</a><a href="/subscribe.html">Newsletter</a><a href="/affiliate-disclosure.html">Affiliate disclosure</a></div><div class="nx-footer-bottom"><span>© 2026 NextGen Essentials.</span><span>As an Amazon Associate, we earn from qualifying purchases.</span><a href="#main-content">Back to top ↑</a></div></div></footer>
+<dialog class="nx-search-dialog" aria-labelledby="nx-search-title"><div class="nx-search-heading"><h2 id="nx-search-title">Find a useful guide.</h2><button type="button" class="nx-search-close" aria-label="Close search">✕</button></div><label for="nx-guide-search">Search watches, monitors, desk gear and style</label><input id="nx-guide-search" type="search" placeholder="Try monitor or NH36" autocomplete="off"><p id="nx-search-count" role="status">Search our practical guides.</p><ul id="nx-search-results"></ul><a class="nx-search-all" href="/articles.html">Browse the complete journal →</a></dialog></body>
 </html>
