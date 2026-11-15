@@ -223,6 +223,70 @@ body.nx-site video{display:block;width:100%;height:auto}
 body.nx-site carousel{display:block;width:100%;overflow:hidden}
 body.nx-site :is(p,li,figcaption){overflow-wrap:anywhere}
 
+
+/* Layout and reading rhythm. These rules remain editable in this HTML. */
+body.nx-site .nx-nav-shell,body.nx-site .nx-footer-inner{max-width:1280px}
+body.nx-site :is(.mag-story,.mag-index){max-width:1280px;padding-inline:32px}
+body.nx-site .mag-breadcrumb{padding-block:26px 30px;line-height:1.7}
+body.nx-site .mag-feature{gap:48px;margin-bottom:32px}
+body.nx-site .mag-feature-copy{padding-block:16px}
+body.nx-site .mag-reading-layout{grid-template-columns:210px minmax(0,1fr);gap:40px;align-items:start}
+body.nx-site .mag-prose{font-size:17px;line-height:1.85;max-width:840px;padding:36px}
+body.nx-site :is(.guide-content,.rg-content,.rg-body,.pg-content,.qg-content,.rf-reading,.bg-reading){font-size:17px;line-height:1.85}
+body.nx-site :is(.mag-prose,.guide-content,.rg-content,.pg-content,.qg-content,.rf-reading,.bg-reading)>p{max-width:72ch;margin-block:0 22px}
+body.nx-site :is(.mag-prose,.guide-content,.rg-content,.pg-content,.qg-content,.rf-reading,.bg-reading) h2{font-size:clamp(25px,2.4vw,33px);line-height:1.25;margin-block:44px 18px;letter-spacing:-.028em}
+body.nx-site :is(.mag-prose,.guide-content,.rg-content,.pg-content,.qg-content,.rf-reading,.bg-reading) h3{font-size:clamp(20px,1.8vw,25px);line-height:1.35;margin-block:30px 14px}
+body.nx-site .mag-prose li{margin-block:8px}
+body.nx-site .mag-summary{margin-block:0 26px}
+body.nx-site .mag-related{padding-top:64px}
+body.nx-site .mag-card-grid{gap:28px}
+body.nx-site .mag-story-card{display:flex;flex-direction:column;min-width:0;height:100%}
+body.nx-site .mag-story-card h3{font-size:22px;line-height:1.3;letter-spacing:-.023em;margin-block:14px 12px}
+body.nx-site .mag-story-card p{font-size:14px;line-height:1.75}
+body.nx-site .mag-story-card .mag-card-meta{font-size:10px;line-height:1.6;padding-top:14px;gap:12px;flex-wrap:wrap}
+body.nx-site.modern-home .section.wrap{padding-block:68px}
+body.nx-site.modern-home .section-head{align-items:end;gap:28px;margin-bottom:28px}
+body.nx-site.modern-home .section-head h2{max-width:24ch;letter-spacing:-.035em}
+body.nx-site.modern-home .story-card{display:flex;flex-direction:column;min-width:0}
+body.nx-site.modern-home .story-card>:not(.story-image){margin-inline:20px}
+body.nx-site.modern-home .story-card>.eyebrow{margin-top:20px}
+body.nx-site.modern-home .story-card>h3{font-size:23px;line-height:1.3;letter-spacing:-.025em;margin-block:12px}
+body.nx-site.modern-home .story-card>p:not(.eyebrow){font-size:14px;line-height:1.75;flex:1}
+body.nx-site.modern-home .story-card>.text-link{margin-top:18px;margin-bottom:22px}
+body.nx-site.modern-home .product{background:#fff;border:1px solid #e0e7ef;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 6px 24px rgba(24,43,67,.025)}
+body.nx-site.modern-home .product>:not(.product-image){margin-inline:18px}
+body.nx-site.modern-home .product .product-image{border-radius:0;border:0}
+body.nx-site.modern-home .product h3{font-size:19px;line-height:1.35;letter-spacing:-.02em;margin-block:12px}
+body.nx-site.modern-home .product-verdict{font-size:13px;line-height:1.75;flex:1}
+body.nx-site.modern-home .product-links{padding-block:16px 20px;margin-top:auto}
+body.nx-site.modern-home .home-topic-guides .home-topic-card{padding:26px;box-shadow:none}
+body.nx-site .shop .shop-hero{margin-bottom:30px}
+body.nx-site .shop .shop-hero-copy{padding:48px 36px}
+body.nx-site .shop .shop-grid{gap:28px 24px;align-items:stretch}
+body.nx-site .shop .pick-card:not([hidden]){display:flex;flex-direction:column;min-width:0;height:100%;background:#fff;border:1px solid #e0e7ef;border-radius:20px;overflow:hidden;box-shadow:0 6px 24px rgba(24,43,67,.025)}
+body.nx-site .shop .pick-card>figure{margin:0;min-width:0}
+body.nx-site .shop .pick-card .pick-photo{border:0;border-radius:0;background:#fff;box-shadow:none}
+body.nx-site .shop .pick-card figcaption{padding:9px 18px 0;min-height:31px;font-size:10px;line-height:1.6;color:#647184}
+body.nx-site .shop .pick-card .pick-copy{padding:18px;display:flex;flex-direction:column;flex:1;min-width:0}
+body.nx-site .shop .pick-card .pick-eyebrow{font-size:10px;line-height:1.6;letter-spacing:.08em;min-block-size:3.2em;margin-block:0 10px}
+body.nx-site .shop .pick-card .pick-copy h3{font-size:20px;line-height:1.3;letter-spacing:-.023em;min-block-size:2.6em;margin:0 0 10px}
+body.nx-site .shop .pick-card .pick-ref{font-size:11px;line-height:1.7;min-height:3.4em;margin:0 0 14px;color:#647184}
+body.nx-site .shop .pick-card .pick-fit{font-size:14px;line-height:1.75;margin:0 0 18px;flex:1}
+body.nx-site .shop .pick-card .pick-detail{font-size:13px;line-height:1.8;border-color:#e0e7ef}
+body.nx-site .shop .pick-card .pick-actions{margin-top:auto;padding-top:18px}
+body.nx-site .shop .pick-card .pick-buy{min-height:46px;font-size:12px;line-height:1.4;align-items:center}
+body.nx-site .shop .pick-card .pick-compare{min-height:40px;font-size:12px}
+body.nx-site .shop .shop-category{scroll-margin-top:220px}
+body.nx-site .shop .shop-tools{position:sticky;top:74px;z-index:12;background:rgba(244,246,249,.97);border:1px solid #dce3eb;border-radius:16px;padding:18px;gap:18px;backdrop-filter:blur(12px)}
+body.nx-site .shop .shop-filters{gap:8px}
+body.nx-site .shop .shop-filters button{min-height:42px;font-size:12px}
+body.nx-site .shop .shop-search input,body.nx-site .shop .shop-need select{min-height:46px}
+body.nx-site [hidden]{display:none!important}
+body.nx-site .pick-mini>a>img{display:block;width:auto!important;height:auto!important;max-width:100%!important;max-height:340px!important;object-fit:contain!important;margin-inline:auto}
+@media(max-width:1050px){body.nx-site .mag-reading-layout{grid-template-columns:180px minmax(0,1fr);gap:28px}body.nx-site .mag-prose{padding:28px}body.nx-site .mag-feature{gap:30px}body.nx-site .shop .shop-grid{gap:24px 20px}}
+@media(max-width:800px){body.nx-site :is(.mag-story,.mag-index){padding-inline:20px}body.nx-site .mag-feature{gap:24px}body.nx-site .mag-reading-layout{grid-template-columns:minmax(0,1fr);gap:24px}body.nx-site .mag-prose{padding:26px 22px;font-size:16px;line-height:1.8;max-width:none}body.nx-site :is(.guide-content,.rg-content,.rg-body,.pg-content,.qg-content,.rf-reading,.bg-reading){font-size:16px;line-height:1.8}body.nx-site .mag-card-grid{gap:24px}body.nx-site.modern-home .section.wrap{padding-block:46px}body.nx-site.modern-home .section-head{align-items:start;gap:20px}body.nx-site .shop .shop-tools{position:static;padding:16px}body.nx-site .shop .shop-hero-copy{padding:32px 26px}body.nx-site .shop .shop-category{scroll-margin-top:88px}}
+@media(max-width:540px){body.nx-site .mag-prose{padding:24px 18px}body.nx-site .mag-prose h2{margin-top:36px}body.nx-site .mag-related{padding-top:44px}body.nx-site .shop .shop-grid{gap:26px}body.nx-site .shop .pick-card .pick-eyebrow,body.nx-site .shop .pick-card .pick-copy h3,body.nx-site .shop .pick-card .pick-ref{min-height:0;min-block-size:0}body.nx-site .shop .pick-card .pick-copy{padding:20px}body.nx-site .shop .pick-card .pick-copy h3{font-size:22px}body.nx-site .shop .pick-card .pick-fit{font-size:15px}body.nx-site.modern-home .story-card>:not(.story-image){margin-inline:18px}body.nx-site .nx-nav-shell{gap:12px}}
+
 </style>
 </head>
 <body class="page-article magazine-site nx-site" data-nx-release="20261030">
@@ -284,7 +348,7 @@ body.nx-site :is(p,li,figcaption){overflow-wrap:anywhere}
       </div>
       <figure class="mag-feature-photo">
         <a href="/images/office-kit-20261031-usb-c-laptop-kit-full.webp" target="_blank" rel="noopener" data-lightbox>
-          <img src="/images/office-kit-20261031-usb-c-laptop-kit-full.webp" srcset="/images/office-kit-20261031-usb-c-laptop-kit-720.webp 720w, /images/office-kit-20261031-usb-c-laptop-kit-full.webp 1122w" sizes="(max-width:800px) 100vw, 50vw" alt="A laptop on a fixed black Curve stand beside an Anker USB-C hub, with a black desk pad and external keyboard" fetchpriority="high" decoding="async" width="1122" height="1402" data-nx-orientation="portrait">
+          <img src="/images/office-kit-20261031-usb-c-laptop-kit-full.webp" srcset="/images/office-kit-20261031-usb-c-laptop-kit-720.webp 720w, /images/office-kit-20261031-usb-c-laptop-kit-full.webp 1122w" sizes="(max-width:800px) 100vw, 50vw" alt="A laptop on a fixed black Curve stand beside an Anker USB-C hub, with a black desk pad and external keyboard" fetchpriority="high" decoding="async" width="1122" height="1402" data-nx-orientation="portrait" loading="eager">
         </a>
         <figcaption><span>Desk &amp; tech / The everyday edit</span><span>View larger ↗</span></figcaption>
       </figure>
